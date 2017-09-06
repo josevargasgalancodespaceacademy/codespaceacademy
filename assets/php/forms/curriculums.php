@@ -5,13 +5,7 @@ require_once '../classes/validator.php';
 require_once '../classes/sanitizer.php';
 require_once '../config.php';
 
-$request = array(
-	"name" => $_POST['name'],
-	"email" => $_POST ['email'],
-	"telephone" => $_POST ['telephone'],
-	"website" => $_POST['website'],
-	"linkedin" => $_POST['linkedin'],
-);
+$request = $_POST;
 
 if(isset($_FILES['curriculum'])){
 	$file_upload_errors= array();
@@ -48,14 +42,15 @@ $validator = new Validator($request);
 $validator->filledIn("name")->length("name", "<=", 100);
 $validator->filledIn("email")->length("email", "<=", 100)->email("email");
 $validator->filledIn("telephone")->length("telephone", "<=", 15);
-$errors = $validator->getErrors();
 
-$errors = $validator->getErrors();
-if ($errors) die(print_r($errors));
+$errors = array_merge($validator->getErrors(),$file_upload_errors);
 
+if (!$errors) {
+	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+	$mysql->insertRow("curriculums",$request);
+}
 
-$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-$mysql->insertRow("curriculums",$request);
+echo json_encode($errors);
 
 
 
