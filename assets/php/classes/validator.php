@@ -98,7 +98,8 @@ class Validator {
 	function construct_error_messages() {
 		$errors = array();
 		foreach ($this->errors as $key => $error) {
-			$errors[$key] = $this->error_messages[$error];
+			if (is_array($error)) $errors[$key] = $this->error_messages[$error[count($error) - 1]]; 
+			else $errors[$key] = $this->error_messages[$error];
 			
 		}
 		$this->errors = $errors;
@@ -152,6 +153,7 @@ class Validator {
 			if(array_key_exists($field, $this->request) && $this->request[$field] != "") {
 				return $this;
 			} else {
+
 				$this->setError($field, 100);
 				return $this;
 			}
@@ -219,6 +221,7 @@ class Validator {
 		if (preg_match('/^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/', $address)){
 			return $this;
 		}	else {
+
 			$this->setError($field, 102);
 			return $this;
 		}
