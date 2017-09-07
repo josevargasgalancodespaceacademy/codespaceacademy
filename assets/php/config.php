@@ -6,9 +6,9 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', ''); 
 define('DB_NAME', 'codespaceacademy2'); 
 
-define('SMTP_HOST', '');
-define('SMTP_USER', '');
-define('SMTP_PASSWORD', '');
+define('SMTP_HOST', 'smtp.gmail.com');
+define('SMTP_USER', 'davidfisher24');
+define('SMTP_PASSWORD', 'bernardmendy');
 define('SMTP_PORT', 587);
 define('SMTP_DEBUG', 0);
 define('SMTP_SECURE', 'tls');

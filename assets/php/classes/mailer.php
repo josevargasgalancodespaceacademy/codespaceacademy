@@ -3,7 +3,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../vendor/autoload.php';
+require '../../../vendor/autoload.php';
 require './../config.php';
 
 
@@ -13,6 +13,8 @@ class Mailer
     public $mail;
     private $fromEmail;
     private $fromName;
+    private $unsubscribeLinkHtml = "<p>Si no desea recibir más comunicaciones nuestras en el futuro, por favor anule su suscripción <a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>aquí.</a></p>";
+    private $unsubscribeLinkText = "Si no desea recibir más comunicaciones nuestras en el futuro, por favor anule su suscripción <a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>aquí.</a>";
 
     public function __construct()
     {
@@ -62,6 +64,30 @@ class Mailer
         $this->mail->AltBody = $plainTextBody;
 
         $this->mail->send();
+    }
+
+    public function sendBulkMail($subscribers,$subject,$body,$plainTextBody,$addUnsubscribe = true)
+    {
+        $this->mail->From = $this->fromEmail;
+        $this->mail->FromName = $this->fromName;
+
+        foreach($subscribers as $subscriber){
+            $this->mail->AddBcc($subscriber);
+        }
+
+        $this->mail->isHTML(true);
+
+        $this->mail->Subject = $subject;
+        $this->mail->Body = $body;
+        $this->mail->AltBody = $plainTextBody;
+
+        if ($addUnsubscribe) {
+            $this->mail->Body .= $this->unsubscribeLinkHtml;
+            $this->mail->AltBody .= $this->unsubscribeLinkText;
+        }
+        
+        $this->mail->send();
+        $this->mail->ClearAddresses();
     }
 
     

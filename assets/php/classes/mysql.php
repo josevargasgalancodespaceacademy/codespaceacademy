@@ -18,7 +18,7 @@ class Mysql
 	private $port;
 	private $Debug;
  
-    function __construct($host,$user,$password,$db) {
+    public function __construct($host,$user,$password,$db) {
 		$this->conn = false;
 		$this->host = $host; 
 		$this->user = $user; 
@@ -29,7 +29,7 @@ class Mysql
 		$this->connect();
 	}
  
-	function __destruct() {
+	public function __destruct() {
 		$this->disconnect();
 	}
 	
@@ -41,7 +41,7 @@ class Mysql
 	 *
 	*/
 
-	function connect() {
+	private function connect() {
 		if (!$this->conn) {
 			try {
 				$this->conn = new PDO('mysql:host='.$this->host.';dbname='.$this->baseName.'', $this->user, $this->password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));  
@@ -71,7 +71,7 @@ class Mysql
 	 *
 	*/
  
-	function disconnect() {
+	private function disconnect() {
 		if ($this->conn) {
 			$this->conn = null;
 		}
@@ -86,7 +86,7 @@ class Mysql
 	 *
 	*/
 	
-	function getOne($query) {
+	private function getOne($query) {
 		$result = $this->conn->prepare($query);
 		$ret = $result->execute();
 		if (!$ret) {
@@ -110,7 +110,7 @@ class Mysql
 	 *
 	*/
 	
-	function getAll($query) {
+	private function getAll($query) {
 		$result = $this->conn->prepare($query);
 		$ret = $result->execute();
 		if (!$ret) {
@@ -134,7 +134,7 @@ class Mysql
 	 *
 	*/
 	
-	function execute($query) {
+	private function execute($query) {
 		$query = $this->conn->prepare($query);
 		if (!$response = $query->execute()) {
 			echo 'PDO::errorInfo():';
@@ -155,7 +155,7 @@ class Mysql
 	 *
 	*/
 
-	function insertRow($tableName,$data) {
+	public function insertRow($tableName,$data) {
 		$columns = array_keys($data);
 		$values = array_values($data);
 		array_push($columns,"created");
@@ -175,7 +175,7 @@ class Mysql
 	 *
 	*/
 
-	function checkRowExists($tableName,$data) {
+	public function checkRowExists($tableName,$data) {
         $query = "SELECT * FROM $tableName WHERE ";
         foreach ($data as $key => $value) {
         	$query .= "$key = '$value' OR ";
@@ -183,6 +183,52 @@ class Mysql
 
         $result = $this->getAll(substr($query,0,-4));
         return count($result);
+	}
+
+	/**
+	 *
+	 * Gets all data with column = value filters
+	 *
+	 * @param  string  $tableName  The table to check
+	 * @param  array  $filters (optional)   $key => $value data to look for
+	 * @return array $data  All records found with filters
+	 *
+	*/
+
+	public function getAllDataWithParameters($tableName,$filters = null) {
+		$query = "SELECT * FROM $tableName";
+		if ($filters) {
+			$query .= " WHERE";
+			foreach ($filters as $name => $value) {
+				$query .= " $name = '$value' AND ";
+			}
+		}
+		return $this->getAll(substr($query,0,-5));
+	}
+
+	/**
+	 *
+	 * Gets one value from all rows with column = value filters
+	 *
+	 * @param  string  $tableName  The table to check
+	 * @param  string  $selectedData  Data parameter to return
+	 * @param  array  $filters (optional)   $key => $value data to look for
+	 * @return array $data  data parameters for the selected field
+	 *
+	*/
+
+	public function getSelectedDataWithParameters($tableName,$selectData,$filters = null) {
+		$data = $this->getAllDataWithParameters($tableName,$filters);
+		return array_column($data, $selectData);
+	}
+
+	public function editSingleRow($tableName,$identifiers,$updateValues) {
+		$query = "UPDATE $tableName SET ";
+		foreach($updateValues as $column => $value) $query .= $value === "" ? "$column = NULL, " : "$column = '$value', ";
+		$query = substr($query,0,-2);
+		$query .= " WHERE ";
+		foreach ($identifiers as $column => $value) $query .= "$column = '$value' OR ";
+		return $this->execute(substr($query,0,-3) . " LIMIT 1");
 	}
 
 }
