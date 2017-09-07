@@ -136,7 +136,6 @@ class Mysql
 	
 	function execute($query) {
 		$query = $this->conn->prepare($query);
-		//if (!$response = $this->conn->exec($query)) {
 		if (!$response = $query->execute()) {
 			echo 'PDO::errorInfo():';
 		   echo '<br />';
