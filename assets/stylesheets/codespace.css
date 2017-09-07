@@ -7493,7 +7493,7 @@ margin-bottom: 25px
   margin-top: 129px
 }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) 
+@media screen and (min-width: 993px) and (max-width: 1024px) 
 {
 .newsletter p
 {
@@ -7511,6 +7511,7 @@ margin-bottom: 25px
 {
   width: 220px;
   margin-top: 30%;
+}
 }
 }
 @media screen and (max-width: 768px) 
@@ -9160,6 +9161,21 @@ animation-direction: alternate;
   margin-left: 5%;
 }
 }
+@media (min-width:768px) and (max-width: 1210px)
+{  
+#fecha-nac-sorteo 
+{
+   width: 100%;
+   margin-left: 5%;
+   margin-bottom: 10px;
+}
+.select-identidad 
+{
+  width: 100%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+} 
 .fecha-nac
 {
    padding-top: 10px;
