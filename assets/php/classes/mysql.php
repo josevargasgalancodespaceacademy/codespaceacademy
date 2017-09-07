@@ -196,14 +196,21 @@ class Mysql
 	*/
 
 	public function getAllDataWithParameters($tableName,$filters = null) {
-		$query = "SELECT * FROM $tableName";
-		if ($filters) {
-			$query .= " WHERE";
-			foreach ($filters as $name => $value) {
-				$query .= " $name = '$value' AND ";
-			}
+		$query = !$filters ? "SELECT * FROM $tableName" : $this->buildGetDataQueryWithFilters($tableName,$filters);
+		return $this->getAll($query);
+	}
+
+	public function getOneDataWithParameters($tableName,$filters = null) {
+		$query = !$filters ? "SELECT * FROM $tableName" : $this->buildGetDataQueryWithFilters($tableName,$filters);
+		return $this->getOne($query);
+	}
+
+	private function buildGetDataQueryWithFilters($tableName,$filters){
+		$query = "SELECT * FROM $tableName WHERE";
+		foreach ($filters as $name => $value) {
+			$query .= " $name = '$value' AND ";
 		}
-		return $this->getAll(substr($query,0,-5));
+		return substr($query,0,-5);
 	}
 
 	/**
@@ -221,6 +228,17 @@ class Mysql
 		$data = $this->getAllDataWithParameters($tableName,$filters);
 		return array_column($data, $selectData);
 	}
+
+	/**
+	 *
+	 * updates a single row
+	 *
+	 * @param  string  $tableName  The table to check
+	 * @param  array  $identifiers  $key => $value data to filter to find row
+	 * @param  array  $filters    $key => $value data to update
+	 * @return void
+	 *
+	*/
 
 	public function editSingleRow($tableName,$identifiers,$updateValues) {
 		$query = "UPDATE $tableName SET ";

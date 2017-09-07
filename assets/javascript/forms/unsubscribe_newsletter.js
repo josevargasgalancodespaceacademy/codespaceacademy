@@ -5,6 +5,7 @@ function enviar_cancelar_suscripscion(){
 		url: url,  
 		data: $("#unsubscribe_newsletter").serialize()                   
 	}).done(function(respuesta){
-		alert(respuesta);
+		var response = JSON.parse(respuesta);
+		console.log(response);
 	});
 }
