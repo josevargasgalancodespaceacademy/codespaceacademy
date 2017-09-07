@@ -7,7 +7,7 @@
     <script type="text/javascript" src="../assets/javascript/forms/unsubscribe_newsletter.js"></script>
     <link rel="shortcut icon" href="../assets/favicon.ico">
     <title>
-      Unsubscribe form the codespace newsletter.
+      Cancelar tu suscripcion a nuestro newsletter.
     </title>
   </head>
   <body onselectstart='return false;' class="page-nosotros">
@@ -21,21 +21,24 @@
 
     <section class="container codespace-talent">
       <div class="row col-sm-12">
-        <h1 class="title">Unsubscribe from our newsletter</h1>
+        <h1 class="title">
+          Cancelar tu suscripcion a nuestro newsletter.
+        </h1>
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          <p class="talent-text">
-            If you no longer which to recieved the codespace newsletter, enter your email adress to unsubscribe.
+          <p>
+            Si quieres dejar de recibir estas comunicaciones, introduzca tu correco electronico aquí..
           </p> 
+          <br>
           <form role="form" id="unsubscribe_newsletter">
             <div class="subscriber_details">
               <label for="email"> 
-                Tu correo electronico 
+                Correo Electronico
               </label>
               <div class="form-group">
-                <input class="form-control" id="subscriber_details" placeholder="Correo electronico" name="email">
+                <input class="form-control" id="subscriber_details" placeholder="" name="email">
               </div>
-              <label for="comment-unsubscribe">Reason for unsubscribing</label>
-              <textarea class="form-control comentario-unsubscribe" id="comentario-talent" placeholder="Por que quieres dejarnos" name="comment_unsubscribe"></textarea>
+              <label for="comment-unsubscribe">Nos gustaría saber los motivos por los que deseas cancelar la recepción de este tipo concreto de contenido.</label>
+              <textarea class="form-control comentario-unsubscribe" id="comentario-talent" placeholder="Dejarno cualquier comentario o sugerencia aquí" name="comment_unsubscribe"></textarea>
             </div>
             <button type="button" class="button btn boton-enviar-talent" onclick="enviar_cancelar_suscripscion()">Unsubscribe</button>
           </form>

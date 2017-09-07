@@ -13,8 +13,8 @@ class Mailer
     public $mail;
     private $fromEmail;
     private $fromName;
-    private $unsubscribeLinkHtml = "<p>Si no desea recibir más comunicaciones nuestras en el futuro, por favor anule su suscripción <a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>aquí.</a></p>";
-    private $unsubscribeLinkText = "Si no desea recibir más comunicaciones nuestras en el futuro, por favor anule su suscripción <a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>aquí.</a>";
+    private $unsubscribeLinkHtml = "<p><a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>ejar de recibir mensajes de esta dirección</a></p>";
+    private $unsubscribeLinkText = "<a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>ejar de recibir mensajes de esta dirección</a>";
 
     public function __construct()
     {
@@ -38,7 +38,8 @@ class Mailer
             $mail->Password = SMTP_PASSWORD;                           
             $mail->SMTPSecure = SMTP_SECURE;                           
             $mail->Port = SMTP_PORT;  
-            $mail->setLanguage(SMTP_LANGUAGE);                                 
+            $mail->setLanguage(SMTP_LANGUAGE); 
+            $mail->CharSet = 'UTF-8';                                
 
             $this->mail = $mail;
             $this->fromEmail = FROM_EMAIL;
