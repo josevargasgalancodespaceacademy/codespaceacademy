@@ -25,5 +25,7 @@ function enviar_curriculum(){
               }
               return myXhr;
           },                
+          }).done(function(respuesta){
+              alert (respuesta);
           });
         }

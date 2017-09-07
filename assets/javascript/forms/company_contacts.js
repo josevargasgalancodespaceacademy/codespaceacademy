@@ -4,5 +4,7 @@ function enviar_contacto_company(){
            type: "POST",                 
            url: url,  
            data: $("#company_contacts").serialize()                   
-});
+}).done(function(respuesta){
+       alert(respuesta);
+	 });
   }
