@@ -30,7 +30,7 @@ if(isset($_FILES['curriculum'])){
 		move_uploaded_file($file_tmp,$saved_file);
 		$request["route_curriculum_pdf"] = $file_name;
 	}else{
-		die(print_r($file_upload_errors));
+		$file_upload_errors[] = 'No se puede subir el archivo';
 	}
 }
 

@@ -23,23 +23,6 @@ $(document).ready(function(){
    $('html,body').css("overflow-x","hidden");
   });
 
-/*Se muestran modulos del curso al pasar el raton por encima del titulo de cada uno de los modulos del bootcamp*/
-$(function() {
-  var nummodulo;
-  var posicion;
-  $('.modulo-item').hover(function() {
-    nummodulo = $(this).data("id");
-    posicion = $(this).position();
-    $('.modulo-1').css('display','none');
-    if (nummodulo<=4) {
-    $('.modulo-' + nummodulo).css({"left":posicion.left});}
-    $('.modulo-' + nummodulo).css('display', 'block');
-  }, function() {
-    // vuelve a dejar el <div> como estaba al hacer el "mouseout"
-    $('.modulo-' + nummodulo).css('display','none');
-    $('.modulo-1').css('display','block');
-  });
-});
 /*Se muestra formulario del sorteo*/
 $(document).ready(function(){ 
   $('.abrir-formulario-sorteo').click(function() {
@@ -68,11 +51,11 @@ $(document).ready(function() {
     });
 });
 /*Se oculta ventana de sorteo*/
-$(function() {
+/*$(function() {
 $('.boton-sorteo').click(function(){
      $('.formulario-sorteo').css('display','none');
    });
-});
+});*/
 /*Se oculta ventana de envio de cv*/
 $(function() {
 $('.boton-enviar-cv').click(function(){

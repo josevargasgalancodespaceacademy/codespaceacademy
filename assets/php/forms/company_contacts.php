@@ -13,11 +13,9 @@ $request = $sanitizer->sanitizeRequest();
 $validator = new Validator($request);
 $validator->filledIn("name")->length("name", "<=", 100);
 $validator->filledIn("email")->length("email", "<=", 100)->email("email");
-$validator->filledIn("telephone")->length("telephone", "<=", 15);
+$validator->filledIn("telephone")->lengthBetween("telephone", 15, 9, $inclusive = true);
 $validator->filledIn("company_name")->length("company_name", "<=", 100);
 $validator->filledIn("training_request");
-$errors = $validator->getErrors();
-
 $errors = $validator->getErrors();
 
 if (!$errors) {
