@@ -102,7 +102,7 @@
      <div class="container formulario-cv"> 
         <form role="form" id="curriculums" enctype="multipart/form-data">
         <div class="datos-personales">
-        <label> Ingresa tus datos personales </label>
+        <label> Ingresa tus datos personales*</label>
         <div class="form-group">
         <input class="form-control" id="nombre-cv"
            placeholder="Nombre completo" name="name">
@@ -123,15 +123,15 @@
       </div>
       <div class="adjuntar-cv">  
       <div class="form-group">
-      <label for="archivo-cv" class="title">Adjunta tu CV</label>
+      <label for="archivo-cv" class="title">Adjunta tu CV*</label>
       <input type="file" id="archivo-cv" name="curriculum">
       <p class="help-block">Solo se admite formato PDF con un peso máximo de 5MB*</p>
       </div>
       <div class="checkbox">
        <label>
-      <input type="checkbox"> Al enviar este formulario acepto las políticas de privacidad. Para más informacion click
+      <input type="checkbox" id="check-cv"> Al enviar este formulario acepto las políticas de privacidad. Para más informacion click
       </label>
-      <a>aqui</a>
+      <a>aqui</a>*
       </div>
       <button type="button" class="button btn boton-enviar-cv" data-toggle="modal" data-target="#modal-cv" onclick="enviar_curriculum()">Enviar</button>
       </div>
@@ -180,18 +180,24 @@
         </div>
         </div>
     </section>
-<footer>
+     <footer>
   <div class="container footer-content">
     <div class="row">
-    <div class=" col-xs-12 col-sm-3 container-logo"><div class="codespace-logo"><img src="../assets/images/logos/logo_negativo.svg"></div></div>
-    <div class=" col-xs-10 col-xs-offset-1 col-sm-4 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Formación tecnológica. All Rigths Reserved</p></div>
-      <div class="col-xs-12 col-sm-4 footer-navigate">
+    <div class=" col-xs-12 col-sm-2 container-logo"><div class="codespace-logo"><img src="../assets/images/logos/logo_negativo.svg"></div></div>
+    <div class=" col-xs-10 col-xs-offset-1 col-sm-3 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Formación tecnológica. All Rigths Reserved</p></div>
+      <div class="col-xs-12 col-sm-3 footer-navigate">
         <ul>
-          <li class="footer-link">política de cookies</li>
-          <li class="footer-link">privacidad</li>
-          <li class="footer-link">legal</li>
+          <li class="footer-link">políticas legales y condiciones de uso</li>
         </ul>
         </div>
+         <div class="col-xs-12 col-sm-3 redes-sociales"> 
+         <ul>
+          <li class="footer-link facebook"><a><img src="../assets/images/footer/facebook.svg"></a></li>
+          <li class="footer-link instagram"><a><img src="../assets/images/footer/instagram.svg"></a></li>
+          <li class="footer-link twitter"><a><img src="../assets/images/footer/twitter.svg"></a></li>
+          <li class="footer-link linkedin"><a><img src="../assets/images/footer/linkedin.svg"></a></li>
+        </ul>
+         </div>
         </div>
         </div>
         </footer>

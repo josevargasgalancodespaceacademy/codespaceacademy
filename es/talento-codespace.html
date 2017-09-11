@@ -120,18 +120,20 @@
     <h1 class="title"><strong>Contacta</strong> con nosotros </h1>
         <form role="form" id="company_contacts">
         <div class="datos-personales">
-        <label> Ingresa tus datos personales </label>
+        <label> Ingresa tus datos personales*</label>
         <div class="form-group">
         <input class="form-control" id="nombre-talento"
            placeholder="Nombre completo" name="name">
+          
               <input class="form-control" id="telefono-talento" 
            placeholder="Teléfono" name="telephone">
+           
            <input class="form-control" id="email-talento" 
            placeholder="Email" name="email">
-       </div>
+        </div>
        </div>
        <div class="empresa">
-       <label> Empresa </label>
+       <label> Empresa*</label>
        <div class="form-group">
        <input class="form-control" id="nombre-empresa" 
            placeholder="Nombre de tu empresa" name="company_name">
@@ -141,8 +143,8 @@
       </div>
       <div class="form-formacion-a-medida">  
       <div class="form-group">
-      <select class="formacion-a-medida" name="training_request">
-      <option value="">¿Estás interesado en formación a medida para tu empresa?</option>
+      <select class="formacion-a-medida" id="formacion-a-medida" name="training_request">
+      <option value="">¿Estás interesado en formación a medida para tu empresa?*</option>
        <option value="si">Si</option>
        <option value="no">No</option>
        <option value="otro">Otro</option>
@@ -153,6 +155,7 @@
       </div>
       </div>
       <button type="button" class="button btn boton-enviar-talent" onclick="enviar_contacto_company()">Enviar</button>
+      <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>
       </form>
       </div>
      </div>
@@ -182,18 +185,24 @@
         </div>
         </div>
     </section>
-    <footer>
+     <footer>
   <div class="container footer-content">
     <div class="row">
-    <div class=" col-xs-12 col-sm-3 container-logo"><div class="codespace-logo"><img src="../assets/images/logos/logo_negativo.svg"></div></div>
-    <div class=" col-xs-10 col-xs-offset-1 col-sm-4 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Formación tecnológica. All Rigths Reserved</p></div>
-      <div class="col-xs-12 col-sm-4 footer-navigate">
+    <div class=" col-xs-12 col-sm-2 container-logo"><div class="codespace-logo"><img src="../assets/images/logos/logo_negativo.svg"></div></div>
+    <div class=" col-xs-10 col-xs-offset-1 col-sm-3 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Formación tecnológica. All Rigths Reserved</p></div>
+      <div class="col-xs-12 col-sm-3 footer-navigate">
         <ul>
-          <li class="footer-link">política de cookies</li>
-          <li class="footer-link">privacidad</li>
-          <li class="footer-link">legal</li>
+          <li class="footer-link">políticas legales y condiciones de uso</li>
         </ul>
         </div>
+         <div class="col-xs-12 col-sm-3 redes-sociales"> 
+         <ul>
+          <li class="footer-link facebook"><a><img src="../assets/images/footer/facebook.svg"></a></li>
+          <li class="footer-link instagram"><a><img src="../assets/images/footer/instagram.svg"></a></li>
+          <li class="footer-link twitter"><a><img src="../assets/images/footer/twitter.svg"></a></li>
+          <li class="footer-link linkedin"><a><img src="../assets/images/footer/linkedin.svg"></a></li>
+        </ul>
+         </div>
         </div>
         </div>
         </footer>
