@@ -78,6 +78,7 @@ class Validator {
 		109 => "Alphanumeric string contains invalid characters",
 		110 => "Fecha es invalido",
 		111 => "Numero de identificacion no es valido",
+		112 => "Este campo solo puede contener numeros",
 	);
 	
 	
@@ -437,6 +438,63 @@ class Validator {
 					return $this;
 				} else {
 					$this->setError($field, 108);
+					return $this;
+				}
+			}
+		}
+	}
+
+	//check if a field contains only numeric characters and + or space
+	function numeric($field = null) {
+		if(is_array($field)) {
+			foreach ($field as $key => $value){
+				$strlen = strlen($this->request[$value]);
+				if($strlen > 0) {
+					if(preg_match('/^[0-9 +]+$/', $this->request[$value])) {
+						$this->setError($value, 112);
+					} 
+				}
+			}
+			foreach ($this->errors as $key => $value){
+				if($value == 112) {
+					$this->valid = false;
+				}
+			}
+			if($this->valid) {
+				$this->resetValid();
+				return $this;
+			} else {
+				$this->resetValid();
+				return $this;
+			}
+		} elseif ($field == null) { 
+			foreach ($this->request as $key => $value) {
+				$strlen = strlen($value);
+				if($strlen > 0) {
+					if(preg_match('/^[0-9 +]+$/', $value)) {
+						$this->setError($key, 112);
+					}
+				}
+			}
+			foreach ($this->errors as $key => $value){
+				if($value == 112) {
+					$this->valid = false;
+				}
+			}
+			if($this->valid) {
+				$this->resetValid();
+				return $this;
+			} else {
+				$this->resetValid();
+				return $this;
+			}
+		} else {
+			$strlen = strlen($this->request[$field]);
+			if($strlen > 0) {
+				if(preg_match('/^[0-9 +]+$/', $this->request[$field])) {
+					return $this;
+				} else {
+					$this->setError($field, 112);
 					return $this;
 				}
 			}
