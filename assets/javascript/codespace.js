@@ -19,6 +19,7 @@
   });
 
 });*/
+
 $(document).ready(function(){ 
    $('html,body').css("overflow-x","hidden");
   });
@@ -50,6 +51,7 @@ $(document).ready(function() {
         until: launchdate
     });
 });
+
 /*Se oculta ventana de sorteo*/
 /*$(function() {
 $('.boton-sorteo').click(function(){
@@ -57,11 +59,11 @@ $('.boton-sorteo').click(function(){
    });
 });*/
 /*Se oculta ventana de envio de cv*/
-$(function() {
+/*$(function() {
 $('.boton-enviar-cv').click(function(){
      $('.formulario-cv').css('display','none');
    });
-})
+})*/
 
 
 /*animacion anclas usabilidad*/
@@ -160,6 +162,7 @@ else{
       yearRange: '-100:+0',
       dateFormat:'yy/mm/dd'});
   });
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (typeof jQuery === 'undefined') {

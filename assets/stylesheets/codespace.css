@@ -7423,7 +7423,6 @@ margin-bottom: 25px
 }
 .newsletter-email
 {
- 
   width:70%;
 }
 @media (max-width:767px)
@@ -7564,7 +7563,7 @@ margin-bottom: 25px
 }
 @media (max-width:767px)
 {
-  .footer-content .container-logo, .codespace-copyright, .footer-navigate 
+  .footer-content .container-logo, .codespace-copyright, .footer-navigate, .redes-sociales 
   {
   align-items: center;
   display: flex;
@@ -7594,15 +7593,63 @@ margin-bottom: 25px
 {
   margin-top: 130px;
 }
-.footer-navigate ul 
+.footer-navigate ul, .redes-sociales ul 
 {
-  float: left;
+  float: left!important;
 }
-.footer-navigate li 
+.footer-navigate li, .redes-sociales li 
 {
   float:left;
   margin-left: 20px;
   text-transform: uppercase;
+}
+.redes-sociales 
+{
+  margin-top: 110px;
+}
+.redes-sociales img 
+{
+ background:no-repeat;
+background-position: center;
+position:relative;
+overflow:hidden;
+width: 50px;
+height: 50px;
+display: block;
+margin: auto;
+}
+@media (min-width:768px) and (max-width: 1023px)
+{
+  .redes-sociales img 
+  {
+     width: 20px;
+     height: 20px;
+  }
+}
+@media (min-width:1024px) and (max-width: 1365px)
+{
+.redes-sociales img 
+  {
+     width: 30px;
+     height: 30px;
+  }
+}
+@media (max-width:767px)
+{
+  .redes-sociales 
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.redes-sociales img 
+  {
+     width: 30px;
+     height: 30px;
+  }
+  .redes-sociales li:first-child 
+{
+   margin-left: 0px;
+}
 }
 @media screen and (max-width: 768px) 
 {
@@ -9407,7 +9454,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   margin-top: 80px;
   margin-bottom: 40px
 }
-.formulario-talento .datos-personales input
+.formulario-talento .datos-personales input 
 {
   width: 24%;
   display: inline-block;
@@ -9473,6 +9520,29 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   font-size: 1.5em;
   margin-bottom: 5px;
 }
+}
+
+
+/*estilos cajas de error*/
+.errorbox
+{
+border: solid 1px red;
+-webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
+-moz-box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
+box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
+}
+.errorbox::placeholder
+{
+  color:red;;
+  font-weight:bold;
+}
+.mensajerror
+{
+  display: inline-block;
+  margin-left: 10px;
+  color: red;
+  font-weight: 500;
+  display: none;
 }
 /*politica-de-cookies*/
 #barraaceptacion{
