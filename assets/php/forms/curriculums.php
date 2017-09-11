@@ -39,9 +39,9 @@ $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
 
 $validator = new Validator($request);
-$validator->filledIn("name")->length("name", "<=", 100);
+$validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
 $validator->filledIn("email")->length("email", "<=", 100)->email("email");
-$validator->filledIn("telephone")->length("telephone", "<=", 15);
+$validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->length("telephone", "<=", 15);
 
 $errors = array_merge($validator->getErrors(),$file_upload_errors);
 
@@ -50,7 +50,8 @@ if (!$errors) {
 	$mysql->insertRow("curriculums",$request);
 }
 
-echo json_encode($errors);
+if (!$errors) echo "OK";
+else echo json_encode($errors);
 
 
 

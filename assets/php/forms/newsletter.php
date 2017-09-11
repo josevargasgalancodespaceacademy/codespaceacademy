@@ -23,7 +23,9 @@ if ($mysql->checkRowExists("newsletter_subscriptions", array("email" => $request
 if (!$errors) {
 	$mysql->insertRow("newsletter_subscriptions",$insertData);
 }
-echo json_encode($errors);
+
+if (!$errors) echo "OK";
+else echo json_encode($errors);
 
 
 ?>

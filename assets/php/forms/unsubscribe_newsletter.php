@@ -23,7 +23,9 @@ if (!$errors) {
 	if ((int) $row["subscribed"] === 0) $errors["general"] = "Ya has cancelado su suscripcion";
 	else $mysql->editSingleRow("newsletter_subscriptions",array("email" => $request["email"]), array('subscribed' => 0, "comment_unsubscribe" => $request["comment_unsubscribe"]));
 }
-echo json_encode($errors);
+
+if (!$errors) echo "OK";
+else echo json_encode($errors);
 
 
 ?>
