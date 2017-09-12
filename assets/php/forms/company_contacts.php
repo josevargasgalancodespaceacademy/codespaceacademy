@@ -10,10 +10,11 @@ $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
 
 
+
 $validator = new Validator($request);
-$validator->filledIn("name")->length("name", "<=", 100);
+$validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
 $validator->filledIn("email")->length("email", "<=", 100)->email("email");
-$validator->filledIn("telephone")->lengthBetween("telephone", 15, 9, $inclusive = true);
+$validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->lengthBetween("telephone", 15, 9, $inclusive = true);
 $validator->filledIn("company_name")->length("company_name", "<=", 100);
 $validator->filledIn("training_request");
 $errors = $validator->getErrors();
@@ -23,7 +24,9 @@ if (!$errors) {
 	$mysql->insertRow("company_contacts",$request);
 }
 
-echo json_encode($errors);
+
+if (!$errors) echo "OK";
+else echo json_encode($errors);
 
 
 ?>

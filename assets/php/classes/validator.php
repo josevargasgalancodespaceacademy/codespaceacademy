@@ -25,6 +25,8 @@
 *
 * alphaNumeric($field = null) -- checks to see if $field contains only alphanumericcharacters. If argument left blank, checks all fields.
 *
+* numeric($field = null, (array) $additionalCharacters = null) checks to see if a field only cointains numeric characters and any characters included as additional characters
+*
 * spanish_id($field, $type) -- type is "dni" or "nie". Checks against the algorithm to see if the id number is valid
 *
 * date($field, $format) -- checks $field against specified format. acceptable date separators are "/", "-", and "." . day, month, and year are specified as "d", "m", "y". eg. "dd/mm/yyyy" or "mm.yyyy"
@@ -69,16 +71,17 @@ class Validator {
 		100 => "Este campo es obligatorio",
 		101 => "Numero de caracters no es correcto",
 		102 => "Correo Electronico Invalido",
-		103 => "Inputs fail to match",
-		104 => "Length not in correct range",
+		103 => "Los valores introducidos no son iguales",
+		104 => "Longitud no en el ranfo correcto",
 		105 => "Punctuated characters in input",
-		106 => "Value of integer is too short/long",
-		107 => "Value of integer not in correct range",
-		108 => "Alphabetic string contains invalid characters",
-		109 => "Alphanumeric string contains invalid characters",
+		106 => "Valor es demasiado corto o largo",
+		107 => "Valor introducido no es en el rango correcto",
+		108 => "Este campo solo puede contener caracteres alfabeticos",
+		109 => "ste campo solo puede contener caracteres alfabeticos y numericos",
 		110 => "Fecha es invalido",
 		111 => "Numero de identificacion no es valido",
 		112 => "Este campo solo puede contener numeros",
+		113 => "Solo disponible para mayores de 18 anos",
 	);
 	
 	
@@ -393,7 +396,7 @@ class Validator {
 			foreach ($field as $key => $value){
 				$strlen = strlen($this->request[$value]);
 				if($strlen > 0) {
-					if(!preg_match("/[[:alpha:]]\{$strlen}/", $this->request[$value])) {
+					if(!preg_match('/^[a-zA-Z ]+$/', $this->request[$value])) {
 						$this->setError($value, 108);
 					} 
 				}
@@ -414,7 +417,7 @@ class Validator {
 			foreach ($this->request as $key => $value) {
 				$strlen = strlen($value);
 				if($strlen > 0) {
-					if(!preg_match("/[[:alpha:]]\{$strlen}/", $value)) {
+					if(!preg_match('/^[a-zA-Z ]+$/', $value)) {
 						$this->setError($key, 108);
 					}
 				}
@@ -434,23 +437,34 @@ class Validator {
 		} else {
 			$strlen = strlen($this->request[$field]);
 			if($strlen > 0) {
-				if(preg_match("/[[:alpha:]]\{$strlen}/", $this->request[$field])) {
+				if(preg_match('/^[a-zA-Z ]+$/', $this->request[$field])) {
 					return $this;
 				} else {
 					$this->setError($field, 108);
 					return $this;
 				}
+			} else {
+				return $this;
 			}
 		}
 	}
 
-	//check if a field contains only numeric characters and + or space
-	function numeric($field = null) {
+	// check if a field contains 
+	// $additionalCharacters is array of characters to add to the regex
+	function numeric($field = null, $additionalCharacters = null) {
+		$regex = "/^[0-9";
+		if ($additionalCharacters) {
+			foreach($additionalCharacters as $character) {
+				$regex .= $character;
+			}
+		}
+		$regex .= "]+$/";
+
 		if(is_array($field)) {
 			foreach ($field as $key => $value){
 				$strlen = strlen($this->request[$value]);
 				if($strlen > 0) {
-					if(preg_match('/^[0-9 +]+$/', $this->request[$value])) {
+					if(preg_match($regex, $this->request[$value])) {
 						$this->setError($value, 112);
 					} 
 				}
@@ -471,7 +485,7 @@ class Validator {
 			foreach ($this->request as $key => $value) {
 				$strlen = strlen($value);
 				if($strlen > 0) {
-					if(preg_match('/^[0-9 +]+$/', $value)) {
+					if(preg_match($regex, $value)) {
 						$this->setError($key, 112);
 					}
 				}
@@ -491,12 +505,14 @@ class Validator {
 		} else {
 			$strlen = strlen($this->request[$field]);
 			if($strlen > 0) {
-				if(preg_match('/^[0-9 +]+$/', $this->request[$field])) {
+				if(preg_match($regex, $this->request[$field])) {
 					return $this;
 				} else {
 					$this->setError($field, 112);
 					return $this;
 				}
+			} else {
+				return $this;
 			}
 		}
 	}
@@ -507,7 +523,7 @@ class Validator {
 			foreach ($field as $key => $value){
 				$strlen = strlen($this->request[$value]);
 				if($strlen > 0) {
-					if(!preg_match("/[[:alnum:]]\{$strlen}/", $this->request[$value])) {
+					if(!preg_match('/^[a-zA-Z0-9]+$/', $this->request[$value])) {
 						$this->setError($value, 109);
 					} 
 				}
@@ -554,6 +570,8 @@ class Validator {
 					$this->setError($field, 109);
 					return $this;
 				}
+			} else {
+				return $this;
 			}
 		}
 	}
@@ -596,7 +614,7 @@ class Validator {
 	//acceptable formats use "m" for month, "d" for day, "y" for year
 	//eg: date("date", "mm.dd.yyyy") will match a field called "date" containing 01-12.01-31.nnnn where n is any real number
 	//ERROR: 110
-	function date($field, $format) {
+	function date($field, $format, $checkLegalAge = false) {
 		$month = false;
 		$day = false;
 		$year = false;
@@ -695,13 +713,54 @@ class Validator {
 		} 
 		
 		if ($this->valid) {
-			$this->resetValid();
-			return $this;
+			// Check the legal age if it has been requested
+			if ($checkLegalAge && !$this->checkAbove18($dateArray)) {
+				$this->resetValid();
+				$this->setError($field, 113);
+				return $this;
+				/*$today = date("Y-m-d");
+				$formattedValidDate = $dateArray[0] . "-" . $dateArray[1] . "-" . $dateArray[2]; 
+				$diff=date_diff(date_create($formattedValidDate),date_create($today));*/
+
+				/*if ($diff->days <= 6570) {
+					$this->resetValid();
+					$this->setError($field, 113);
+					return $this;
+				} else {
+					$this->resetValid();
+					return $this;
+				}*/
+
+			} else {
+				$this->resetValid();
+				return $this;
+			}
 		} else {
 			$this->resetValid();
 			$this->setError($field, 110);
 			return $this;
 		}
+	}
+
+	// Used with the function above to check above 18 years
+	function checkAbove18($dateArray){
+		$birthDay = $dateArray[2]; $birthMonth = $dateArray[1]; $birthYear = $dateArray[0];
+		if (date('Y') - $birthYear > 18) { 
+			return true; 
+		} else {
+			   if (date('Y') - $birthYear = 18) { 
+					if (date('m') - $birthMonth > 0) { 
+						return true; 
+					} else {
+						 if (date('m') - $birthMonth = 0) {
+							  if (date('d') - $birthDay >= 0) { 
+							  	return true; 
+							  }
+						 }
+					}
+			   }
+		  }
+		  return false;
 	}
 	
 	//set errors here
