@@ -5,6 +5,14 @@ function enviar_cancelar_suscripscion(){
 		url: url,  
 		data: $("#unsubscribe_newsletter").serialize()                   
 	}).done(function(respuesta){
+		if(respuesta = "OK")
+	   {
+		   $('#subscriber_details').removeClass("errorbox");
+           $('#subscriber_details').val("");
+           $('#modal-cancelar-suscripcion').modal('show');
+       }
+		else
+		{
 		var response = JSON.parse(respuesta);
 		if (response.hasOwnProperty('email'))
 		{
@@ -17,11 +25,7 @@ function enviar_cancelar_suscripscion(){
           $('#subscriber_details').addClass("errorbox");
           $('#subscriber_details').val("");
           $('#subscriber_details').attr("placeholder", response['general']);  
-       } else 
-       {
-           $('#subscriber_details').removeClass("errorbox");
-           $('#subscriber_details').val("");
-           $('#modal-cancelar-suscripcion').modal('show');
        }
+   }
 	});
 }
