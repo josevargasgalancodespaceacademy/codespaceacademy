@@ -189,3 +189,19 @@ function PonerCookie(){
     setCookie('tiendaaviso','1',365);
     document.getElementById("barraaceptacion").css('display','none');
 }
+
+/**
+ * Sets a focus event for inputs with errors. On focus the error message
+ * is removed and the original value placed in the input box.
+ * @param {string} elementId - #id of the input
+ * @param {string} originalData - original data passed to php
+ * @return void
+ */
+ 
+function replaceValueTimeout(elementId,originalData) {
+    $(elementId).on('focus',function(){
+      $(elementId).removeAttr('placeholder');
+      $(elementId).val(originalData); 
+    });
+}
+
