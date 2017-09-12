@@ -20,7 +20,7 @@ if (!$mysql->checkRowExists("newsletter_subscriptions", array("email" => $reques
 
 if (!$errors) {
 	$row = $mysql->getOneDataWithParameters("newsletter_subscriptions",array("email" => $request["email"]));
-	if ((int) $row["subscribed"] === 0) $errors["general"] = "Ya has cancelado su suscripcion";
+	if ((int) $row["subscribed"] === 0) $errors["general"] = "Ya has cancelado tu suscripción";
 	else $mysql->editSingleRow("newsletter_subscriptions",array("email" => $request["email"]), array('subscribed' => 0, "comment_unsubscribe" => $request["comment_unsubscribe"]));
 }
 
