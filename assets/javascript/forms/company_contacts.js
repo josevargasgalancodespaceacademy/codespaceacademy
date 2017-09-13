@@ -5,7 +5,65 @@ function enviar_contacto_company(){
            url: url,  
            data: $("#company_contacts").serialize()                   
 }).done(function(respuesta){
-var data = JSON.parse(respuesta);
+
+ var postData = $("#company_contacts").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.name;
+            return obj;
+        }, {});
+  if( respuesta == "OK")
+  {
+    $('#modal-talento').modal('show');
+  }
+  else
+  {
+  var data = JSON.parse(respuesta);
+  $('#company_contacts .mensajerror').css('display', 'inline-block');
+  for (var key in postData) {
+    for (var key2 in data){
+  if (postData[key] == key2)
+  {
+    
+     $('#'+ key).addClass("errorbox");
+     $('#' + key).attr("placeholder", data[key]);  
+     $('#' + key).val("");
+     break
+  }
+  else
+  {  
+     $('#'+ key).removeClass("errorbox");
+     $('#' + key).attr("placeholder", ""); 
+  }
+}
+}
+}
+}) 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var data = JSON.parse(respuesta);
 //diferentes validaciones formulario
 
 //campo nombre
@@ -82,4 +140,4 @@ for (var key in data) {
 }
 //ocultar mensaje de error
 })
-}
+}*/

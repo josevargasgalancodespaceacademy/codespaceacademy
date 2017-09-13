@@ -9219,7 +9219,7 @@ animation-direction: alternate;
 {
   margin-bottom: 10px;
 }
-#fecha-nac-sorteo 
+.fecha-nac-sorteo 
 {
    float: right;
    margin-top: 10px;
@@ -9231,7 +9231,7 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-  #fecha-nac-sorteo 
+  .fecha-nac-sorteo 
 {
    width: 30%;
    margin-left: 5%
@@ -9244,7 +9244,7 @@ animation-direction: alternate;
 }
 @media (min-width:768px) and (max-width: 1210px)
 {  
-#fecha-nac-sorteo 
+.fecha-nac-sorteo 
 {
    width: 100%;
    margin-left: 5%;

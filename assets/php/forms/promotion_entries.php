@@ -24,7 +24,7 @@ $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 if ($mysql->checkRowExists("promotion_entries", array(
 	"email" => $request["email"],
 	"number_identification" => $request["number_identification"],
-)) > 0) $errors["general"] = "Los detalles puestos ya han sido entrado";
+)) > 0) $errors["number_identification"] = "Usuario ya registrado";
 
 
 if (!$errors) $mysql->insertRow("promotion_entries",$request);

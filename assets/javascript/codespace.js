@@ -16,6 +16,12 @@ $(document).ready(function(){
    $('html,body').css("overflow-x","hidden");
   });
 
+//recargar la página
+function recargar()
+{
+ location.reload();
+}
+
 /*Se muestra formulario del sorteo*/
 $(document).ready(function(){ 
   $('.abrir-formulario-sorteo').click(function() {
@@ -38,7 +44,7 @@ $(document).ready(function(){
 
 /*contador hacia atras del primer bootcamp*/
 $(document).ready(function() { 
-    var launchdate = new Date(2017, 11 - 1, 10);//la fecha de lanzamiento del bootcamp
+    var launchdate = new Date(2017, 11 - 1, 20);//la fecha de lanzamiento del bootcamp
     $('#counter').countdown({
         until: launchdate
     });
@@ -148,7 +154,7 @@ else{
 
 //datepicker fecha de nacimiento becas
    $(document).ready(function() {
-    $('#fecha-nac-sorteo').datepicker({
+    $('#date_of_birth').datepicker({
       changeYear: true,
       changeMonth: true ,
       yearRange: '-100:+0',
@@ -156,7 +162,7 @@ else{
   });
 
    /*Cookies*/
-function getCookie(c_name){
+/*function getCookie(c_name){
     var c_value = document.cookie;
     var c_start = c_value.indexOf(" " + c_name + "=");
     if (c_start == -1){
@@ -188,4 +194,4 @@ function setCookie(c_name,value,exdays){
 function PonerCookie(){
     setCookie('tiendaaviso','1',365);
     document.getElementById("barraaceptacion").css('display','none');
-}
+}*/

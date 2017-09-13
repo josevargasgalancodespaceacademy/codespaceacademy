@@ -28,8 +28,39 @@ if ($('#check-cv').is(':checked')){
               return myXhr;
           },                
           }).done(function(respuesta){
+          var postData = $("#curriculums").serializeArray().reduce(function(obj, item) {
+          obj[item.name] = item.name;
+          return obj;
+        }, {});
+  if( respuesta == "OK")
+  {
+    alert(respuesta);
+    $('#modal-cv').modal('show');
+  }
+  else
+  {
+  var data = JSON.parse(respuesta);
+    $('#curriculums .mensajerror').css('display', 'inline-block');
+  for (var key in postData) {
+    for (var key2 in data){
+  if (postData[key] == key2)
+  {
+     $('#'+ key).addClass("errorbox");
+     $('#' + key).attr("placeholder", data[key]);  
+     $('#' + key).val("");
+     break
+  } 
+  else
+  {  
+     $('#'+ key).removeClass("errorbox");
+     $('#' + key).attr("placeholder", ""); 
+  }
+}
+}
+}
+})
             
-var data = JSON.parse(respuesta);
+/*var data = JSON.parse(respuesta);
 //diferentes validaciones formulario
 
 //campo nombre
@@ -71,8 +102,10 @@ var data = JSON.parse(respuesta);
   $('#telefono-cv').attr("placeholder", "Email");
  }
   })
-    }else{
+    */
+  }
+  else
+  {
     alert ('Acepta las condiciones legales');
   }
-
-        }
+}

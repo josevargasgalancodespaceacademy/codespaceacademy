@@ -69,19 +69,19 @@ class Validator {
 
 	var $error_messages = array(
 		100 => "Este campo es obligatorio",
-		101 => "Numero de caracters no es correcto",
-		102 => "Correo Electronico Invalido",
+		101 => "Número de caracteres incorrecto",
+		102 => "Formato de email incorrecto",
 		103 => "Los valores introducidos no son iguales",
-		104 => "Longitud no en el ranfo correcto",
+		104 => "Longitud incorrecta",
 		105 => "Punctuated characters in input",
-		106 => "Valor es demasiado corto o largo",
+		106 => "El valor es demasiado corto o largo",
 		107 => "Valor introducido no es en el rango correcto",
 		108 => "Este campo solo puede contener caracteres alfabeticos",
-		109 => "ste campo solo puede contener caracteres alfabeticos y numericos",
-		110 => "Fecha es invalido",
-		111 => "Numero de identificacion no es valido",
-		112 => "Este campo solo puede contener numeros",
-		113 => "Solo disponible para mayores de 18 anos",
+		109 => "Este campo solo puede contener caracteres alfabeticos y numericos",
+		110 => "La fecha es válida",
+		111 => "El número de identificacion no es válido",
+		112 => "Este campo solo puede contener números",
+		113 => "Solo disponible para mayores de 18 años",
 	);
 	
 	

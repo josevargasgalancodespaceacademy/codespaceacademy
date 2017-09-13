@@ -5,10 +5,11 @@ function enviar_cancelar_suscripscion(){
 		url: url,  
 		data: $("#unsubscribe_newsletter").serialize()                   
 	}).done(function(respuesta){
-		if(respuesta = "OK")
+		if(respuesta == "OK")
 	   {
 		   $('#subscriber_details').removeClass("errorbox");
            $('#subscriber_details').val("");
+           $('#subscriber_details').attr("placeholder", " ");  
            $('#modal-cancelar-suscripcion').modal('show');
        }
 		else
