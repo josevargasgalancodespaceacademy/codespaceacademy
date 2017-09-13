@@ -396,7 +396,7 @@ class Validator {
 			foreach ($field as $key => $value){
 				$strlen = strlen($this->request[$value]);
 				if($strlen > 0) {
-					if(!preg_match('/^[a-zA-Z ]+$/', $this->request[$value])) {
+					if(!preg_match('~^[\p{L}\p{Z}]+$~u', $this->request[$value])) {
 						$this->setError($value, 108);
 					} 
 				}
@@ -417,7 +417,7 @@ class Validator {
 			foreach ($this->request as $key => $value) {
 				$strlen = strlen($value);
 				if($strlen > 0) {
-					if(!preg_match('/^[a-zA-Z ]+$/', $value)) {
+					if(!preg_match('~^[\p{L}\p{Z}]+$~u', $value)) {
 						$this->setError($key, 108);
 					}
 				}
@@ -437,7 +437,7 @@ class Validator {
 		} else {
 			$strlen = strlen($this->request[$field]);
 			if($strlen > 0) {
-				if(preg_match('/^[a-zA-Z ]+$/', $this->request[$field])) {
+				if(preg_match('~^[\p{L}\p{Z}]+$~u', $this->request[$field])) {
 					return $this;
 				} else {
 					$this->setError($field, 108);
@@ -523,7 +523,7 @@ class Validator {
 			foreach ($field as $key => $value){
 				$strlen = strlen($this->request[$value]);
 				if($strlen > 0) {
-					if(!preg_match('/^[a-zA-Z0-9]+$/', $this->request[$value])) {
+					if(!preg_match('~^[\p{L}\p{Z}\p{N}]+$~u', $this->request[$value])) {
 						$this->setError($value, 109);
 					} 
 				}
@@ -544,7 +544,7 @@ class Validator {
 			foreach ($this->request as $key => $value) {
 				$strlen = strlen($value);
 				if($strlen > 0) {
-					if(!preg_match("/[[:alnum:]]\{$strlen}/", $value)) {
+					if(!preg_match("~^[\p{L}\p{Z}\p{N}]+$~u", $value)) {
 						$this->setError($key, 109);
 					}
 				}
@@ -564,7 +564,7 @@ class Validator {
 		} else {
 			$strlen = strlen($this->request[$field]);
 			if($strlen > 0) {
-				if(preg_match("/[[:alnum:]]\{$strlen}/", $this->request[$field])) {
+				if(preg_match("~^[\p{L}\p{Z}\p{N}]+$~u", $this->request[$field])) {
 					return $this;
 				} else {
 					$this->setError($field, 109);
