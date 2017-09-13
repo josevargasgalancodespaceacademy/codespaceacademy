@@ -35,6 +35,7 @@ function enviar_contacto_company(){
   }
   else
   {  
+     $('#'+ key).off('focus');
      $('#'+ key).removeClass("errorbox");
      $('#' + key).attr("placeholder", ""); 
   }

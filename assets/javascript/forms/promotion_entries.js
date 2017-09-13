@@ -10,6 +10,10 @@ if ($('#check-sorteo').is(':checked')){
             obj[item.name] = item.name;
             return obj;
         }, {});
+   var originalData = $("#promotion_entries").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
   if( respuesta == "OK")
   {
     $('#modal-sorteo').modal('show');
@@ -32,11 +36,13 @@ if ($('#check-sorteo').is(':checked')){
      $('#'+ key).addClass("errorbox");
      $('#' + key).attr("placeholder", data[key]);  
      $('#' + key).val("");
+     replaceValueTimeout('#'+ key,originalData[key]);
      break
     }
   } 
   else
   {  
+     $('#'+ key).off('focus');
      $('#'+ key).removeClass("errorbox");
      $('#' + key).attr("placeholder", ""); 
   }

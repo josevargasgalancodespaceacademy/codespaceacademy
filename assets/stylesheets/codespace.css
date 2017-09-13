@@ -7925,6 +7925,28 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
      font-size:40px!important;
   }
 }
+@media (min-width:881px) and (max-width:1365px)
+{
+  .page-bootcamp-web .main-nav
+{
+   margin-bottom: 100px!important
+} 
+.page-bootcamp-web .hero-block h1
+{
+  font-size:70px!important;
+}
+}
+@media (min-width:768px) and (max-width:881px)
+{
+  .page-bootcamp-web .main-nav
+{
+   margin-bottom: 160px!important
+} 
+.page-bootcamp-web .hero-block h1
+{
+  font-size:60px!important;
+}
+}
 .video-bootcamp-web
 {
  position:absolute;
@@ -7962,20 +7984,20 @@ z-index: -100;
 }
 .testimonial-web img
 {
-background-position:center;
+  background-position:center;
   background-size:cover;
   height:400px;
   margin:0 auto 20px;
-  width:100px
- margin-bottom: 15px;
+  width:400px;
+  margin-bottom: 15px;
 }
 
-@media (max-width:767px)
+@media (min-width:768px) and (max-width:1023px)
 {
   .testimonial-web img
   {
-  height:325px;
-  width:325px;
+  height:250px;
+  width:250px;
   }
 
 }
@@ -8076,6 +8098,13 @@ background-position:center;
    margin-left: 50px;
    padding-left: 0
 }
+@media (min-width:768px) and (max-width:1600px)
+{
+  .container .activities
+  {
+    margin-left: 0px!important
+  }
+}
 @media (max-width:767px)
 {
   .container .structure, .container .activities 
@@ -8156,6 +8185,30 @@ border-right-color: rgb(134, 36, 131);
 .modulo-item-text ul
 {
   margin-top: 20px
+}
+@media (min-width:768px) and (max-width: 1170px)
+{
+ .modulo-item-text
+{
+  padding: 20px;
+  width: 90%;
+  height: 400px;
+}
+.modulo-item-number
+{
+  right: 150px;
+}
+}
+@media (min-width:1171px) and (max-width: 1366px)
+{
+  .course-structure-container
+  {
+    padding-right: 40px!important
+  }
+.modulo-item-number
+{
+  right: 50px;
+}
 }
 .timeline 
 {
@@ -8455,7 +8508,7 @@ padding: inherit!important;
 }
 .pad-text
 {
-  width: 470px;
+  width: 100%;
   height: 300px;
   background-color: rgb(230, 23, 83);
   padding: 40px;
@@ -8473,10 +8526,6 @@ padding: inherit!important;
 {
   width: auto;
   height: auto;
-  background-color: rgb(230, 23, 83);
-  padding: 40px;
-  color: #FFF;
-  font-size: 15px
 }
 }
 .pad-text  a
@@ -8505,6 +8554,37 @@ padding: inherit!important;
 transform: translateY(-20px);
 cursor:pointer;
 }
+@media (min-width:1170px) and (max-width: 1420px)
+{ 
+  .pad-text
+{
+  padding: 20px;
+}
+}
+@media (min-width:820px) and (max-width: 1169px)
+{ 
+  .pad-text
+{
+  padding: 20px;
+  font-size: 11px;
+}
+  .pad-text p 
+{
+   padding: 10px
+}
+}
+@media (min-width:768px) and (max-width: 819px)
+{ 
+  .pad-text
+{
+  padding: 20px;
+  font-size: 10px
+}
+.pad-text p 
+{
+   padding: 10px
+}
+}
 @media (max-width:767px)
 {
 .sub-section-prices-and-dates h3 
@@ -8520,7 +8600,7 @@ cursor:pointer;
 .bootcamp-web-faq
 {
  max-width: 1224px;
- margin:120px;
+ margin:5%;
  padding-left: 100px;
 }
 .bootcamp-web-faq ul li

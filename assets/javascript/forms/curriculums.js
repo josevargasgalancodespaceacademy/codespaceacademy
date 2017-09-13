@@ -32,6 +32,10 @@ if ($('#check-cv').is(':checked')){
           obj[item.name] = item.name;
           return obj;
         }, {});
+          var originalData = $("#curriculums").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
   if( respuesta == "OK")
   {
     alert(respuesta);
@@ -48,10 +52,12 @@ if ($('#check-cv').is(':checked')){
      $('#'+ key).addClass("errorbox");
      $('#' + key).attr("placeholder", data[key]);  
      $('#' + key).val("");
+     replaceValueTimeout('#'+ key,originalData[key]);
      break
   } 
   else
   {  
+    $('#'+ key).off('focus');
      $('#'+ key).removeClass("errorbox");
      $('#' + key).attr("placeholder", ""); 
   }
