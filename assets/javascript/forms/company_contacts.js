@@ -10,6 +10,10 @@ function enviar_contacto_company(){
             obj[item.name] = item.name;
             return obj;
         }, {});
+ var originalData = $("#company_contacts").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
   if( respuesta == "OK")
   {
     $('#modal-talento').modal('show');
@@ -26,6 +30,7 @@ function enviar_contacto_company(){
      $('#'+ key).addClass("errorbox");
      $('#' + key).attr("placeholder", data[key]);  
      $('#' + key).val("");
+     replaceValueTimeout('#'+ key,originalData[key]);
      break
   }
   else
