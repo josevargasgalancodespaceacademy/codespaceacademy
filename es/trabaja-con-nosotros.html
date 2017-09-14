@@ -103,30 +103,42 @@
      <div class="container formulario-cv"> 
         <form role="form" id="curriculums" enctype="multipart/form-data">
         <div class="datos-personales">
-        <label> Ingresa tus datos personales*</label>
-        <div class="form-group">
+        <label class="title"> Ingresa tus datos personales*</label>
+        <div class="trabaja-field">
+        <label class="title-field" for="name">Nombre completo*</label>
         <input class="form-control" id="name"
-           placeholder="Nombre completo" name="name">
+           placeholder="Introduce tu nombre completo" name="name">
+           </div>
+           <div class="trabaja-field">
+        <label class="title-field" for="telephone">Teléfono*</label>
               <input class="form-control" id="telephone" 
-           placeholder="Teléfono" name="telephone">
+           placeholder="Introduce tu teléfono" name="telephone">
+           </div>
+           <div class="trabaja-field">
+        <label class="title-field" for="email">Email*</label>
            <input class="form-control" id="email" 
-           placeholder="Email" name="email">
-       </div>
+           placeholder="Introduce tu email" name="email">
+           </div>
        </div>
        <div class="web-linkedin">
-       <label> Website y Linkedin </label>
-       <div class="form-group">
-       <input class="form-control" id="website-cv" 
-           placeholder="Website o portfolio" name="website">
+       <label class="title"> Website y Linkedin </label>
+        <div class="trabaja-field">
+        <label class="title-field" for="website-cv">Website o portfolio</label>
+         <input class="form-control" id="website-cv" 
+           placeholder="Introduce tu website o portfolio" name="website">
+           </div>
+           <div class="trabaja-field">
+        <label class="title-field" for="website-cv">Linkedin</label>
            <input class="form-control" id="linkedin-cv" 
-           placeholder="Linkedin" name="linkedin">
-      </div>
+           placeholder="Introduce tu perfil de Linkedin" name="linkedin">
+           </div>
       </div>
       <div class="adjuntar-cv">  
       <div class="form-group">
       <label for="archivo-cv" class="title">Adjunta tu CV*</label>
       <input type="file" id="archivo-cv" name="curriculum">
       <p class="help-block">Solo se admite formato PDF con un peso máximo de 5MB*</p>
+      <div class="pdf-error"></div>
       </div>
       <div class="checkbox">
        <label>

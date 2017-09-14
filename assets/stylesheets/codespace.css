@@ -7402,6 +7402,35 @@ z-index: -100;
  padding-bottom: 65px;
  min-height: 300px;
 }
+@-moz-document url-prefix() 
+{
+   .prefooter .trabaja-con-nosotros 
+   {
+      padding-bottom: 63px;
+   }
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) 
+{
+  .newsletter 
+{
+ padding-bottom: 92px;
+}
+}
+@media screen and (min-width: 1441px) and (max-width: 1548px) 
+{
+   .newsletter 
+{
+ padding-bottom: 94px;
+}
+}
+@media screen and (min-width: 1549px) and (max-width: 1600px) 
+{
+  .prefooter .trabaja-con-nosotros 
+  {
+      padding-bottom: 8px!important;
+  }
+}
+}
 @media (max-width:767px)
 {
   .prefooter .trabaja-con-nosotros  
@@ -7512,6 +7541,38 @@ margin-bottom: 25px
   margin-top: 30%;
 }
 }
+@media screen and (min-width: 1367px) and (max-width: 1440px) 
+{
+.prefooter .trabaja-con-nosotros
+{
+   padding-bottom: 11px;
+}
+.prefooter .trabaja-con-nosotros p
+{
+  margin-top: 10px
+}
+}
+@media screen and (min-width: 1441px) and (max-width: 1548px) 
+{
+.prefooter .trabaja-con-nosotros
+{
+   padding-bottom: 12px;
+}
+.prefooter .trabaja-con-nosotros p
+{
+  margin-top: 10px
+}
+}
+@media screen and (min-width: 1549px) and (max-width: 1600px) 
+{
+.prefooter .trabaja-con-nosotros
+{
+   padding-bottom: 32px;
+}
+.prefooter .trabaja-con-nosotros p
+{
+  margin-top: 10px
+}
 }
 @media screen and (max-width: 768px) 
 {
@@ -7530,8 +7591,8 @@ margin-bottom: 25px
 }
 .tcn-image img
 {
-  width: 170px;
-  margin-top: 80%;
+  width: 300px;
+  margin-top: 10%;
   padding-left: 0
 }
 }
@@ -9024,6 +9085,21 @@ cursor:pointer;
   margin: 30px;
   transition: transform 0.2s linear;
 }
+@media (min-width:768px) and (max-width: 1365px) 
+{
+  .work-with-us-reasons .reason
+{
+  width: 30%;
+  margin: 10px;
+  height: 35%;
+  padding: 20px;
+  font-size: inherit;
+}
+ .work-with-us-reasons .reason h2
+{
+   font-size: 25px  
+}
+}
 .wwu-reason-title
 {
   margin-bottom: 15px
@@ -9128,27 +9204,36 @@ animation-direction: alternate;
 {
   display: none;
 }
-.formulario-cv .datos-personales input
+.formulario-cv .title-field 
 {
-  width: 400px;
+  margin-bottom: 10px
+}
+.formulario-cv .datos-personales .trabaja-field
+{
+  margin-left:20px;
+  margin-top: 30px;
+  margin-bottom:30px;
+  display: inline-block;
+  width: 27%
+}
+.web-linkedin .trabaja-field
+{
+  width: 37%;
   display: inline-block;
   margin-left:20px;
   margin-top: 30px;
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
-.formulario-cv .datos-personales label, .formulario-cv .adjuntar-cv .title
+.formulario-cv .datos-personales input
+{
+ width: 100%;
+ clear: left;
+}
+.formulario-cv .datos-personales .title, .formulario-cv .web-linkedin .title, .formulario-cv .adjuntar-cv .title
 {
   width: 88%;
   padding-bottom: 20px;
   border-bottom: 1px solid #BDBDBD;
-}
-.formulario-cv .web-linkedin input
-{
-  width: 612px;
-  display: inline-block;
-  margin-left:20px;
-  margin-top: 30px;
-  margin-bottom:20px;
 }
 .formulario-cv .adjuntar-cv .title
 {
@@ -9162,9 +9247,29 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.formulario-cv .datos-personales input, .formulario-cv .web-linkedin input
+.formulario-cv .datos-personales .trabaja-field, .formulario-cv .web-linkedin .trabaja-field
 {
-  width: auto
+  width: 75%
+}
+#archivo-cv
+{
+   font-size: 10px
+}
+.formulario-cv .datos-personales .trabaja-field, .formulario-cv .web-linkedin .trabaja-field
+{
+  margin-top: 10px
+}
+.cv-y-ofertas .ofertas-trabajo
+{
+   clear:left;
+}
+}
+@media (max-width:320px)
+{
+   .cv-y-ofertas-button
+{
+  width: 75px;
+  height: 75px;
 }
 }
 /*becas-page*/
@@ -9529,16 +9634,26 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   text-align: center;
   border:solid 1px #000;
   padding: 40px;
-  height: 30%;
+  width: 100%;
   margin-top: 50px;
-  margin-left: 40px
+  margin-left: 40px;
+  height: 33%;
+}
+@media (min-width:768px) and (max-width: 960px)
+{
+.preseleccion, .presentacion-tu-empresa, .asistir-a-presentaciones
+{
+  margin-left:0px;
+  height: 30%;
+}
 }
 @media (max-width:767px)
 {
   .preseleccion, .presentacion-tu-empresa, .asistir-a-presentaciones
   {
     margin-left: 0px;
-    margin-top: 25px
+    margin-top: 25px;
+    height: auto
   }
 }
 .preseleccion h2, .presentacion-tu-empresa h2, .asistir-a-presentaciones h2
@@ -9561,6 +9676,21 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
    margin-left: 15%
 }
+@media (min-width:768px) and (max-width: 1366px)
+{
+ .formulario-talento 
+{
+   margin-left: 5%
+}
+}
+@media (min-width:1367px) and (max-width: 1600px)
+{
+ .formulario-talento 
+{
+   margin-left: 10%
+}
+}
+
 .formulario-talento h1
 {
   text-align: center;
@@ -9570,25 +9700,34 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 .formulario-talento .datos-personales input 
 {
-  width: 24%;
-  display: inline-block;
+  width: 100%;
+  clear: left;
+}
+.formulario-talento .title-field
+{
+  margin-bottom: 10px;
+} 
+ .datos-personales .talento-field
+{
   margin-left:20px;
   margin-top: 30px;
-  margin-bottom:20px;
+  margin-bottom:30px;
+  display: inline-block;
+  width: 24%
 }
-.formulario-talento .datos-personales label, .formulario-talento .empresa label
+.formulario-talento .datos-personales .title, .formulario-talento .empresa .title
 {
   width: 83%;
   padding-bottom: 20px;
   border-bottom: 1px solid #BDBDBD;
 }
-.formulario-talento .empresa input
+.empresa .talento-field
 {
-  width: 35%;
+  width: 37%;
   display: inline-block;
   margin-left:20px;
   margin-top: 30px;
-  margin-bottom:20px;
+  margin-bottom:30px;
 }
 .formulario-talento .formacion-a-medida
 {
@@ -9618,9 +9757,14 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   margin-right: 0px;
 }
-.formulario-talento .datos-personales input, .formulario-talento .empresa input, .formulario-talento .formacion-a-medida
+.formulario-talento .talento-field, .formulario-talento .formacion-a-medida
 {
   width: 75%;
+  margin-bottom: 10px
+}
+.formulario-talento .formacion-a-medida 
+{
+   margin-top: 20px;
 }
 }
 @media screen and (max-width: 64em) 
@@ -9647,7 +9791,7 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
 }
 .errorbox::placeholder
 {
-  color:red;;
+  color:red;
   font-weight:bold;
 }
 .mensajerror
@@ -9655,8 +9799,11 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
   display: inline-block;
   margin-left: 10px;
   color: red;
-  font-weight: 500;
   display: none;
+}
+.pdf-error
+{
+  color: red;
 }
 /*politica-de-cookies*/
 #barraaceptacion{

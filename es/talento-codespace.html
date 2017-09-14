@@ -102,16 +102,15 @@
     </div>
     <div class="row col-sm-12">
     <h2 class="necesidades-talento-title">Podemos ofrecer a tu empresa la forma que mejor se adapte a sus necesidades.</h2>
-    <div class="col-xs-12 col-sm-12"></div>
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1 preseleccion">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1  preseleccion">
         <h2>Preseleccion</h2>
         <p>Te enviamos los perfiles más adaptados al objetivo y perfil asociado.</p>
      </div>
-     <div class="col-xs-12 col-sm-3  presentacion-tu-empresa">
+     <div class="col-xs-12 col-sm-4 col-md-3  presentacion-tu-empresa">
        <h2> Presentación de la empresa</h2>
        <p>En esta sección encontrarás las ofertas de empleo que actualmente están activas, pero recuerda que continuamente buscamos personas apasionadas que quieran trabajar en nuestros campus.</p> 
     </div>
-       <div class="col-xs-12 col-sm-3 asistir-a-presentaciones">
+       <div class="col-xs-12 col-sm-4 col-md-3 asistir-a-presentaciones">
        <h2> Asistirás a nuestras presentaciones </h2>
        <p>de proyectos de alumnos  y comprobarás sus capacidades.</p>
     </div>
@@ -121,26 +120,35 @@
     <h1 class="title"><strong>Contacta</strong> con nosotros </h1>
         <form role="form" id="company_contacts">
         <div class="datos-personales">
-        <label> Ingresa tus datos personales*</label>
-        <div class="form-group">
+        <label class="title"> Ingresa tus datos personales</label>
+        <div class="talento-field">
+        <label class="title-field" for="name">Nombre completo*</label>
         <input class="form-control" id="name"
-           placeholder="Nombre completo" name="name">
-          
+           placeholder="Introduce tu nombre completo" name="name">
+       </div>
+       <div class="talento-field">
+           <label class="title-field" for="telephone">Teléfono*</label>
               <input class="form-control" id="telephone" 
-           placeholder="Teléfono" name="telephone">
-           
-           <input class="form-control" id="email" 
-           placeholder="Email" name="email">
+           placeholder="Introduce tu teléfono" name="telephone">
         </div>
+        <div class="talento-field">
+            <label class="title-field" for="email">Email*</label>
+           <input class="form-control" id="email" 
+           placeholder=" Introduce tu email" name="email">
+       </div>
        </div>
        <div class="empresa">
-       <label> Empresa*</label>
-       <div class="form-group">
+       <label  class="title"> Empresa</label>
+       <div class="talento-field">
+        <label class="title-field" for="company_name">Nombre de tu empresa*</label>
        <input class="form-control" id="company_name" 
-           placeholder="Nombre de tu empresa" name="company_name">
+           placeholder="Introduce el nombre de tu empresa" name="company_name">
+           </div>
+        <div class="talento-field">
+       <label class="title-field" for="link-ofertas">Link con ofertas de empleo de tu empresa</label>
            <input class="form-control" id="link-ofertas" 
            placeholder="Link con ofertas de empleo de tu empresa" name="company_link">
-      </div>
+           </div>
       </div>
       <div class="form-formacion-a-medida">  
       <div class="form-group">

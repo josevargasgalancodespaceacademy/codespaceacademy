@@ -15,11 +15,11 @@ if(isset($_FILES['curriculum'])){
 	$file_type = $_FILES['curriculum']['type']; 
 
 	if($file_type !== 'application/pdf'){
-		$file_upload_errors[] = "La extension no esta permitidio. Por favor, escoge un pdf.";
+		$file_upload_errors[] = "La extension no esta permitida. Por favor, escoge un pdf.";
 	}
 
 	if($file_size > 5242880){
-		$file_upload_errors[] = 'Tamaño tiene que ser menos de 5MB';
+		$file_upload_errors[] = 'El tamaño tiene que ser menos de 5MB';
 	}
 
 
