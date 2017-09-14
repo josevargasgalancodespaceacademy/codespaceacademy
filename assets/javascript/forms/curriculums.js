@@ -43,7 +43,6 @@ if ($('#check-cv').is(':checked')){
   }
   else
   {
-  console.log(respuesta);
   var data = JSON.parse(respuesta);
     $('#curriculums .mensajerror').css('display', 'inline-block');
   for (var key in postData) {
@@ -64,9 +63,9 @@ if ($('#check-cv').is(':checked')){
   }
 }
 }
- if (data["0"] !=undefined || data["1"] !=undefined)
+ if (data["file_upload"] !=undefined)
       {
-        $('.pdf-error').html(data["1"]);
+        $('.pdf-error').html(data["file_upload"]);
       }
       else
       {
