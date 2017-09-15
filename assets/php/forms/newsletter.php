@@ -18,7 +18,17 @@ $insertData = $request;
 $insertData["subscribed"] = 1;
 
 $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-if ($mysql->checkRowExists("newsletter_subscriptions", array("email" => $request["email"])) > 0) $errors["general"] = "Ya has suscrito al newsletter";
+if ($mysql->checkRowExists("newsletter_subscriptions", array("email" => $request["email"])) > 0) {
+	$row = $mysql->getOneDataWithParameters("newsletter_subscriptions", array("email" => $request["email"]));
+	if ($row["subscribed"] == 1) {
+		$errors["general"] = "Ya has suscrito al newsletter";
+	} else {
+		$mysql->editSingleRow("newsletter_subscriptions",array("email" => $request["email"]),array("subscribed" => true));
+		echo "OK";
+		die;
+	}
+}
+
 
 if (!$errors) {
 	$mysql->insertRow("newsletter_subscriptions",$insertData);
