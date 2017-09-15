@@ -584,7 +584,7 @@ class Validator {
 		$id = trim($this->request[$field]);
 		$id = str_replace("-","",$id);  
 		$id = str_ireplace(" ","",$id);  
-		if ($type === "nie") $id = str_replace(array('X', 'Y', 'Z'), array(0, 1, 2), $id);	
+		if ($type === "NIE" || $type === "nie") $id = str_replace(array('X', 'Y', 'Z'), array(0, 1, 2), $id);	
 
 		$number = intval(substr($id,0,strlen($id)-1));  
 		if (!is_int($number)) {  
@@ -597,7 +597,6 @@ class Validator {
 			$this->setError($field, 111);
 			return $this;
 		}  
-
 		$checksum = substr ("TRWAGMYFPDXBNJZSQVHLCKE", $number%23, 1);  
 
 		if (strtolower($checksum) == strtolower($letter)) {  
