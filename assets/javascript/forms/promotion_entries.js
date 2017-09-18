@@ -14,6 +14,7 @@ if ($('#check-sorteo').is(':checked')){
             obj[item.name] = item.value;
             return obj;
         }, {});
+   console.log(respuesta)
   if( respuesta == "OK")
   {
     $('#modal-sorteo').modal('show');
@@ -41,10 +42,17 @@ if ($('#check-sorteo').is(':checked')){
     }
   } 
   else
-  {  
+  {   if(key =="date_of_birth")
+      { 
+       $('#'+ key).removeClass("errorbox");
+       $('#' + key).attr("placeholder", ""); 
+      }
+      else
+      {
      $('#'+ key).off('focus');
      $('#'+ key).removeClass("errorbox");
      $('#' + key).attr("placeholder", ""); 
+   }  
   }
 }
 }
