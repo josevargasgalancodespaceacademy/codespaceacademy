@@ -34,7 +34,7 @@ $request = $sanitizer->sanitizeRequest();
 $validator = new Validator($request);
 $validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
 $validator->filledIn("email")->length("email", "<=", 100)->email("email");
-$validator->filledIn("telephone")->numeric("telephone",array(" ","+")->lengthBetween("telephone", 15, 9, $inclusive = true);
+$validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->lengthBetween("telephone", 15, 9, $inclusive = true);
 $errors = $validator->getErrors();
 foreach ($file_upload_errors as $file_upload_error) $errors["file_upload"] = $file_upload_error;
 if (!$errors) {
