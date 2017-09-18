@@ -747,17 +747,17 @@ class Validator {
 		if (date('Y') - $birthYear > 18) { 
 			return true; 
 		} else {
-			   if (date('Y') - $birthYear = 18) { 
-					if (date('m') - $birthMonth > 0) { 
-						return true; 
-					} else {
-						 if (date('m') - $birthMonth = 0) {
-							  if (date('d') - $birthDay >= 0) { 
-							  	return true; 
-							  }
-						 }
+			if (date('Y') - $birthYear === 18) { 
+				if (date('m') - $birthMonth > 0) { 
+					return true; 
+				} else {
+					if (date('m') - $birthMonth === 0) {
+						if (date('d') - $birthDay >= 0) { 
+							return true; 
+						}
 					}
-			   }
+				}
+			}
 		  }
 		  return false;
 	}
