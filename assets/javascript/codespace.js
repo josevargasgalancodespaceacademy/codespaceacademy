@@ -156,7 +156,7 @@ function datepicker() {
       changeYear: true,
       changeMonth: true ,
       yearRange: '-100:+0',
-      dateFormat:'yy/mm/dd'});
+      dateFormat:'dd-mm-yy'});
   };
 
    /*Cookies*/
