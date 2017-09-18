@@ -9857,7 +9857,7 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     min-height:40px;
     background-color: rgba(0, 0, 0, 0.5);
     color:#fff;
-    z-index:1000000000000;
+    z-index:99999;
 }
  
 .inner {
@@ -9874,6 +9874,7 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     color:#fff;
     text-decoration:none;
     font-size: 20px;
+    background-color: rgb(230, 23, 83); 
 }
  
 .inner a.info {
