@@ -6,6 +6,10 @@ function enviar_newsletter(ruta){
            url: url,  
            data: $("#newsletter").serialize()               
 }).done(function(respuesta){
+   var originalData = $("#newsletter").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+        }, {});
 if(respuesta == "OK")
      {
            $('.newsletter-email').removeClass("errorbox");
@@ -21,9 +25,11 @@ if(respuesta == "OK")
           $('.newsletter-email').addClass("errorbox");
           $('.newsletter-email').val("");
           $('.newsletter-email').attr("placeholder", data['email']);
+          replaceValueTimeout('.newsletter-email',originalData['email']);
         }
       else 
        {
+        $('.newsletter-email').off('focus');
          $('.newsletter-email').removeClass("errorbox");
        }
  }

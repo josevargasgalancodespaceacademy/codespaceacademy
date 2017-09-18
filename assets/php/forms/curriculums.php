@@ -13,18 +13,22 @@ if(isset($_FILES['curriculum'])){
 
 	if($file_type !== 'application/pdf'){
 		$file_upload_errors[] = "La extension no esta permitida. Por favor, escoge un pdf.";
-	} else if ($file_size > 5242880){
+	} 
+	else if ($file_size > 5242880){
 		$file_upload_errors[] = 'Tamaño tiene que ser menos de 5MB';
-	} else if(empty($file_upload_errors) == true){
+	} 
+	else if(empty($file_upload_errors) == true){
 		$folder = "../../../curriculums/";
 		$time = date("Y-m-d");
 		$saved_file = $folder . $time . "-" . $file_name;
 		move_uploaded_file($file_tmp,$saved_file);
 		$request["route_curriculum_pdf"] = $file_name;
-	}else{
+	}
+	else{
 		$file_upload_errors[] = 'No se puede subir el archivo';
 	}
 }
+
 $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
 $validator = new Validator($request);
@@ -37,6 +41,7 @@ if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("curriculums",$request);
 }
+
 if (!$errors) echo "OK";
 else echo json_encode($errors);
 ?>

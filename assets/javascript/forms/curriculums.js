@@ -38,7 +38,6 @@ if ($('#check-cv').is(':checked')){
         }, {});
   if( respuesta == "OK")
   {
-    alert(respuesta);
     $('#modal-cv').modal('show');
   }
   else
