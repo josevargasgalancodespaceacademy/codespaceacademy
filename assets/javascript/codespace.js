@@ -43,13 +43,12 @@ $(document).ready(function(){
         });
 
 /*contador hacia atras del primer bootcamp*/
-$(document).ready(function() { 
+function contador() { 
     var launchdate = new Date(2017, 11 - 1, 20);//la fecha de lanzamiento del bootcamp
     $('#counter').countdown({
         until: launchdate
     });
-});
-
+  }
 /*Se oculta ventana de sorteo*/
 /*$(function() {
 $('.boton-sorteo').click(function(){
@@ -133,6 +132,8 @@ else{
 })
 
 //datepicker en español
+//datepicker fecha de nacimiento becas
+function datepicker() {
  $.datepicker.regional['es'] = {
  closeText: 'Cerrar',
  prevText: '<Ant',
@@ -151,15 +152,12 @@ else{
  yearSuffix: ''
  };
  $.datepicker.setDefaults($.datepicker.regional['es']);
-
-//datepicker fecha de nacimiento becas
-   $(document).ready(function() {
     $('#date_of_birth').datepicker({
       changeYear: true,
       changeMonth: true ,
       yearRange: '-100:+0',
       dateFormat:'yy/mm/dd'});
-  });
+  };
 
    /*Cookies*/
 /*function getCookie(c_name){
