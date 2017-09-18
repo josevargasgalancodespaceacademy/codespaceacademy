@@ -249,5 +249,22 @@ class Mysql
 		return $this->execute(substr($query,0,-3) . " LIMIT 1");
 	}
 
+	/**
+	 *
+	 * converts a string into a suitable sql Date value
+	 *
+	 * @param  {string}  $string date in string format
+	 * @param  {string}  $fformat  original format using (dmY)
+	 
+	 * @return {string}
+	 *
+	*/
+
+	public function checkAndPrepareDateString($string,$format) {
+
+		$date = DateTime::createFromFormat($format,$string);
+		return $date->format('Y-m-d');
+	}
+
 }
 

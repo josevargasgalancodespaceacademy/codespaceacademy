@@ -654,6 +654,7 @@ class Validator {
 				$this->valid = true;
 			}
 		}
+
 		
 		if($this->valid) {
 			//explode $format into $formatArray and get the index of the day, month, and year
@@ -673,7 +674,7 @@ class Validator {
 					$this->valid = false;
 				}
 			}
-			
+
 			//set whether $format uses day, month, year
 			if($monthNum) {
 				$month = true;
@@ -710,26 +711,13 @@ class Validator {
 				}
 			}
 		} 
-		
+
 		if ($this->valid) {
 			// Check the legal age if it has been requested
-			if ($checkLegalAge && !$this->checkAbove18($dateArray)) {
+			if ($checkLegalAge && !$this->checkAbove18($dateArray,$yearPos,$monthPos,$dayPos)) {
 				$this->resetValid();
 				$this->setError($field, 113);
 				return $this;
-				/*$today = date("Y-m-d");
-				$formattedValidDate = $dateArray[0] . "-" . $dateArray[1] . "-" . $dateArray[2]; 
-				$diff=date_diff(date_create($formattedValidDate),date_create($today));*/
-
-				/*if ($diff->days <= 6570) {
-					$this->resetValid();
-					$this->setError($field, 113);
-					return $this;
-				} else {
-					$this->resetValid();
-					return $this;
-				}*/
-
 			} else {
 				$this->resetValid();
 				return $this;
@@ -742,8 +730,10 @@ class Validator {
 	}
 
 	// Used with the function above to check above 18 years
-	function checkAbove18($dateArray){
-		$birthDay = $dateArray[2]; $birthMonth = $dateArray[1]; $birthYear = $dateArray[0];
+	function checkAbove18($dateArray, $yearPos,$monthPos,$dayPos){
+		$birthDay = $dateArray[$dayPos]; 
+		$birthMonth = $dateArray[$monthPos]; 
+		$birthYear = $dateArray[$yearPos];
 		if (date('Y') - $birthYear > 18) { 
 			return true; 
 		} else {
