@@ -5,6 +5,10 @@ function enviar_cancelar_suscripscion(){
 		url: url,  
 		data: $("#unsubscribe_newsletter").serialize()                   
 	}).done(function(respuesta){
+		var originalData = $("#unsubscribe_newsletter").serializeArray().reduce(function(obj, item) {
+            obj[item.name] = item.value;
+            return obj;
+         }, {});
 		if(respuesta == "OK")
 	   {
 		   $('#subscriber_details').removeClass("errorbox");
@@ -20,12 +24,14 @@ function enviar_cancelar_suscripscion(){
           $('#subscriber_details').addClass("errorbox");
           $('#subscriber_details').val("");
           $('#subscriber_details').attr("placeholder", response['email']);
+          replaceValueTimeout('#subscriber_details',originalData['email']);
         }
         else if (response.hasOwnProperty('general'))
        {
           $('#subscriber_details').addClass("errorbox");
           $('#subscriber_details').val("");
-          $('#subscriber_details').attr("placeholder", response['general']);  
+          $('#subscriber_details').attr("placeholder", response['general']);
+          replaceValueTimeout('#subscriber_details',originalData['email']);  
        }
    }
 	});

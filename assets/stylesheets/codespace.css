@@ -7173,23 +7173,50 @@ z-index: -100;
 .button
 {
   display:inline-block;
-  padding:18px 50px;
+  padding: 15px 50px;
   font-weight:550;
   letter-spacing:1px;
   text-align:center;
-  background-color:rgb(230, 23, 83);
   color:#fff;
+  background-color: rgb(230, 23, 83);
+  font-weight:bold;
   text-transform:uppercase;
   text-decoration:none;
   font-family:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  cursor:pointer
+  cursor:pointer;
+  border-radius:5px;
+  transition: all 0.20s linear;
+  -webkit-transition: all 0.20s linear;
+  -moz-transition: all 0.20s linear;
+   position: relative;
+   bottom: 3;
+}
+.button:focus
+{
+  outline: 0;
+  color:#FFF;
+}
+.button:active
+{
+  bottom:-5px;
+}
+.fondobutton
+{
+  background: rgb(230, 23, 83);
+  box-shadow: 0px 5px 0 #DF013A;
+   color:#fff;  
 }
 .button:hover
 {
   background-color:#fc0060;
-  color:#fff
+  color:#fff;
+}
+.fondobutton:active
+{
+  box-shadow:0 0 0 #9a1604, inset 0 0 5px rgb(230, 23, 83); 
 }
  /*family-courses-container*/
+
 .row
 {
   margin-right:-15px;
@@ -7616,7 +7643,6 @@ margin-bottom: 25px
 {
   margin-left: 15%;
 }
-
 .footer-content .container-logo
 {
    padding-bottom: 20px;
@@ -7663,6 +7689,10 @@ margin-bottom: 25px
   float:left;
   margin-left: 20px;
   text-transform: uppercase;
+}
+.footer-navigate a
+{
+   color:#FFF;
 }
 .redes-sociales 
 {
