@@ -43,7 +43,7 @@ if ($('#check-cv').is(':checked')){
   else
   {
   var data = JSON.parse(respuesta);
-    $('#curriculums .mensajerror').css('display', 'inline-block');
+  $('#curriculums .mensajerror').css('display', 'inline-block');
   for (var key in postData) {
     for (var key2 in data){
   if (postData[key] == key2)
