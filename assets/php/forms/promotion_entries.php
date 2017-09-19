@@ -27,8 +27,10 @@ if ($mysql->checkRowExists("promotion_entries", array(
 )) > 0) $errors["number_identification"] = "Usuario ya registrado";
 
 
-$request["date_of_birth"] = $mysql->checkAndPrepareDateString($request["date_of_birth"],'d-m-Y');
-if (!$errors) $mysql->insertRow("promotion_entries",$request);
+if (!$errors) {
+	$request["date_of_birth"] = $mysql->checkAndPrepareDateString($request["date_of_birth"],'d-m-Y');
+	$mysql->insertRow("promotion_entries",$request);
+}
 
 if (!$errors) echo "OK";
 else echo json_encode($errors);
