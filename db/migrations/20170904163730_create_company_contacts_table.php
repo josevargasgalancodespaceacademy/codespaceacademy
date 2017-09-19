@@ -18,7 +18,8 @@ class CreateCompanyContactsTable extends AbstractMigration
               ->addColumn('company_link', 'string', array('limit' => 100, 'null' => true))
               ->addColumn('training_request', 'string', array('limit' => 10))
               ->addColumn('comment', 'text', array('null' => true))
-              ->addColumn('created', 'datetime')
+              ->addColumn('created_at', 'datetime', array('null' => true))
+              ->addColumn('updated_at', 'datetime', array('null' => true))
               ->save();
     }
 

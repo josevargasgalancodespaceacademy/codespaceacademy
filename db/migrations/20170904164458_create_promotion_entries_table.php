@@ -21,7 +21,8 @@ class CreatePromotionEntriesTable extends AbstractMigration
               ->addColumn('city', 'string', array('limit' => 100))
               ->addColumn('comment', 'text', array('null' => true))
               ->addColumn('linkedin', 'string', array('limit' => 100, 'null' => true))
-              ->addColumn('created', 'datetime')
+              ->addColumn('created_at', 'datetime', array('null' => true))
+              ->addColumn('updated_at', 'datetime', array('null' => true))
               ->save();
     }
 
