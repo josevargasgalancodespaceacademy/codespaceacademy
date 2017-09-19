@@ -30,7 +30,7 @@ $(document).ready(function(){
 });
 /*Se muestra formulario de envio de cv*/
 $(document).ready(function(){ 
-  $('.cv-y-ofertas-button').click(function() {
+  $('.contamos-contigo .cv-y-ofertas-button').click(function() {
     $('.formulario-cv').toggle('slow');
   });
 });
@@ -186,11 +186,11 @@ function setCookie(c_name,value,exdays){
   document.cookie=c_name + "=" + c_value + "; path=/";
 }
 
-if(getCookie('codespaceaviso')!="1"){
+if(getCookie('Aviso de cookies codespaceacademy')!="1"){
   $("#barraaceptacion").css('display', 'block');
 }
 function PonerCookie(){
-  setCookie('codespaceaviso','1',365);
+  setCookie('Aviso de cookies codespaceacademy','1',365);
   document.getElementById("barraaceptacion").style.display = "none";
 }
 
