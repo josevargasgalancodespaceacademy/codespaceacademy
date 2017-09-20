@@ -45,11 +45,19 @@ $(document).ready(function(){
 /*contador hacia atras del primer bootcamp*/
 function contador() { 
     var launchdate = new Date(2017, 11 - 1, 20);//la fecha de lanzamiento del bootcamp
+    var format = 'DD hh:mm:ss';
     $('#counter').countdown({
-        format: 'DD hh:mm:ss',
+
+        format: format,
+        layout: '<span class="countdown_row countdown_show4"><span class="countdown_section">' +
+                '<span class="countdown_amount">{dnn}</span><br>Dias</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{hnn}</span><br>Horas</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{mnn}</span><br>Minutos</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{snn}</span><br>Segundos</span></span></div></div>',
         until: launchdate
     });
   }
+
 /*Se oculta ventana de sorteo*/
 /*$(function() {
 $('.boton-sorteo').click(function(){
