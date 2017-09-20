@@ -9879,19 +9879,17 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     padding-bottom:20px;
     width:100%;
     text-align:center;
-    min-height:40px;
+    min-height:70px;
     background-color: rgba(0, 0, 0, 0.5);
     color:#fff;
     z-index:99999;
 }
- 
 .inner {
     width:100%;
     position:absolute;
     padding-left:5px;
-    font-family:verdana;
-    font-size:12px;
-    top:20%;
+    font-size:15px;
+    top:30%;
 }
  
 .inner a.ok {
@@ -9906,6 +9904,39 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     padding-left:5px;
     text-decoration:none;
     color:#fff;
+}
+ @media (max-width:767px)
+{
+    #barraaceptacion
+    {
+      min-height: 85px;
+      bottom: inherit;
+      top:0px;
+    }
+    .inner a.ok 
+    {
+    font-size: 15px;
+    padding: 2px;
+    }
+    .inner 
+    {
+    font-size: 10px;
+    padding: 5px;
+    top: 10%;
+    text-align: center;
+    }
+}
+ @media (min-width:768px) and (max-width:1365px)
+{
+ #barraaceptacion
+    {
+      min-height: 100px;
+    }
+ .inner a.ok 
+    {
+    padding: 1px;
+    font-size: 18px
+    }
 }
 /*responsive*/
 @media (max-width:767px)
