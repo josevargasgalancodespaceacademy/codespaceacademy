@@ -6774,7 +6774,7 @@ overflow-x: hidden!important;
 /* Main Menu */
 .num-telefono
 {
-  font-size: 2em;
+  font-size: 3em;
   position: relative;
   padding-right: 3%;
   padding-top: 2%;
@@ -6787,8 +6787,8 @@ overflow-x: hidden!important;
 }
 .telefono-icon
  {
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 42px;
   clear: right;
   margin-right: 10px;
   margin-top:4px;
@@ -6801,7 +6801,7 @@ overflow-x: hidden!important;
    color:rgb(230, 23, 83);
    content: "900 102 101"
 }
-@media screen and (min-width: 769px) and (max-width: 64em) 
+@media screen and (min-width: 768px) and (max-width: 64em) 
 {
 .num-telefono  
 {
@@ -6811,6 +6811,30 @@ overflow-x: hidden!important;
  {
   width: 15px;
   height: 15px;
+ }
+}
+@media screen and (width: 768px) 
+{
+.num-telefono  
+{
+    font-size: 2em;
+}
+.telefono-icon
+ {
+  width: 30px;
+  height: 30px;
+ }
+}
+@media screen and (min-width: 64em) and (max-width: 89em) 
+{
+.num-telefono  
+{
+    font-size: 2em;
+}
+.telefono-icon
+ {
+  width: 30px;
+  height: 30px;
  }
 }
 .menu-fixed
