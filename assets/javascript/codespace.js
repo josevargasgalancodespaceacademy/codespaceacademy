@@ -46,6 +46,7 @@ $(document).ready(function(){
 function contador() { 
     var launchdate = new Date(2017, 11 - 1, 20);//la fecha de lanzamiento del bootcamp
     $('#counter').countdown({
+        format: 'DD hh:mm:ss',
         until: launchdate
     });
   }
