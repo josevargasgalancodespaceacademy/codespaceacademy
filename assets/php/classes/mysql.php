@@ -158,7 +158,7 @@ class Mysql
 	public function insertRow($tableName,$data) {
 		$columns = array_keys($data);
 		$values = array_values($data);
-		array_push($columns,"created");
+		array_push($columns,"created_at");
 		array_push($values,date('Y-m-d G:i:s'));
 
         $query = "INSERT INTO $tableName (".implode(',',$columns).") VALUES ('" . implode("', '", $values) . "' )";
