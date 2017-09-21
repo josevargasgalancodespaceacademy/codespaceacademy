@@ -9910,8 +9910,6 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     #barraaceptacion
     {
       min-height: 85px;
-      bottom: inherit;
-      top:0px;
     }
     .inner a.ok 
     {
