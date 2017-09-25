@@ -7473,14 +7473,29 @@ z-index: -100;
  background-color: rgb(134, 36, 131);
  color:#fff;
  padding-left:3%!important;  
- padding-bottom: 90px;
- min-height:300px;
+ height:100%;
 }
+@media (min-width: 320px) and (max-width:479px)
+{
+  .prefooter
+  {
+    height: 370px;
+  }
+}
+
+@media (min-width: 480px) and (max-width:767px)
+{
+  .prefooter
+  {
+    height: 270px;
+  }
+}
+
 @media (max-width:767px)
 {
   .newsletter 
   {
-    padding-left: 40px!important
+    padding-left: 40px!important;
   }
 }
 .prefooter .trabaja-con-nosotros
@@ -7489,36 +7504,13 @@ z-index: -100;
  color:#fff;
  padding-left: 2%!important;
  padding-top: 30px;
- padding-bottom: 65px;
- min-height: 300px;
+ height: 100%;
 }
-@-moz-document url-prefix() 
+@media screen and (min-width: 1025px) and (max-width: 1438px) 
 {
-   .prefooter .trabaja-con-nosotros 
-   {
-      padding-bottom: 63px;
-   }
-
-@media screen and (min-width: 1025px) and (max-width: 1366px) 
+  .prefooter
 {
-  .newsletter 
-{
- padding-bottom: 92px;
-}
-}
-@media screen and (min-width: 1441px) and (max-width: 1548px) 
-{
-   .newsletter 
-{
- padding-bottom: 94px;
-}
-}
-@media screen and (min-width: 1549px) and (max-width: 1600px) 
-{
-  .prefooter .trabaja-con-nosotros 
-  {
-      padding-bottom: 8px!important;
-  }
+  height: 400px!important;
 }
 }
 @media (max-width:767px)
@@ -7608,15 +7600,12 @@ margin-bottom: 25px
 {
 .newsletter p
 {
-  margin-top: 129px
+  margin-top: 100px
 }
 }
 @media screen and (min-width: 993px) and (max-width: 1024px) 
 {
-.newsletter p
-{
-  margin-top: 89px
-}
+
 .newsletter-button
 {
   margin-left: 10px;
@@ -7629,39 +7618,6 @@ margin-bottom: 25px
 {
   width: 220px;
   margin-top: 30%;
-}
-}
-@media screen and (min-width: 1367px) and (max-width: 1440px) 
-{
-.prefooter .trabaja-con-nosotros
-{
-   padding-bottom: 11px;
-}
-.prefooter .trabaja-con-nosotros p
-{
-  margin-top: 10px
-}
-}
-@media screen and (min-width: 1441px) and (max-width: 1548px) 
-{
-.prefooter .trabaja-con-nosotros
-{
-   padding-bottom: 12px;
-}
-.prefooter .trabaja-con-nosotros p
-{
-  margin-top: 10px
-}
-}
-@media screen and (min-width: 1549px) and (max-width: 1600px) 
-{
-.prefooter .trabaja-con-nosotros
-{
-   padding-bottom: 32px;
-}
-.prefooter .trabaja-con-nosotros p
-{
-  margin-top: 10px
 }
 }
 @media screen and (max-width: 768px) 
