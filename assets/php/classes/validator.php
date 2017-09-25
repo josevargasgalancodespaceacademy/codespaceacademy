@@ -102,7 +102,7 @@ class Validator {
 	function construct_error_messages() {
 		$errors = array();
 		foreach ($this->errors as $key => $error) {
-			if (is_array($error)) $errors[$key] = $this->error_messages[$error[count($error) - 1]]; 
+			if (is_array($error)) $errors[$key] = $this->error_messages[$error[0]]; 
 			else $errors[$key] = $this->error_messages[$error];
 			
 		}
