@@ -6,6 +6,7 @@
     color: rgb(230, 23, 83);
     margin-top:10px;
     font-size:2em;
+    clear:both;
 }
 
 .puesto {
@@ -18,21 +19,20 @@
     position: relative;
 }
 
-.foto-dummy {
+/* Foto Layout - repsposive for col-xs */
+
+.foto-dummy, .foto-bottom, .foto-top {
     float:left;
     height:auto;
-    width:100%;
-    left:0;
+    width:70%;
+    left:15%;
+}
+
+.foto-dummy {
     opacity:0;
 }
 
-/* Foto Layout */
-
 .foto-bottom {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: auto;
     -webkit-box-shadow: 5px 5px 5px #aaa;
     -moz-box-shadow: 5px 5px 5px #aaa;
     box-shadow: 5px 5px 5px #aaa;
@@ -40,6 +40,10 @@
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    left:15%;
 }
 
 .foto-top {
@@ -48,8 +52,6 @@
     -o-transform: scale(0,0);
     transform: scale(0,0);
     opacity: 0;
-    position: absolute;
-    left: 0;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
@@ -57,9 +59,20 @@
     -webkit-box-shadow: 5px 5px 5px #aaa;
     -moz-box-shadow: 5px 5px 5px #aaa;
     box-shadow: 5px 5px 5px #aaa;
-    width: 100%;
+    width: 70%;
     height: auto;
+    position: absolute;
+    left:15%;
 }
+
+@media (max-width: 576px) {
+    .foto-dummy, .foto-top, .foto-bottom {
+        width:50%;
+        left:25%;
+    }
+
+}
+
 
 /* Foto Scale transition */
 
