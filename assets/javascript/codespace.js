@@ -14,6 +14,16 @@
 
 $(document).ready(function(){ 
    $('html,body').css("overflow-x","hidden");
+
+   // Calculate height for profile pictures
+    var height = 0;
+
+    $('.blurb-box').children().each(function(i,el){
+      height = $(el).height() > height ? $(el).height() : height;
+    });
+
+    $('.blurb-box').height(height + 10);  
+
   });
 
 //recargar la página
