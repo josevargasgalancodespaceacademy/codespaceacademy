@@ -6767,6 +6767,10 @@ body
 font-family: 'Source Sans Pro', sans-serif!important;
 overflow-x: hidden!important;
 }
+textarea
+{
+  resize: none;
+}
 .header
 {
   position:relative;
