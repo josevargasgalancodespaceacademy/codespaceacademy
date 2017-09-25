@@ -9630,9 +9630,18 @@ margin-right: 0px
 }
 .sm-becas-button
 {
-  background-position:center;
-  background-size:cover;
-  float: left;
+  margin: inherit!important;
+  width:85px;
+  height: 85px;
+}
+}
+@media (max-width:1280px)
+{
+  .saber-mas-becas .row
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 }
 /*mentoring*/
