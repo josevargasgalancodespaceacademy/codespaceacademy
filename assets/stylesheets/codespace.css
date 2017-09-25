@@ -7479,7 +7479,7 @@ z-index: -100;
 {
   .prefooter
   {
-    height: 370px;
+    height: 340px;
   }
 }
 
@@ -7546,6 +7546,7 @@ margin-bottom: 25px
   .newsletter p
 {
  font-size: 20px;
+ margin-top: 40px
 }
 }
 .newsletter-button
@@ -7605,7 +7606,6 @@ margin-bottom: 25px
 }
 @media screen and (min-width: 993px) and (max-width: 1024px) 
 {
-
 .newsletter-button
 {
   margin-left: 10px;
