@@ -76,10 +76,10 @@ class Validator {
 		105 => "Punctuated characters in input",
 		106 => "El valor es demasiado corto o largo",
 		107 => "Valor introducido no es en el rango correcto",
-		108 => "Este campo solo puede contener caracteres alfabeticos",
-		109 => "Este campo solo puede contener caracteres alfabeticos y numericos",
+		108 => "Este campo solo puede contener caracteres alfabéticos",
+		109 => "Este campo solo puede contener caracteres alfabéticos y numéricos",
 		110 => "La fecha no es válida",
-		111 => "El número de identificacion no es válido",
+		111 => "El número de identificación no es válido",
 		112 => "Este campo solo puede contener números",
 		113 => "Solo disponible para mayores de 18 años",
 	);
