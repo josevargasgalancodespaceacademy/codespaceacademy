@@ -115,21 +115,7 @@ $(function(){
 /*Despliegue de menú móvil*/
 $(document).ready(function(){ 
   $('.hamburger-icon').click(function(e) {
-   if ($('body').hasClass("page-home"))
-   {
-    $(".container .menu").animate({
-            width: "toggle"   
-        },500);
-    if($('.page-home .hero-block').css("margin-top")=="450px")
-    {
-       $('.page-home .hero-block').css("margin-top", "0px");
-    }
-    else
-    {
-    $('.page-home .hero-block').css("margin-top", "450px");
-  }
-   }
-  else if ($('body').hasClass("page-bootcamp-web"))
+ if ($('body').hasClass("page-bootcamp-web"))
    {
     $(".container .menu").animate({
             width: "toggle"   
