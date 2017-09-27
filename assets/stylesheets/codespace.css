@@ -10078,6 +10078,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .event-explanation
 {
   margin-bottom:30px!important;
+  text-align: justify;
 }
 @media (max-width:767px)
 {
