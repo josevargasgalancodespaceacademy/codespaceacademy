@@ -10016,7 +10016,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 .page-events .hero-block h1 
 {
-   padding-top: 150px;
+   padding-top: 120px;
    font-size:110px!important;
 }
 @media (max-width:767px)
@@ -10030,6 +10030,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .container-events 
 {
   margin-bottom: 50px;
+}
+.container-events .row
+{
+  border-bottom: solid 1px #E6E6E6;
 }
 .event-image
 {
@@ -10051,6 +10055,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .informacion-evento a 
 {
   text-decoration: none;
+  margin-bottom: 30px;
 }
 .event-type
 {
