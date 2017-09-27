@@ -9417,11 +9417,23 @@ animation-direction: alternate;
   position:relative;
   overflow:hidden
 }
+@media (max-width:767px)
+{
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block
+{
+  max-height: 350px;
+}
+.page-becas-financiacion .hero-block 
+{
+  padding-top:  50px;
+}
+}
 .page-becas-financiacion .hero-block
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
 .page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2
+{
    color:#fff!important;
    margin:0px!important
 }
@@ -9441,7 +9453,7 @@ animation-direction: alternate;
 {
 .page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1
 {
-  font-size: 50px!important;
+  font-size: 45px!important;
 }
 }
 .page-becas-financiacion .hero-block h1 strong
@@ -9658,7 +9670,7 @@ margin-right: 0px
 {
 .page-mentoring .hero-block h1 
 {
-   padding-top: 40px!important;
+   padding-top: 0px!important;
    font-size:60px!important;
 }
 }
@@ -9714,7 +9726,7 @@ background-image:url(../../assets/images/mentoring/comunidad.svg)
 {
  .page-talent .hero-block h1 
 {
-   padding-top: 50px
+   padding-top: 0px
 }
 }
 .talent-reasons
@@ -9998,6 +10010,23 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 /*página eventos*/
 /*container evento*/
+.page-events .hero-block
+{
+  background-image: url("../../assets/images/eventos/eventos-header.jpg");
+}
+.page-events .hero-block h1 
+{
+   padding-top: 150px;
+   font-size:110px!important;
+}
+@media (max-width:767px)
+{
+.page-events .hero-block h1 
+{
+   padding-top: 0px!important;
+   font-size:60px!important;
+}
+}
 .container-events 
 {
   margin-bottom: 50px;
@@ -10063,7 +10092,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   .fechayhora
   {
-    width:70%;
+    width:60%;
   } 
 }
 /*estilos cajas de error*/
