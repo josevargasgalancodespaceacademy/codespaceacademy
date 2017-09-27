@@ -6765,7 +6765,7 @@ a:link {
 body
 {
 font-family: 'Source Sans Pro', sans-serif!important;
-overflow-x: hidden!important;
+overflow-y: hidden!important;
 }
 textarea
 {
@@ -9398,11 +9398,11 @@ animation-direction: alternate;
 }
 }
 /*becas-page*/
-.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav
+.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav
 {
    margin-bottom: 20px
 }
-.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block
 {
   padding-top: 100px;
   height: 100%!important;
@@ -9421,12 +9421,11 @@ animation-direction: alternate;
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
-.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2
-{
+.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2
    color:#fff!important;
    margin:0px!important
 }
-.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1
+.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1
 {
    font-size: 80px!important; 
    font-weight: 400!important
@@ -9440,7 +9439,7 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1
+.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1
 {
   font-size: 50px!important;
 }
@@ -9996,6 +9995,76 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .persona-equipo .puesto
 {
   color: rgb(230, 23, 83); 
+}
+/*página eventos*/
+/*container evento*/
+.container-events 
+{
+  margin-bottom: 50px;
+}
+.event-image
+{
+  background-position:center;
+  background-size:cover;
+  width:100%;
+  height: 350px;
+  margin:0 auto 20px;
+  background-image: url(../../assets/images/eventos/inauguracion.jpg)
+}
+.informacion-evento 
+{
+  padding-left:30px!important;
+}
+.informacion-evento p, a, h3
+{
+  margin-bottom: 10px;
+}
+.informacion-evento a 
+{
+  text-decoration: none;
+}
+.event-type
+{
+ color:rgb(230, 23, 83); 
+}
+.fechayhora 
+{
+  padding-top:10px;
+  padding-bottom: 10px;
+  background-color: #A4A4A4;
+  color:#FFF;
+  width: 50%;
+}
+.fechayhora .fecha 
+{
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.event-explanation
+{
+  margin-bottom:30px!important;
+}
+@media (max-width:767px)
+{
+  .event-image
+  {
+    display: none;
+  } 
+}
+@media (min-width: 320px) and (max-width:400px)
+{
+  .fechayhora
+  {
+    width:70%;
+  } 
+}
+@media (min-width: 768px) and (max-width:1023px)
+{
+  .fechayhora
+  {
+    width:70%;
+  } 
 }
 /*estilos cajas de error*/
 .errorbox
