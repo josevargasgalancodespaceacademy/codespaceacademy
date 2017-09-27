@@ -24,6 +24,7 @@ $(document).ready(function(){
 
     $('.blurb-box').height(height + 10);  
 
+
   });
 
 //recargar la página

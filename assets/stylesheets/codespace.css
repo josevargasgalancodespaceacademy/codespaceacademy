@@ -6765,7 +6765,7 @@ a:link {
 body
 {
 font-family: 'Source Sans Pro', sans-serif!important;
-overflow-x: hidden!important;
+overflow-y: hidden!important;
 }
 textarea
 {
@@ -9162,6 +9162,10 @@ cursor:pointer;
 {
  padding-left: 0px;
 }
+.page-work-with-us .hero-block h1
+{
+  padding-top: 0px
+}
 }
 .work-with-us-reasons .title h1
 {
@@ -9398,11 +9402,11 @@ animation-direction: alternate;
 }
 }
 /*becas-page*/
-.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav
+.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav
 {
    margin-bottom: 20px
 }
-.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block
 {
   padding-top: 100px;
   height: 100%!important;
@@ -9417,16 +9421,27 @@ animation-direction: alternate;
   position:relative;
   overflow:hidden
 }
+@media (max-width:767px)
+{
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block
+{
+  max-height: 350px;
+}
+.page-becas-financiacion .hero-block 
+{
+  padding-top:  50px;
+}
+}
 .page-becas-financiacion .hero-block
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
-.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2
+.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2
 {
    color:#fff!important;
    margin:0px!important
 }
-.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1
+.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1
 {
    font-size: 80px!important; 
    font-weight: 400!important
@@ -9440,9 +9455,9 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1
+.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1
 {
-  font-size: 50px!important;
+  font-size: 45px!important;
 }
 }
 .page-becas-financiacion .hero-block h1 strong
@@ -9630,9 +9645,18 @@ margin-right: 0px
 }
 .sm-becas-button
 {
-  background-position:center;
-  background-size:cover;
-  float: left;
+  margin: inherit!important;
+  width:85px;
+  height: 85px;
+}
+}
+@media (max-width:1280px)
+{
+  .saber-mas-becas .row
+{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 }
 /*mentoring*/
@@ -9650,7 +9674,7 @@ margin-right: 0px
 {
 .page-mentoring .hero-block h1 
 {
-   padding-top: 40px!important;
+   padding-top: 0px!important;
    font-size:60px!important;
 }
 }
@@ -9706,7 +9730,7 @@ background-image:url(../../assets/images/mentoring/comunidad.svg)
 {
  .page-talent .hero-block h1 
 {
-   padding-top: 50px
+   padding-top: 0px
 }
 }
 .talent-reasons
@@ -9987,6 +10011,99 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .persona-equipo .puesto
 {
   color: rgb(230, 23, 83); 
+}
+/*página eventos*/
+/*container evento*/
+.page-events .hero-block
+{
+  background-image: url("../../assets/images/eventos/eventos-header.jpg");
+}
+.page-events .hero-block h1 
+{
+   padding-top: 120px;
+   font-size:110px!important;
+}
+@media (max-width:767px)
+{
+.page-events .hero-block h1 
+{
+   padding-top: 0px!important;
+   font-size:60px!important;
+}
+}
+.container-events 
+{
+  margin-bottom: 50px;
+}
+.container-events .row
+{
+  border-bottom: solid 1px #E6E6E6;
+}
+.event-image
+{
+  background-position:center;
+  background-size:cover;
+  width:100%;
+  height: 350px;
+  margin:0 auto 20px;
+  background-image: url(../../assets/images/eventos/inauguracion.jpg)
+}
+.informacion-evento 
+{
+  padding-left:30px!important;
+}
+.informacion-evento p, a, h3
+{
+  margin-bottom: 10px;
+}
+.informacion-evento a 
+{
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.event-type
+{
+ color:rgb(230, 23, 83); 
+}
+.fechayhora 
+{
+  padding-top:10px;
+  padding-bottom: 10px;
+  background-color: #A4A4A4;
+  color:#FFF;
+  width: 50%;
+}
+.fechayhora .fecha 
+{
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.event-explanation
+{
+  margin-bottom:30px!important;
+  text-align: justify;
+}
+@media (max-width:767px)
+{
+  .event-image
+  {
+    display: none;
+  } 
+}
+@media (min-width: 320px) and (max-width:400px)
+{
+  .fechayhora
+  {
+    width:70%;
+  } 
+}
+@media (min-width: 768px) and (max-width:1023px)
+{
+  .fechayhora
+  {
+    width:60%;
+  } 
 }
 /*estilos cajas de error*/
 .errorbox
