@@ -8549,7 +8549,7 @@ margin-top: 0px;
 }
 .pasos-matricula1-num
 {
-   margin: 20 auto;
+   margin: 20px auto;
    width: 80px;
    height: 155px;
    text-align: center;
@@ -8564,7 +8564,7 @@ margin-top: 0px;
 }
 .pasos-matricula2-num
 {
-   margin: 20 auto;
+   margin: 20px auto;
    width: 80px;
    height: 220px;
    text-align: center;
@@ -8579,7 +8579,7 @@ margin-top: 0px;
 }
 .pasos-matricula3-num
 {
-   margin: 20 auto;
+   margin: 20px auto;
    width: 80px;
    height: 240px;
    text-align: center;
@@ -9148,9 +9148,9 @@ cursor:pointer;
 {
   background-image: url("../../assets/images/trabaja-con-nosotros/trabajadores.jpg");
 }
-.page-work-with-us .hero-block h1
+.page-work-with-us .hero-block h2
 {
-  padding-top: 130px
+  padding-bottom: 120px
 }
 .work-with-us-reasons
 {
@@ -9192,7 +9192,7 @@ cursor:pointer;
 .work-with-us-reasons .reason
 {
   width: 27%;
-  height: 33%;
+  height: 300px;
   background-color: rgb(230, 23, 83);
   padding: 40px;
   color: #FFF;
@@ -9206,13 +9206,19 @@ cursor:pointer;
 {
   width: 30%;
   margin: 10px;
-  height: 35%;
   padding: 20px;
   font-size: inherit;
 }
  .work-with-us-reasons .reason h2
 {
    font-size: 25px  
+}
+}
+@media (min-width:768px) and (max-width: 890px) 
+{
+  .work-with-us-reasons .reason
+{
+  height: 350px
 }
 }
 .wwu-reason-title
@@ -9406,6 +9412,13 @@ animation-direction: alternate;
 .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav
 {
    margin-bottom: 20px
+}
+@media (max-width:767px)
+{
+  .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav
+{
+   margin-bottom: inherit;
+}
 }
 .page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block
 {
@@ -9668,8 +9681,11 @@ margin-right: 0px
 }
 .page-mentoring .hero-block h1 
 {
-   padding-top: 150px;
    font-size:110px!important;
+}
+.page-mentoring .hero-block h2 
+{
+   padding-bottom: 120px;
 }
 @media (max-width:767px)
 {
@@ -9723,9 +9739,9 @@ background-image:url(../../assets/images/mentoring/comunidad.svg)
 {
   background-image: url("../../assets/images/talento/talento-header.jpg");
 }
-.page-talent .hero-block h1 
+.page-talent .hero-block h2 
 {
-   padding-top: 170px
+   padding-bottom: 120px
 }
 @media (max-width:767px)
 {
@@ -9829,14 +9845,14 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   width: 100%;
   margin-top: 50px;
   margin-left: 40px;
-  height: 33%;
+  height: 300px
 }
 @media (min-width:768px) and (max-width: 960px)
 {
 .preseleccion, .presentacion-tu-empresa, .asistir-a-presentaciones
 {
   margin-left:0px;
-  height: 30%;
+  height: 250px
 }
 }
 @media (max-width:767px)
@@ -10021,9 +10037,13 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 .page-events .hero-block h1 
 {
-   padding-top: 120px;
    font-size:110px!important;
 }
+.page-events .hero-block h2 
+{
+  padding-bottom: 120px;
+}
+   
 @media (max-width:767px)
 {
 .page-events .hero-block h1 
