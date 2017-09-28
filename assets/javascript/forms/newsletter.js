@@ -26,6 +26,13 @@ if(respuesta == "OK")
           $('.newsletter-email').val("");
           $('.newsletter-email').attr("placeholder", data['email']);
           replaceValueTimeout('.newsletter-email',originalData['email']);
+    }
+      if (data.hasOwnProperty('general'))
+    {
+          $('.newsletter-email').addClass("errorbox");
+          $('.newsletter-email').val("");
+          $('.newsletter-email').attr("placeholder", data['general']);
+          replaceValueTimeout('.newsletter-email',originalData['general']);
         }
       else 
        {
