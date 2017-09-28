@@ -7396,10 +7396,10 @@ z-index: -100;
     letter-spacing: normal;
     line-height: 1;
 }
-@media screen and (max-width: 64em) 
+@media screen and (max-width: 86em) 
 {
 .countdown_amount {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 @media (max-width:767px)
