@@ -1,5 +1,10 @@
 /vendor/
+<<<<<<< HEAD
 
 /curriculums/
 
 /assets/php/config.php
+=======
+/curriculums/
+/assets/php/config.php
+>>>>>>> d75ff1f864fac2ce2e08488d632b1348f0bd089c
