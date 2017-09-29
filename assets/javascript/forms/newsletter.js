@@ -27,7 +27,7 @@ if(respuesta == "OK")
           $('.newsletter-email').attr("placeholder", data['email']);
           replaceValueTimeout('.newsletter-email',originalData['email']);
     }
-      if (data.hasOwnProperty('general'))
+     else  if (data.hasOwnProperty('general'))
     {
           $('.newsletter-email').addClass("errorbox");
           $('.newsletter-email').val("");
