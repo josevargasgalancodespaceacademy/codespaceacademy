@@ -8152,6 +8152,13 @@ z-index: -100;
  .course-structure-container,.other-activities{
   margin-top: 50px;
 }
+@media (min-width:1366px)
+{
+  .course-structure-container
+{
+  padding-left: 0px!important
+}
+}
 .other-activities
 {
  margin-bottom: 50px
