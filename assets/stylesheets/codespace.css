@@ -10038,6 +10038,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   margin-bottom: 40px;
 }
+.contact-form label 
+{
+  margin-bottom: 5px;
+}
 .contact-form .logo 
 {
  background-size:cover!important;
