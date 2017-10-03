@@ -1,4 +1,11 @@
-#Con esto conseguimos que no se pueda acceder al htaccess (mejora de seguridad)
+#Para acceder a la web se necesita los user y pass indicados en el archivo htpasswd
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+
+#Con esto conseguimos que no se carge htaccess vía web (mejora de seguridad)
 <Files .htaccess>
 Order allow,deny
 Deny from all
@@ -8,6 +15,10 @@ Deny from all
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#Proteccion ataques DDOS
+LimitRequestBody 10240000
+
 
 
 
