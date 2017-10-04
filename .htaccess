@@ -11,12 +11,6 @@ Order allow,deny
 Deny from all
 </Files>
 
-#Con esto conseguimos que no se carge htaccess vía web (mejora de seguridad)
-<Files .htaccess>
-Order allow,deny
-Deny from all
-</Files>
-
 #Url´s amigables (mejora para posicionamiento web)
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
