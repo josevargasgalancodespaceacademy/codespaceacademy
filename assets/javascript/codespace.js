@@ -122,7 +122,7 @@ $(document).ready(function(){
    {
     $(".container .menu").animate({
             width: "toggle"   
-        },500);
+        },400);
     if ($('.page-bootcamp-web .hero-block').css("margin-top")=="465px")
     {
        $('.page-bootcamp-web .hero-block').css("margin-top", "80px");
@@ -135,7 +135,7 @@ $(document).ready(function(){
 else{
     $(".container .menu").animate({
             width: "toggle"       
-        },500);
+        },400);
   }
   });
 })
