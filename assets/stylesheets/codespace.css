@@ -10134,6 +10134,11 @@ background-image:url(../../assets/images/talento/capacidad.svg)
     width:60%;
   } 
 }
+/*página de pedir informacion*/
+#mas_informacion_course_block, .mas_informacion_course_block{
+  display:none;
+}
+
 /*página de contacto*/
 .page-contacto .hero-block
 {
