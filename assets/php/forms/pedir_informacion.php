@@ -30,7 +30,7 @@ if (!$cityCourseChoice["city"]) {
 	$errors["city"] = "Por favor, elige una ciudad";
 } else {
 	$course = $cityCourseChoice["course-" . $cityCourseChoice["city"]];
-	if (!$course) $errors["course-" . $cityCourseChoice["city"]] = "Por favor, elige una curso";
+	if (!$course) $errors["course-" . $cityCourseChoice["city"]] = "Por favor, elige un curso";
 	else {
 		$request["city"] = $cityCourseChoice["city"];
 		$request["course"] = $cityCourseChoice["course-" . $cityCourseChoice["city"]];
