@@ -6,6 +6,7 @@ function enviar_contact_form(){
   }, {}));
 
   var url = "../assets/php/forms/contact.php";
+  if ($('#check-contacto').is(':checked')){ 
   $.ajax({                        
     type: "POST",                 
     url: url,  
@@ -40,7 +41,11 @@ function enviar_contact_form(){
         }
       }
     }
-  });
+  })
+}else
+  {
+    alert ('Acepta las condiciones legales');
+  }
 }
 
 
