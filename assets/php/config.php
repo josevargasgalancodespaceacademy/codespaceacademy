@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 // DB Settings
 define('DB_SERVER', 'localhost');
@@ -17,11 +17,11 @@ define('STMP_LANGUAGE', 'es');
 define('FROM_EMAIL', 'admin@codespaceacademy.com');
 define('FROM_NAME', 'Codespace Academy');
 
-session_start(); 
+session_start();
 
 
-$mini = false; 
-$nonav = false; 
+$mini = false;
+$nonav = false;
 error_reporting(0);
 
 

@@ -212,6 +212,8 @@ function PonerCookie(){
  */
  
 function replaceValueTimeout(elementId,originalData) {
+    console.log(elementId);
+    console.log(originalData);
     $(elementId).on('focus',function(){
       $(elementId).removeAttr('placeholder');
       $(elementId).val(originalData); 
