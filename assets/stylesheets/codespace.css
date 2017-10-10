@@ -7070,7 +7070,7 @@ float:left
   padding-top:10px;
   padding-bottom: 10px;
   position:absolute;
-  width:150px;
+  width:280px;
   z-index:99999;
 }
 .submenu ul li
@@ -7382,10 +7382,23 @@ z-index: -100;
 {
   margin-top: 10px;
   color:rgb(230, 23, 83)!important;
+  font-size: 60px;
 }
 .contador-atras h2
 {
   font-weight: 600;
+  font-size: 40px;
+}
+@media (max-width:1365px)
+{
+.contador-atras h1 
+{
+  font-size:40px;
+}
+.contador-atras h2 
+{
+font-size: 30px;
+}
 }
 @media (max-width:767px)
 {
@@ -7408,6 +7421,7 @@ z-index: -100;
     width: 10%;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-left: 40px;
 }
 
 @media screen and (max-width: 64em) 
@@ -7418,6 +7432,7 @@ z-index: -100;
 }
 .countdown_section:first-child {
     border-left: 0;
+    margin-left: 0px!important;
 }
 
 .countdown_amount {
@@ -7441,6 +7456,7 @@ z-index: -100;
   {
     width: 25%;
     font-size: 10px;
+    margin-left: 0px;
   }
   .countdown_amount 
   {
@@ -8211,6 +8227,7 @@ z-index: -100;
 .para-quien ul li
 {
    margin-bottom: 60px;
+   font-size: 15px;
 }
 @media (max-width:767px)
 {
@@ -8241,7 +8258,8 @@ z-index: -100;
 {
   color:rgb(230, 23, 83);
   font-weight: 400;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 /*structure-bootcamp*/
  .course-structure-container,.other-activities
@@ -8352,7 +8370,14 @@ border-right-color: rgb(134, 36, 131);
 {
    width: 200px;
    height: 200px;
-   margin-top: 40px;
+}
+.coming-out-week-image 
+{
+ margin-top: 40px;
+}
+.final-project-image 
+{
+  margin-top: 20px;
 }
 @media (max-width:767px)
 {
@@ -8411,13 +8436,13 @@ border-right-color: rgb(134, 36, 131);
 }
 @media (min-width:1171px) and (max-width: 1366px)
 {
-  .course-structure-container
-  {
+.course-structure-container
+{
     padding-right: 40px!important
-  }
+}
 .modulo-item-number
 {
-  right: 20px;
+  right: 40px;
 }
 }
 .timeline 
@@ -8638,7 +8663,7 @@ margin-top: 0px;
 {
    margin: 20px auto;
    width: 80px;
-   height: 240px;
+   height: 260px;
    text-align: center;
    background-color:rgb(230, 23, 83); 
    font-size: 100px;
@@ -8646,7 +8671,7 @@ margin-top: 0px;
 }
 .pasos-matricula3-num p
 {
-   padding-top: 115px
+   padding-top: 135px
 }
 .pasos-matricula1-logo{
 
@@ -8691,16 +8716,49 @@ margin-top: 0px;
 }
 .bootcamp-web-malaga-dates
 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom: 2px solid  rgb(230, 23, 83);
   border-style:dashed;
-  font-size: 15px
+  font-size: 19px;
+}
+.bootcamp-web-malaga-dates:first-child
+{
+  border-top: 2px solid  rgb(230, 23, 83);
+  border-style:dashed;
+}
+.bootcamp-web-malaga-dates:hover
+{
+ background-color:#F8E0EC;
+}
+.bootcamp-web-malaga-dates .solicitar-informacion
+{
+  color:rgb(230, 23, 83);
+  font-weight: 600
+}
+.bootcamp-web-malaga-dates:hover .solicitar-informacion
+{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(230, 23, 83);
+  color:#FFF;
+  padding: 10px;
+  border: 1px solid rgb(230, 23, 83);
+  border-radius: 10px;
 }
 @media (max-width:767px)
 {
 .bootcamp-web-malaga-dates
 {
-   font-size: 14px  
+   font-size: 12px;
+}
+.bootcamp-web-malaga-dates .fecha, .bootcamp-web-malaga-dates  .idioma, .bootcamp-web-malaga-dates .precio
+{
+   margin-bottom: 20px;
+}
+.bootcamp-web-malaga-dates .horario 
+{
+  display: none;
 }
 .price-and-dates-title
 {
@@ -9649,12 +9707,19 @@ animation-direction: alternate;
 {
    padding-top: 10px;
 }
-.abrir-formulario-sorteo 
+.abrir-formulario-sorteo
 { 
    padding: 5px 15px!important;
    margin-top: 5px;
    outline: none!important;
    border: 0px!important;
+}
+.boton-mujeres-tec 
+{
+   padding: 5px 15px!important;
+   outline: none!important;
+   border: 0px!important;
+   margin-top: -20px;
 }
 .saber-mas-becas
 {
@@ -10093,6 +10158,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .event-type
 {
  color:rgb(230, 23, 83); 
+ margin-top: 20px;
 }
 .fechayhora 
 {
