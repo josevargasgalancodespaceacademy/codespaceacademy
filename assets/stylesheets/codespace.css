@@ -7332,9 +7332,9 @@ z-index: -100;
 {
   background-position:center;
   background-size:cover;
-  height:130px;
+  height:150px;
   margin:0 auto 40px;
-  width:130px
+  width:150px
 }
 .page-home .explanation-title, .page-courses-families .bootcamp-title, .page-courses-families .bussiness-title
 {
@@ -8274,9 +8274,9 @@ z-index: -100;
 {
   background-position:center;
   background-size:cover;
-  height:100px;
+  height:150px;
   margin:0 auto 20px;
-  width:100px
+  width:150px;
   margin-bottom: 15px;
 }
 .course-structure-container .structure-title, .other-activities-title, .activity-item
@@ -8539,7 +8539,7 @@ border-right-color: rgb(134, 36, 131);
 .modulo-item-text ul
 {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 @media (min-width:768px) and (max-width: 1170px)
 {
@@ -9750,9 +9750,9 @@ animation-direction: alternate;
 {
   background-position:center;
   background-size:cover;
-  height:100px;
+  height:150px;
   margin:0 auto 20px;
-  width:100px
+  width:150px
 }
 .becas-families h2
 {
@@ -9946,10 +9946,13 @@ margin-right: 0px
 .mentoring-reason-experience, .mentoring-reason-laboral, .mentoring-reason-comunity
 {
   background-position:center;
-  background-size:cover;
-  height:100px;
+  background-size:contain!important;
+  background-repeat: no-repeat;
+  height:200px;
   margin:0 auto 20px;
-  width:100px
+  width:200px;
+  position:relative;
+  overflow:hidden;
 }
 .mentoring-reasons h2
 {
@@ -9965,7 +9968,7 @@ background-image:url(../../assets/images/mentoring/asesoramiento-laboral.svg)
 }
 .mentoring-reason-comunity
 {
-background-image:url(../../assets/images/mentoring/comunidad.svg)
+background-image:url(../../assets/images/mentoring/comunidad.svg);
 }
 .mentoring-reason-explanation
 {
@@ -9999,9 +10002,10 @@ background-image:url(../../assets/images/mentoring/comunidad.svg)
 {
   background-position:center;
   background-size:cover;
-  height:100px;
+  background-repeat: no-repeat;
+  height:150px;
   margin:20px auto 20px;
-  width:100px;
+  width:150px;
 }
 .talent-reasons h2
 {
@@ -10019,7 +10023,8 @@ background-image:url(../../assets/images/mentoring/comunidad.svg)
 }
 .talent-reason-cost
 {
-  background-image:url(../../assets/images/talento/sin-comision.svg)
+  background-image:url(../../assets/images/talento/sin-comision.svg);
+  background-size:contain;
 }
 .talent-reason-practice
 {
