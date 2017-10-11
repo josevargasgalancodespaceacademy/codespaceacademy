@@ -8464,20 +8464,21 @@ border-bottom: 45px solid rgb(230, 23, 83);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding-top: 6px;
+  padding-bottom: 4px;
 }
 .esquina-weeks, .esquina-weeks-hiring
 {
   top:92px;
-  margin-left: 6px;
+  margin-left: 5px;
   border-right: 45px solid  transparent; 
 }
  .esquina-weeks
   {
-    border-bottom: 30px solid rgb(134, 36, 131);
+    border-bottom: 29px solid rgb(134, 36, 131);
   }
 .esquina-weeks-hiring
   { 
-    border-bottom: 30px solid rgb(230, 23, 83);
+    border-bottom: 29px solid rgb(230, 23, 83);
   }
 }
 .modulo-item-6 .modulo-item-text
