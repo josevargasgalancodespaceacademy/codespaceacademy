@@ -60,39 +60,51 @@
 
             </div>
 
+             <hr>
              <div class="row">
+
+             <?php
+              require('../assets/php/config.php');
+              require('../assets/php/classes/mysql.php');
+              $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+
+              $cities = $mysql->getAllDataWithParameters("citys");
+              $courses = $mysql->getAllDataWithParameters("courses", array("active" => true));
+              $courses = $mysql->groupResultByColumn($courses,"city_id"); 
+             ?>
+
 
               <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_city_block">
 
                 <label for="city"> 
-                  Ciudad
+                  Ciudad donde quieres estudiar
                 </label>
 
                 <select class="form-control" id="information-city" name="city">
-                  <option value="" >Escoger una ciudad</option>
-                  <option value="malaga">Málaga</option>
-                  <option value="madrid">Madrid</option>
+                  <option value="" class="unselectable">Escoger una ciudad</option>
+                  <?php
+                    foreach ($cities as $city) {
+                      echo "<option value ='" . $city["id"] . "'>" . $city["name"] . "</option>";
+                    }
+                  ?>
                 </select>
 
                 <p class="city-error mensajerror""></p>
               </div>
               <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_course_block">
-
+    
                 <label for="course"> 
-                  Curso
+                  Curso en que estás interesado
                 </label>
 
-                <select class="form-control mas_informacion_course_block"  data-city="malaga" name="course-malaga">
-                  <option value="" >Escoge un curso en Malaga</option>
-                  <option value="Web Development Bootcamp" name="city">Web Development Bootcamp Málaga</option>
-                  <option value="Curso Angular" name="city">Desarrollo de aplicaciones web con Angular 4</option>
-                </select>
-
-                <select class="form-control mas_informacion_course_block" data-city="madrid" name="course-madrid">
-                  <option value="" >Escoge un curso en Madrid</option>
-                  <option value="Web Development Bootcamp" name="city">Web Development Bootcamp Madrid</option>
-                </select>
-
+               <?php
+                foreach ($courses as $key => $cityBlock) {
+                  echo "<select class='form-control mas_informacion_course_block'  data-city='".$key."' name='course-".$key."'>";
+                  echo "<option value=''>Escoge un curso en ".$cities[$key-1]["name"]."</option>";
+                    foreach ($cityBlock as $course) echo "<option value='".$course["id"]."' name='city'>".$course["name"]."</option>";
+                  echo "</select>";
+                }
+               ?>
                 <p class="course-error mensajerror""></p>
 
               </div>
