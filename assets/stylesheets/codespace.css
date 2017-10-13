@@ -6938,6 +6938,7 @@ float:left
   height:100px!important;
   z-index: 20000;
 }
+
 .menu ul,.footer-content ul,.para-quien ul li
 {
     list-style: none;
@@ -6979,7 +6980,11 @@ float:left
      height: 95px;
      padding-left: 15px
   }
-   .menu-item 
+  .menu 
+  {
+    height: inherit!important;
+  }
+ .menu-item 
  {
      font-size: 0.8em;  
  } 
