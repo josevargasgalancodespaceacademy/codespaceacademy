@@ -7833,11 +7833,18 @@ margin-bottom: 25px
 {
   float: left!important;
 }
-.footer-navigate li, .redes-sociales li 
+.redes-sociales li 
 {
   float:left;
-  margin-left: 20px;
-  text-transform: uppercase;
+  margin-left: 15px;
+}
+.redes-sociales li:first-child 
+{
+  margin-left: 0px!important;
+}
+.footer-navigate li
+{
+   text-transform: uppercase;
 }
 .footer-navigate a, .codespace-copyright a
 {
@@ -7974,7 +7981,10 @@ background-image: url(../../assets/images/cursos/bootcamp-videogames.svg);
 background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 /* container-bussiness-courses*/
-
+.family-bussiness-courses
+{
+  background-color: #F2F2F2!important;
+}
  .bussiness-courses span{
   font-size: 18px;
 }
