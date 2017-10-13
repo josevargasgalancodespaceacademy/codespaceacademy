@@ -10346,6 +10346,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .container-events .row
 {
   border-bottom: solid 1px #E6E6E6;
+  margin-top: 20px;
 }
 .event-image
 {
