@@ -7663,7 +7663,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 350px;
-  height: 290px;
+  height: 250px;
+  margin-top: 40px;
 }
 }
 @media (min-width: 1024px) and (max-width: 1151px)
@@ -7671,8 +7672,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 220px;
-  height: 220px;
-  margin-top: 70px;
+  height: 160px;
+  margin-top: 130px;
 }
 }
 @media (min-width: 1152px) and (max-width: 1279px)
@@ -7680,8 +7681,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 260px;
-  height: 260px;
-  margin-top: 110px;
+  height: 190px;
+  margin-top: 180px;
 }
 }
 @media (min-width: 1280px) and (max-width: 1359px)
@@ -7689,8 +7690,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 290px;
-  height: 240px;
-  margin-top: 130px;
+  height: 210px;
+  margin-top: 160px;
 }
 }
 @media (min-width: 1360px) and (max-width: 1439px)
@@ -7698,8 +7699,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 310px;
-  height: 240px;
-  margin-top: 130px;
+  height: 210px;
+  margin-top: 160px;
 }
 }
 @media (min-width: 1440px) and (max-width: 1599px)
@@ -7707,8 +7708,8 @@ margin-bottom: 25px
 .tcn-image img
 {
   width: 330px;
-  height: 270px;
-  margin-top: 100px;
+  height: 240px;
+  margin-top: 130px;
 }
 }
 @media (min-width: 1600px) and (max-width: 1680px)
@@ -8179,7 +8180,6 @@ z-index: -100;
 }
 .testimonial-web 
 {
-  width: 85%;
   text-align: center;
   margin-top: 30px
 }
@@ -8187,9 +8187,9 @@ z-index: -100;
 {
   background-position:center;
   background-size:cover;
-  height:400px;
+  height:354px;
   margin:0 auto 20px;
-  width:500px;
+  width:477px;
   margin-bottom: 15px;
 }
 
@@ -8197,19 +8197,26 @@ z-index: -100;
 {
   .testimonial-web img
   {
-  height:250px;
-  width:250px;
+  height:265.5px;
+  width:357.75px;
   }
 
 }
-@media (min-width:1024px) and (max-width:1279px)
+@media (min-width:1024px) and (max-width:1175px)
 {
   .testimonial-web img
   {
-   height:350px;
-   width:380px;
+   height:300.9px;
+   width:405.45px;
   }
-
+}
+@media (min-width:1176px) and (max-width:1279px)
+{
+ .testimonial-web img
+  {
+   height:336.3px;
+   width:453.15px;
+  }
 }
 .testimonial-web p
 {
@@ -8408,7 +8415,7 @@ border-bottom: 45px solid rgb(230, 23, 83);
 {
   .esquina-weeks, .esquina-weeks-hiring
   {
-     margin-left: 15px;
+     margin-left: 17px;
   }
  .esquina-weeks
   {
@@ -8424,7 +8431,7 @@ border-bottom: 45px solid rgb(230, 23, 83);
 {
   .esquina-weeks, .esquina-weeks-hiring
   {
-     margin-left: 16px;
+     margin-left: 17px;
   }
  .esquina-weeks
   {
@@ -8435,11 +8442,26 @@ border-bottom: 45px solid rgb(230, 23, 83);
     border-bottom: 46px solid rgb(230, 23, 83);
   }
 }
-@media (min-width:1280px) and (max-width: 1365px)
+@media (min-width:1280px) and (max-width: 1366px)
 {
  .esquina-weeks, .esquina-weeks-hiring
 {
-  top:99px;
+  top:-6px;
+  margin-left: 18px;
+}
+@supports (-ms-ime-align:auto) 
+{
+   .esquina-weeks, .esquina-weeks-hiring
+{
+  top:-5px;
+}
+}
+@-moz-document url-prefix() 
+{
+  .esquina-weeks, .esquina-weeks-hiring
+  {
+     margin-left: 16px;
+  }
 }
 }
 @media (max-width:414px)
