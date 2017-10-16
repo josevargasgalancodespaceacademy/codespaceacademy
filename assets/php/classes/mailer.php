@@ -13,8 +13,8 @@ class Mailer
     public $mail;
     private $fromEmail;
     private $fromName;
-    private $unsubscribeLinkHtml = "<p><a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>ejar de recibir mensajes de esta dirección</a></p>";
-    private $unsubscribeLinkText = "<a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>ejar de recibir mensajes de esta dirección</a>";
+    private $unsubscribeLinkHtml = "<p><a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>dejar de recibir mensajes de esta dirección</a></p>";
+    private $unsubscribeLinkText = "<a href='http://localhost/codespaceacademy/es/cancelar-subscripcion.html'>dejar de recibir mensajes de esta dirección</a>";
 
     public function __construct()
     {
