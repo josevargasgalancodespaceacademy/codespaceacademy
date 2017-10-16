@@ -37,10 +37,10 @@ if (!$cityCourseChoice["city"]) {
 	}
 } 
 
-if (!$errors) {
+/*if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("information_requests",$request);
-}
+}*/
 
 if (!$errors) echo "OK";
 else echo json_encode($errors);
