@@ -1,5 +1,6 @@
 function enviar_contacto_company(){
         var url ="../assets/php/forms/company_contacts.php";
+        if ($('#check-talento').is(':checked')){ 
         $.ajax({                        
            type: "POST",                 
            url: url,  
@@ -43,6 +44,9 @@ function enviar_contacto_company(){
 }
 }
 }) 
+}else{
+    alert ('Acepta las condiciones legales');
+  }
 }
 
 
