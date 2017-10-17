@@ -8298,6 +8298,13 @@ bottom:-2120px;
 bottom:-1700px;
 }
 } 
+@media(min-width: 451px) and (max-width:767px)
+{
+  .dots
+{
+bottom:-2200px;
+}
+} 
 @media(min-width: 360px) and (max-width:450px)
 {
   .dots
