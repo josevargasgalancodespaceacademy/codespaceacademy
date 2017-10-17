@@ -9908,18 +9908,18 @@ animation-direction: alternate;
 }
 }
 /*becas-page*/
-.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav
+.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav
 {
    margin-bottom: 20px
 }
 @media (max-width:767px)
 {
-  .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav
+  .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav
 {
    margin-bottom: inherit;
 }
 }
-.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block, .page-legal .hero-block
 {
   padding-top: 100px;
   height: 100%!important;
@@ -9949,7 +9949,7 @@ animation-direction: alternate;
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
-.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2
+.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2,  .page-legal .hero-block h2
 {
    color:#fff!important;
    margin:0px!important;
