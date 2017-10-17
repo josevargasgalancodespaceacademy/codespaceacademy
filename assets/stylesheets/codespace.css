@@ -8240,13 +8240,6 @@ bottom:-1020px;
 bottom:-1140px;
 }
 }
-@media (min-width:768px) and (max-width: 1023px)
-{
-.dots
-{
-bottom:-3060px;
-}
-}
 .dots li {
   display: inline-block;
   width: 15px;
