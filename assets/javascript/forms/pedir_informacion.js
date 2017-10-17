@@ -18,6 +18,7 @@ window.onload = function() {
 function enviar_pedir_mas_informacion(){
 
     var url ="../assets/php/forms/pedir_informacion.php";
+    if ($('#check-mas-info').is(':checked')){ 
     $.ajax({                        
       type: "POST",                 
       url: url,  
@@ -72,5 +73,8 @@ function enviar_pedir_mas_informacion(){
       }
       }
     });
+  }else{
+    alert ('Acepta las condiciones legales');
   }
+}
 
