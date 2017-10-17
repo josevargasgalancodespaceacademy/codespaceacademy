@@ -8031,36 +8031,68 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
   background-color: #F2F2F2!important;
 }
-.family-bussiness-courses .container-bussiness
+.family-bussiness-courses .container-bussiness 
 {
-  height: 370px!important;
+  height: 420px!important;
 }
- .bussiness-courses .title-business-course
+ .bussiness-courses .title-business-course,  .bussiness-courses-movil .title-business-course
 {
   font-size: 20px;
   height: 50px!important;
+  color:rgb(230, 23, 83); 
 }
-.bussiness-courses .explanation {
+.bussiness-courses .explanation, .bussiness-courses-movil .explanation 
+{
   text-align: center;
   padding: 15px;
   height: 90px!important;
 }
-.bussiness-courses h2{
+.bussiness-courses h2, .bussiness-courses-movil h2
+{
   margin-top: 10px;
   margin-bottom: 10px;
   color:#Fc4c7e;
 }
 .bussiness-courses-logo
 {
-  background-size:cover!important;
+  background-size:contain!important;
   background-position:center!important;
+  background-repeat: no-repeat;
   position:relative;
   overflow:hidden;
-  max-width: 140px;
-  max-height: 56px;
+  max-width: 100%;
+  height: 85px!important;
   margin-bottom:15px!important;
   display: block;
   margin: auto;
+}
+.xamarin
+{
+  background-image: url(../../assets/images/business-courses/icono-xamarin-morado.svg);
+}
+.angular
+{
+  background-image: url(../../assets/images/business-courses/icono-angular-morado.svg);
+}
+.mongo
+{
+  background-image: url(../../assets/images/business-courses/icono-mongo-morado.svg);
+}
+.swift
+{
+  background-image: url(../../assets/images/business-courses/icono-swift-morado.svg);
+}
+.kotlin
+{
+  background-image: url(../../assets/images/business-courses/icono-kotlin-morado.svg);
+}
+.scala
+{
+  background-image: url(../../assets/images/business-courses/icono-scala-morado.svg);
+}
+.selenium
+{
+  background-image: url(../../assets/images/business-courses/icono-selenium-morado.svg);
 }
 .family-bussiness-courses li
 {
@@ -8140,7 +8172,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   position: absolute;
   left: 0;
   right: 0;
-  bottom:-760px;
+  bottom:-850px;
   text-align: center;
   padding-bottom: 50px!important;
 }
@@ -8148,28 +8180,32 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
 .dots
 {
-bottom:-850px;
+bottom:-930px;
 }
 }
 @media (width:1680px)
 {
 .dots
 {
-bottom:-780px;
+bottom:-870px;
 }
 }
 @media (width:1600px)
 {
 .dots
 {
-bottom:-800px;
+bottom:-900px;
 }
 }
 @media (width:1440px)
 {
+  .family-bussiness-courses .container-bussiness
+{
+  height: 435px!important;
+}
 .dots
 {
-bottom:-920px;
+bottom:-1040px;
 }
 .bussiness-courses h2
 {
@@ -8178,20 +8214,24 @@ bottom:-920px;
 }
 @media (min-width:1360px) and (max-width: 1366px)
 {
+.family-bussiness-courses .container-bussiness
+{
+  height: 435px!important;
+}  
 .dots
 {
-bottom:-1070px;
+bottom:-1170px;
 }
-.bussiness-courses h2
+.bussiness-courses h2 
 {
   margin-top: 30px;
 }
 }
 @media (width:1280px)
-{
+{ 
 .dots
 {
-bottom:-850px;
+bottom:-950px;
 }
 }
 @media (min-width:1152px) and (max-width: 1280px)
@@ -8205,19 +8245,23 @@ bottom:-850px;
   font-size: 20px;
   height: 70px!important;
 }
+.family-bussiness-courses .container-bussiness
+{
+  height: 465px!important;
+}
 }
 @media (max-width:1176px)
 {
 .dots
 {
-bottom:-1210px;
+bottom:-1310px;
 }
 }
 @media (max-width:1152px)
 {
 .dots
 {
-bottom:-1020px;
+bottom:-1120px;
 }
 }
 @media (width: 1024px)
@@ -8233,13 +8277,41 @@ bottom:-1020px;
 }
 .family-bussiness-courses .container-bussiness
 {
-  height: 420px!important;
+  height: 520px!important;
 }
 .dots
 {
-bottom:-1140px;
+bottom:-1250px;
 }
 }
+@media(min-width: 800px) and (max-width:1023px)
+{
+  .dots
+{
+bottom:-2120px;
+}
+} 
+@media(min-width: 768px) and (max-width:799px)
+{
+  .dots
+{
+bottom:-1700px;
+}
+} 
+@media(min-width: 360px) and (max-width:450px)
+{
+  .dots
+{
+bottom:-2130px;
+}
+} 
+@media(min-width: 320px) and (max-width:359px)
+{
+  .dots
+{
+bottom:-2450px;
+}
+} 
 .dots li {
   display: inline-block;
   width: 15px;
@@ -8260,6 +8332,33 @@ bottom:-1140px;
 .dots li.active {
   background: #F2F2F2;
   opacity: 1;
+}
+.bussiness-courses-movil
+{
+  display: none;
+}
+@media (max-width:1023px)
+{
+.bussiness-courses-movil
+ {
+  display: block
+ }
+ .bussiness-courses
+ {
+   display: none;
+ }
+.family-bussiness-courses .container-bussiness
+{
+  height: 530px!important;
+}
+.bussiness-courses-movil .title-business-course
+{
+  height: 70px!important
+}
+.bussiness-courses-movil .explanation
+{
+  height: 125px!important
+}
 }
 /*web-development-bootcamp*/
 .page-bootcamp-web .main-nav
