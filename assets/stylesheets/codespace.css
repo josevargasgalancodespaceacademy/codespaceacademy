@@ -8031,15 +8031,21 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
   background-color: #F2F2F2!important;
 }
- .bussiness-courses span{
-  font-size: 18px;
+.family-bussiness-courses .container-bussiness
+{
+  height: 370px!important;
 }
-.bussiness-courses p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+ .bussiness-courses .title-business-course
+{
+  font-size: 20px;
+  height: 50px!important;
+}
+.bussiness-courses .explanation {
   text-align: center;
+  padding: 15px;
+  height: 90px!important;
 }
-.bussiness-courses h4{
+.bussiness-courses h2{
   margin-top: 10px;
   margin-bottom: 10px;
   color:#Fc4c7e;
@@ -8056,60 +8062,9 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   display: block;
   margin: auto;
 }
-.bussiness-courses .row
+.family-bussiness-courses li
 {
-  padding-left: 80px
-}
-@media (min-width: 768px) and (max-width:992px) 
-{
-  .bussiness-courses .row 
-  {
-    padding-left: inherit;
-  }
-}
-@media (max-width:767px)
-{
-.bussiness-courses .row 
-{
-   padding:inherit;
-}
-}
-.container-bussiness-selenium .bussiness-courses-logo
-{
-  max-height: 100px;
-  margin-bottom: 0px!important
-}
- .container-bussiness-selenium
-{
-  top:-59px!important;
-}
- .container-bussiness-selenium h4
-{
-  margin-top:10px!important;
-}
- .container-bussiness-xamarin
-{
-  top:-2px!important;
-}
- .container-bussiness-angular h4
-{
-  margin-top:15px!important;
-}
- .container-bussiness-mongo h4
-{
-  margin-top:10px!important;
-}
- .container-bussiness-ios
-{
-  top:-2.75px!important;
-}
- .container-bussiness-kotlin
-{
-  top:-7px!important;
-}
- .container-bussiness-kotlin h4
-{
-  margin-top:15px!important;
+  list-style: none;
 }
 .family-bootcamp-courses .button
 {
@@ -8150,6 +8105,66 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .bussiness-courses .button:hover:before, .bootcamp-videogames-container .button:hover:before, .bootcamp-mobile-container .button:hover:before 
 {
    content: 'próximamente';
+}
+.boton-business-courses:before
+{
+  content: 'próximamente'
+}
+.boton-business-courses:hover:before
+{
+  content: 'ver más'
+}
+.boton-business-courses
+{
+   width: 100%;
+   padding: 10px;
+   border:solid 1px #000;
+   text-transform: uppercase;
+   font-weight: 600;
+   background-color:rgb(230, 23, 83);
+   color:#FFF;
+
+}
+.boton-business-courses:hover
+{
+  content: 'ver curso';
+  background-color: rgb(134, 36, 131); 
+  color: #FFF; 
+  cursor: pointer;
+}
+.slider-business-courses 
+{
+  margin-bottom: 80px;
+}
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:-760px;
+  text-align: center;
+  padding-bottom: 50px!important;
+}
+
+.dots li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 4px;
+  text-indent: -999em;
+  border: 3px solid rgb(134, 36, 131);
+  border-radius: 1000px;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.dots li.active {
+  background: #F2F2F2;
+  opacity: 1;
 }
 /*web-development-bootcamp*/
 .page-bootcamp-web .main-nav
