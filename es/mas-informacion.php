@@ -81,7 +81,7 @@
                 </label>
 
                 <select class="form-control" id="information-city" name="city">
-                  <option value="" class="unselectable">Escoger una ciudad</option>
+                  <option value="" class="unselectable">Escoge una ciudad</option>
                   <?php
                     foreach ($cities as $city) {
                       echo "<option value ='" . $city["id"] . "'>" . $city["name"] . "</option>";
@@ -94,7 +94,7 @@
               <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_course_block">
     
                 <label for="course"> 
-                  Curso en que estás interesado
+                  Curso en el que estás interesado
                 </label>
 
                <?php
@@ -110,7 +110,16 @@
               </div>
 
             </div>
-
+                  <div class="checkbox">
+       <label>
+      <input class="check-mas-info" type="checkbox" id="check-sorteo"> Acepto <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.* Solo pueden participar mayores de 18 años.
+      </label>
+      </div>
+      <div class="checkbox">
+       <label>
+      <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
+      </label>
+      </div>
 
             <button type="button" class="button fondobutton btn boton-enviar-talent" onclick="enviar_pedir_mas_informacion();">enviar</button>
 
