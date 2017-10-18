@@ -28,7 +28,6 @@ function enviar_pedir_mas_informacion(){
               obj[item.name] = item.value;
               return obj;
            }, {});
-      console.log(respuesta);
     if(respuesta = "OK")
        {
              $('#modal-pedir-informacion').modal('show');

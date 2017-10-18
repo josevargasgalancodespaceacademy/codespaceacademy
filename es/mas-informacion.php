@@ -139,7 +139,7 @@
 <h4 class="modal-title">Hemos recibido tu petición correctamente</h4>
        </div>
 <div class="modal-body">
-         En breve nos ponemos en contacto contigo con mas informacion.
+         En breve nos pondremos en contacto contigo con más información.
        </div>
 <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
