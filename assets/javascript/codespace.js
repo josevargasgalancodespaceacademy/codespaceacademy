@@ -150,25 +150,6 @@ $('.slider-business-courses').unslider({
     fluid: true          
   });
 });
-/*$(document).ready(function() {
-    $('.boton-business-1').click(function() {
-        $(".fila2").animate({
-            width:"hide"
-        }, 500); 
-        $(".fila1").animate({
-            width: "show"
-        },500);  
-    });
-    $('.boton-business-2').click(function() {
-         $(".fila1").animate({
-            width: "hide"
-        },500); 
-        $(".fila2").animate({
-            width: "show"
-        },500); 
-
-    });
-});*/
 
 //datepicker en español
 //datepicker fecha de nacimiento becas
