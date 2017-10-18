@@ -28,9 +28,9 @@ function enviar_pedir_mas_informacion(){
               obj[item.name] = item.value;
               return obj;
            }, {});
-      if(respuesta == "OK")
+      console.log(respuesta);
+    if(respuesta == "OK")
        {
-             console.log("HOLA")
              $('#modal-pedir-informacion').modal('show');
              $('.form-control').removeClass("errorbox").val("");
              $('.mas_informacion_course_block').css('display','none');
