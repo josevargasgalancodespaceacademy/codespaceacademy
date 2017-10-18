@@ -1,10 +1,4 @@
 function enviar_contact_form(){
-  console.log($("#formulario-contacto").serialize());
-  console.log($("#formulario-contacto").serializeArray().reduce(function(obj, item) {
-    obj[item.name] = item.name;
-    return obj;
-  }, {}));
-
   var url = "../assets/php/forms/contact.php";
   if ($('#check-contacto').is(':checked')){ 
   $.ajax({                        
