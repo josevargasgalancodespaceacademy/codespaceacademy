@@ -1,15 +1,14 @@
 <?php
 
-require_once '../classes/mysql.php';
+require_once '../classes/mysql.php'; 
 require_once '../classes/validator.php';
 require_once '../classes/sanitizer.php';
 require_once '../config.php';
 
+
 $request = $_POST;
 $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
-
-
 
 $validator = new Validator($request);
 $validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
