@@ -37,6 +37,7 @@ function enviar_pedir_mas_informacion(){
       else
       {
       var response = JSON.parse(respuesta);
+      console.log (respuesta);
       if (response.hasOwnProperty('name'))
       {
         $('#informacion_name').addClass("errorbox");
