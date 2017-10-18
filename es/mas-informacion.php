@@ -112,7 +112,7 @@
             </div>
                   <div class="checkbox">
        <label>
-      <input class="check-becas" type="checkbox" id="check-mas-info"> Acepto <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.* Solo pueden participar mayores de 18 años.
+      <input class="check-becas" type="checkbox" id="check-mas-info"> Acepto <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.
       </label>
       </div>
       <div class="checkbox">
