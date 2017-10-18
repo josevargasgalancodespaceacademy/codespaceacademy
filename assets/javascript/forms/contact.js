@@ -5,7 +5,7 @@ function enviar_contact_form(){
     return obj;
   }, {}));
 
-  var url = "../assets/php/forms/contact.php";
+  var url = "../assets/php/forms/pedir_informacion.php";
   if ($('#check-contacto').is(':checked')){ 
   $.ajax({                        
     type: "POST",                 
@@ -20,7 +20,8 @@ function enviar_contact_form(){
       obj[item.name] = item.value;
       return obj;
     }, {});
-    if( respuesta == "OK") {
+    if( respuesta == "OK") 
+    {
       $('#modal-contact').modal('show');
     } else {
       var data = JSON.parse(respuesta);
