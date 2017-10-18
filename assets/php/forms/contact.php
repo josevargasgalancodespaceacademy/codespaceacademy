@@ -1,5 +1,6 @@
 <?php
 
+require_once '../classes/mysql.php';
 require_once '../classes/validator.php';
 require_once '../classes/sanitizer.php';
 require_once '../config.php';
@@ -17,6 +18,11 @@ $validator->filledIn("email")->length("email", "<=", 100)->email("email");
 $validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->lengthBetween("telephone", 15, 9, $inclusive = true);
 $errors = $validator->getErrors();
 
+
+if (!$errors) {
+	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+	$mysql->insertRow("information_requests",$request);
+}
 
 if (!$errors) echo "OK";
 else echo json_encode($errors);
