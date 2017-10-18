@@ -29,7 +29,7 @@ function enviar_pedir_mas_informacion(){
               return obj;
            }, {});
       console.log(respuesta);
-    if(respuesta == "OK")
+    if(respuesta = "OK")
        {
              $('#modal-pedir-informacion').modal('show');
              $('.form-control').removeClass("errorbox").val("");
