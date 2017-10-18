@@ -20,6 +20,7 @@ function enviar_contact_form(){
       obj[item.name] = item.value;
       return obj;
     }, {});
+    console.log(respuesta);
     if( respuesta == "OK") {
       $('#modal-contact').modal('show');
     } else {
