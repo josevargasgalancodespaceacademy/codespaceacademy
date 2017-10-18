@@ -39,7 +39,7 @@ if (!$cityCourseChoice["city"]) {
 
 if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-	$mysql->insertRow("information_requests",$request);*/
+	$mysql->insertRow("information_requests",$request);
 }
 
 if (!$errors) echo "OK";
