@@ -17,10 +17,10 @@ $validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->lengthBe
 $errors = $validator->getErrors();
 
 
-/*if (!$errors) {
+if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-	$mysql->insertRow("information_contact",$request);
-}*/
+	/*$mysql->insertRow("information_contact",$request);*/
+}
 
 if (!$errors) echo "OK";
 else echo json_encode($errors);
