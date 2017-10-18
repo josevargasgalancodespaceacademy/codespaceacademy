@@ -195,7 +195,7 @@ class Mysql
 	 *
 	*/
 
-	public function getAllDataWithParameters($tableName,$filters = null) {
+	public function getAllDataWithParameters($tableName,$filters = null, $groupBy = null) {
 		$query = !$filters ? "SELECT * FROM $tableName" : $this->buildGetDataQueryWithFilters($tableName,$filters);
 		return $this->getAll($query);
 	}
@@ -264,6 +264,28 @@ class Mysql
 
 		$date = DateTime::createFromFormat($format,$string);
 		return $date->format('Y-m-d');
+	}
+
+	/**
+	 *
+	 * Groups a raw flat result by a chosen colu
+	 *
+	 * @param  {array}  flat result
+	 * @param  {string}  column name
+	 
+	 * @return {multidimensional array}
+	 *
+	*/
+
+	public function groupResultByColumn($result,$column) {
+		$grouped = array();
+		foreach ($result as $row) {
+			if (!$grouped[$row[$column]]) {
+				$grouped[$row[$column]] = array();
+			}
+			array_push($grouped[$row[$column]],$row);
+		}
+		return $grouped;
 	}
 
 }
