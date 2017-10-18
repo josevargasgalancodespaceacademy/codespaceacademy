@@ -30,13 +30,13 @@ function enviar_pedir_mas_informacion(){
            }, {});
       if(respuesta == "OK")
        {
+             console.log("HOLA")
              $('#modal-pedir-informacion').modal('show');
              $('.form-control').removeClass("errorbox").val("");
              $('.mas_informacion_course_block').css('display','none');
-         }
+      }
       else
       {
-      console.log (respuesta);
       var response = JSON.parse(respuesta);
       if (response.hasOwnProperty('name'))
       {
