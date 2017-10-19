@@ -8241,6 +8241,16 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   height: 560px!important
 }
 } 
+@media (max-width: 1023px)
+{
+.dots 
+{
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom:50px;
+}
+}
 .dots li {
   display: inline-block;
   width: 15px;
