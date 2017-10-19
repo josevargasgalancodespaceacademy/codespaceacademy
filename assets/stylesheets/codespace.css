@@ -9283,6 +9283,13 @@ padding: inherit!important;
 transform: translateY(-20px);
 cursor:pointer;
 }
+@media (max-width: 767px)
+{ 
+.sub-section-pad-financiacion:hover,.sub-section-pad-becas:hover
+{
+transform: inherit;
+}
+}
 @media (min-width:1170px) and (max-width: 1420px)
 { 
   .pad-text
