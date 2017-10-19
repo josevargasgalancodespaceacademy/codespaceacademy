@@ -19,9 +19,9 @@ if(respuesta == "OK")
     }
     else
        {
-	 var data = JSON.parse(respuesta);
-	if (data.hasOwnProperty('email'))
-		{
+   var data = JSON.parse(respuesta);
+  if (data.hasOwnProperty('email'))
+    {
           $('.newsletter-email').addClass("errorbox");
           $('.newsletter-email').val("");
           $('.newsletter-email').attr("placeholder", data['email']);
@@ -42,3 +42,4 @@ if(respuesta == "OK")
  }
  });
 }
+
