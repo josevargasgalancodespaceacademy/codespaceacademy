@@ -11,15 +11,13 @@ function enviar_newsletter(ruta){
             return obj;
         }, {});
   console.log(respuesta);
-if(respuesta == "OK")
+if(respuesta == "ok")
     {
            $('.newsletter-email').removeClass("errorbox");
            $('.newsletter-email').val("");
            $('.newsletter-email').attr("placeholder", " ");  
            $('#modal-newsletter').modal('show');
-    }
-    else
-       {
+    }else{
 	 var data = JSON.parse(respuesta);
 	if (data.hasOwnProperty('email'))
 		{
