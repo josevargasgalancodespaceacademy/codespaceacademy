@@ -11,7 +11,7 @@ function enviar_newsletter(ruta){
             return obj;
         }, {});
   console.log(respuesta);
-if(respuesta == "ok")
+if(respuesta == "OK")
     {
            $('.newsletter-email').removeClass("errorbox");
            $('.newsletter-email').val("");

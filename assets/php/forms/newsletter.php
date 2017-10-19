@@ -34,7 +34,7 @@ if (!$errors) {
 	$mysql->insertRow("newsletter_subscriptions",$insertData);
 }
 
-if (!$errors) echo "ok";
+if (!$errors) echo "OK";
 else echo json_encode($errors);
 
 
