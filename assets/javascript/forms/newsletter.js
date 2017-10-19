@@ -10,14 +10,15 @@ function enviar_newsletter(ruta){
             obj[item.name] = item.value;
             return obj;
         }, {});
-   var ok == "OK";
-if(ok == respuesta)
-    {
+if(respuesta == "OK")
+     {
            $('.newsletter-email').removeClass("errorbox");
            $('.newsletter-email').val("");
            $('.newsletter-email').attr("placeholder", " ");  
            $('#modal-newsletter').modal('show');
-    }else{
+    }
+    else
+       {
 	 var data = JSON.parse(respuesta);
 	if (data.hasOwnProperty('email'))
 		{
