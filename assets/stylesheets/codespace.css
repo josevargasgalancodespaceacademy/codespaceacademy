@@ -9235,6 +9235,28 @@ margin-top: 0px;
   color:rgb(230, 23, 83);
   font-weight: 600
 }
+@media (min-width: 860px) and (max-width: 1024px)
+{
+  .bootcamp-web-malaga-dates .solicitar-informacion 
+  {
+    font-size: 16px;
+  }
+  .bootcamp-web-malaga-dates 
+  {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 860px)
+{
+  .bootcamp-web-malaga-dates .solicitar-informacion 
+  {
+    font-size: 11px;
+  }
+  .bootcamp-web-malaga-dates 
+  {
+    font-size: 14px;
+  }
+}
 .bootcamp-web-malaga-dates:hover .solicitar-informacion
 {
   text-decoration: none;
@@ -9340,7 +9362,7 @@ cursor:pointer;
   .pad-text
 {
   padding: 20px;
-  font-size: 11px;
+  font-size: 13px;
 }
   .pad-text p 
 {
