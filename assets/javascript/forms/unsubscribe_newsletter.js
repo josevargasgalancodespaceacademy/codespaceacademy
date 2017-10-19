@@ -9,7 +9,7 @@ function enviar_cancelar_suscripscion(){
             obj[item.name] = item.value;
             return obj;
          }, {});
-		if(respuesta == "OK")
+		if(respuesta = "OK")
 	   {
 		   $('#subscriber_details').removeClass("errorbox");
            $('#subscriber_details').val("");
