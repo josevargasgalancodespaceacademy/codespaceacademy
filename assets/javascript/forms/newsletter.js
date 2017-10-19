@@ -10,7 +10,7 @@ function enviar_newsletter(ruta){
             obj[item.name] = item.value;
             return obj;
         }, {});
-   var ok = "OK";
+   var ok == "OK";
 if(ok == respuesta)
     {
            $('.newsletter-email').removeClass("errorbox");
