@@ -15,7 +15,7 @@ function enviar_contacto_company(){
             obj[item.name] = item.value;
             return obj;
         }, {});
-  if( respuesta == "OK")
+  if( respuesta == "\nOK")
   {
     $('#modal-talento').modal('show');
   }

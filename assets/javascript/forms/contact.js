@@ -15,7 +15,7 @@ function enviar_contact_form(){
       return obj;
     }, {});
     console.log(respuesta);
-    if( respuesta == "OK") {
+    if( respuesta == "\nOK") {
       $('#modal-contact').modal('show');
     } else {
       var data = JSON.parse(respuesta);
