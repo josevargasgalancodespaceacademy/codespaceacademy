@@ -10576,6 +10576,12 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 }
 /*página nosotros*/
+.page-nosotros .hero-block
+{
+  background-image: url("../../assets/images/nosotros/header-nosotros.jpg");
+  padding-top: 80px!important;
+  padding-bottom: 60px!important; 
+}
 .nosotros-introduction
 {
  margin-bottom: 70px;
@@ -10592,6 +10598,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
    background-color: rgb(230, 23, 83); 
    color: #FFF;
    margin-bottom: 70px;
+}
+.nuestro-equipo
+{
+  display: none;
 }
 .nuestro-equipo .equipo-container 
 {
