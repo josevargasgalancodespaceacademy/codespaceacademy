@@ -28,7 +28,7 @@ function enviar_pedir_mas_informacion(){
               obj[item.name] = item.value;
               return obj;
            }, {});
-    if(respuesta = "OK")
+    if(respuesta == "OK")
        {
              $('#modal-pedir-informacion').modal('show');
              $('.form-control').removeClass("errorbox").val("");

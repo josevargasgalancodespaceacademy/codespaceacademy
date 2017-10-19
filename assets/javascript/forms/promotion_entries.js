@@ -14,7 +14,7 @@ if ($('#check-sorteo').is(':checked')){
             obj[item.name] = item.value;
             return obj;
         }, {});
-  if( respuesta = "OK")
+  if( respuesta == "OK")
   {
     $('#modal-sorteo').modal('show');
   }

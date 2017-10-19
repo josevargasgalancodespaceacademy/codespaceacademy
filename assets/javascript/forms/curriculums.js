@@ -36,7 +36,7 @@ if ($('#check-cv').is(':checked')){
             obj[item.name] = item.value;
             return obj;
         }, {});
-  if( respuesta = "OK")
+  if( respuesta == "OK")
   {
     $('#modal-cv').modal('show');
   }
