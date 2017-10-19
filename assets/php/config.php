@@ -4,8 +4,8 @@
 // DB Settings
 define('DB_SERVER', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'Qh467VqYY7');
-define('DB_NAME', 'codespaceacademy');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'codespaceacademy2');
 
 define('SMTP_HOST', '');
 define('SMTP_USER', '');
