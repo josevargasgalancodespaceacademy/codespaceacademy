@@ -8701,6 +8701,7 @@ z-index: -100;
     top:-6px;
     margin-left: 18px;
     display: inline-block;
+    display:none;
 }
 .esquina-weeks
 {
