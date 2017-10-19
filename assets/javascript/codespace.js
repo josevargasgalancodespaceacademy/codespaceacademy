@@ -141,7 +141,7 @@ else{
 })
 
 //Transiciones business code courses
-jQuery(document).ready(function(){
+function slider(){
 $('.slider-business-courses').unslider({
     speed: 1000,              
     delay: 10000,              
@@ -149,7 +149,7 @@ $('.slider-business-courses').unslider({
     dots: true,               
     fluid: true          
   });
-});
+};
 
 //datepicker en español
 //datepicker fecha de nacimiento becas
