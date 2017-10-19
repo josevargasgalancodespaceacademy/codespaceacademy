@@ -8167,45 +8167,23 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .slider-business-courses 
 {
   margin-bottom: 80px;
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  height: 500px!important
 }
 .dots {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  bottom:-850px;
+  bottom:-10px;
   text-align: center;
-  padding-bottom: 50px!important;
-}
-@media (width:1768px)
-{
-.dots
-{
-bottom:-930px;
-}
-}
-@media (width:1680px)
-{
-.dots
-{
-bottom:-870px;
-}
-}
-@media (width:1600px)
-{
-.dots
-{
-bottom:-900px;
-}
 }
 @media (width:1440px)
 {
   .family-bussiness-courses .container-bussiness
 {
   height: 435px!important;
-}
-.dots
-{
-bottom:-1040px;
 }
 .bussiness-courses h2
 {
@@ -8218,20 +8196,9 @@ bottom:-1040px;
 {
   height: 435px!important;
 }  
-.dots
-{
-bottom:-1170px;
-}
 .bussiness-courses h2 
 {
   margin-top: 30px;
-}
-}
-@media (width:1280px)
-{ 
-.dots
-{
-bottom:-950px;
 }
 }
 @media (min-width:1152px) and (max-width: 1280px)
@@ -8249,19 +8216,9 @@ bottom:-950px;
 {
   height: 465px!important;
 }
-}
-@media (max-width:1176px)
+.slider-business-courses 
 {
-.dots
-{
-bottom:-1310px;
-}
-}
-@media (max-width:1152px)
-{
-.dots
-{
-bottom:-1120px;
+  height: 520px!important;
 }
 }
 @media (width: 1024px)
@@ -8279,44 +8236,9 @@ bottom:-1120px;
 {
   height: 520px!important;
 }
-.dots
+.slider-business-courses 
 {
-bottom:-1250px;
-}
-}
-@media(min-width: 800px) and (max-width:1023px)
-{
-  .dots
-{
-bottom:-2120px;
-}
-} 
-@media(min-width: 768px) and (max-width:799px)
-{
-  .dots
-{
-bottom:-1700px;
-}
-} 
-@media(min-width: 451px) and (max-width:767px)
-{
-  .dots
-{
-bottom:-2200px;
-}
-} 
-@media(min-width: 360px) and (max-width:450px)
-{
-  .dots
-{
-bottom:-2130px;
-}
-} 
-@media(min-width: 320px) and (max-width:359px)
-{
-  .dots
-{
-bottom:-2450px;
+  height: 560px!important
 }
 } 
 .dots li {

@@ -147,7 +147,8 @@ $('.slider-business-courses').unslider({
     delay: 10000,              
     keys: true,              
     dots: true,               
-    fluid: true          
+    fluid: true,
+    nav:true          
   });
 };
 

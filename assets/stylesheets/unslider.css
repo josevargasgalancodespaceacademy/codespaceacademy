@@ -15,6 +15,7 @@
   overflow: auto;
   margin: 0;
   padding: 0;
+  position:relative;
 }
 .unslider-wrap {
   position: relative;
@@ -73,7 +74,7 @@
   border-radius: 5px;
   overflow: hidden;
   text-indent: -999em;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   cursor: pointer;
 }
 .unslider-nav ol li.unslider-active {
