@@ -1,0 +1,58 @@
+{% if canedit %}
+
+	<tr>
+		<td>
+			<a class="admin-editable" id="name" data-type="text" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+				{{ row.name }}
+			</a>
+			<a class="admin-editable" id="surnames" data-type="text" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+				{{ row.surnames }}
+			</a>
+		</td>
+		<td><a class="admin-editable" id="telephone" data-type="text" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+			{{ row.telephone }}
+		</a></td>
+		<td><a class="admin-editable" id="email" data-type="text" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+			{{ row.email }}
+		</a></td>
+		<td>
+			{{ row.type_identification }}:  {{ row.number_identification }}
+		</td>
+		<td><a class="admin-editable" id="date_of_birth" data-type="date" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+			{{ row.date_of_birth }}
+		</a></td>
+		<td><a class="admin-editable" id="city" data-type="text" data-pk="{{row.id}}" data-page="promotionentries" data-url=".././admineditdata">
+			{{ row.city }}
+		</a></td>
+		<td>
+			{{ row.created }}
+		</td>
+	</tr>
+
+{% else %}
+
+	<tr>
+		<td>
+			{{ row.name }} {{ row.surnames }}
+		</td>
+		<td>
+			{{ row.telephone }}
+		</td>
+		<td>
+			{{ row.email }}
+		</td>
+		<td>
+			{{ row.type_identification }}:  {{ row.number_identification }}
+		</td>
+		<td>
+			{{ row.date_of_birth }}
+		</td>
+		<td>
+			{{ row.city }}
+		</td>
+		<td>
+			{{ row.created }}
+		</td>
+	</tr>
+
+{% endif %}	

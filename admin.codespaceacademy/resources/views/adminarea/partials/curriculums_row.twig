@@ -1,0 +1,41 @@
+{% if canedit %}
+
+<tr>
+	<td><a class="admin-editable" id="name" data-type="text" data-pk="{{row.id}}" data-page="curriculums" data-url=".././admineditdata">
+		{{ row.name }}
+	</a></td>
+	<td><a class="admin-editable" id="telephone" data-type="text" data-pk="{{row.id}}" data-page="curriculums" data-url=".././admineditdata">
+		{{ row.telephone }}
+	</a></td>
+	<td><a class="admin-editable" id="email" data-type="text" data-pk="{{row.id}}" data-page="curriculums" data-url=".././admineditdata">
+		{{ row.email }}
+	</a></td>
+	<td>
+		{{ row.created }}
+	</td>
+	<td><a href="./../{{ row.route_row_pdf }}" target="_BLANK">
+		Ver
+	</a></td>
+</tr>
+
+{% else %}
+
+<tr>
+	<td>
+		{{ row.name }}
+	</td>
+	<td>
+		{{ row.telephone }}
+	</td>
+	<td>
+		{{ row.email }}
+	</td>
+	<td>
+		{{ row.created }}
+	</td>
+	<td><a href="./../{{ row.route_row_pdf }}" target="_BLANK">
+		Ver
+	</a></td>
+</tr>
+
+{% endif %}	

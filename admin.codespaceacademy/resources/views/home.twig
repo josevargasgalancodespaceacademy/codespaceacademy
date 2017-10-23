@@ -1,0 +1,11 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+	{% if auth.check %}
+		{% embed "templates/dashboard.twig" %}
+		{% endembed %}
+	{% else %}
+		{% embed "auth/signin.twig" %}
+		{% endembed %}
+	{% endif %}
+{% endblock %}
