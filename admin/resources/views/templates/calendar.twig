@@ -1,0 +1,23 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+<!-- Modal -->
+<div id="calendarModal" class="modal fade" role="dialog">
+</div>
+
+<!-- Calendar -->
+
+<div class="panel">
+	<div class="panel-heading">
+		Welcome {{ auth.user.name }} 
+	</div>
+	<div class="panel-body">
+		<div id='calendar' data-events="{{ events }}" data-permissions="{{ permissions }}"></div>
+	</div>
+	{{ csrf.field | raw }}
+</div>
+
+{% endblock %}
+
+
