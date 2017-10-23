@@ -1,0 +1,29 @@
+<div class="panel-heading">
+	<p class="panel-title">Newsletter Subscribers
+		<span class="pull-right">
+		</span>
+	</p>
+
+</div>
+
+<div class="panel-body">
+	<table class="table" >
+		<thead class="bg-primary">
+			<tr>
+				<th>E-mail</th>
+				<th>Status</th>
+				<th>Date subscribed</th>
+				{% if canedit %} 
+					<th>Options</th>
+				{% endif %}	
+			</tr>
+		</thead>
+		{% for row in data %}
+			{% include 'adminarea/partials/newsletters_row.twig' with {'row':row} %}
+		{% endfor %}
+	</table>
+</div>
+
+<div class="panel-footer">
+	{% include 'adminarea/partials/pagination_control.twig' with {'count':count, 'page': page, 'pagesize' : pagesize , 'pageType' : 'newsletters'} %}
+</div>

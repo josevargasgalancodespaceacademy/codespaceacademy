@@ -1,0 +1,12 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+	<div class="panel" id="adminTable">
+		<div id="table_container">
+			{% include 'adminarea/partials/curriculums_table.twig' with {'data':data, 'count': count, 'page': page} %}
+		</div>
+		{{ csrf.field | raw }}
+	</div>
+
+{% endblock %}

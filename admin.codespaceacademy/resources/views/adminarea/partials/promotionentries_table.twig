@@ -1,0 +1,28 @@
+<div class="panel-heading">
+	<p class="panel-title">Contacts para el sorteo
+		<span class="pull-right">
+		</span>
+	</p>
+</div>
+<div class="panel-body">
+	<table class="table" >
+		<thead class="bg-primary">
+			<tr>
+				<th>Name</th>
+				<th>Telephone.</th>
+				<th>Email</th>
+				<th>Identification</th>
+				<th>Date of birth</th>
+				<th>Ciudad</th>
+				<th>Date sent</th>
+			</tr>
+		</thead>
+		{% for row in data %}
+			{% include 'adminarea/partials/promotionentries_row.twig' with {'row':row} %}
+		{% endfor %}
+	</table>
+</div>
+
+<div class="panel-footer">
+	{% include 'adminarea/partials/pagination_control.twig' with {'count':count, 'page': page, 'pageType' : 'promotionentries'} %}
+</div>
