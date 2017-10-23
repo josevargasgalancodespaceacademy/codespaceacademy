@@ -1,0 +1,26 @@
+<div class="panel-heading">
+	<p class="panel-title">Company Contacts
+		<span class="pull-right">
+		</span>
+	</p>
+</div>
+<div class="panel-body">
+	<table class="table" id="adminTable">
+		<thead class="bg-primary">
+			<tr>
+				<th>Enterprise</th>
+				<th>Contact</th>
+				<th>Contact tel.</th>
+				<th>Contact email</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		{% for row in data %}
+			{% include 'adminarea/partials/companycontacts_row.twig' with {'row':row} %}
+		{% endfor %}
+	</table>
+</div>
+
+<div class="panel-footer">
+	{% include 'adminarea/partials/pagination_control.twig' with {'count':count, 'page': page, 'pageType' : 'companycontacts'} %}
+</div>

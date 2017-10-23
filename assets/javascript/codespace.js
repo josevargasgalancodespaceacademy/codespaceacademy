@@ -12,6 +12,20 @@
 
 });*/
 
+/*$(document).ready(function(){
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 250 )
+    {
+      $('.main-nav').addClass('menu-fixed');
+      $('.main-nav').slideDown("slow");
+    } 
+    else {
+      $('.main-nav').removeClass('menu-fixed');
+    }
+  });
+
+});*/
+
 /*No permite usar el boton derecho en la web*/
 document.oncontextmenu = function() {return false;}
 
