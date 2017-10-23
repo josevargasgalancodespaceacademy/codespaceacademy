@@ -7143,6 +7143,12 @@ float:left
   {
     color:#fff;
   }
+  .menu li a 
+  {
+    display: block;
+    width: 100%;
+    margin-bottom: inherit;
+  }
   .menu>ul
   {
     margin:inherit;
@@ -7151,6 +7157,7 @@ float:left
   }
   .menu li
   {
+    position: relative;
     float: none;
     border-bottom: 1px solid rgba(181,181,181, .5);
     border-top: 1px solid rgba(181,181,181, .5);
