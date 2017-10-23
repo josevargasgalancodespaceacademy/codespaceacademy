@@ -25,12 +25,14 @@
   <body onselectstart='return false;' class="page-nosotros">
     <div id="top" class="main-content">
       <div class="header">
+        <div class="num-telefono"><a onclick="goog_report_conversion ('tel:900-102-101')" href="tel://900102101"><img class="telefono-icon" src="../assets/images/index/telefono-negativo.svg"></a></div>
+           <div class="main-nav">
         <div class="container">
           <a href="https://www.codespaceacademy.com/" class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
         </div>
       </div>
     </div>
-
+</div>
     <section class="container codespace-talent">
       <div class="row col-sm-12">
         <h1 class="title">
