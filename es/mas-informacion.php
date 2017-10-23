@@ -1,6 +1,6 @@
 <!DOCTYPE html>
   <head>
-  <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
+  <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script>
       <script src="../assets/javascript/bootstrap.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
 
@@ -23,6 +23,57 @@
     </title>
   </head>
   <body onselectstart='return false;' class="page-nosotros">
+
+    <!-- Google Code for Conversiones M&oacute;viles Conversion Page
+    In your html page, add the snippet and call
+    goog_report_conversion when someone clicks on the
+    phone number link or button. -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 830007273;
+        w.google_conversion_label = "2GarCPjSwncQ6c_jiwM";
+        w.google_remarketing_only = false;
+      }
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      }
+      var conv_handler = window['google_trackConversion'];
+      if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+      }
+    }
+    /* ]]> */
+    </script>
+    <script type="text/javascript"
+      src="//www.googleadservices.com/pagead/conversion_async.js">
+    </script> 
+
+
+    <!-- Google Code for Convesiones Formulario Conversion Page -->
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 830007273;
+    var google_conversion_label = "WGJqCI7RwncQ6c_jiwM";
+    var google_remarketing_only = false;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/830007273/?label=WGJqCI7RwncQ6c_jiwM&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
     <div id="top" class="main-content">
       <div class="header">
         <div class="container">
@@ -39,27 +90,27 @@
         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           <p>
             Déjanos tus datos personales e indica en que curso estás interesado para ponernos en contacto contigo.
-          </p> 
+          </p>
           <br>
           <form role="form" id="pedir_mas_informacion">
 
             <div >
 
-              <label for="name"> 
+              <label for="name">
                 Nombre*
               </label>
               <div class="form-group">
                 <input class="form-control" id="informacion_name" placeholder="" name="name">
               </div>
 
-              <label for="email"> 
+              <label for="email">
                 Email*
               </label>
               <div class="form-group">
                 <input class="form-control" id="informacion_email" placeholder="" name="email">
               </div>
 
-              <label for="telephone"> 
+              <label for="telephone">
                 Teléfono*
               </label>
               <div class="form-group">
@@ -81,13 +132,13 @@
 
               $cities = $mysql->getAllDataWithParameters("citys");
               $courses = $mysql->getAllDataWithParameters("courses", array("active" => true));
-              $courses = $mysql->groupResultByColumn($courses,"city_id"); 
+              $courses = $mysql->groupResultByColumn($courses,"city_id");
              ?>
 
 
               <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_city_block">
 
-                <label for="city"> 
+                <label for="city">
                   Ciudad donde quieres estudiar
                 </label>
 
@@ -103,8 +154,8 @@
                 <p class="city-error mensajerror""></p>
               </div>
               <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_course_block">
-    
-                <label for="course"> 
+
+                <label for="course">
                   Curso en el que estás interesado
                 </label>
 
@@ -157,7 +208,7 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 
    <footer>
   <div class="container footer-content">
@@ -170,7 +221,7 @@
           <li class="footer-link"><a href="../es/contacto">contacto</a></li>
         </ul>
         </div>
-         <div class="col-xs-12 col-sm-12 redes-sociales"> 
+         <div class="col-xs-12 col-sm-12 redes-sociales">
          <ul>
           <li class="footer-link facebook"><a class="facebook-link" target="_blank" href="https://www.facebook.com/CodeSpace-Academy-274879479668861/"></a></li>
           <li class="footer-link instagram"><a class="instagram-link" target="_blank" href="https://www.instagram.com/codespaceacademy/"></a></li>
@@ -182,11 +233,11 @@
         </div>
         </footer>
 
-          <div id="barraaceptacion">     
+          <div id="barraaceptacion">
     <div class="inner">
-        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+        Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real
         Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
-        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+        <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> |
         <a href="../es/avisos-legales" target="_blank" class="info">Más información</a>
     </div>
 </div>
