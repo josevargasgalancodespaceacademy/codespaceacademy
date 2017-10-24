@@ -37,10 +37,10 @@
 <nav class="menu">
     <ul>
       <li class="menu-item">
-        <a href="company_contacts">Empresas</a>
+        <a href="company-contacts">Empresas</a>
       </li>
         <li class="menu-item">
-        <a href="contacto">Contacto</a>
+        <a href="information-contact">Contacto</a>
       </li>
       <li class="menu-item">
       <a href="">Más informacion bootcamp</a>
@@ -52,7 +52,7 @@
         <a href="../es/asesoramiento-laboral-malaga">Sorteo becas</a>
       </li>
       <li class="menu-item">
-        <a href="../es/talento-codespace">Newsletter</a>
+        <a href="newsletter">Newsletter</a>
       </li>
     </ul>
     </nav>
