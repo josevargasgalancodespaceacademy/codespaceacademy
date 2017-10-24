@@ -66,7 +66,7 @@
   <tr>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["email"]."</td><td>".$company[$key]["created"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["email"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
                 }
                ?>
   </tr>             
