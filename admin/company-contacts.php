@@ -8,23 +8,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style type="text/css"> 
-  .title 
-  {
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: underline;
-    padding-bottom: 20px
-  }
-  td
-  {
-    text-align: center;
-  }
-</style>
     <title>Admin Web</title>
       <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
       <script src="../assets/javascript/bootstrap.js"></script>
+      <script src="datatables/datatables.js"></script>
+      <script src="js/admin.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
+     <link rel="stylesheet" href="datatables/datatables.css">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="shortcut icon" href="../assets/favicon.ico">
@@ -62,7 +52,8 @@
     </div>
     </div>
     <div id="datos">
-  <table class="container admin" border="1px">
+  <table class="display" cellspacing="0" width="100%" id="tabla-datos">
+    <thead>
   <tr>
         <td class="title">Nombre</td>
         <td class="title">Email</td>
@@ -73,13 +64,12 @@
         <td class="title">Comentario</td>
         <td class="title">Fecha</td>
     </tr>
-  <tr>
+   </thead> 
  <?php
                 foreach ($company as $key => $company_contacts) {
                   echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
                 }
-               ?>
-  </tr>             
+               ?>           
   </table>  
 </div>
      <script>
