@@ -43,7 +43,7 @@
         <a href="information-contact">Contacto</a>
       </li>
       <li class="menu-item">
-      <a href="">Más informacion bootcamp</a>
+      <a href="information-requests">Más informacion bootcamp</a>
       </li>
       <li class="menu-item">
         <a href="curriculums">Currículums</a>
