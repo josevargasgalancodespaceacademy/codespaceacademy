@@ -72,7 +72,7 @@
   <tr>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key-1]["name"]."</td><td>".$company[$key-1]["email"]."</td><td>".$company[$key-1]["telephone"]."</td><td>".$company[$key-1]["company_name"]."</td><td>".$company[$key-1]["company_link"]."</td><td>".$company[$key-1]["training_request"]."</td><td>".$company[$key-1]["comment"]."</td><td>".$company[$key-1]["created"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created"]."</td></tr>";
                 }
                ?>
   </tr>             
