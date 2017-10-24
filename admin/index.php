@@ -54,10 +54,14 @@
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
       </li>
+      <li>
+       <input type="button" id="exportarexcel" value="Descargar Excel">
+      </li>
     </ul>
     </nav>
     </div>
     </div>
+    <div id="datos">
   <table class="container admin" border="1px">
   <tr>
         <td class="title">Nombre</td>
@@ -72,11 +76,19 @@
   <tr>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
                 }
                ?>
   </tr>             
-  </table>             
+  </table>   
+</div>
+    <script>
+    $("#exportarexcel").click(function(e) {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#datos').html()));
+        e.preventDefault();
+    });
+    </script>
+
 </body>
 </html>
 

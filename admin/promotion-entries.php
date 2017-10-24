@@ -54,10 +54,14 @@
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
       </li>
+      <li>
+       <input type="button" id="exportarexcel" value="Descargar Excel">
+      </li>
     </ul>
     </nav>
     </div>
     </div>
+    <div id="datos">
   <table class="container admin" border="1px">
   <tr>
         <td class="title">Nombre</td>
@@ -77,6 +81,13 @@
                 }
                ?>
   </tr>             
-  </table>             
+  </table>
+</div>
+    <script>
+    $("#exportarexcel").click(function(e) {
+        window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#datos').html()));
+        e.preventDefault();
+    });
+    </script>              
 </body>
 </html>
