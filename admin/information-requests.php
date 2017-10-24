@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $company = $mysql->getAllDataWithParameters("company_contacts");
+              $company = $mysql->getAllDataWithParameters("information_requests");
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,21 +62,19 @@
   <tr>
         <td class="title">Nombre</td>
         <td class="title">Email</td>
-        <td class="title">Telefono</td>
-        <td class="title">Nombre de la empresa</td>
-        <td class="title">Link</td>
-        <td class="title">Petición de formación</td>
+        <td class="title">Teléfono</td>
         <td class="title">Comentario</td>
+        <td class="title">Ciudad</td>
+        <td class="title">Curso</td>
         <td class="title">Fecha</td>
     </tr>
   <tr>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key-1]["name"]."</td><td>".$company[$key-1]["email"]."</td><td>".$company[$key-1]["telephone"]."</td><td>".$company[$key-1]["company_name"]."</td><td>".$company[$key-1]["company_link"]."</td><td>".$company[$key-1]["training_request"]."</td><td>".$company[$key-1]["comment"]."</td><td>".$company[$key-1]["created"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["city"]."</td><td>".$company[$key]["course"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
                 }
                ?>
   </tr>             
   </table>             
 </body>
 </html>
-
