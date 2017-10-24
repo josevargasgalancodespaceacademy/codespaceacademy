@@ -49,7 +49,7 @@
         <a href="../es/becas-programacion-malaga">Currículums</a>
       </li>
        <li class="menu-item">
-        <a href=".promotion-entries">Sorteo becas</a>
+        <a href="promotion-entries">Sorteo becas</a>
       </li>
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
