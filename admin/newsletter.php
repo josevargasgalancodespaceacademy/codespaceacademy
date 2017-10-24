@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $company = $mysql->getAllDataWithParameters("company_contacts");
+              $company = $mysql->getAllDataWithParameters("newsletter_subscriptions");
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,10 +37,10 @@
 <nav class="menu">
     <ul>
       <li class="menu-item">
-        <a href="company_contacts">Empresas</a>
+        <a href="company-contacts">Empresas</a>
       </li>
         <li class="menu-item">
-        <a href="contacto">Contacto</a>
+        <a href="information-contact">Contacto</a>
       </li>
       <li class="menu-item">
       <a href="">Más informacion bootcamp</a>
@@ -52,7 +52,7 @@
         <a href="../es/asesoramiento-laboral-malaga">Sorteo becas</a>
       </li>
       <li class="menu-item">
-        <a href="../es/talento-codespace">Newsletter</a>
+        <a href="newsletter">Newsletter</a>
       </li>
     </ul>
     </nav>
@@ -60,19 +60,13 @@
     </div>
   <table class="container admin" border="1px">
   <tr>
-        <td class="title">Nombre</td>
         <td class="title">Email</td>
-        <td class="title">Telefono</td>
-        <td class="title">Nombre de la empresa</td>
-        <td class="title">Link</td>
-        <td class="title">Petición de formación</td>
-        <td class="title">Comentario</td>
-        <td class="title">Fecha</td>
+        <td class="title">Fecha de suscripción</td>
     </tr>
   <tr>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["email"]."</td><td>".$company[$key]["created"]."</td></tr>";
                 }
                ?>
   </tr>             
