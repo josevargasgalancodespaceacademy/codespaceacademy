@@ -30,7 +30,9 @@ function getRealIP()
     }
 
 }
-
+array getdate ([ int $timestamp = time() ] );
+$fecha = getdate();
 echo $_SERVER['HTTP_USER_AGENT']. "<br>";
 echo getRealIP();
+echo $fecha;
 ?>
