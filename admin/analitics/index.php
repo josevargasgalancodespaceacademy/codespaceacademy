@@ -31,7 +31,7 @@ function getRealIP()
     }
 
 }
-$fechaActual = date('d-m-Y');
+$fechaActual = date('d-m-Y H:i:s');
 echo $_SERVER['HTTP_USER_AGENT']. "<br>";
 echo getRealIP(). "<br>";
 echo $fechaActual; 
