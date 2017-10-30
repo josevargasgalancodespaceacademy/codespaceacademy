@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('Europe/Madrid');
 /*header("HTTP/1.1 301 Moved Permanently");
 header("Location: https://www.codespaceacademy.com");*/
 function getRealIP()
@@ -30,7 +31,8 @@ function getRealIP()
     }
 
 }
+$fechaActual = date('d-m-Y');
 echo $_SERVER['HTTP_USER_AGENT']. "<br>";
-echo getRealIP();
-
+echo getRealIP(). "<br>";
+echo $fechaActual; 
 ?>
