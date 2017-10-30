@@ -6,7 +6,7 @@
               $company = $mysql->getAllDataWithParameters("information_contact");
 ?>
 <!DOCTYPE html>
-<html>
+<html style="overflow-y:scroll">
 <head>
     <title>Admin Web</title>
       <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 

@@ -86,20 +86,6 @@ function contador() {
     });
   }
 
-/*Se oculta ventana de sorteo*/
-/*$(function() {
-$('.boton-sorteo').click(function(){
-     $('.formulario-sorteo').css('display','none');
-   });
-});*/
-/*Se oculta ventana de envio de cv*/
-/*$(function() {
-$('.boton-enviar-cv').click(function(){
-     $('.formulario-cv').css('display','none');
-   });
-})*/
-
-
 /*animacion anclas usabilidad*/
 $(function(){
 
