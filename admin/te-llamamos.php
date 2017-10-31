@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $company = $mysql->getAllDataWithParameters("newsletter_subscriptions");
+              $company = $mysql->getAllDataWithParameters("information_phone_number");
 ?>
 <!DOCTYPE html>
 <html style="overflow-y:scroll">
@@ -58,23 +58,23 @@
   <table class="display" cellspacing="0" width="100%" id="tabla-datos">
     <thead>
   <tr>
-        <td class="title">Email</td>
-        <td class="title">Fecha de suscripción</td>
+        <td class="title">Nombre</td>
+        <td class="title">Telefono</td>
+        <td class="title">Fecha</td>
     </tr>
-   </thead> 
+  </thead>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["email"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
                 }
-               ?>          
+               ?>        
   </table>
-</div>
-    <script>
+  </div> 
+      <script>
     $("#exportarexcel").click(function(e) {
         window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#datos').html()));
         e.preventDefault();
     });
-    </script>                
+    </script>            
 </body>
 </html>
-
