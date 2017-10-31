@@ -49,8 +49,8 @@
       </li>
     </ul>
     </nav>
-       <li>
-       <input style="list-style: none" type="button" id="exportarexcel" value="Descargar Excel">
+           <li style="list-style: none">
+       <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>
     </div>
     </div>
