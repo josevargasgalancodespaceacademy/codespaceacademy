@@ -7545,6 +7545,25 @@ font-size: 30px;
   margin:0 auto;
   margin-bottom: 40px;
 }
+/*formulario te llamamos*/
+.llamamos-form
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2!important;
+}
+.llamamos-form h3
+{
+ text-align: center;
+}
+.llamamos-form .button 
+{
+  padding:10px 25px;
+  margin-bottom: 10px;
+}
 /*prefooter*/
 .prefooter
 {
