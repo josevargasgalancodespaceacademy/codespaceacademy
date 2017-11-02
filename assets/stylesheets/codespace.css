@@ -7558,6 +7558,15 @@ font-size: 30px;
 .llamamos-form h3
 {
  text-align: center;
+ font-size: 40px;
+ margin-bottom: 20px;
+}
+@media (max-width:767px)
+{
+  .llamamos-form h3
+{
+ font-size: 25px;
+}
 }
 .llamamos-form .button 
 {
