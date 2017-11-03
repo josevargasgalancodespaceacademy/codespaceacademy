@@ -8018,11 +8018,19 @@ background-image: url("../images/footer/linkedin.svg");
 {
 padding-bottom: 27px;
 }
-.family-bootcamp-courses h1, .family-bussiness-courses h1
+.family-bootcamp-courses .title, .family-bussiness-courses .title
 {
   font-size: 50px;
   margin-bottom: 30px;
   font-weight:600;
+  color: #000
+}
+@media (max-width: 767px)
+{
+.family-bootcamp-courses .title, .family-bussiness-courses .title
+{
+  font-size: 40px;
+}
 }
 .bootcamp-title
 {
@@ -8511,7 +8519,7 @@ z-index: -100;
 {
    margin-bottom: 10px;
 }
-.para-quien h1
+.para-quien h2
 {
   font-size:50px;
   margin-bottom: 40px;
@@ -8519,7 +8527,7 @@ z-index: -100;
 }
 @media (max-width:767px)
 {
-  .para-quien h1
+  .para-quien h2
   {
   font-size:40px;
   text-align: center;
@@ -8598,7 +8606,7 @@ z-index: -100;
     margin-top: 30px; 
   }
 }
-.container .structure h1
+.container .structure h2
 {
   font-size: 40px;
   font-weight: 200;
@@ -9776,7 +9784,7 @@ cursor:pointer;
   padding-top: 0px
 }
 }
-.work-with-us-reasons .title h1
+.work-with-us-reasons .title h2
 {
    margin-bottom: 30px;
    margin-top: 30px;
@@ -9786,7 +9794,7 @@ cursor:pointer;
 }
 @media (max-width:767px)
 {
-.work-with-us-reasons .title h1
+.work-with-us-reasons .title h2
 {
  padding-right: 0px;
  font-size: 40px!important;
@@ -9869,7 +9877,7 @@ cursor:pointer;
  margin-bottom: 50px;
  margin-top: 50px;
 }
-.cv-y-ofertas h1
+.cv-y-ofertas h2
 {
   
   margin-top: 30px;
@@ -9881,7 +9889,7 @@ cursor:pointer;
 }
 @media (max-width:767px)
 {
-.cv-y-ofertas h1
+.cv-y-ofertas h2
 {
  padding-right: 0px;
  font-size: 40px;
@@ -9893,7 +9901,7 @@ cursor:pointer;
   margin-bottom:20px;
 }
 
-.contamos-contigo h2, .ofertas-trabajo h2
+.contamos-contigo h3, .ofertas-trabajo h3
 {
   text-align: center;
   margin-bottom: 20px;
@@ -10397,7 +10405,8 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-weight: 600
+  font-weight: 600;
+  font-size: 40px
 }
 .talent-text
 {
@@ -10483,13 +10492,14 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 }
 
-.formulario-talento h1
+.formulario-talento h2
 {
   text-align: center;
   margin-right: 250px;
   margin-top: 80px;
   margin-bottom: 40px;
-  font-weight: 600
+  font-weight: 600;
+  font-size: 40px
 }
 .formulario-talento .datos-personales input 
 {
