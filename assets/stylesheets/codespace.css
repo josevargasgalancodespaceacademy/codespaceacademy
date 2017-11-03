@@ -7438,7 +7438,7 @@ z-index: -100;
 {
   text-align: center;
 }
-.contador-atras h1
+.contador-atras h3
 {
   margin-top: 10px;
   color:rgb(230, 23, 83)!important;
@@ -7451,7 +7451,7 @@ z-index: -100;
 }
 @media (max-width:1365px)
 {
-.contador-atras h1 
+.contador-atras h3 
 {
   font-size:40px;
 }
@@ -7462,7 +7462,7 @@ font-size: 30px;
 }
 @media (max-width:767px)
 {
-  .contador-atras h1
+  .contador-atras h3
   {
      margin-top: 50px;
   }
