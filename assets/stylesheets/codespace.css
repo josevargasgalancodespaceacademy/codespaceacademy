@@ -10675,6 +10675,11 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   margin:0 auto 20px;
   background-image: url(../../assets/images/eventos/inauguracion.jpg)
 }
+.taller-javascript
+{
+  background-image: url(../../assets/images/eventos/taller-javascript.jpg)
+}
+
 .informacion-evento 
 {
   padding-left:30px!important;
