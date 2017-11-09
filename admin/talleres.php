@@ -46,10 +46,10 @@
       </li>
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
+      </li>
     </ul>
     <ul>
-    </li>
-          <li class="menu-item">
+      <li class="menu-item">
         <a href="talleres">Talleres</a>
       </li>
      </ul> 
