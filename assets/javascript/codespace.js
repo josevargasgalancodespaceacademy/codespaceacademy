@@ -29,6 +29,7 @@
 /*No permite usar el boton derecho en la web*/
 document.oncontextmenu = function() {return false;}
 
+
 $(document).ready(function(){ 
    $('html,body').css("overflow-x","hidden");
 
