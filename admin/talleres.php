@@ -47,12 +47,10 @@
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
       </li>
-    </ul>
-    <ul>
-      <li class="menu-item">
+          <li class="menu-item">
         <a href="talleres">Talleres</a>
       </li>
-     </ul> 
+    </ul>
     </nav>
      <li style="list-style: none">
        <input type="button" id="exportarexcel" value="Descargar Excel">
