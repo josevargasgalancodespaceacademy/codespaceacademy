@@ -52,7 +52,7 @@
       </li>
     </ul>
     </nav>
-     <li style="list-style: none; float: left;" >
+     <li style="list-style: none; float: right;" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
      </li>
     </div>
