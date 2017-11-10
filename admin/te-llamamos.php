@@ -68,7 +68,7 @@
   </thead>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["telephone"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td></tr>";
                 }
                ?>        
   </table>
