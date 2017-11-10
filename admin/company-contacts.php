@@ -13,6 +13,7 @@
       <script src="../assets/javascript/bootstrap.js"></script>
       <script src="datatables/datatables.js"></script>
       <script src="js/admin.js"></script>
+      <script src="js/uikit.min.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
      <link rel="stylesheet" href="datatables/datatables.min.css">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
