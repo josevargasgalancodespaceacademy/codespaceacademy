@@ -58,7 +58,7 @@
     </div>
     </div>
     <div id="datos">
-  <table class="display" cellspacing="0" width="100%" id="tabla-datos">
+  <table class="display" cellspacing="0" width="100%" id="tabla-datos" data-page-length="15">
     <thead>
   <tr>
         <td class="title">Nombre</td>
