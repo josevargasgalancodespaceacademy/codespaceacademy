@@ -159,7 +159,7 @@ class Mysql
 		$columns = array_keys($data);
 		$values = array_values($data);
 		array_push($columns,"created_at");
-		array_push($values,date('Y-m-d G:i:s'));
+		array_push($values,date('d-m-Y G:i:s'));
 
         $query = "INSERT INTO $tableName (".implode(',',$columns).") VALUES ('" . implode("', '", $values) . "' )";
         return $this->execute($query);
