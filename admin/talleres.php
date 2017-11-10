@@ -47,7 +47,7 @@
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
       </li>
-          <li class="menu-item">
+        <li class="menu-item">
         <a href="talleres">Talleres</a>
       </li>
     </ul>
