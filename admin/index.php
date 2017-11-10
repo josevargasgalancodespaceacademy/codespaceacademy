@@ -35,7 +35,7 @@
       <li class="menu-item">
       <a href="information-requests">Más informacion bootcamp</a>
       </li>
-      <li class="menu-item">
+       <li class="menu-item">
         <a href="te-llamamos">Te llamamos</a>
       </li>
       <li class="menu-item">
@@ -47,12 +47,12 @@
       <li class="menu-item">
         <a href="newsletter">Newsletter</a>
       </li>
-        <li class="menu-item">
+      <li class="menu-item">
         <a href="talleres">Talleres</a>
       </li>
     </ul>
     </nav>
-       <li style="list-style: none; float: right; display: none" >
+      <li style="list-style: none; float: right; display: none" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>
     </div>
@@ -70,23 +70,20 @@
         <td class="title">Comentario</td>
         <td class="title">Fecha</td>
     </tr>
-  </thead>
-  <tbody>
+   </thead> 
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["created_at"]."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td></tr>";
                 }
-               ?>
-  </tbody>             
-  </table>   
+               ?>           
+  </table>  
 </div>
-    <script>
+     <script>
     $("#exportarexcel").click(function(e) {
         window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#datos').html()));
         e.preventDefault();
     });
-    </script>
-
+    </script>           
 </body>
 </html>
 
