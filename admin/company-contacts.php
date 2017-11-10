@@ -12,6 +12,7 @@
       <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
       <script src="../assets/javascript/bootstrap.js"></script>
       <script src="datatables/datatables.js"></script>
+       <script src="datatables/datatables.min.js"></script>
       <script src="js/admin.js"></script>
       <script src="js/uikit.min.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
