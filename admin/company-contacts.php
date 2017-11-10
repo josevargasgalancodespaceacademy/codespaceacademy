@@ -72,10 +72,10 @@
     </tr>
    </thead> 
  <?php
- 
+  $fecha
                 foreach ($company as $key => $company_contacts) {
-                  $date = date_create($company[$key]["created_at"]);
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".date_format($date,'d-m-Y H:i:s');."</td></tr>";
+                  
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["company_name"]."</td><td>".$company[$key]["company_link"]."</td><td>".$company[$key]["training_request"]."</td><td>".$company[$key]["comment"]."</td><td>".date_format($company[$key]["created_at"], 'Y-m-d H:i:s')."</td></tr>";
                 }
                ?>           
   </table>  
