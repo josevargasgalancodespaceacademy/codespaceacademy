@@ -14,7 +14,7 @@
       <script src="datatables/datatables.js"></script>
       <script src="js/admin.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
-     <link rel="stylesheet" href="datatables/datatables.css">
+     <link rel="stylesheet" href="datatables/datatables.min.css">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="shortcut icon" href="../assets/favicon.ico">
