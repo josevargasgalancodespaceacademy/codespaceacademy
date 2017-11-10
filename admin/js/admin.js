@@ -9,5 +9,11 @@ $(document).ready(function() {
       '<option value="-1">All</option>'+
       '</select> filas'
   }
+  columnDefs: [
+            {
+                targets: [ 0, 1, 2 ],
+                className: 'mdl-data-table__cell--non-numeric'
+            }
+        ]
     } );
 } );
