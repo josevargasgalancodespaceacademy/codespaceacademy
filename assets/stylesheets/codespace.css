@@ -10863,6 +10863,38 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   padding: 30px;
 }
+.offer-job-location, .offer-job-time
+{
+background:no-repeat;
+background-position: top;
+position:relative;
+overflow:hidden;
+width: 20px;
+height: 30px;
+float: left;
+margin-right: 5px;
+margin-left:30px; 
+display: block;
+}
+.offer-conditions
+{
+  margin-bottom: 20px;
+  border-bottom:1px solid #000;
+  padding-bottom: 20px
+}
+.offer-job-location
+{
+  background-image: url("../images/jobs/localizacion.svg");
+}
+.job-location
+{
+  padding: inherit!important;
+}
+.offer-job-time
+{
+  background-image: url("../images/jobs/calendario.svg");
+}
+}
 /*estilos cajas de error*/
 .errorbox
 {
