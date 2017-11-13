@@ -6765,7 +6765,7 @@ a:link {
 body
 {
 font-family: 'Source Sans Pro', sans-serif!important;
-overflow-y: hidden!important;
+overflow-y:hidden;
 }
 textarea
 {
@@ -6817,7 +6817,7 @@ textarea
   height: 15px!important;
  }
 }
-@media screen and (width: 768px) 
+@media screen and (width: 768px)
 {
 .num-telefono  
 {
@@ -10888,6 +10888,11 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     padding-left:5px;
     text-decoration:none;
     color:#fff;
+}
+/*datos*/
+#datos
+{
+  margin-top: 50px!important
 }
  @media (max-width:767px)
 {
