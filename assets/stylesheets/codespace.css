@@ -10890,9 +10890,12 @@ box-shadow: inset 0px 0px 10px 0px rgba(255,0,0,0.5);
     color:#fff;
 }
 /*datos*/
+ @media (max-width:767px)
+{
 #datos
 {
-  margin-top: 50px!important
+  margin-top: 100px!important
+}
 }
  @media (max-width:767px)
 {
