@@ -78,6 +78,7 @@
         window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#datos').html()));
         e.preventDefault();
     });
-    </script>            
+    </script>
+    <script src="assets/javascript/codespace.js"></script>            
 </body>
 </html>
