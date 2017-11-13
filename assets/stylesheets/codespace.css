@@ -10019,18 +10019,18 @@ animation-direction: alternate;
 }
 }
 /*becas-page*/
-.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav
+.page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav, .page-jobs .main-nav
 {
    margin-bottom: 20px
 }
 @media (max-width:767px)
 {
-  .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav
+  .page-becas-financiacion .main-nav, .page-work-with-us .main-nav, .page-mentoring .main-nav, .page-talent .main-nav, .page-nosotros .main-nav, .page-events .main-nav, .page-contacto .main-nav, .page-legal .main-nav,.page-jobs .main-nav
 {
    margin-bottom: inherit;
 }
 }
-.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block, .page-legal .hero-block
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block, .page-legal .hero-block, .page-jobs .hero-block
 {
   padding-top: 100px;
   height: 100%!important;
@@ -10047,7 +10047,7 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block
+.page-becas-financiacion .hero-block, .page-work-with-us .hero-block, .page-business-courses .hero-block, .page-mentoring .hero-block, .page-talent .hero-block, .page-nosotros .hero-block, .page-events .hero-block, .page-contacto .hero-block, .page-jobs .hero-block
 {
   max-height: 350px;
 }
@@ -10073,7 +10073,7 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1, .page-contacto .hero-block h1
+.page-becas-financiacion .hero-block h1, .page-work-with-us .hero-block h1, .page-business-courses .hero-block h1, .page-mentoring .hero-block h1, .page-talent .hero-block h1, .page-nosotros .hero-block h1, .page-events .hero-block h1, .page-contacto .hero-block h1, .page-jobs .hero-block h1
 {
   font-size: 45px!important;
 }
@@ -10556,7 +10556,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
    margin-left: 0px
 }
-.formulario-talento h1
+.formulario-talento h2
 {
   margin-right: 0px;
 }
@@ -10612,10 +10612,6 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   {
     padding-right: 50px
   }
-}
-.nuestro-equipo
-{
-  display: none;
 }
 .nuestro-equipo .equipo-container 
 {
@@ -10828,6 +10824,44 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   width:100%;
   height: 100%
+}
+/*página jobs*/
+.page-jobs .hero-block  
+{
+  padding-top: inherit; 
+}
+.page-jobs .hero-block  h1
+{
+  color:rgb(230, 23, 83);
+}
+.page-jobs .hero-block  h2
+{
+  color: #000
+}
+.offer-jobs
+{
+  background-color: #F2F2F2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.offer 
+{
+  border:1px solid #000;
+  margin-bottom: 20px;
+  background-color: #FFF
+}
+.offer-job-title
+{
+  padding-left: 30px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color:rgb(230, 23, 83);
+
+}
+.offer-job-explanation
+{
+  padding: 30px;
 }
 /*estilos cajas de error*/
 .errorbox
