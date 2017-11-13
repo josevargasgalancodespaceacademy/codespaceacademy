@@ -65,6 +65,7 @@
         <td class="title">Email</td>
         <td class="title">Telefono</td>
         <td class="title">Fecha</td>
+        <td class="title">Estado</td>
     </tr>
   </thead>
  <?php
