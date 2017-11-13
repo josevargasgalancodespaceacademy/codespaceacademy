@@ -69,7 +69,12 @@
   </thead>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td><td> <form role='form' id='company_contacts'> <select class='formacion-a-medida' id='training_request' name='training_request'>
+      <option value="">Estado</option>
+       <option value='si'>Imposible contactar</option>
+       <option value='no'>Inscrito</option>
+       <option value='otro'>No inscrito</option>
+       </select></td></tr>";
                 }
                ?>        
   </table>
