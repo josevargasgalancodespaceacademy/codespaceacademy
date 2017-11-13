@@ -57,7 +57,7 @@
       </li>
     </div>
     </div>
-    <div id="datos" class="col-xs-12">
+    <div id="datos" class="table-responsive">
   <table class="display" cellspacing="0" width="100%" id="tabla-datos">
     <thead>
   <tr>
