@@ -82,6 +82,5 @@
         e.preventDefault();
     });
     </script>
-    <script src="../assets/javascript/codespace.js"></script>
 </body>
 </html>
