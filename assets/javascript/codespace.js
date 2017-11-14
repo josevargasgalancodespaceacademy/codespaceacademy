@@ -181,6 +181,7 @@ function datepicker() {
       dateFormat:'dd-mm-yy'});
   };
 
+
    /*Cookies*/
 function getCookie(c_name){
   var c_value = document.cookie;

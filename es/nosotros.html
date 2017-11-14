@@ -4,10 +4,10 @@
 <script type="text/javascript" src="../assets/javascript/forms/newsletter.js"></script>
 <script type="text/javascript" src="../assets/javascript/bootstrap.js"></script>
 <script src="../assets/javascript/lib/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../assets/javascript/lib/jquery.lightbox-0.5-mod.js"></script>
+<script type="text/javascript" src="../assets/javascript/unslider.js"></script>
 <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
+<link rel="stylesheet" href="../assets/stylesheets/unslider.css">
 <link rel="stylesheet" href="../assets/stylesheets/profiles.css">
-<link rel="stylesheet" type="text/css" href="../assets/stylesheets/jquery.lightbox-0.5.css" media="screen" />
 
 <!-- Facebook Pixel Code -->
 <script>
@@ -69,8 +69,6 @@ src="https://www.facebook.com/tr?id=501989386838410&ev=PageView
 <meta name="DC.Description" content="Grupo de trabajo multidisciplinar, formado por profesionales con amplia experiencia en el sector. Factoría de profesionales de la industria IT." />
 <meta name="DC.Identifier" content="https://www.codespaceacademy.com" />
 </head>
-<body onselectstart='return false;' class="page-nosotros">
-
   <!-- Google Code for Conversiones M&oacute;viles Conversion Page
 In your html page, add the snippet and call
 goog_report_conversion when someone clicks on the
@@ -104,7 +102,7 @@ phone number link or button. -->
   src="//www.googleadservices.com/pagead/conversion_async.js">
 </script>
 
-<body onselectstart='return false;' class="page-nosotros" onload="galeria()">
+<body onselectstart='return false;' class="page-nosotros" onload="slider()">
 <div id="top" class="main-content">
        <div class="header">
                <div class="num-telefono"><a onclick="goog_report_conversion ('tel:900-102-101')" href="tel://900102101"><img class="telefono-icon" src="../assets/images/index/telefono-negativo.svg"></a></div>
@@ -162,7 +160,7 @@ phone number link or button. -->
     <section class="container nosotros-introduction">
       <div class="row js-same-height">
       <h2 class="title"> ¿Quiénes somos?</h2> 
-        <div class="col-xs-12 col-sm-12">
+        <div class="col-xs-12 col-sm-6">
         <article>
           <p>Somos un grupo de trabajo multidisciplinar, formado por profesionales con amplia <strong>experiencia</strong> en el sector. Queremos transmitiros nuestra <strong>pasión por la tecnología</strong> y todo lo que ello implica, la constancia y la comunicación, el compromiso con nuestros clientes/amigos y el permanente dinamismo en nuestro trabajo, lo que nos da plena garantía de satisfacción y eficiencia contrastada en nuestros servicios.<br><br>
 
@@ -176,6 +174,8 @@ Contamos con el saber hacer y el apoyo del <strong>grupo empresarial</strong> al
 </p>
           </article>
         </div>
+        <div class="col-xs-12 col-sm-5  quienes-somos-image">
+        </div>
     </div>
     </section>
 
@@ -184,20 +184,29 @@ Contamos con el saber hacer y el apoyo del <strong>grupo empresarial</strong> al
 <div class="row">
 <div class="mision-container col-xs-12 col-sm-12">
 <h2 class="title">El campus</h2> 
-<p class="mision-explanation col-sm-12">Nuestro campus <strong>codespace</strong> cuenta con unas instalaciones de más de 300 m2 situadas en <strong>pleno centro de Málaga</strong>, calle Compositor Lehmberg Ruiz, 13.<br>
-Disponemos de espacios colaborativos, cafetería, zona de conferencias y aulas equipadas con paneles interactivos y hemos dotado nuestro campus con <strong>los equipos informáticos más potentes del mercado</strong>, acordes con el rendimiento necesario para la formación avanzada que ofertamos.<br>
+<p class="mision-explanation col-xs-12 col-sm-6">
+Nuestro campus <strong>codespace</strong> cuenta con unas instalaciones de más de 300 m2 situadas en <strong>pleno centro de Málaga</strong>, calle Compositor Lehmberg Ruiz, 13.<br><br>
+Disponemos de espacios colaborativos, cafetería, zona de conferencias y aulas equipadas con paneles interactivos y hemos dotado nuestro campus con <strong>los equipos informáticos más potentes del mercado</strong>, acordes con el rendimiento necesario para la formación avanzada que ofertamos.<br><br>
 Nuestro mobiliario y decoración reflejan nuestro gusto por la excelencia, donde cuidamos cada detalle para ofrecer, además de una <strong>formación excelente</strong>, un ambiente de coworking donde puedan aflorar las <strong>buenas relaciones</strong> y el <strong>espíritu de equipo</strong> tanto de nuestro staff como de los alumnos.
 </p>
-<div id="gallery" class="col-sm-6" style="display: none">
-  <a href="../assets/images/nosotros/jose_formal.jpg"><img src="../assets/images/nosotros/jose_formal.jpg" width="150" height="150" alt="" /></a>
-  <a href="../assets/images/nosotros/jair_formal.jpg"><img src="../assets/images/nosotros/jair_formal.jpg" width="150" height="150" alt="" /></a>
-</div>
+ <div class=" col-xs-12 col-sm-6">   
+  <div class="slider-business-courses">
+    <ul>
+      <li class="campus1">
+        </li>
+        <li class="campus2">
+        </li>
+        <li class="campus3">
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 </div>
 </section>
 
 
-<section class ="nuestro-equipo" style="display: none">
+<section class ="nuestro-equipo">
   <div class="equipo-container">
       <h2 class="title col-xs-12">nuestro equipo</h2>
       <div class="row" class="persona">
