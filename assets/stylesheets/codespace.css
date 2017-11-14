@@ -10831,7 +10831,8 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   } 
 }
 /*página de pedir informacion*/
-#mas_informacion_course_block, .mas_informacion_course_block{
+#mas_informacion_course_block, .mas_informacion_course_block
+{
   display:none;
 }
 
@@ -10976,7 +10977,6 @@ display: block;
 .offer-job-time
 {
   background-image: url("../images/jobs/calendario.svg");
-}
 }
 /*estilos cajas de error*/
 .errorbox
