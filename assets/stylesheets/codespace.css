@@ -10599,6 +10599,23 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   margin-bottom: 15px;
   text-transform: uppercase;
 }
+.quienes-somos-image
+{
+  background-position:center;
+  background-size:cover!important;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/nosotros/quienes_somos.jpg");
+   margin:auto 30px;
+  height: 325px;
+  width: 100%;
+}
+@media (max-width: 767px)
+{
+  .quienes-somos-image
+{
+  display: none;
+}
+}
 .nuestra-mision .mision-container 
 {
    padding: 5%;
@@ -10612,6 +10629,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   {
     padding-right: 50px
   }
+  .nuestra-mision p
+{
+ margin-bottom: 30px!important;
+}
 }
 .nuestro-equipo .equipo-container 
 {
@@ -10629,6 +10650,74 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .persona-equipo .puesto
 {
   color: rgb(230, 23, 83); 
+}
+.page-nosotros .slider-business-courses 
+{
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  height: 425px!important;
+}
+.page-nosotros li
+{
+  list-style: none!important
+}
+.page-nosotros .dots li {
+  border: 3px solid #FFF;
+  border-radius: 1000px;
+  cursor: pointer;
+  opacity: .4;
+  -webkit-transition: background .5s, opacity .5s;
+  -moz-transition: background .5s, opacity .5s;
+  transition: background .5s, opacity .5s;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.page-nosotros .dots li.active {
+  background: rgb(230, 23, 83);
+  opacity: 1;
+}
+.campus1,.campus2, .campus3
+{
+  background-position:center;
+  background-size:cover!important;
+  background-repeat: no-repeat;
+  height:400px;
+}
+@media (max-width: 767px)
+{
+  .page-nosotros .slider-business-courses 
+{
+  height: 250px!important;
+}
+.campus1,.campus2, .campus3 
+{
+  height:225px;
+}
+}
+@media (max-width: 1023px)
+{
+.page-nosotros .dots 
+{
+  bottom:-10px;
+}
+}
+.campus1
+{
+   background-image: url("../../assets/images/nosotros/campus1.jpg");
+}
+.campus2
+{
+   background-image: url("../../assets/images/nosotros/campus2.jpg");
+}
+.campus3
+{
+   background-image: url("../../assets/images/nosotros/campus3.jpg");
+}
+.nuestro-equipo
+{
+  display: none;
 }
 /*página eventos*/
 /*container evento*/
