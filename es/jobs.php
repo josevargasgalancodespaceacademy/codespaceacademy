@@ -92,8 +92,8 @@
                {
       echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
       <article>
-      <p class='offer-job-title'>".$offer["name"]."</p>
       <div class='offer-job-date'>".date("d-m-Y", strtotime($offer["created_at"]))."</div>
+      <p class='offer-job-title'>".$offer["name"]."</p>
       <p class='offer-job-explanation'>".$offer["offer_short_description"]."</p>
       <div class='offer-conditions'>
        <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
