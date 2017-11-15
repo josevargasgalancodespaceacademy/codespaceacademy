@@ -132,7 +132,7 @@ $contenido =
 <p class='col-xs-12 descripcion-oferta'>".$request["offer_description"]."</p>
     <p class='col-xs-12 tipo-industria-oferta'><strong>Tipo de industria de la oferta: </strong>".$request["industry_type"]."</p>
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
-    <button type='button' class='button fondobutton newsletter-button' onclick=enviar_newsletter(""../../assets/php/forms/newsletter.php"")"">Inscribirme a la oferta</button>
+    <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>Inscribirme a la oferta</button>
   </div>
 </section>
 
