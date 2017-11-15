@@ -4,6 +4,7 @@
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
               $offers = $mysql->getAllDataWithParameters("work_offers");
+              $offers = array_reverse($offers);
 ?>
 <!DOCTYPE html>
 <html>
