@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $company = $mysql->getAllDataWithParameters("work_offers");
+              $offers = $mysql->getAllDataWithParameters("work_offers");
 ?>
 <!DOCTYPE html>
 <html>
@@ -86,39 +86,22 @@
      <section class="offer-jobs">
     <div class="container"> 
      <div class="row col-sm-12">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3 offer">
+       <?php
+                foreach ($offers as $key => $work_offers) 
+               {
+      echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
       <article>
-      <p class="offer-job-title">Maquetador/a web</p>
-      <p class="offer-job-explanation">Importante empresa de la zona de Tordera precisa incorporar un/a maquetador/a web. Funciones: - Desarrollo responsive en HTML, CSS y Javascript/Jquery. - Desarrollos de calidad y reutilizables. - Generación de plantilla. - Adaptación de...
+      <p class='offer-job-title'>Maquetador/a web</p>
+      <p class='offer-job-explanation'>Importante empresa de la zona de Tordera precisa incorporar un/a maquetador/a web. Funciones: - Desarrollo responsive en HTML, CSS y Javascript/Jquery. - Desarrollos de calidad y reutilizables. - Generación de plantilla. - Adaptación de...
       </p>
-      <div class="offer-conditions">
-       <div class="offer-job-location"></div><p class="col-xs-1 job-location">Málaga</p><div class="offer-job-time"></div><p>Indefinido</p>
+      <div class='offer-conditions'>
+       <div class='offer-job-location'></div><p class='col-xs-1 job-location'>Málaga</p><div class='offer-job-time'></div><p>Indefinido</p>
      </div>
-     <a class="button fondobutton" href="">ver oferta</a>
+     <a class='button fondobutton'>ver oferta</a>
       </article>
-     </div>
-     <div class="col-xs-12 col-sm-6 col-sm-offset-3 offer">
-      <article>
-      <p class="offer-job-title">Full stack web developer</p>
-      <p class="offer-job-explanation">Importante empresa de la zona de Tordera precisa incorporar un/a maquetador/a web. Funciones: - Desarrollo responsive en HTML, CSS y Javascript/Jquery. - Desarrollos de calidad y reutilizables. - Generación de plantilla. - Adaptación de...
-      </p>
-      <div class="offer-conditions">
-       <div class="offer-job-location"></div><p class="col-xs-1 job-location">Málaga</p><div class="offer-job-time"></div><p>Temporal</p>
-     </div>
-     <a class="button fondobutton" href="">ver oferta</a>
-      </article>
-     </div>
-     <div class="col-xs-12 col-sm-6 col-sm-offset-3 offer">
-      <article>
-      <p class="offer-job-title">Android developer</p>
-      <p class="offer-job-explanation">Importante empresa de la zona de Tordera precisa incorporar un/a maquetador/a web. Funciones: - Desarrollo responsive en HTML, CSS y Javascript/Jquery. - Desarrollos de calidad y reutilizables. - Generación de plantilla. - Adaptación de...
-      </p>
-      <div class="offer-conditions">
-       <div class="offer-job-location"></div><p class="col-xs-1 job-location">Málaga</p><div class="offer-job-time"></div><p>Temporal</p>
-     </div>
-     <a class="button fondobutton" href="">ver oferta</a>
-      </article>
-     </div>
+     </div>"
+                }
+               ?>  
     </div>   
     </div>
 </section>
