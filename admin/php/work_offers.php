@@ -24,12 +24,13 @@ $validator->filledIn("industry_type")->length("industry_type", "<=", 100);
 $validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 120);
 $validator->filledIn("offer_description");
 $errors = $validator->getErrors();
-
+$contenido = "<html><body><h1>Datos</h1></body></html>";
 
 if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("work_offers",$request);
 	mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
+	file_put_contents('/var/www/codespaceacademy/es/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.html', $contenido);
 }
 
 if (!$errors) echo "OK";
