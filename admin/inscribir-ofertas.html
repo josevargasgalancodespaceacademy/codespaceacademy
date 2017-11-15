@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
 <script src="../assets/javascript/forms/company_contacts.js" type="text/javascript"></script> 
@@ -64,6 +65,11 @@
               <input class="form-control" id="city" 
            placeholder="Introduce la localidad de la oferta" name="city">
         </div>
+         <div class="talento-field">
+           <label class="title-field" for="business">Empresa*</label>
+              <input class="form-control" id="business" 
+           placeholder="Introduce la localidad de la oferta" name="business">
+        </div>
         <div class="talento-field">
             <label class="title-field" for="offer_type">Tipo de oferta*</label>
           <select class="form-control" id="offer_type" name="offer_type">
@@ -91,7 +97,7 @@
        <option value="Bachillerato o CF Grado medio">Bachillerato o CF Grado medio</option>
        <option value="Ciclo Formativo Grado superior">Ciclo Formativo Grado superior</option>
        <option value="Título universitario">Título universitario</option>
-        <option value="Otros títulos, certificaciones y carnés">Otros títulos, certificaciones y carnés</option>
+        <option value="Otros títulos y certificaciones">Otros títulos y certificaciones</option>
        </select>
        </div>
        <div class="talento-field">
@@ -99,9 +105,9 @@
               <input class="form-control" id="salary" 
            placeholder="Introduce el salario" name="salary">
         </div><br>
-       <div class="talento-field">
+       <div>
        <label for="min_requirements" class="title-field">Requisitos mínimos*</label>
-        <textarea class="form-control comentario-talent" id="min_requirements"
+        <textarea class="form-control" id="min_requirements"
            placeholder="Requisitos mínimos de la oferta" name="min_requirements"></textarea>
        </div>
      </div>
@@ -120,10 +126,15 @@
       </div>
       <div class="form-formacion-a-medida">  
       <div class="form-group">
-       <label for="offer_description">Descripción de la oferta*</label>
-        <textarea class="form-control comentario-talent" id="offer_description"
-           placeholder="Descripción detallada de la oferta" name="offer_description"></textarea>
+       <label for="offer_short_description">Descripción corta de la oferta (máximo 120 caracteres)*</label>
+        <textarea class="form-control" id="offer_short_description"
+           placeholder="Descripción básica de la oferta" name="offer_short_description"></textarea>
       </div>
+      <div class="form-group">
+       <label for="offer_short_description">Descripción de la oferta*</label>
+        <textarea class="form-control" id="offer_description"
+           placeholder="Descripción detallada de la oferta" name="offer_description"></textarea>
+         </div>
       </div>
       <button type="button" class="button fondobutton btn boton-enviar-talent" onclick="enviar_work_offer()">Inscribir oferta</button>
       <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>

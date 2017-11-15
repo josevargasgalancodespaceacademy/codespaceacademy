@@ -10537,7 +10537,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
    margin-left:20px;
    margin-bottom: 20px
 } 
-#comentario-talent
+#comentario-talent, #offer_description, #min_requirements, #offer_short_description
 {
    margin-top: 20px;
    margin-bottom: 20px;
