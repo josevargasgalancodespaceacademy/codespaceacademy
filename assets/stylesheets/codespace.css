@@ -10979,6 +10979,13 @@ display: block;
 {
   background-image: url("../images/jobs/calendario.svg");
 }
+/*work offers pages*/
+.informacion-basica-oferta
+{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ background-color: #E6E6E6;
+}
 /*estilos cajas de error*/
 .errorbox
 {
