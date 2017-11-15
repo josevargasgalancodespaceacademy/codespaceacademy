@@ -98,7 +98,7 @@
      </div>
      <a class='button fondobutton'>ver oferta</a>
       </article>
-     </div>"
+     </div>";
                 }
                ?>  
     </div>   
