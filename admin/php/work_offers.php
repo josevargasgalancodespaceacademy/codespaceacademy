@@ -217,7 +217,7 @@ $contenido =
           <h2>Suscríbete a nuestra newsletter</h2>
         <form id='newsletter'>
         <input type='text' class='newsletter-email' placeholder='Introduce tu email aquí' name='email'>
-             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>enviar</button>
+             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter(`../../assets/php/forms/newsletter.php`)'>enviar</button>
         </form>
           </div>
         <div class='col-xs-12 col-sm-12 col-md-6 trabaja-con-nosotros'>
