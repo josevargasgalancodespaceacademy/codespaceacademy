@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $offers = $mysql->buildGetDataQueryWithOrder("work_offers", "created_at DESC");
+              $offers = $mysql->getAllDataWithParameters("work_offers");
 ?>
 <!DOCTYPE html>
 <html>

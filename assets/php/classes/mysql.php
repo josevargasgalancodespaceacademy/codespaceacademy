@@ -212,10 +212,6 @@ class Mysql
 		}
 		return substr($query,0,-5);
 	}
-		private function buildGetDataQueryWithOrder($tableName,$filters){
-		$query = "SELECT * FROM $tableName ORDER BY $filters";
-		return $this->getAll($query);
-	}
 
 	/**
 	 *
