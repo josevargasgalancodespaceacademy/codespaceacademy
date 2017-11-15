@@ -86,12 +86,7 @@
      <section class="offer-jobs">
     <div class="container"> 
      <div class="row col-sm-12">
-       <?php
-                foreach ($offers as $key => $work_offers) 
-               {
-      echo "hola"
-                }
-               ?>  
+     
     </div>   
     </div>
 </section>
