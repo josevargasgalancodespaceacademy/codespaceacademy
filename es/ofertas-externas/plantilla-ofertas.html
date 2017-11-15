@@ -1,31 +1,4 @@
-<?php
-
-require_once '../../assets/php/classes/mysql.php'; 
-require_once '../../assets/php/classes/validator.php';
-require_once '../../assets/php/classes/sanitizer.php';
-require_once '../../assets/php/config.php';
-
-
-$request = $_POST;
-$sanitizer = new Sanitizer($request);
-$request = $sanitizer->sanitizeRequest();
-
-$validator = new Validator($request);
-$validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
-$validator->filledIn("city")->alpha("city")->length("city", "<=", 100);
-$validator->filledIn("business")->alpha("business")->length("business", "<=", 100);
-$validator->filledIn("offer_type")->length("offer_type", "<=", 50);
-$validator->filledIn("min_experience")->length("min_experience", "<=", 25);
-$validator->filledIn("min_studies")->length("min_estudies", "<=", 50);
-$validator->filledIn("salary")->length("salary", "<=", 15)->numeric("salary","€");
-$validator->filledIn("min_requirements");
-$validator->filledIn("num_vacant")->length("num_vacant", "<=", 10)->numeric("num_vacant");
-$validator->filledIn("industry_type")->length("industry_type", "<=", 100);
-$validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 120);
-$validator->filledIn("offer_description");
-$errors = $validator->getErrors();
-$contenido = 
-"<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
 <script type='text/javascript' src='../../assets/javascript/lib/jquery-3.2.1.min.js' type='text/javascript'></script> 
 <script type='text/javascript' src='../../assets/javascript/forms/curriculums.js' type='text/javascript'></script> 
@@ -95,26 +68,26 @@ $contenido =
      <div class='image-overlay'></div>
         <div class='row'>
           <div class='col-xs-12 col-md-10 col-md-offset-1 call-to-action'>
-            <h1 class='h1'>".$request["name"]."</h1>
+            <h1 class='h1'>Titulo oferta</h1>
           </div>
         </div>
       </div>
     </div>
 
-        <section>
+    <section>
   <div class='col-sm-12 informacion-basica-oferta'>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>".$request["business"]."</li>
-        <li>".$request["city"]."</li>
-        <li>".$request["created_at"]."</li>
+        <li>Nombre de la empresa</li>
+        <li>Localidad</li>
+        <li>Cuando fue publicada</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>".$request["salary"]."</li>
-        <li>".$request["min_experience"]."</li>
-        <li>".$request["offer_type"]."</li>
+        <li>Salario</li>
+        <li>Experiencia mínima</li>
+        <li>Tipo de oferta</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
@@ -178,7 +151,7 @@ $contenido =
       </div>
      </form>
      </div>
-
+     
   <div class='modal fade' id='modal-cv' role='dialog'>
 <div class='modal-dialog'>
 <div class='modal-content'>
@@ -276,14 +249,4 @@ $contenido =
 </div>
         <script src='../../assets/javascript/codespace.js'></script>
     </body>
-</html>";
-
-if (!$errors) {
-	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-	$mysql->insertRow("work_offers",$request);
-	mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
-	file_put_contents('/var/www/codespaceacademy/es/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.html', $contenido);
-}
-
-if (!$errors) echo "OK";
-else echo json_encode($errors);
+</html>
