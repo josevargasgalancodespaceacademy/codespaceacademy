@@ -1,4 +1,12 @@
+<?php
+
+              require('../assets/php/config.php');
+              require('../assets/php/classes/mysql.php');
+              $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+              $company = $mysql->getAllDataWithParameters("curriculums");
+?>
 <!DOCTYPE html>
+<html>
 <head>
 <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
 <script type="text/javascript" src="../assets/javascript/forms/curriculums.js" type="text/javascript"></script> 
