@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $offers = $mysql->getAllDataWithParameters("work_offers");
+              $company = $mysql->getAllDataWithParameters("work_offers");
 ?>
 <!DOCTYPE html>
 <html>
@@ -87,7 +87,7 @@
     <div class="container"> 
      <div class="row col-sm-12">
        <?php
-                foreach ($offers as $key => $work_offers) 
+                foreach ($company as $key => $company_contacts) 
                {
       echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
       <article>
