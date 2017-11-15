@@ -3,7 +3,7 @@
               require('../assets/php/config.php');
               require('../assets/php/classes/mysql.php');
               $mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
-              $offers = $mysql->getAllDataWithParameters("work_offers")."ORDER BY created_at DESC" ;
+              $offers = $mysql->getAllDataWithParameters("work_offers", "ORDER BY created_at DESC");
 ?>
 <!DOCTYPE html>
 <html>
