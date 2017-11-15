@@ -105,15 +105,15 @@ $contenido =
   <div class='col-sm-12 informacion-basica-oferta'>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>Empresa: ".$request["business"]."</li>
-        <li>Localidad: ".$request["city"]."</li>
-        <li>Salario: ".$request["salary"]."</li>
+        <li><strong>Empresa</strong>: ".$request["business"]."</li>
+        <li><strong>Localidad</strong>: ".$request["city"]."</li>
+        <li><strong>Salario</strong>: ".$request["salary"]."€</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>Experiencia mínima: ".$request["min_experience"]."</li>
-        <li>Tipo de oferta: ".$request["offer_type"]."</li>
+        <li><strong>Experiencia mínima: </strong>".$request["min_experience"]."</li>
+        <li><strong>Tipo de oferta: </strong>".$request["offer_type"]."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
@@ -128,7 +128,7 @@ $contenido =
     <p class='col-xs-12 experiencia-minima'><strong>Experiencia mínima: </strong>".$request["min_experience"]."</p>
     <p class='col-xs-12 estudios-minimos'><strong>Estudios mínimos: </strong>".$request["min_studies"]."</p>
     <p class='col-xs-12 requisitos-minimos'><strong>Requisitos mínimos:</strong><br>".$request["min_requirements"]."</p>
-<h2 class='informacion-detallada-oferta-title col-sm-12'>Descripcion</h2>
+<h2 class='informacion-detallada-oferta-title col-sm-12'>Descripción</h2>
 <p class='col-xs-12 descripcion-oferta'>".$request["offer_description"]."</p>
     <p class='col-xs-12 tipo-industria-oferta'><strong>Tipo de industria de la oferta: </strong>".$request["industry_type"]."</p>
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
@@ -296,7 +296,7 @@ if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("work_offers",$request);
 	mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
-	file_put_contents('/var/www/codespaceacademy/es/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.html', $contenido);
+	file_put_contents('/var/www/codespaceacademy/es/offers/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.html', $contenido);
 }
 
 if (!$errors) echo "OK";
