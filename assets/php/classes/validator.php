@@ -197,7 +197,6 @@ class Validator {
 				if(strlen(trim($this->request[$field])) <= $length) {
 					return $this;
 				} else {
-					die(print_r("Error"));
 					$this->setError($field, 101);
 					return $this;
 				}
