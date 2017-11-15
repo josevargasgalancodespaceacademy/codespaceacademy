@@ -96,7 +96,7 @@
       <div class='offer-conditions'>
        <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
      </div>
-     <a class='button fondobutton' href='".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
+     <a class='button fondobutton' href='ofertas-externas/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
       </article>
      </div>";
                }
