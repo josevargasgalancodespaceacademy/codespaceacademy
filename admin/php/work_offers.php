@@ -47,10 +47,10 @@ $contenido = "<!DOCTYPE html>
 <link rel='shortcut icon' href='../../assets/favicon.ico'>
 <title>Ofertas de trabajo codespace</title>
 </head>
-<body onselectstart='return false;' class='page-work-with-us'>
+<body onselectstart='return false;' class='page-jobs'>
   <div id='top' class='main-content'>
            <div class='header'>
-           <div class='num-telefono'><a onclick='goog_report_conversion ('tel:900-102-101')' href='tel://900102101'><img class='telefono-icon' src='../assets/images/index/telefono-negativo.svg'></a></div>
+           <div class='num-telefono'><a onclick='goog_report_conversion ('tel:900-102-101')' href='tel://900102101'><img class='telefono-icon' src='../../assets/images/index/telefono-negativo.svg'></a></div>
    <div class='main-nav'>
         <div class='container'>
         <a href='https://www.codespaceacademy.com/' class='codespace-logo'><img src='../../assets/images/logos/logo_positivo.svg'></a>
