@@ -29,7 +29,7 @@ $errors = $validator->getErrors();
 if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("work_offers",$request);
-	mkdir('/var/www/codespaceacademy/curriculums/ofertas-exteras/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
+	mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
 }
 
 if (!$errors) echo "OK";
