@@ -90,7 +90,7 @@
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
-      <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>Inscribirme a la oferta</button>
+      <a class='button fondobutton newsletter-button' href="">Inscribirme a la oferta</a>
     </div>
   </div>
 </section>
@@ -120,12 +120,10 @@ Se ofrece:
 -Contrato de larga duración</p>
     <p class='col-xs-12 tipo-industria-oferta'><strong>Tipo de industria de la oferta:</strong> Industria</p>
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes:</strong> vacantes</p>
-    <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter("../../assets/php/forms/newsletter.php")'>Inscribirme a la oferta</button>
   </div>
 </section>
 
-
-     <div class='container formulario-cv'> 
+ <div class='container formulario-cv-ofertas'> 
         <form role='form' id='curriculums' enctype='multipart/form-data'>
         <div class='datos-personales'>
         <label class='title'> Ingresa tus datos personales*</label>
@@ -175,7 +173,7 @@ Se ofrece:
       <input class='comunicaciones' type='checkbox' id='comunicaciones'>No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
       </label>
       </div>
-      <button type='button' class='button fondobutton btn boton-enviar-cv' onclick='enviar_curriculum()'>Enviar</button>
+      <button type='button' class='button fondobutton btn boton-enviar-cv' onclick='enviar_curriculum()'>Inscribirme a la oferta</button>
       <div class='mensajerror'>Uno o mas campos del formulario tienen errores.</div> 
       </div>
      </form>
@@ -205,7 +203,7 @@ Se ofrece:
           <h2>Suscríbete a nuestra newsletter</h2>
         <form id='newsletter'>
         <input type='text' class='newsletter-email' placeholder='Introduce tu email aquí' name='email'>
-             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>enviar</button>
+             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter(`../../assets/php/forms/newsletter.php`)'>enviar</button>
         </form>
           </div>
         <div class='col-xs-12 col-sm-12 col-md-6 trabaja-con-nosotros'>
