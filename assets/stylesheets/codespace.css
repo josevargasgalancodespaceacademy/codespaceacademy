@@ -10942,7 +10942,11 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   font-size: 25px;
   font-weight: 700;
   color:rgb(230, 23, 83);
-
+}
+.offer-job-date
+{
+  display: inline-block;
+  float: right;
 }
 .offer-job-explanation
 {
