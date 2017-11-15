@@ -10998,6 +10998,16 @@ display: block;
   border: solid 1px #000;
   margin-bottom: 40px;
 }
+.informacion-detallada-oferta-title
+{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top:30px;
+}
+.experiencia-minima, .estudios-minimos, .requisitos-minimos, .descripcion-oferta, .tipo-industria-oferta, .vacantes-oferta, .informacion-detallada-oferta-container .button
+{
+  margin-bottom: 20px;
+}
 /*estilos cajas de error*/
 .errorbox
 {

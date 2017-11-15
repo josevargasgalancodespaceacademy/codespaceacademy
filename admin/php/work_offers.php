@@ -107,12 +107,11 @@ $contenido =
       <ul>
         <li>Empresa: ".$request["business"]."</li>
         <li>Localidad: ".$request["city"]."</li>
-        <li>Publicada: ".$request["created_at"]."</li>
+        <li>Salario: ".$request["salary"]."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>Salario: ".$request["salary"]."</li>
         <li>Experiencia mínima: ".$request["min_experience"]."</li>
         <li>Tipo de oferta: ".$request["offer_type"]."</li>
       </ul>
@@ -122,6 +121,21 @@ $contenido =
     </div>
   </div>
 </section>
+
+<section class='col-xs-12 col-sm-12 informacion-detallada-oferta-container'>
+  <div class='col-xs-12 col-sm-6 col-sm-offset-3 informacion-detallada-oferta'>
+    <h2 class='informacion-detallada-oferta-title col-sm-12'>Requisitos</h2>
+    <p class='col-xs-12 experiencia-minima'><strong>Experiencia mínima: </strong>".$request["min_experience"]."</p>
+    <p class='col-xs-12 estudios-minimos'><strong>Estudios mínimos: </strong>".$request["min_studies"]."</p>
+    <p class='col-xs-12 requisitos-minimos'><strong>Requisitos mínimos:</strong><br>".$request["min_requirements"]."</p>
+<h2 class='informacion-detallada-oferta-title col-sm-12'>Descripcion</h2>
+<p class='col-xs-12 descripcion-oferta'>".$request["offer_description"]."</p>
+    <p class='col-xs-12 tipo-industria-oferta'><strong>Tipo de industria de la oferta: </strong>".$request["industry_type"]."</p>
+    <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
+    <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>Inscribirme a la oferta</button>
+  </div>
+</section>
+
 
      <div class='container formulario-cv'> 
         <form role='form' id='curriculums' enctype='multipart/form-data'>
