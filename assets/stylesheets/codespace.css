@@ -9950,11 +9950,11 @@ animation-direction: alternate;
 {
   display: none;
 }
-.formulario-cv .title-field 
+.formulario-cv .title-field, .formulario-cv-ofertas .title-field 
 {
   margin-bottom: 10px
 }
-.formulario-cv .datos-personales .trabaja-field
+.formulario-cv .datos-personales .trabaja-field, .formulario-cv-ofertas .datos-personales .trabaja-field
 {
   margin-left:20px;
   margin-top: 30px;
@@ -9962,7 +9962,7 @@ animation-direction: alternate;
   display: inline-block;
   width: 27%
 }
-.web-linkedin .trabaja-field
+.web-linkedin .trabaja-field 
 {
   width: 37%;
   display: inline-block;
@@ -9970,18 +9970,18 @@ animation-direction: alternate;
   margin-top: 30px;
   margin-bottom:30px;
 }
-.formulario-cv .datos-personales input
+.formulario-cv .datos-personales input, .formulario-cv-ofertas .datos-personales input
 {
  width: 100%;
  clear: left;
 }
-.formulario-cv .datos-personales .title, .formulario-cv .web-linkedin .title, .formulario-cv .adjuntar-cv .title
+.formulario-cv .datos-personales .title, .formulario-cv .web-linkedin .title, .formulario-cv .adjuntar-cv .title, .formulario-cv-ofertas .datos-personales .title, .formulario-cv-ofertas .web-linkedin .title, .formulario-cv-ofertas .adjuntar-cv .title
 {
   width: 88%;
   padding-bottom: 20px;
   border-bottom: 1px solid #BDBDBD;
 }
-.formulario-cv .adjuntar-cv .title
+.formulario-cv .adjuntar-cv .title, .formulario-cv-ofertas .adjuntar-cv .title
 {
  margin-bottom: 30px
 }
@@ -10990,6 +10990,7 @@ display: block;
 .informacion-detallada-oferta-container
 {
   background-color: #E6E6E6;
+  margin-bottom: 30px;
 }
 .informacion-detallada-oferta
 {

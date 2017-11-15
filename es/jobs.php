@@ -97,7 +97,7 @@
       <div class='offer-conditions'>
        <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
      </div>
-     <a class='button fondobutton' href='ofertas-externas/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
+     <a class='button fondobutton' href='offers/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
       </article>
      </div>";
                }
@@ -105,62 +105,6 @@
     </div>   
     </div>
 </section>
-
-<div class="container formulario-cv"> 
-        <form role="form" id="curriculums" enctype="multipart/form-data">
-        <div class="datos-personales">
-        <label class="title"> Ingresa tus datos personales*</label>
-        <div class="trabaja-field">
-        <label class="title-field" for="name">Nombre completo*</label>
-        <input class="form-control" id="name"
-           placeholder="Introduce tu nombre completo" name="name">
-           </div>
-           <div class="trabaja-field">
-        <label class="title-field" for="telephone">Teléfono*</label>
-              <input class="form-control" id="telephone" 
-           placeholder="Introduce tu teléfono" name="telephone">
-           </div>
-           <div class="trabaja-field">
-        <label class="title-field" for="email">Email*</label>
-           <input class="form-control" id="email" 
-           placeholder="Introduce tu email" name="email">
-           </div>
-       </div>
-       <div class="web-linkedin">
-       <label class="title"> Website y Linkedin </label>
-        <div class="trabaja-field">
-        <label class="title-field" for="website-cv">Website o portfolio</label>
-         <input class="form-control" id="website-cv" 
-           placeholder="Introduce tu website o portfolio" name="website">
-           </div>
-           <div class="trabaja-field">
-        <label class="title-field" for="website-cv">Linkedin</label>
-           <input class="form-control" id="linkedin-cv" 
-           placeholder="Introduce tu perfil de Linkedin" name="linkedin">
-           </div>
-      </div>
-      <div class="adjuntar-cv">  
-      <div class="form-group">
-      <label for="archivo-cv" class="title">Adjunta tu CV*</label>
-      <input type="file" id="archivo-cv" name="curriculum">
-      <p class="help-block">Solo se admite formato PDF con un peso máximo de 5MB*</p>
-      <div class="pdf-error"></div>
-      </div>
-      <div class="checkbox">
-       <label>
-      <input type="checkbox" id="check-cv"> Acepto <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad.</a>* 
-      </label>
-      </div>
-      <div class="checkbox">
-       <label>
-      <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
-      </label>
-      </div>
-      <button type="button" class="button fondobutton btn boton-enviar-cv" onclick="enviar_curriculum()">Enviar</button>
-      <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div> 
-      </div>
-     </form>
-     </div>
 
     <section class="prefooter">
       <div class="row">
