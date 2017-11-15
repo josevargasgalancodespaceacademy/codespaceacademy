@@ -44,8 +44,8 @@ $contenido = "<!DOCTYPE html>
 
 <meta http-equiv='Content-type' content='text/html; charset=utf-8'/>
 <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1'>
-<link rel='shortcut icon' href='../assets/favicon.ico'>
-<title>¿Quieres ser codespacer?. Te aseguramos que alucinarás trabajando en uno de nuestros campus.</title>
+<link rel='shortcut icon' href='../../assets/favicon.ico'>
+<title>Ofertas de trabajo codespace</title>
 </head>
 <body onselectstart='return false;' class='page-work-with-us'>
   <div id='top' class='main-content'>
@@ -53,34 +53,34 @@ $contenido = "<!DOCTYPE html>
            <div class='num-telefono'><a onclick='goog_report_conversion ('tel:900-102-101')' href='tel://900102101'><img class='telefono-icon' src='../assets/images/index/telefono-negativo.svg'></a></div>
    <div class='main-nav'>
         <div class='container'>
-        <a href='https://www.codespaceacademy.com/' class='codespace-logo'><img src='../assets/images/logos/logo_positivo.svg'></a>
-        <a href='#' class='hamburger-icon'><img src='../assets/images/logos/hamburger-icon-positivo.svg'></a>
+        <a href='https://www.codespaceacademy.com/' class='codespace-logo'><img src='../../assets/images/logos/logo_positivo.svg'></a>
+        <a href='#' class='hamburger-icon'><img src='../../assets/images/logos/hamburger-icon-positivo.svg'></a>
 <nav class='menu'>
     <ul>
       <li class='menu-item'>
-        <a href='../es/nosotros'>Nosotros</a>
+        <a href='../../es/nosotros'>Nosotros</a>
       </li>
         <li class='menu-item'>
-        <a href='../es/cursos-programacion-malaga'>Cursos</a>
+        <a href='../../es/cursos-programacion-malaga'>Cursos</a>
         <div class='submenu'>
           <ul>
-            <li><a href='../es/cursos-programacion-malaga#bootcamps'>Bootcamps</a></li>
-            <li><a href='../es/cursos-programacion-malaga#business-courses'>Business code courses</a></li>
+            <li><a href='../../es/cursos-programacion-malaga#bootcamps'>Bootcamps</a></li>
+            <li><a href='../../es/cursos-programacion-malaga#business-courses'>Business code courses</a></li>
             <li><a href='#''>Extreme programming workshops</a></li>
           </ul>
         </div>
       </li>
       <li class='menu-item'>
-      <a href='../es/agenda-eventos-codespace'>Eventos</a>
+      <a href='../../es/agenda-eventos-codespace'>Eventos</a>
       </li>
       <li class='menu-item'>
-        <a href='../es/becas-programacion-malaga'>Becas</a>
+        <a href='../../es/becas-programacion-malaga'>Becas</a>
       </li>
        <li class='menu-item'>
-        <a href='../es/asesoramiento-laboral-malaga'>Mentoring</a>
+        <a href='../../es/asesoramiento-laboral-malaga'>Mentoring</a>
       </li>
       <li class='menu-item'>
-        <a href='../es/talento-codespace'>Talento <strong>codespace</strong></a>
+        <a href='../../es/talento-codespace'>Talento <strong>codespace</strong></a>
       </li>
         <li class='menu-item'>
         <a href='#''>Partners</a>
@@ -141,7 +141,7 @@ $contenido = "<!DOCTYPE html>
       </div>
       <div class='checkbox'>
        <label>
-      <input type='checkbox' id='check-cv'> Acepto <a href='../es/avisos-legales' target='_blank'>los términos y Condiciones de uso y Política de Privacidad.</a>* 
+      <input type='checkbox' id='check-cv'> Acepto <a href='../../es/avisos-legales' target='_blank'>los términos y Condiciones de uso y Política de Privacidad.</a>* 
       </label>
       </div>
       <div class='checkbox'>
@@ -179,7 +179,7 @@ $contenido = "<!DOCTYPE html>
           <h2>Suscríbete a nuestra newsletter</h2>
         <form id='newsletter'>
         <input type='text' class='newsletter-email' placeholder='Introduce tu email aquí'' name='email'>
-             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../assets/php/forms/newsletter.php')'>enviar</button>
+             <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>enviar</button>
         </form>
           </div>
         <div class='col-xs-12 col-sm-12 col-md-6 trabaja-con-nosotros'>
@@ -194,7 +194,7 @@ $contenido = "<!DOCTYPE html>
           <a class='button fondobutton' href='../es/trabaja-con-nosotros'>Únete</a>
         </div>
         <div class='col-xs-12 col-sm-6 col-md-6 tcn-image'>
-        <img src='../assets/images/trabaja-con-nosotros/trabaja-con-nosotros-icon.png'>
+        <img src='../../assets/images/trabaja-con-nosotros/trabaja-con-nosotros-icon.png'>
         </div>
         </div>
         </div>
@@ -221,12 +221,12 @@ $contenido = "<!DOCTYPE html>
    <footer>
   <div class='container footer-content'>
     <div class='row'>
-    <div class='col-xs-12 col-sm-12 container-logo'><div class='codespace-logo'><a href='https://www.codespaceacademy.com/''><img src='../assets/images/logos/logo_negativo.svg'></a></div></div>
+    <div class='col-xs-12 col-sm-12 container-logo'><div class='codespace-logo'><a href='https://www.codespaceacademy.com/''><img src='../../assets/images/logos/logo_negativo.svg'></a></div></div>
     <div class='col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 codespace-copyright'><p>C/ Compositor Lehmberg Ruiz, 13 29007 Málaga | 900 102 101 | www.codespaceacademy.com</p></div>
     <div class='col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 codespace-copyright'><p>&copy; 2017 <strong>code</strong>space - Formación tecnológica. All Rigths Reserved. <a href='../es/avisos-legales'>Políticas legales y condiciones de uso</a></p></div>
       <div class='col-xs-12 col-sm-12 footer-navigate'>
         <ul>
-          <li class='footer-link'><a href='../es/contacto'>contacto</a></li>
+          <li class='footer-link'><a href='../../es/contacto'>contacto</a></li>
         </ul>
         </div>
          <div class='col-xs-12 col-sm-12 redes-sociales'> 
@@ -250,7 +250,7 @@ $contenido = "<!DOCTYPE html>
         <a href='../es/avisos-legales' target='_blank' class='info'>Más información</a>
     </div>
 </div>
-        <script src='../assets/javascript/codespace.js'></script>
+        <script src='../../assets/javascript/codespace.js'></script>
     </body>
 </html>";
 
