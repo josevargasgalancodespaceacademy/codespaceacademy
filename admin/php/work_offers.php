@@ -105,16 +105,16 @@ $contenido =
   <div class='col-sm-12 informacion-basica-oferta'>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>".$request["business"]."</li>
-        <li>".$request["city"]."</li>
-        <li>".$request["created_at"]."</li>
+        <li>Empresa: ".$request["business"]."</li>
+        <li>Localidad: ".$request["city"]."</li>
+        <li>Publicada: ".$request["created_at"]."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
-        <li>".$request["salary"]."</li>
-        <li>".$request["min_experience"]."</li>
-        <li>".$request["offer_type"]."</li>
+        <li>Salario: ".$request["salary"]."</li>
+        <li>Experiencia mínima: ".$request["min_experience"]."</li>
+        <li>Tipo de oferta: ".$request["offer_type"]."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>

@@ -10985,6 +10985,18 @@ display: block;
  padding-top: 30px;
  padding-bottom: 30px;
  background-color: #E6E6E6;
+ margin-bottom: 20px;
+}
+.informacion-detallada-oferta-container
+{
+  background-color: #E6E6E6;
+}
+.informacion-detallada-oferta
+{
+  margin-top: 40px;
+  background-color: #FFFFFF;
+  border: solid 1px #000;
+  margin-bottom: 40px;
 }
 /*estilos cajas de error*/
 .errorbox
