@@ -30,7 +30,7 @@ if (!$errors) {
 	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("work_offers",$request);
 	mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'], 0777, true);
-	file_put_contents('/var/www/codespaceacademy/es/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.html', $contenido);
+	file_put_contents('/var/www/codespaceacademy/es/ofertas-externas/'.$request["name"].'-'.$request['city'].'-'.$request['business'].'.php', $contenido);
 }
 
 if (!$errors) echo "OK";
