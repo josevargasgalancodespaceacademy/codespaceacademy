@@ -117,7 +117,7 @@ $contenido =
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
-      <button type='button' class='button fondobutton newsletter-button' onclick='enviar_newsletter('../../assets/php/forms/newsletter.php')'>Inscribirme a la oferta</button>
+      <a class='button fondobutton href='../offers/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."#inscripcion'>Inscribirme a la oferta</a>
     </div>
   </div>
 </section>
@@ -134,8 +134,9 @@ $contenido =
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
   </div>
 </section>
-
+ 
  <div class='container formulario-cv-ofertas'> 
+ <a name='inscripcion'></a>
         <form role='form' id='curriculums' enctype='multipart/form-data'>
         <div class='datos-personales'>
         <label class='title'> Ingresa tus datos personales*</label>
