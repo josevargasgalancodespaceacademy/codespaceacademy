@@ -94,7 +94,7 @@
       <article>
       <div class='offer-job-date'>Publicada el: ".date("d-m-Y", strtotime($offer["created_at"]))."</div>
       <p class='offer-job-title'>".$offer["name"]."</p>
-      <p class='offer-job-explanation'>".$offer["offer_short_description"]."</p>
+      <p class='offer-job-explanation'>".nl2br($offer["offer_short_description"])."</p>
       <div class='offer-conditions'>
        <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
      </div>
