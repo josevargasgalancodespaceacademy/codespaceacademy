@@ -136,8 +136,7 @@ $contenido =
   </div>
 </section>
 
-
-     <div class='container formulario-cv'> 
+ <div class='container formulario-cv-ofertas'> 
         <form role='form' id='curriculums' enctype='multipart/form-data'>
         <div class='datos-personales'>
         <label class='title'> Ingresa tus datos personales*</label>
@@ -187,7 +186,7 @@ $contenido =
       <input class='comunicaciones' type='checkbox' id='comunicaciones'>No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
       </label>
       </div>
-      <button type='button' class='button fondobutton btn boton-enviar-cv' onclick='enviar_curriculum()'>Enviar</button>
+      <button type='button' class='button fondobutton btn boton-enviar-cv' onclick='enviar_curriculum()'>Inscribirme a la oferta</button>
       <div class='mensajerror'>Uno o mas campos del formulario tienen errores.</div> 
       </div>
      </form>
