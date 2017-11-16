@@ -10977,7 +10977,7 @@ display: block;
 {
   background-image: url("../images/jobs/localizacion.svg");
 }
-.job-location, .job-time
+.job-location
 {
   padding: inherit!important;
 }
