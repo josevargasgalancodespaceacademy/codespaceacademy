@@ -9993,17 +9993,14 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.formulario-cv .datos-personales .trabaja-field, .formulario-cv .web-linkedin .trabaja-field
+.formulario-cv .datos-personales .trabaja-field, .formulario-cv .web-linkedin .trabaja-field,.formulario-cv-ofertas .datos-personales .trabaja-field, .formulario-cv-ofertas .web-linkedin .trabaja-field
 {
-  width: 75%
+  width: 75%;
+  margin-top: 10px
 }
 #archivo-cv
 {
    font-size: 10px
-}
-.formulario-cv .datos-personales .trabaja-field, .formulario-cv .web-linkedin .trabaja-field
-{
-  margin-top: 10px
 }
 .cv-y-ofertas .ofertas-trabajo
 {
