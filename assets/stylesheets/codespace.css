@@ -10981,6 +10981,13 @@ display: block;
 {
   padding: inherit!important;
 }
+@media (max-width: 767px)
+{
+.job-location
+{
+  margin-left: 10px
+}
+}
 .offer-job-time
 {
   background-image: url("../images/jobs/calendario.svg");
