@@ -117,7 +117,7 @@ $contenido =
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
-      <a class='button fondobutton href='../offers/".$request['name'].'-'.$request['city'].'-'.$request['business']."#inscripcion'>Inscribirme a la oferta</a>
+      <a class='button fondobutton' href='../offers/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>Inscribirme a la oferta</a>
     </div>
   </div>
 </section>
