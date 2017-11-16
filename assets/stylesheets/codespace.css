@@ -10913,13 +10913,16 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   height: 100%
 }
 /*página jobs*/
+.page-jobs strong
+{
+  font-weight: 600
+}
 .page-jobs .hero-block  
 {
   padding-top: 50px; 
   margin-bottom: 0px;
   background-image: url("../../assets/images/jobs/header-jobs.jpg");
 }
-
 .offer-jobs
 {
   background-color: #F2F2F2;
