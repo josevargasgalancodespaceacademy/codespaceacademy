@@ -101,7 +101,7 @@ $contenido =
       </div>
     </div>
 
-   <section class='col-xs-12 col-sm-12>
+   <section>
   <div class='col-sm-12 informacion-basica-oferta'>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
