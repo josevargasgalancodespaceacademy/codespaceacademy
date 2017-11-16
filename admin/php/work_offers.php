@@ -101,7 +101,7 @@ $contenido =
       </div>
     </div>
 
-        <section>
+   <section class='col-xs-12 col-sm-12>
   <div class='col-sm-12 informacion-basica-oferta'>
     <div class='col-sm-3 col-sm-offset-1'>
       <ul>
@@ -134,7 +134,8 @@ $contenido =
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
   </div>
 </section>
- 
+
+ <section class='col-xs-12 col-sm-12'>
  <div class='container formulario-cv-ofertas'> 
  <a name='inscripcion'></a>
         <form role='form' id='curriculums' enctype='multipart/form-data'>
@@ -191,6 +192,7 @@ $contenido =
       </div>
      </form>
      </div>
+    </section>
 
   <div class='modal fade' id='modal-cv' role='dialog'>
 <div class='modal-dialog'>
@@ -255,7 +257,7 @@ $contenido =
     </div>
   </div>
 
-   <footer>
+   <footer class='col-xs-12 col-sm-12' style='margin: inherit!important; padding: inherit!important;'>
   <div class='container footer-content'>
     <div class='row'>
     <div class='col-xs-12 col-sm-12 container-logo'><div class='codespace-logo'><a href='https://www.codespaceacademy.com/''><img src='../../assets/images/logos/logo_negativo.svg'></a></div></div>
