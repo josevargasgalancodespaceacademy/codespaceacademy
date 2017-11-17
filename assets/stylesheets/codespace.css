@@ -10595,6 +10595,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   padding-left: 15px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .quienes-somos-image
 {
@@ -10619,6 +10620,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
    background-color: rgb(230, 23, 83); 
    color: #FFF;
    margin-bottom: 70px;
+}
+.nuestra-mision .title, .nuestro-equipo .title
+{
+  font-weight: 600;
 }
 @media (max-width: 767px)
 {
