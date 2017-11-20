@@ -1,9 +1,9 @@
 function enviar_curriculum(name){
         var url ="../../assets/php/forms/work_offers_curriculums.php";
         var nameoffer = name;
-        console.log (nameoffer);
         var data = new FormData();
         data.append(nameoffer,$('#curriculums')[0]);
+        console.log (data);
 if ($('#check-cv').is(':checked')){ 
         $.ajax({                        
           url: url,
