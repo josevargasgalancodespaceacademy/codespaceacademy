@@ -134,8 +134,8 @@ $contenido =
     <p class='col-xs-12 vacantes-oferta'><strong>Vacantes: </strong>".$request["num_vacant"]."</p>
   </div>
 </section>
- <a name='inscripcion'></a>
  <section class='col-xs-12 col-sm-12'>
+  <a name='inscripcion'></a>
  <div class='container formulario-cv-ofertas'> 
         <form role='form' id='curriculums' enctype='multipart/form-data'>
         <div class='datos-personales'>
