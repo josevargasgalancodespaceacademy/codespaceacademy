@@ -27,7 +27,7 @@ if ($('#check-cv').is(':checked')){
                   } , false);
               }
               return myXhr;
-          },{name_offer:nameoffer}                
+          },                
           }).done(function(respuesta){
           var postData = $("#curriculums").serializeArray().reduce(function(obj, item) {
           obj[item.name] = item.name;
