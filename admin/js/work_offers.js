@@ -13,7 +13,6 @@ function enviar_work_offer(){
       obj[item.name] = item.value;
       return obj;
     }, {});
-    console.log(respuesta);
     if( respuesta == "\nOK") {
       $('#modal-ofertas-trabajo').modal('show');
     } else {
