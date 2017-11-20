@@ -1,5 +1,5 @@
 function enviar_curriculum(){
-        var url ="../assets/php/forms/work_offers_curriculums.php";
+        var url ="../../assets/php/forms/work_offers_curriculums.php";
 
 if ($('#check-cv').is(':checked')){ 
         $.ajax({                        
