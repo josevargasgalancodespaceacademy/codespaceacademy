@@ -3,7 +3,6 @@ function enviar_curriculum(name){
         var nameoffer = name;
         data = new FormData($('#curriculums')[0]);
         data.append('name_offer',nameoffer);
-        console.log (data);
 if ($('#check-cv').is(':checked')){ 
         $.ajax({                        
           url: url,
