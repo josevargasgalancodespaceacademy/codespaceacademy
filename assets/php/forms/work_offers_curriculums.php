@@ -18,7 +18,7 @@ if(isset($_FILES['curriculum'])){
 		$file_upload_errors[] = 'El tamaño tiene que ser menos de 5MB';
 	} 
 	else if(empty($file_upload_errors) == true){
-		$folder = "../../../curriculums/ofertas-externas/";
+		$folder = "../../../curriculums/ofertas-externas/".$request['name_offer']."/";
 		$time = date("Y-m-d");
 		$saved_file = $folder . $time . "-" . $file_name;
 		move_uploaded_file($file_tmp,$saved_file);
