@@ -1,12 +1,13 @@
-function enviar_curriculum(){
+function enviar_curriculum(name){
         var url ="../../assets/php/forms/work_offers_curriculums.php";
+        var nameoffer=name;
 
 if ($('#check-cv').is(':checked')){ 
         $.ajax({                        
           url: url,
           type: 'POST',
 
-          data: new FormData($('#curriculums')[0]),
+          data:new FormData($('#curriculums')[0]),
 
           cache: false,
           contentType: false,
@@ -26,7 +27,7 @@ if ($('#check-cv').is(':checked')){
                   } , false);
               }
               return myXhr;
-          },                
+          },{name_offer:nameoffer}                
           }).done(function(respuesta){
           var postData = $("#curriculums").serializeArray().reduce(function(obj, item) {
           obj[item.name] = item.name;
