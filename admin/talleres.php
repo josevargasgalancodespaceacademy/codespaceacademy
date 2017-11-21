@@ -62,6 +62,7 @@
     <thead>
   <tr>
         <td class="title">Nombre</td>
+        <td class="title">DNI</td>
         <td class="title">Email</td>
         <td class="title">Telefono</td>
         <td class="title">Fecha</td>
@@ -70,7 +71,7 @@
   </thead>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td><td><form role='form' id='company_contacts'><select class='formacion-a-medida' id='training_request' name='training_request'><option value=''>Selecciona el estado</option><option value='No contactado'>No contactado</option><option value='Imposible contactar'>Imposible contactar</option><option value='Inscrito'>Inscrito</option><option value='No inscrito'>No inscrito</option></select><button type='button' style='margin-left:20px'>Cambiar estado</button></form></td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["number_identification"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td><td><form role='form' id='company_contacts'><select class='formacion-a-medida' id='training_request' name='training_request'><option value=''>Selecciona el estado</option><option value='No contactado'>No contactado</option><option value='Imposible contactar'>Imposible contactar</option><option value='Inscrito'>Inscrito</option><option value='No inscrito'>No inscrito</option></select><button type='button' style='margin-left:20px'>Cambiar estado</button></form></td></tr>";
                 }
                ?>        
   </table>
