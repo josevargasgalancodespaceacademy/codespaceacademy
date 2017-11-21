@@ -1,13 +1,11 @@
-function change_state(id){
+function change_state(id,state){
   var url = "php/change_state.php";
       var id_row = id;
-      var formulario = $('#' + id_row);
-        data = new FormData(formulario.serialize());
-        data.append('id',id_row);
+      var state_row = $(state).val();
   $.ajax({                        
     type: "POST",                 
     url: url,  
-    data: data                  
+    data: {id:id_row,state:state_row}                  
   }).done(function(respuesta){
     var postData = $("#change_state").serializeArray().reduce(function(obj, item) {
     obj[item.name] = item.name;
