@@ -16,7 +16,7 @@ function change_state(id,state){
       return obj;
     }, {});
     if( respuesta == "\nOK") {
-      alert("Estado cambiado");
+      location.reload();
     } else {
       var data = JSON.parse(respuesta);
       for (var key in postData) {
