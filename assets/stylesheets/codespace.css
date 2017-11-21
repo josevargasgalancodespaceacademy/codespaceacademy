@@ -10774,7 +10774,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   width:100%;
   height: 350px;
   margin:0 auto 20px;
-  background-image: url(../../assets/images/eventos/inauguracion.jpg)
+}
+.meetup-scala
+{
+  background-image: url(../../assets/images/eventos/meetup-scala.jpg)
 }
 .taller-javascript
 {
