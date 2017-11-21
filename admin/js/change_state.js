@@ -1,12 +1,15 @@
 function change_state(id){
   var url = "php/change_state.php";
       var id_row = id;
-        data = new FormData($('#'+id_row)[0]);
+        data = new FormData($('#'+id_row).serialize());
         data.append('id',id_row);
   $.ajax({                        
     type: "POST",                 
     url: url,  
-    data: data                   
+    data: data,
+          cache: false,
+          contentType: false,
+          processData: false,                   
   }).done(function(respuesta){
     var postData = $("#change_state").serializeArray().reduce(function(obj, item) {
     obj[item.name] = item.name;
