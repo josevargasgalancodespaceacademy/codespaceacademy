@@ -17,7 +17,7 @@ $validator->filledIn("business")->alpha("business")->length("business", "<=", 10
 $validator->filledIn("offer_type")->length("offer_type", "<=", 50);
 $validator->filledIn("min_experience")->length("min_experience", "<=", 25);
 $validator->filledIn("min_studies")->length("min_estudies", "<=", 50);
-$validator->filledIn("salary")->length("salary", "<=", 15)->numeric("salary","€");
+$validator->filledIn("salary")->length("salary", "<=", 15)->numeric("salary",array(" ","€","-"));
 $validator->filledIn("min_requirements");
 $validator->filledIn("num_vacant")->length("num_vacant", "<=", 10)->numeric("num_vacant");
 $validator->filledIn("industry_type")->length("industry_type", "<=", 100);
