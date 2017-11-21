@@ -1,9 +1,9 @@
 <?php
 
-require_once '../classes/mysql.php'; 
-require_once '../classes/validator.php';
-require_once '../classes/sanitizer.php';
-require_once '../config.php';
+require_once '../../classes/mysql.php'; 
+require_once '../../classes/validator.php';
+require_once '../../classes/sanitizer.php';
+require_once '../../config.php';
 
 
 $request = $_POST;
