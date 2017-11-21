@@ -1,7 +1,7 @@
 function change_state(id){
   var url = "php/change_state.php";
       var id_row = id;
-        data = new FormData($('#'+id_row).serialize());
+        data = new FormData($('"#' + id_row + '"')[0]);
         data.append('id',id_row);
   $.ajax({                        
     type: "POST",                 
