@@ -17,8 +17,8 @@ $validator->filledIn("business")->alpha("business")->length("business", "<=", 10
 $validator->filledIn("offer_type")->length("offer_type", "<=", 50);
 $validator->filledIn("min_experience")->length("min_experience", "<=", 25);
 $validator->filledIn("min_studies")->length("min_estudies", "<=", 50);
-$validator->filledIn("min_salary")->length("min_salary", "<=", 30)->numeric("min_salary");
-$validator->filledIn("max_salary")->length("max_salary", "<=", 30)->numeric("max_salary");
+$validator->length("min_salary", "<=", 30)->numeric("min_salary");
+$validator->length("max_salary", "<=", 30)->numeric("max_salary");
 $validator->filledIn("min_requirements");
 $validator->filledIn("num_vacant")->length("num_vacant", "<=", 10)->numeric("num_vacant");
 $validator->filledIn("industry_type")->length("industry_type", "<=", 100);
@@ -108,7 +108,7 @@ $contenido =
       <ul>
         <li><strong>Empresa</strong>: ".$request["business"]."</li>
         <li><strong>Localidad</strong>: ".$request["city"]."</li>
-        <li><strong>Salario</strong>: ".$request["salary"]."€</li>
+        <li><strong>Rango salarial</strong>: ".$request["min_salary"]." - ".$request["max_salary"]."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
