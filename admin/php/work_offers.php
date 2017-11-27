@@ -108,7 +108,7 @@ $contenido =
       <ul>
         <li><strong>Empresa</strong>: ".$request["business"]."</li>
         <li><strong>Localidad</strong>: ".$request["city"]."</li>
-        <li><strong>Salario</strong>: ".$request["salary"]."€</li>
+        <li><strong>Salario</strong>: ".$request["min_salary"]." - ".$request["max_salary"]."€</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
