@@ -8090,6 +8090,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   text-align: center;
   padding: 15px;
   height: 90px!important;
+  margin-bottom: 20px
 }
 .bussiness-courses h2
 {
@@ -8116,6 +8117,10 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   {
     height: inherit!important;
   } 
+  .bussiness-courses .explanation
+  {
+  margin-bottom: inherit;
+  }
 }
 .angular
 {
