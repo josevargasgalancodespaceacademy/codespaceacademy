@@ -91,8 +91,8 @@
                 foreach ($offers as $offer) 
                {
       echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
-      <article>
       <div class='offer-job-date'>Publicada el: ".date("d-m-Y", strtotime($offer["created_at"]))."</div>
+      <article>
       <p class='offer-job-title'>".$offer["name"]."</p>
       <p class='offer-job-explanation'>".nl2br($offer["offer_short_description"])."</p>
       <div class='offer-conditions'>
