@@ -11072,6 +11072,13 @@ display: block;
  margin-bottom: 20px;
  font-size: 17px;
 }
+@media (max-width: 767px)
+{
+.informacion-basica-oferta .button 
+{
+  margin-top: 20px
+}
+}
 .informacion-detallada-oferta-container
 {
   background-color: #E6E6E6;
