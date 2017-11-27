@@ -85,7 +85,7 @@ $contenido =
         <a href='../../es/talento-codespace'>Talento <strong>codespace</strong></a>
       </li>
         <li class='menu-item'>
-        <a href='#''>Partners</a>
+        <a href='../../es/jobs>Jobs</a>
       </li>
     </ul>
     </nav>
