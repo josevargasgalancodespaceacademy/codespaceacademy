@@ -8073,25 +8073,24 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .family-bussiness-courses
 {
   background-color: #F2F2F2!important;
-  padding-bottom: 40px;
 }
 .family-bussiness-courses .container-bussiness 
 {
   height: 420px!important;
 }
- .bussiness-courses .title-business-course
+ .bussiness-courses .title-business-course,  .bussiness-courses-movil .title-business-course
 {
   font-size: 20px;
   height: 50px!important;
   color:rgb(230, 23, 83); 
 }
-.bussiness-courses .explanation
+.bussiness-courses .explanation, .bussiness-courses-movil .explanation 
 {
   text-align: center;
   padding: 15px;
   height: 90px!important;
 }
-.bussiness-courses h2
+.bussiness-courses h2, .bussiness-courses-movil h2
 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -8110,100 +8109,37 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   display: block;
   margin: auto;
 }
-@media (max-width: 768px)
+.xamarin
 {
-  .family-bussiness-courses .container-bussiness, .bussiness-courses .title-business-course, .bussiness-courses .explanation
-  {
-    height: inherit!important;
-  } 
+  background-image: url(../../assets/images/business-courses/icono-xamarin-morado.svg);
 }
 .angular
 {
   background-image: url(../../assets/images/business-courses/icono-angular-morado.svg);
 }
-.scrum
+.mongo
 {
-  background-image: url(../../assets/images/business-courses/icono-scrum-morado.svg);
+  background-image: url(../../assets/images/business-courses/icono-mongo-morado.svg);
 }
-.django
+.swift
 {
-  background-image: url(../../assets/images/business-courses/icono-django-morado.svg);
+  background-image: url(../../assets/images/business-courses/icono-swift-morado.svg);
 }
-.git
+.kotlin
 {
-  background-image: url(../../assets/images/business-courses/icono-git-morado.svg);
+  background-image: url(../../assets/images/business-courses/icono-kotlin-morado.svg);
 }
-.xamarin
-{
-  background-image: url(../../assets/images/business-courses/icono-xamarin-morado.svg);
-}
-.react-redux
-{
-  background-image: url(../../assets/images/business-courses/icono-react-redux-morado.svg);
-}
-.reactnative
-{
-  background-image: url(../../assets/images/business-courses/icono-reactnative-morado.svg);
-}
-.scala-introduction
+.scala
 {
   background-image: url(../../assets/images/business-courses/icono-scala-morado.svg);
 }
-.spark
+.selenium
 {
-  background-image: url(../../assets/images/business-courses/icono-spark-morado.svg);
+  background-image: url(../../assets/images/business-courses/icono-selenium-morado.svg);
 }
-.node
+.family-bussiness-courses li
 {
-  background-image: url(../../assets/images/business-courses/icono-node-morado.svg);
-}
-.electron
-{
-  background-image: url(../../assets/images/business-courses/icono-electron-morado.svg);
-}
-.vuejs
-{
-  background-image: url(../../assets/images/business-courses/icono-vuejs-morado.svg);
-}
-.devops-aws
-{
-  background-image: url(../../assets/images/business-courses/icono-devops-aws-morado.svg);
-}
-.docker
-{
-  background-image: url(../../assets/images/business-courses/icono-docker-morado.svg);
-}
-.ansible
-{
-  background-image: url(../../assets/images/business-courses/icono-ansible-morado.svg);
-}
-.unity3d
-{
-  background-image: url(../../assets/images/business-courses/icono-unity3d-morado.svg);
-}
-.unreal-engine
-{
-  background-image: url(../../assets/images/business-courses/icono-unreal-engine-morado.svg);
-}
-.go-language
-{
-  background-image: url(../../assets/images/business-courses/icono-go-language-morado.svg);
-}
-.scikit-psypark
-{
-  background-image: url(../../assets/images/business-courses/icono-scikit-psypark-morado.svg);
-}
-.criptografia-algoritmos
-{
-  background-image: url(../../assets/images/business-courses/icono-criptografia-algoritmos-morado.svg);
-}
-.hugo
-{
-  background-image: url(../../assets/images/business-courses/icono-hugo-morado.svg);
-}
-.r-ciencias-datos
-{
-  background-image: url(../../assets/images/business-courses/icono-r-ciencias-datos-morado.svg);
+  list-style: none;
 }
 .family-bootcamp-courses .button
 {
@@ -8378,6 +8314,33 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .dots li.active {
   background: #F2F2F2;
   opacity: 1;
+}
+.bussiness-courses-movil
+{
+  display: none;
+}
+@media (max-width:1023px)
+{
+.bussiness-courses-movil
+ {
+  display: block
+ }
+ .bussiness-courses
+ {
+   display: none;
+ }
+.family-bussiness-courses .container-bussiness
+{
+  height: 530px!important;
+}
+.bussiness-courses-movil .title-business-course
+{
+  height: 70px!important
+}
+.bussiness-courses-movil .explanation
+{
+  height: 125px!important
+}
 }
 /*web-development-bootcamp*/
 .page-bootcamp-web .main-nav
@@ -11065,7 +11028,6 @@ display: block;
  padding-bottom: 30px;
  background-color: #E6E6E6;
  margin-bottom: 20px;
- font-size: 20px;
 }
 .informacion-detallada-oferta-container
 {
