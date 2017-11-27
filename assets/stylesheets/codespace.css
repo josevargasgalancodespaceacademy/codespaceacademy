@@ -11017,13 +11017,6 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   color:rgb(230, 23, 83);
   font-weight: 400;
 }
-@media (max-width: 767px)
-{
-  .offer-job-date
-{
-  margin-bottom: 30px;
-}
-}
 .offer-job-explanation
 {
   padding: 30px;
@@ -11063,7 +11056,7 @@ display: block;
 }
 .offer-job-date
 {
-  margin-bottom: 10px
+  margin-bottom: 30px
 }
 }
 .offer-job-time
