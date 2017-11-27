@@ -90,19 +90,21 @@
        <?php
                 foreach ($offers as $offer) 
                {
-      echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
-      <div class='offer-job-date'>Publicada el: ".date("d-m-Y", strtotime($offer["created_at"]))."</div>
-      <article>
-      <p class='offer-job-title'>".$offer["name"]."</p>
-      <p class='offer-job-explanation'>".nl2br($offer["offer_short_description"])."</p>
-      <div class='offer-conditions'>
-       <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
-     </div>
-     <a class='button fondobutton' href='offers/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
-      </article>
-     </div>";
-               }
-               ?>  
+                  if($offer["status"]==1){
+                     echo "<div class='col-xs-12 col-sm-6 col-sm-offset-3 offer'>
+                            <div class='offer-job-date'>Publicada el: ".date("d-m-Y", strtotime($offer["created_at"]))."</div>
+                            <article>
+                            <p class='offer-job-title'>".$offer["name"]."</p>
+                            <p class='offer-job-explanation'>".nl2br($offer["offer_short_description"])."</p>
+                            <div class='offer-conditions'>
+                             <div class='offer-job-location'></div><p class='col-xs-1 job-location'>".$offer["city"]."</p><div class='offer-job-time'></div><p>".$offer["offer_type"]."</p>
+                           </div>
+                           <a class='button fondobutton' href='offers/".$offer["name"].'-'.$offer['city'].'-'.$offer['business']."'>ver oferta</a>
+                            </article>
+                           </div>";
+             }
+           }
+        ?>  
     </div>   
     </div>
 </section>
