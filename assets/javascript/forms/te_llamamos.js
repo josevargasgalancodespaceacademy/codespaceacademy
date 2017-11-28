@@ -14,7 +14,6 @@ function enviar_llamamos_form(){
       obj[item.name] = item.value;
       return obj;
     }, {});
-    console.log(respuesta);
     if( respuesta == "\nOK") {
       $('#modal-te-llamamos').modal('show');
     } else {
