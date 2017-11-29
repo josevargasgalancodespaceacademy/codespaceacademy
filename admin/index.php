@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
-<body class="page-nosotros">
+<body class="page-admin">
      <div class="main-nav">
         <div class="container">
         <a class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
