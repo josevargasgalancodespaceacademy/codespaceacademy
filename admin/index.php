@@ -19,35 +19,39 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
-<body class="page-admin">
+<body class="page-nosotros">
      <div class="main-nav">
         <div class="container">
         <a class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
         <a href="#" class="hamburger-icon"><img src="../assets/images/logos/hamburger-icon-positivo.svg"></a>
 <nav class="menu">
     <ul>
-       <li class="menu-item">
-        <a href="information-contact">Jobs</a>
+      <li class="menu-item">
+        <a href="company-contacts">Empresas</a>
+      </li>
+        <li class="menu-item">
+        <a href="information-contact">Contacto</a>
       </li>
       <li class="menu-item">
-        <a href="#">Vistas Web</a>
-          <div class="submenu">
-          <ul>
-            <div class="row"><li><a href="company-contacts">Empresas</a></li></div>
-            <div class="row"><li><a href="information-contact">Contacto</a></li></div>
-            <div class="row"><li><a href="information-requests">Más informacion bootcamp</a></li></div>
-            <div class="row"><li><a href="te-llamamos">Te llamamos</a></li></div>
-            <div class="row"><li><a href="curriculums">Currículums</a></li></div>
-            <div class="row"><li><a href="promotion-entries">Sorteo becas</a></li></div>
-            <div class="row"><li><a href="newsletter">Newsletter</a></li></div>
-            <div class="row"><li><a href="talleres">Talleres</a></li></div>
-          </ul>
-        </div>
+      <a href="information-requests">Más informacion bootcamp</a>
+      </li>
+       <li class="menu-item">
+        <a href="te-llamamos">Te llamamos</a>
+      </li>
+      <li class="menu-item">
+        <a href="curriculums">Currículums</a>
+      </li>
+       <li class="menu-item">
+        <a href="promotion-entries">Sorteo becas</a>
+      </li>
+      <li class="menu-item">
+        <a href="newsletter">Newsletter</a>
+      </li>
+      <li class="menu-item">
+        <a href="talleres">Talleres</a>
       </li>
     </ul>
     </nav>
-  </div>
-</div>
       <li style="list-style: none; float: right; display: none" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>

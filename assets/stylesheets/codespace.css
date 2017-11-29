@@ -7078,10 +7078,7 @@ float:left
   width:280px;
   z-index:99999;
 }
-.page-admin .submenu ul
-{
-  float: left!important
-}
+
 @media (min-width:768px) and (max-width:800px) 
 {
  .submenu 
