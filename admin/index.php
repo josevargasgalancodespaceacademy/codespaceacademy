@@ -26,14 +26,14 @@
         <a href="#" class="hamburger-icon"><img src="../assets/images/logos/hamburger-icon-positivo.svg"></a>
 <nav class="menu">
     <ul>
-              <li class="menu-item">
-        <a href="information-contact">Contacto</a>
+       <li class="menu-item">
+        <a href="information-contact">Jobs</a>
       </li>
       <li class="menu-item">
         <a href="#">Vistas Web</a>
           <div class="submenu">
           <ul>
-            <li></li>
+            <li><a href="company-contacts">Empresas</a></li>
             <li><a href="information-contact">Contacto</a></li>
             <li><a href="information-requests">Más informacion bootcamp</a></li>
             <li><a href="te-llamamos">Te llamamos</a></li>
