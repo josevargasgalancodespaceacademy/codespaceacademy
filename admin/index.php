@@ -20,6 +20,8 @@
     <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
 <body class="page-nosotros">
+  <div id="top" class="main-content">
+       <div class="header">
      <div class="main-nav">
         <div class="container">
         <a class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
@@ -43,6 +45,8 @@
       </li>
     </ul>
     </nav>
+  </div>
+</div>
       <li style="list-style: none; float: right; display: none" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>
