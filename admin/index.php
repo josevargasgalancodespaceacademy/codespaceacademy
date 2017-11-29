@@ -33,7 +33,7 @@
         <a href="#">Vistas Web</a>
           <div class="submenu">
           <ul>
-            <li><a href="company-contacts">Empresas</a></li>
+            <div class="row>"><li><a href="company-contacts">Empresas</a></li></div>
             <li><a href="information-contact">Contacto</a></li>
             <li><a href="information-requests">Más informacion bootcamp</a></li>
             <li><a href="te-llamamos">Te llamamos</a></li>
