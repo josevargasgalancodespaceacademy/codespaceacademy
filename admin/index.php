@@ -20,8 +20,6 @@
     <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
 <body class="page-nosotros">
-  <div id="top" class="main-content">
-       <div class="header">
      <div class="main-nav">
         <div class="container">
         <a class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
@@ -29,24 +27,37 @@
 <nav class="menu">
     <ul>
       <li class="menu-item">
-        <a href="#">Vistas Web</a>
-          <div class="submenu">
+        <a href="../es/nosotros">Nosotros</a>
+      </li>
+        <li class="menu-item">
+        <a href="../es/cursos-programacion-malaga">Cursos</a>
+        <div class="submenu">
           <ul>
-            <li><a href="company-contacts">Empresas</a></li>
-            <li><a href="information-contact">Contacto</a></li>
-            <li><a href="information-requests">Más informacion bootcamp</a></li>
-            <li><a href="te-llamamos">Te llamamos</a></li>
-            <li><a href="curriculums">Currículums</a></li>
-            <li><a href="promotion-entries">Sorteo becas</a></li>
-            <li><a href="newsletter">Newsletter</a></li>
-            <li><a href="talleres">Talleres</a></li>
+            <li><a href="../es/cursos-programacion-malaga#bootcamps">Bootcamps</a></li>
+            <li><a href="../es/cursos-programacion-malaga#business-courses">Business code courses</a></li>
+            <li><a href="#">Extreme programming workshops</a></li>
           </ul>
         </div>
       </li>
+      <li class="menu-item">
+      <a href="../es/agenda-eventos-codespace">Eventos</a>
+      </li>
+      <li class="menu-item">
+        <a href="../es/becas-programacion-malaga">Becas</a>
+      </li>
+       <li class="menu-item">
+        <a href="../es/asesoramiento-laboral-malaga">Mentoring</a>
+      </li>
+      <li class="menu-item">
+        <a href="../es/talento-codespace">Talento <strong>codespace</strong></a>
+      </li>
+        <li class="menu-item">
+        <a href="../es/jobs">Jobs</a>
+      </li>
     </ul>
     </nav>
-  </div>
-</div>
+    </div>
+    </div>
       <li style="list-style: none; float: right; display: none" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>
