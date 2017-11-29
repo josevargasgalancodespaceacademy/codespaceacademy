@@ -2,10 +2,11 @@ function change_state(id,state,bbdd){
   var url = "php/change_state.php";
       var id_row = id;
       var state_row = $(state).val();
+      var bbdd_row = bbdd;
   $.ajax({                        
     type: "POST",                 
     url: url,  
-    data: {id:id_row,state:state_row,bbdd}                  
+    data: {id:id_row,state:state_row,bbdd:bbdd_row}                  
   }).done(function(respuesta){
     var postData = $("#change_state").serializeArray().reduce(function(obj, item) {
     obj[item.name] = item.name;
