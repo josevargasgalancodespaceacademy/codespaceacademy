@@ -33,13 +33,13 @@
         <a href="#">Vistas Web</a>
           <div class="submenu">
           <ul>
-            <li><a href="company-contacts">Empresas</a></li>
-            <li><a href="information-contact">Contacto</a></li>
-            <li><a href="information-requests">Más informacion bootcamp</a></li>
-            <li><a href="te-llamamos">Te llamamos</a></li>
-            <li><a href="curriculums">Currículums</a></li>
-            <li><a href="promotion-entries">Sorteo becas</a></li>
-            <li><a href="newsletter">Newsletter</a></li>
+            <li><a href="company-contacts">Empresas</a></li><br>
+            <li><a href="information-contact">Contacto</a></li><br>
+            <li><a href="information-requests">Más informacion bootcamp</a></li><br>
+            <li><a href="te-llamamos">Te llamamos</a></li><br>
+            <li><a href="curriculums">Currículums</a></li><br>
+            <li><a href="promotion-entries">Sorteo becas</a></li><br>
+            <li><a href="newsletter">Newsletter</a></li><br>
             <li><a href="talleres">Talleres</a></li>
           </ul>
         </div>
