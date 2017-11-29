@@ -20,11 +20,13 @@
     <link rel="shortcut icon" href="../assets/favicon.ico">
 </head>
 <body class="page-nosotros">
+     <div class="main-nav">
+        <div class="container">
         <a class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
         <a href="#" class="hamburger-icon"><img src="../assets/images/logos/hamburger-icon-positivo.svg"></a>
 <nav class="menu">
     <ul>
-      <li class="menu-item">
+              <li class="menu-item">
         <a href="information-contact">Contacto</a>
       </li>
       <li class="menu-item">
@@ -44,6 +46,8 @@
       </li>
     </ul>
     </nav>
+  </div>
+</div>
       <li style="list-style: none; float: right; display: none" >
        <input type="button" id="exportarexcel" value="Descargar Excel">
       </li>
