@@ -70,6 +70,7 @@
         <td class="title">Ciudad</td>
         <td class="title">Comentario</td>
         <td class="title">Fecha</td>
+        <td class="title">Estado</td>
     </tr>
    </thead> 
  <?php
