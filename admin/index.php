@@ -27,28 +27,19 @@
 <nav class="menu">
     <ul>
       <li class="menu-item">
-        <a href="company-contacts">Empresas</a>
-      </li>
-        <li class="menu-item">
-        <a href="information-contact">Contacto</a>
-      </li>
-      <li class="menu-item">
-      <a href="information-requests">Más informacion bootcamp</a>
-      </li>
-       <li class="menu-item">
-        <a href="te-llamamos">Te llamamos</a>
-      </li>
-      <li class="menu-item">
-        <a href="curriculums">Currículums</a>
-      </li>
-       <li class="menu-item">
-        <a href="promotion-entries">Sorteo becas</a>
-      </li>
-      <li class="menu-item">
-        <a href="newsletter">Newsletter</a>
-      </li>
-      <li class="menu-item">
-        <a href="talleres">Talleres</a>
+        <a href="#">Vistas Web</a>
+          <div class="submenu">
+          <ul>
+            <li><a href="company-contacts">Empresas</a></li>
+            <li><a href="information-contact">Contacto</a></li>
+            <li><a href="information-requests">Más informacion bootcamp</a></li>
+            <li><a href="te-llamamos">Te llamamos</a></li>
+            <li><a href="curriculums">Currículums</a></li>
+            <li><a href="promotion-entries">Sorteo becas</a></li>
+            <li><a href="newsletter">Newsletter</a></li>
+            <li><a href="talleres">Talleres</a></li>
+          </ul>
+        </div>
       </li>
     </ul>
     </nav>
