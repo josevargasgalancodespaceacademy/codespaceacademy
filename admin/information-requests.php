@@ -72,7 +72,7 @@
   </thead>
  <?php
                 foreach ($company as $key => $company_contacts) {
-                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["city"]."</td><td>".$company[$key]["course"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td></tr>";
+                  echo "<tr><td>".$company[$key]["name"]."</td><td>".$company[$key]["email"]."</td><td>".$company[$key]["telephone"]."</td><td>".$company[$key]["comment"]."</td><td>".$company[$key]["city"]."</td><td>".$company[$key]["course"]."</td><td>".date("d-m-Y H:i:s", strtotime($company[$key]["created_at"]))."</td><td><form role='form' id='".$company[$key]["id"]."'><select class='formacion-a-medida' id='state".$company[$key]["id"]."' name='state'><option value=''>Selecciona el estado</option><option value='No contactado'>No contactado</option><option value='Imposible contactar'>Imposible contactar</option><option value='Contactado'>Contactado</option></select><button type='button' onClick='change_state(`".$company[$key]["id"]."`,`#state".$company[$key]["id"]."`,`information_requests`)' style='margin-left:20px'>Cambiar estado</button></form>".$company[$key]["state"]."</td></tr>";
                 }
                ?>          
   </table>
