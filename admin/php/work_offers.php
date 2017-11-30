@@ -28,10 +28,10 @@ $errors = $validator->getErrors();
 $contenido = 
 "<!DOCTYPE html>
 <head>
-<script type='text/javascript' src='../../assets/javascript/lib/jquery-3.2.1.min.js' type='text/javascript' async='async'></script> 
+<script type='text/javascript' src='../../assets/javascript/lib/jquery-3.2.1.min.js' type='text/javascript'></script> 
 <script type='text/javascript' src='../../assets/javascript/forms/work_offers_curriculums.js' type='text/javascript' async='async'></script> 
 <script type='text/javascript' src='../../assets/javascript/forms/newsletter.js' async='async'></script>
-<script type='text/javascript' src='../../assets/javascript/bootstrap.js' async='async'></script>
+<script type='text/javascript' src='../../assets/javascript/bootstrap.js'></script>
 <link rel='stylesheet' href='../../assets/stylesheets/codespace.css'>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
