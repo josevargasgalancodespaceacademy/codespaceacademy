@@ -9,9 +9,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript" async="async"></script> 
+<script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
 <script type="text/javascript" src="../assets/javascript/forms/curriculums.js" type="text/javascript" async="async"></script> 
 <script type="text/javascript" src="../assets/javascript/forms/newsletter.js" async="async"></script>
+<script type="text/javascript" src="../assets/javascript/bootstrap.js"></script>
 <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

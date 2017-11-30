@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript" async="async"></script> 
-      <script src="../assets/javascript/bootstrap.js" async="async"></script>
+  <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
+      <script src="../assets/javascript/bootstrap.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
