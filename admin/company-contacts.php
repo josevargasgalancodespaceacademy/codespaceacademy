@@ -69,6 +69,7 @@
         <td class="title">Petición de formación</td>
         <td class="title">Comentario</td>
         <td class="title">Fecha</td>
+        <td class="title">Estado</td>
     </tr>
    </thead> 
  <?php
