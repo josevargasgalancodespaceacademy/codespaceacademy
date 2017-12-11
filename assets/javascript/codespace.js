@@ -87,6 +87,22 @@ function contador() {
     });
   }
 
+function contador_becas() { 
+    var launchdate = new Date(2017, 12 - 1, 19);//la fecha de finalizacion del sorteo
+    var format = 'DD hh:mm:ss';
+    $('#counter').countdown({
+
+        format: format,
+        layout: '<span class="countdown_row countdown_show4"><span class="countdown_section">' +
+                '<span class="countdown_amount">{dnn}</span><br>Dias</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{hnn}</span><br>Horas</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{mnn}</span><br>Minutos</span><span class="countdown_section">' +
+                '<span class="countdown_amount">{snn}</span><br>Segundos</span></span></div></div>',
+        until: launchdate
+    });
+  }
+
+
 /*animacion anclas usabilidad*/
 $(function(){
 
