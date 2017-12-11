@@ -5,6 +5,7 @@
 <script src="../assets/javascript/lib/jquery-ui.min.js" async="async"></script>
 <script src="../assets/javascript/forms/promotion_entries.js" async="async"></script>
 <script type="text/javascript" src="../assets/javascript/forms/newsletter.js" async="async"></script>
+<script type="text/javascript" src="../assets/javascript/lib/jquery.countdown.min.js" async="async"></script>
 <script type="text/javascript" src="../assets/javascript/bootstrap.js"></script>
 <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
 <link rel="stylesheet" href="../assets/stylesheets/jquery-ui.min.css">
@@ -24,7 +25,7 @@
 <link rel="shortcut icon" href="../assets/favicon.ico">
 <title>Nuestras becas. Queremos premiarte...</title>
 </head>
-<body onselectstart='return false;' class="page-becas-financiacion" onload="datepicker()">
+<body onselectstart='return false;' class="page-becas-financiacion" onload="datepicker(); contador_becas();">
 <div id="top" class="main-content">
        <div class="header">
               <div class="num-telefono"><a onclick="goog_report_conversion ('tel:900-102-101')" href="tel://900102101"><img class="telefono-icon" src="../assets/images/index/telefono-negativo.svg"></a></div>
@@ -79,6 +80,13 @@
       </div>
     </div>
 
+    <section class="container contador-atras">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <h2>El<strong> 19 de diciembre</strong> es el último de día para inscribirse al<strong> sorteo</strong></h2>
+        <h3><strong>¡Falta muy poco!</strong></h3>
+      </div>
+      <div id="counter" class="col-xs-12 col-md-8 col-md-offset-2" style="margin-top: 60px!important"></div>
+      </section>
 
     <div class="container sistema-becas"> 
      <div class="row col-sm-12">
