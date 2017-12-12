@@ -23,10 +23,10 @@
             <div class="box-body">
               <!-- the events -->
               <div id="external-events">
-                <div class="external-event bg-green">Citas</div>
-                <div class="external-event bg-yellow">Meetups</div>
-                <div class="external-event bg-aqua">Entrevistas</div>
-                <div class="external-event bg-light-blue">Reuniones</div>
+                <div class="external-event bg-green">Cita</div>
+                <div class="external-event bg-yellow">Meetup</div>
+                <div class="external-event bg-aqua">Entrevista</div>
+                <div class="external-event bg-light-blue">Reunion</div>
                 <div class="checkbox">
                   <label for="drop-remove">
                     <input type="checkbox" id="drop-remove">
@@ -140,7 +140,7 @@
         right: 'month,agendaWeek,agendaDay'
       },
 
-      //events: { url:"cargaEventos"},
+      events: { url:"cargareventos"},
       lang: 'es',
       editable: true,
       droppable: true, // this allows things to be dropped onto the calendar !!!

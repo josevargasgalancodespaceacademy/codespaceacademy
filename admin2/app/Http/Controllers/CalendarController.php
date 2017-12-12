@@ -10,12 +10,12 @@ class CalendarController extends Controller
 public function index()
     {
         $data = array(); //declaramos un array principal que va contener los datos
-        $id = CalendarioEvento::all()->lists('id'); //listamos todos los id de los eventos
-        $titulo = CalendarioEvento::all()->lists('titulo'); //lo mismo para lugar y fecha
-        $fechaIni = CalendarioEvento::all()->lists('fechaIni');
-        $fechaFin = CalendarioEvento::all()->lists('fechaFin');
-        $allDay = CalendarioEvento::all()->lists('todoeldia');
-        $background = CalendarioEvento::all()->lists('color');
+        $id = eventosagendacalendario::all()->pluck('id'); //listamos todos los id de los eventos
+        $titulo = eventosagendacalendario::all()->pluck('title'); //lo mismo para lugar y fecha
+        $fechaIni = eventosagendacalendario::all()->pluck('date_start');
+        $fechaFin = eventosagendacalendario::all()->pluck('date_end');
+        $allDay = eventosagendacalendario::all()->pluck('all_day');
+        $background =eventosagendacalendario::all()->pluck('color');
         $count = count($id); //contamos los ids obtenidos para saber el numero exacto de eventos
  
         //hacemos un ciclo para anidar los valores obtenidos a nuestro array principal $data
@@ -26,7 +26,6 @@ public function index()
                 "end"=>$fechaFin[$i],
                 "allDay"=>$allDay[$i],
                 "backgroundColor"=>$background[$i],
-                "borderColor"=>$borde[$i],
                 "id"=>$id[$i]
                 //"url"=>"cargaEventos".$id[$i]
                 //en el campo "url" concatenamos el el URL con el id del evento para luego
@@ -35,7 +34,7 @@ public function index()
             );
         }
  
-        json_encode($data); //convertimos el array principal $data a un objeto Json 
+       json_encode($data); //convertimos el array principal $data a un objeto Json 
        return $data; //para luego retornarlo y estar listo para consumirlo
     }
 
