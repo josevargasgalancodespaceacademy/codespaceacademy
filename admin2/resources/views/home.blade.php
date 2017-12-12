@@ -23,10 +23,10 @@
             <div class="box-body">
               <!-- the events -->
               <div id="external-events">
-                <div class="external-event bg-green">Cita</div>
+                <div class="external-event bg-green">Taller</div>
                 <div class="external-event bg-yellow">Meetup</div>
-                <div class="external-event bg-aqua">Entrevista</div>
-                <div class="external-event bg-light-blue">Reunion</div>
+                <div class="external-event bg-aqua">Entrevista beca</div>
+                <div class="external-event bg-light-blue">Reunión</div>
                 <div class="checkbox">
                   <label for="drop-remove">
                     <input type="checkbox" id="drop-remove">
@@ -63,10 +63,10 @@
               </div>
               <!-- /btn-group -->
               <div class="input-group">
-                <input id="new-event" type="text" class="form-control" placeholder="Titulo de evento">
+                <input id="new-event" type="text" class="form-control" placeholder="Titulo del evento">
 
                 <div class="input-group-btn">
-                  <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Agregar</button>
+                  <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Añadir</button>
                 </div>
                 <!-- /btn-group -->
               </div><br/><br/>
@@ -186,9 +186,111 @@
                 console.log("Error al crear evento");
               }        
         });        
+      },
+      eventResize: function(event) {
+          var start = event.start.format("YYYY-MM-DD HH:mm");
+          var back=event.backgroundColor;
+          var allDay=event.allDay;
+          if(event.end){
+            var end = event.end.format("YYYY-MM-DD HH:mm");
+          }else{var end="NULL";
+          }
+          crsfToken = document.getElementsByName("_token")[0].value;
+            $.ajax({
+              url: 'actualizarevento',
+              data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id+'&background='+back+'&allday='+allDay,
+              type: "POST",
+              headers: {
+                    "X-CSRF-TOKEN": crsfToken
+                },
+                success: function(json) {
+                  console.log("Updated Successfully");
+                },
+                error: function(json){
+                  console.log("Error al actualizar evento");
+                }
+            });
+      },
+       eventDrop: function(event, delta) {
+        var start = event.start.format("YYYY-MM-DD HH:mm");
+        if(event.end){
+          var end = event.end.format("YYYY-MM-DD HH:mm");
+        }else{var end="NULL";
+        }
+        var back=event.backgroundColor;
+        var allDay=event.allDay;
+        crsfToken = document.getElementsByName("_token")[0].value;
+
+          $.ajax({  
+            url: 'actualizarevento',
+            data: 'title='+ event.title+'&start='+ start +'&end='+ end+'&id='+ event.id+'&background='+back+'&allday='+allDay ,           
+            type: "POST",
+            headers: {
+              "X-CSRF-TOKEN": crsfToken
+            },
+            success: function(json) {
+              console.log("Updated Successfully eventdrop");
+            },
+            error: function(json){
+              console.log("Error al actualizar eventdrop");
+            }
+          });
+      },
+      eventClick: function (event, jsEvent, view) {
+        crsfToken = document.getElementsByName("_token")[0].value;
+        var con=confirm("Esta seguro que desea eliminar el evento");
+        if(con){
+            $.ajax({
+               url: 'eliminarevento',
+               data: 'id=' + event.id,
+               headers: {
+                  "X-CSRF-TOKEN": crsfToken
+                },
+               type: "POST",
+               success: function () {
+                    $('#calendar').fullCalendar('removeEvents', event._id);
+                }
+            });
+        }else{
+           console.log("Cancelado");
+        }
+      },
+
+      eventMouseover: function( event, jsEvent, view ) { 
+        var start = (event.start.format("HH:mm"));
+        var back=event.backgroundColor;
+        if(event.end){
+            var end = event.end.format("HH:mm");
+        }else{var end="No definido";
+        }
+        if(event.allDay){
+            var allDay = "Si";
+        }else{var allDay="No";
+        }
+        var tooltip = '<div class="tooltipevent" style="width:200px;height:100px;color:white;background:'+back+';position:absolute;z-index:10001;">'+'<center>'+ event.title +'</center>'+'El evento dura todo el día: '+allDay+'<br>'+ 'Inicio: '+start+'<br>'+ 'Fin: '+ end +'</div>';
+        $("body").append(tooltip);
+        $(this).mouseover(function(e) {
+          $(this).css('z-index', 10000);
+          $('.tooltipevent').fadeIn('500');
+          $('.tooltipevent').fadeTo('10', 1.9);
+        }).mousemove(function(e) {
+          $('.tooltipevent').css('top', e.pageY + 10);
+          $('.tooltipevent').css('left', e.pageX + 20);
+        });            
+      },
+
+      eventMouseout: function(calEvent, jsEvent) {
+        $(this).css('z-index', 8);
+        $('.tooltipevent').remove();
+      },
+
+      dayClick: function(date, jsEvent, view) {
+            if (view.name === "month") {
+                $('#calendar').fullCalendar('gotoDate', date);
+                $('#calendar').fullCalendar('changeView', 'agendaDay');
+            }
       }      
     });
-
     /* AGREGANDO EVENTOS AL PANEL */
     var currColor = "#3c8dbc"; //Red by default
     //Color chooser button

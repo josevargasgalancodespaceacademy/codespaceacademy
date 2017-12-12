@@ -21,3 +21,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/inscribir-ofertas', 'HomeController@ofertas')->name('inscribir-ofertas');
 Route::post('guardareventos', array('as' => 'guardareventos','uses' => 'CalendarController@create'));
 Route::get('cargareventos{id?}','CalendarController@index');
+Route::post('actualizarevento','CalendarController@update');
+Route::post('eliminarevento','CalendarController@delete');

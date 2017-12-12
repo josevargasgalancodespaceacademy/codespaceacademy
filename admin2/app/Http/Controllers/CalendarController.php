@@ -64,16 +64,16 @@ public function index()
         $allDay = $_POST['allday'];
         $back = $_POST['background'];
 
-        $evento=CalendarioEvento::find($id);
+        $evento=eventosagendacalendario::find($id);
         if($end=='NULL'){
-            $evento->fechaFin=NULL;
+            $evento->date_end=NULL;
         }else{
-            $evento->fechaFin=$end;
+            $evento->date_end=$end;
         }
-        $evento->fechaIni=$start;
-        $evento->todoeldia=$allDay;
+        $evento->date_start=$start;
+        $evento->all_day=$allDay;
         $evento->color=$back;
-        $evento->titulo=$title;
+        $evento->title=$title;
         //$evento->fechaFin=$end;
 
         $evento->save();
@@ -83,6 +83,6 @@ public function index()
         //Valor id recibidos via ajax
         $id = $_POST['id'];
 
-        CalendarioEvento::destroy($id);
+        eventosagendacalendario::destroy($id);
    }
 }
