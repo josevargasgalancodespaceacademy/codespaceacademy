@@ -7,11 +7,13 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" >
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name') }}</title>
-
+    <!-- Scripts -->
+     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('js')
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
 </head>
 <body>
     <div id="app">
@@ -45,6 +47,33 @@
                         @guest
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
+                              <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    Vistas<span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Empresas</a>
+                                        <a href="#">Contacto</a>
+                                        <a href="#">Más información</a>
+                                        <a href="#">Solicitud llamada</a>
+                                        <a href="#">Currículums</a>
+                                        <a href="#">Sorteo Becas</a>
+                                        <a href="#">Newsletter</a>
+                                        <a href="#">Talleres</a>
+                                        <a href="#">Jobs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Ofertas<span class="caret"></span></a>
+                                       <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('inscribir-ofertas')}}">Crear nueva oferta</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -69,11 +98,7 @@
                 </div>
             </div>
         </nav>
-
         @yield('content')
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

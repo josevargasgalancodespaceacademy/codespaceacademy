@@ -10722,7 +10722,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   background: rgb(230, 23, 83);
   opacity: 1;
 }
-.campus1,.campus2,.campus3,.campus4
+.fotos-campus
 {
   background-position:center;
   background-size:cover!important;
@@ -10735,7 +10735,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 {
   height: 250px!important;
 }
-.campus1,.campus2,.campus3,.campus4 
+.fotos-campus
 {
   height:225px;
 }
@@ -10762,6 +10762,30 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .campus4
 {
    background-image: url("../../assets/images/nosotros/campus4.jpg");
+}
+.campus5
+{
+   background-image: url("../../assets/images/nosotros/campus5.jpg");
+}
+.campus6
+{
+   background-image: url("../../assets/images/nosotros/campus6.jpg");
+}
+.campus7
+{
+   background-image: url("../../assets/images/nosotros/campus7.jpg");
+}
+.campus8
+{
+   background-image: url("../../assets/images/nosotros/campus8.jpg");
+}
+.campus9
+{
+   background-image: url("../../assets/images/nosotros/campus9.jpg");
+}
+.campus10
+{
+   background-image: url("../../assets/images/nosotros/campus10.jpg");
 }
 .nuestro-equipo .title
 {
