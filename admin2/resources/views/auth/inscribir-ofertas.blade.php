@@ -4,6 +4,7 @@
 @endsection
 @section('css')
  <link href="{{ asset('css/forms.css') }}" rel="stylesheet"> 
+ <link href="{{ asset('css/AdminLTE.css') }}" rel="stylesheet">
 @endsection
 @section('content')
 <div class="container">

@@ -179,11 +179,11 @@
                     "X-CSRF-TOKEN": crsfToken
                 },
               success: function(events) {
-                console.log('Evento creado');      
+                alert('Evento creado');      
                 $('#calendar').fullCalendar('refetchEvents');
               },
               error: function(json){
-                console.log("Error al crear evento");
+                alert("Error al crear evento");
               }        
         });        
       },
@@ -251,8 +251,6 @@
                     $('#calendar').fullCalendar('removeEvents', event._id);
                 }
             });
-        }else{
-           console.log("Cancelado");
         }
       },
 
