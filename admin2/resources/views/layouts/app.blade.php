@@ -8,9 +8,6 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name') }}</title>
-    <!-- Scripts -->
-     <script src="{{ asset('js/app.js') }}"></script>
-    @yield('js')
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
@@ -99,5 +96,14 @@
         </nav>
         @yield('content')
     </div>
+        <!-- Scripts -->
+     <script src='js/app.js'></script>
+     <script src='js/forms/work_offers.js'></script>
+     <script src="plugins/fullcalendar/lib/jquery.min.js"></script>
+     <script src="plugins/fullcalendar/lib/jquery-ui.min.js"></script>
+     <script src="plugins/fullcalendar//lib/moment.min.js"></script>
+     <script src="plugins/fullcalendar/fullcalendar.js"></script>
+     <script src="plugins/fullcalendar/locale/es.js"></script>
+     @yield('scripts')
 </body>
 </html>
