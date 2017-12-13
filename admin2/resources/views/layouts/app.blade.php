@@ -97,13 +97,13 @@
         @yield('content')
     </div>
         <!-- Scripts -->
-     <script src='www.codespaceacademy.com/admin2/public/js/app.js'></script>
-     <script src='www.codespaceacademy.com/admin2/public/js/forms/work_offers.js'></script>
-     <script src="www.codespaceacademy.com/admin2/public/plugins/fullcalendar/lib/jquery.min.js"></script>
-     <script src="www.codespaceacademy.com/admin2/public/plugins/fullcalendar/lib/jquery-ui.min.js"></script>
-     <script src="www.codespaceacademy.com/admin2/public/plugins/fullcalendar//lib/moment.min.js"></script>
-     <script src="www.codespaceacademy.com/admin2/public/plugins/fullcalendar/fullcalendar.js"></script>
-     <script src="www.codespaceacademy.com/admin2/public/plugins/fullcalendar/locale/es.js"></script>
+     <script src='js/app.js'></script>
+     <script src='js/forms/work_offers.js'></script>
+     <script src="plugins/fullcalendar/lib/jquery.min.js"></script>
+     <script src="plugins/fullcalendar/lib/jquery-ui.min.js"></script>
+     <script src="plugins/fullcalendar//lib/moment.min.js"></script>
+     <script src="plugins/fullcalendar/fullcalendar.js"></script>
+     <script src="plugins/fullcalendar/locale/es.js"></script>
      @yield('scripts')
 </body>
 </html>
