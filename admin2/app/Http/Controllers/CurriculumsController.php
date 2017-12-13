@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Curriculums;
 
+
 class CurriculumsController extends Controller
 {
     public function __construct()
@@ -13,7 +14,7 @@ class CurriculumsController extends Controller
     }
     public function consulta()
     {
-    	$curriculums = Curriculums::all('id' ,'name', 'email', 'telephone', 'website', 'linkedin', 'route_curriculum_pdf', 'created_at');
+    	$curriculums = Curriculums::all('id' ,'name', 'email', 'telephone', 'website', 'linkedin', 'route_curriculum_pdf', 	'created_at');
     	return view('vistas.curriculums')->with('curriculums', $curriculums);
     }
     public function detalle($id)
