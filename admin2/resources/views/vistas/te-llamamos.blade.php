@@ -17,5 +17,6 @@
 	</tr>	
 	@endforeach
 </table>
+{{$te_llamamos->links()}}
 </div>
 @endsection

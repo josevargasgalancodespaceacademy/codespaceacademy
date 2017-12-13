@@ -17,5 +17,6 @@
 	</tr>	
 	@endforeach
 </table>
+{{$contacto->links()}}
 </div>
 @endsection

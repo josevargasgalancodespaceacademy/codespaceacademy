@@ -17,5 +17,6 @@
 	</tr>	
 	@endforeach
 </table>
+{{$mas_informacion->links()}}
 </div>
 @endsection

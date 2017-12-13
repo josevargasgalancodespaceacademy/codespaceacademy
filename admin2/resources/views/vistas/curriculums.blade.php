@@ -15,5 +15,6 @@
 	</tr>	
 	@endforeach
 </table>
+{{$curriculums->links()}}
 </div>
 @endsection

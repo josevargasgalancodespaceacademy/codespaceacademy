@@ -17,5 +17,6 @@
 	</tr>	
 	@endforeach
 </table>
+	{{$sorteo_becas->links()}}
 </div>
 @endsection

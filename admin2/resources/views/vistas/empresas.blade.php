@@ -17,5 +17,6 @@
 	</tr>	
 	@endforeach
 </table>
+{{$empresas->links()}}
 </div>
 @endsection

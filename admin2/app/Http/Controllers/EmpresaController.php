@@ -14,6 +14,7 @@ class EmpresaController extends Controller
     public function consulta()
     {
     	$empresas = Empresas::all('id' ,'name', 'company_name', 'email', 'telephone', 'comment', 'created_at', 'state');
+    	$empresas = Empresas::paginate(15);
     	return view('vistas.empresas')->with('empresas', $empresas);
     }
     public function detalle($id)
