@@ -35,3 +35,5 @@ Route::get('/listado-mas-informacion/{id}/detalle-mas-informacion', 'MasInformac
 Route::get('/listado-te-llamamos', 'TeLLamamosController@consulta')->name('listado-te-llamamos');
 Route::get('/listado-curriculums', 'CurriculumsController@consulta')->name('listado-curriculums');
 Route::get('/listado-curriculums/{id}/detalle-curriculum', 'CurriculumsController@detalle');
+Route::get('/listado-sorteo-becas', 'SorteoBecasController@consulta')->name('listado-sorteo-becas');
+Route::get('/listado-sorteo-becas/{id}/detalle-sorteo-becas', 'SorteoBecasController@detalle');

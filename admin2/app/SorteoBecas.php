@@ -15,4 +15,3 @@ class SorteoBecas extends Model
     protected $hidden = [
     	'id', 'name', 'surnames', 'date_of_birth', 'email', 'type_identification', 'number_identification', 'telephone', 'city', 'comment', 'created_at'];
 }
-}
