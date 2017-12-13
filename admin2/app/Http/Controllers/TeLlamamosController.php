@@ -15,7 +15,6 @@ class TeLlamamosController extends Controller
     {
     	$te_llamamos = TeLlamamos::all('id' ,'name', 'telephone', 'created_at', 'state');
     	$te_llamamos = TeLlamamos::paginate(15);
-        
     	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
     }
 }

@@ -32,7 +32,7 @@ Route::get('/listado-contacto', 'ContactoController@consulta')->name('listado-co
 Route::get('/listado-contacto/{id}/detalle-contacto', 'ContactoController@detalle');
 Route::get('/listado-mas-informacion', 'MasInformacionController@consulta')->name('listado-mas-informacion');
 Route::get('/listado-mas-informacion/{id}/detalle-mas-informacion', 'MasInformacionController@detalle');
-Route::get('/listado-te-llamamos', 'TeLLamamosController@consulta')->name('listado-te-llamamos');
+Route::get('/listado-te-llamamos', 'TeLlamamosController@consulta')->name('listado-te-llamamos');
 Route::get('/listado-curriculums', 'CurriculumsController@consulta')->name('listado-curriculums');
 Route::get('/listado-curriculums/{id}/detalle-curriculum', 'CurriculumsController@detalle');
 Route::get('/listado-sorteo-becas', 'SorteoBecasController@consulta')->name('listado-sorteo-becas');
