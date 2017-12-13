@@ -37,3 +37,4 @@ Route::get('/listado-curriculums', 'CurriculumsController@consulta')->name('list
 Route::get('/listado-curriculums/{id}/detalle-curriculum', 'CurriculumsController@detalle');
 Route::get('/listado-sorteo-becas', 'SorteoBecasController@consulta')->name('listado-sorteo-becas');
 Route::get('/listado-sorteo-becas/{id}/detalle-sorteo-becas', 'SorteoBecasController@detalle');
+Route::get('/listado-newsletter', 'NewsletterController@consulta')->name('listado-newsletter');

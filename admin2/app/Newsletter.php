@@ -15,4 +15,3 @@ class Newsletter extends Model
     protected $hidden = [
     	'id', 'email', 'subscribed', 'created_at', 'comment_unsubscribe'];
 }
-}
