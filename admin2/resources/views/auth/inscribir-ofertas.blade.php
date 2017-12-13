@@ -4,7 +4,6 @@
 @endsection
 @section('css')
  <link href="{{ asset('css/forms.css') }}" rel="stylesheet"> 
- <link href="{{ asset('css/AdminLTE.css') }}" rel="stylesheet">
 @endsection
 @section('content')
 <div class="container">
@@ -83,7 +82,7 @@
        </div>
      </div>
        <div class="empresa">
-       <label  class="title"> Detalles de la oferta</label>
+       <label  class="title">Detalles de la oferta</label>
        <div class="talento-field">
         <label class="title-field" for="num_vacant">Número de vacantes*</label>
        <input class="form-control" id="num_vacant" 
