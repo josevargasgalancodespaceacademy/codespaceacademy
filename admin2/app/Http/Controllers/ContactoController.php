@@ -14,11 +14,11 @@ class ContactoController extends Controller
     public function consulta()
     {
     	$contacto = Contacto::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at');
-    	return view('auth.vistas.contacto')->with('contacto', $contacto);
+    	return view('vistas.contacto')->with('contacto', $contacto);
     }
     public function detalle($id)
     {
     	$detalle_contacto = Contacto::find($id);
-    	return view('auth.vistas.detalle-contacto')->with('detalle_contacto', $detalle_contacto);
+    	return view('vistas.detalle-contacto')->with('detalle_contacto', $detalle_contacto);
     }
 }
