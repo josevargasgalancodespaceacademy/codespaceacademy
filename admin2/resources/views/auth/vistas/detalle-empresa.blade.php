@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="table-responsive">
+<div class="container-fluid table-responsive">
 <table class="table table-bordered">
 	<tr>
 			<td>Nombre de la empresa</td>

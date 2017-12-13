@@ -15,4 +15,3 @@ class MasInformacion extends Model
     protected $hidden = [
     	'id', 'name', 'email', 'telephone', 'city', 'course', 'comment', 'created_at'];
 }
-}

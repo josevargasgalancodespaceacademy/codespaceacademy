@@ -15,4 +15,4 @@ class Contacto extends Model
     protected $hidden = [
     	'id', 'name', 'email', 'telephone', 'comment', 'created_at'];
 }
-}
+

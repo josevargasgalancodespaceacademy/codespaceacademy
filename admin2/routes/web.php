@@ -28,3 +28,7 @@ Route::post('eliminarevento','CalendarController@delete');
 //rutas para mostrar las diferentes tablas
 Route::get('/listado-empresas', 'EmpresaController@consulta')->name('listado-empresas');
 Route::get('/listado-empresas/{id}/detalle-empresa', 'EmpresaController@detalle');
+Route::get('/listado-contacto', 'ContactoController@consulta')->name('listado-contacto');
+Route::get('/listado-contacto/{id}/detalle-contacto', 'ContactoController@detalle');
+Route::get('/listado-mas-informacion', 'MasInformacionController@consulta')->name('listado-mas-informacion');
+Route::get('/listado-mas-informacion/{id}/detalle-mas-informacion', 'MasInformacionController@detalle');

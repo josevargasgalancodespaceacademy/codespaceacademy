@@ -51,8 +51,8 @@
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="{{ route('listado-empresas')}}">Empresas</a>
-                                        <a href="#">Contacto</a>
-                                        <a href="#">Más información</a>
+                                        <a href="{{ route('listado-contacto')}}">Contacto</a>
+                                        <a href="{{ route('listado-mas-informacion')}}">Más información</a>
                                         <a href="#">Solicitud llamada</a>
                                         <a href="#">Currículums</a>
                                         <a href="#">Sorteo Becas</a>
