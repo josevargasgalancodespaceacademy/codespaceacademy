@@ -13,7 +13,7 @@
 			<td>{{ $registro->company_name }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>	
-			<td><a href="../public/listado-empresas/{{$registro->id}}/detalle-empresa">Ver más</a></td>	
+			<td><a href="../public/listado-empresas/{{ $registro->id }}/detalle-empresa">Ver más</a></td>	
 	</tr>	
 	@endforeach
 </table>

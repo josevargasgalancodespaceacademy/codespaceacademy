@@ -7,14 +7,18 @@ use App\Empresas;
 
 class EmpresaController extends Controller
 {
+	public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function consulta()
     {
     	$empresas = Empresas::all('id' ,'name', 'company_name', 'email', 'telephone', 'comment', 'created_at', 'state');
-    	return view('vistas.empresas')->with('empresas', $empresas);
+    	return view('auth.vistas.empresas')->with('empresas', $empresas);
     }
     public function detalle($id)
     {
-    	$detalle_empresa = Empresas::find($id)->first();
-    	return view('vistas.detalle-empresa')->with('detalle_empresa', $detalle_empresa);
+    	$detalle_empresa = Empresas::find($id);
+    	return view('auth.vistas.detalle-empresa')->with('detalle_empresa', $detalle_empresa);
     }
 }
