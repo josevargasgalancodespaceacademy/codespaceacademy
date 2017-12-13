@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-<table border="1">
+<table class="table table-bordered">
 	<tr>
 			<td>Nombre de la empresa</td>
 			<td>Fecha</td>

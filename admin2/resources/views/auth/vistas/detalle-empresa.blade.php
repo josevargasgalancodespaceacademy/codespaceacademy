@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
-<table border="1">
+<div class="table-responsive">
+<table class="table table-bordered">
 	<tr>
 			<td>Nombre de la empresa</td>
 			<td>Nombre del contacto</td>
@@ -12,7 +12,6 @@
 			<td>Comentario</td>
 			<td>Fecha</td>
 			<td>Estado</td>
-			<td>Acciones</td>
 	</tr>
 	<tr>
 			<td>{{ $detalle_empresa->company_name }}</td>
@@ -24,7 +23,6 @@
 			<td>{{ $detalle_empresa->comment }}</td>
 			<td>{{ $detalle_empresa->created_at}}</td>
 			<td>{{ $detalle_empresa->state }}</td>
-			<td></td>	
 	</tr>	
 </table>
 </div>
