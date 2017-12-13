@@ -33,4 +33,5 @@ Route::get('/listado-contacto/{id}/detalle-contacto', 'ContactoController@detall
 Route::get('/listado-mas-informacion', 'MasInformacionController@consulta')->name('listado-mas-informacion');
 Route::get('/listado-mas-informacion/{id}/detalle-mas-informacion', 'MasInformacionController@detalle');
 Route::get('/listado-te-llamamos', 'TeLLamamosController@consulta')->name('listado-te-llamamos');
-Route::get('/listado-te-llamamos/{id}/detalle-te-llamamos', 'TeLLamamosController@detalle');
+Route::get('/listado-curriculums', 'CurriculumsController@consulta')->name('listado-curriculums');
+Route::get('/listado-curriculums/{id}/detalle-curriculum', 'CurriculumsController@detalle');

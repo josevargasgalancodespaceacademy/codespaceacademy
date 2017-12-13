@@ -54,7 +54,7 @@
                                         <a href="{{ route('listado-contacto')}}">Contacto</a>
                                         <a href="{{ route('listado-mas-informacion')}}">Más información</a>
                                         <a href="{{ route('listado-te-llamamos')}}">Solicitud llamada</a>
-                                        <a href="#">Currículums</a>
+                                        <a href="{{ route('listado-curriculums')}}">Currículums</a>
                                         <a href="#">Sorteo Becas</a>
                                         <a href="#">Newsletter</a>
                                         <a href="#">Talleres</a>

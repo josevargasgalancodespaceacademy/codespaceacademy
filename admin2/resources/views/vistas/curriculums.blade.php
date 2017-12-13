@@ -4,16 +4,14 @@
 <table class="table table-bordered">
 	<tr>
 			<td>Nombre</td>
-			<td>Teléfono</td>
 			<td>Fecha</td>
-			<td>Estado</td>
+			<td>Acciones</td>
 	</tr>
-	@foreach($te_llamamos as $registro)
+	@foreach($curriculums as $registro)
 	<tr>
 			<td>{{ $registro->name }}</td>
-			<td>{{ $registro->telephone }}</td>
 			<td>{{ $registro->created_at }}</td>
-			<td>{{ $registro->state }}</td>	
+			<td><a href="../public/listado-curriculums/{{ $registro->id }}/detalle-curriculum">Ver más</a></td>	
 	</tr>	
 	@endforeach
 </table>

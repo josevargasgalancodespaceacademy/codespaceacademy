@@ -15,4 +15,3 @@ class Curriculums extends Model
     protected $hidden = [
     	'id', 'name', 'email', 'telephone', 'website', 'linkedin', 'route_curriculum_pdf', 'created_at'];
 }
-}
