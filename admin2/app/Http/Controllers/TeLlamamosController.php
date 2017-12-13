@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\TeLlamamos;
+use App\TeLLamamos;
 
 class TeLlamamosController extends Controller
 {
@@ -13,8 +13,8 @@ class TeLlamamosController extends Controller
     }
     public function consulta()
     {
-    	$te_llamamos = TeLlamamos::all('id' ,'name', 'telephone', 'created_at', 'state');
-    	$te_llamamos = TeLlamamos::paginate(15);
+    	$te_llamamos = TeLLamamos::all('id' ,'name', 'telephone', 'created_at', 'state');
+    	$te_llamamos = TeLLamamos::paginate(15);
     	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
     }
 }
