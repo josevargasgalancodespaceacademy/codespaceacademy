@@ -97,7 +97,7 @@
         @yield('content')
     </div>
         <!-- Scripts -->
-     <script src='*/js/app.js'></script>
+     <script src='js/app.js'></script>
      <script src='js/forms/work_offers.js'></script>
      <script src="plugins/fullcalendar/lib/jquery.min.js"></script>
      <script src="plugins/fullcalendar/lib/jquery-ui.min.js"></script>
