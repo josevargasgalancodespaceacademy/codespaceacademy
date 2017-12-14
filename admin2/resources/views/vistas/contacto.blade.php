@@ -6,6 +6,7 @@
 			<th>Nombre</th>
 			<th>Comentario</th>
 			<th>Fecha</th>
+			<th>Contacto</th>
 			<th>Acciones</th>
 	</thead>
 	<tbody>
@@ -13,7 +14,8 @@
 	<tr>
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->comment }}</td>
-			<td>{{ $registro->created_at }}</td>	
+			<td>{{ $registro->created_at }}</td>
+			<td>{{ $registro->state }}</td>	
 			<td><a href="../public/listado-contacto/{{ $registro->id }}/detalle-contacto" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver más</a>
 				<a href="../public/listado-contacto/{{ $registro->id }}/editar-contacto" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a></td>		
 	</tr>	
