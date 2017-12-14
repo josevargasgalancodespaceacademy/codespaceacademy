@@ -19,7 +19,7 @@
 			<td>{{ $detalle_empresa->name }}</td>
 			<td>{{ $detalle_empresa->email }}</td>
 			<td>{{ $detalle_empresa->telephone }}</td>
-			<td>{{ $detalle_empresa->company_link }}</td>
+			<td><a href="{{ $detalle_empresa->company_link }}" target="_blank">{{ $detalle_empresa->company_link }}</a></td>
 			<td>{{ $detalle_empresa->training_request }}</td>
 			<td>{{ $detalle_empresa->comment }}</td>
 			<td>{{ $detalle_empresa->created_at}}</td>
