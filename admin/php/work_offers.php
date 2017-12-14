@@ -11,7 +11,7 @@ $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
 
 $validator = new Validator($request);
-$validator->filledIn("name")->alphaNumeric("name")->length("name", "<=", 100);
+$validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
 $validator->filledIn("city")->alpha("city")->length("city", "<=", 100);
 $validator->filledIn("business")->alpha("business")->length("business", "<=", 100);
 $validator->filledIn("offer_type")->length("offer_type", "<=", 50);
@@ -22,7 +22,7 @@ $validator->length("max_salary", "<=", 30)->numeric("max_salary");
 $validator->filledIn("min_requirements");
 $validator->filledIn("num_vacant")->length("num_vacant", "<=", 10)->numeric("num_vacant");
 $validator->filledIn("industry_type")->length("industry_type", "<=", 100);
-$validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 300);
+$validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 250);
 $validator->filledIn("offer_description");
 $errors = $validator->getErrors();
 $contenido = 
