@@ -17,7 +17,9 @@ class TeLlamamosController extends Controller
     	$te_llamamos = TeLLamamos::paginate(15);
     	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
     }
-    public function editar()
+    public function editar($id)
     {
+        $registro_a_editar = TeLLamamos::find($id);
+        return view('vistas.editar')->with('registro_a_editar', $registro_a_editar);
     }
 }

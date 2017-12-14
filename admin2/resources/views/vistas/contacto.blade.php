@@ -15,7 +15,7 @@
 			<td>{{ $registro->comment }}</td>
 			<td>{{ $registro->created_at }}</td>	
 			<td><a href="../public/listado-contacto/{{ $registro->id }}/detalle-contacto" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>Ver más</a>
-				<a href="../public/listado-contacto/editar" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Añadir observaciones </a></td>		
+				<a href="../public/listado-contacto/editar" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a></td>		
 	</tr>	
 	@endforeach
 </tbody>
