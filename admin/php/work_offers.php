@@ -22,7 +22,7 @@ $validator->length("max_salary", "<=", 30)->numeric("max_salary");
 $validator->filledIn("min_requirements");
 $validator->filledIn("num_vacant")->length("num_vacant", "<=", 10)->numeric("num_vacant");
 $validator->filledIn("industry_type")->length("industry_type", "<=", 100);
-$validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 250);
+$validator->filledIn("offer_short_description")->length("offer_short_description", "<=", 300);
 $validator->filledIn("offer_description");
 $errors = $validator->getErrors();
 $contenido = 
