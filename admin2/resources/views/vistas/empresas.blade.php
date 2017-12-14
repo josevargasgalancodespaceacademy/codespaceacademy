@@ -2,12 +2,13 @@
 @section('content')
 <div class="container">
 <table class="table table-bordered">
-	<tr>
-			<td>Nombre de la empresa</td>
-			<td>Fecha</td>
-			<td>Estado</td>
-			<td>Acciones</td>
-	</tr>
+		<thead>
+			<th>Nombre de la empresa</th>
+			<th>Fecha</th>
+			<th>Estado</th>
+			<th>Acciones</th>
+		</thead>
+		<tbody>
 	@foreach($empresas as $registro)
 	<tr>
 			<td>{{ $registro->company_name }}</td>
@@ -16,6 +17,7 @@
 			<td><a href="../public/listado-empresas/{{ $registro->id }}/detalle-empresa">Ver más</a></td>	
 	</tr>	
 	@endforeach
+	</tbody>
 </table>
 {{$empresas->links()}}
 </div>

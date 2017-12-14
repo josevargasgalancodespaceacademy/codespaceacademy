@@ -2,16 +2,17 @@
 @section('content')
 <div class="container-fluid table-responsive">
 <table class="table table-bordered">
-	<tr>
-			<td>Nombre del contacto</td>
-			<td>Email</td>
-			<td>Teléfono</td>
-			<td>Comentario</td>
-			<td>Ciudad</td>
-			<td>Curso</td>
-			<td>Fecha</td>
-			<td>Estado</td>
-	</tr>
+	<thead>
+			<th>Nombre del contacto</th>
+			<th>Email</th>
+			<th>Teléfono</th>
+			<th>Comentario</th>
+			<th>Ciudad</th>
+			<th>Curso</th>
+			<th>Fecha</th>
+			<th>Estado</th>
+	</thead>
+	<tbody>
 	<tr>
 			<td>{{ $detalle_mas_informacion->name }}</td>
 			<td>{{ $detalle_mas_informacion->email }}</td>
@@ -21,7 +22,8 @@
 			<td>{{ $detalle_mas_informacion->course }}</td>
 			<td>{{ $detalle_mas_informacion->created_at}}</td>
 			<td>{{ $detalle_mas_informacion->state }}</td>
-	</tr>	
+	</tr>
+	</tbody>	
 </table>
 </div>
 @endsection

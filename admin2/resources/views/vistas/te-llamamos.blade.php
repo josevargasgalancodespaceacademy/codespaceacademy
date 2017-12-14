@@ -2,12 +2,13 @@
 @section('content')
 <div class="container">
 <table class="table table-bordered">
-	<tr>
-			<td>Nombre</td>
-			<td>Teléfono</td>
-			<td>Fecha</td>
-			<td>Estado</td>
-	</tr>
+	<thead>
+			<th>Nombre</th>
+			<th>Teléfono</th>
+			<th>Fecha</th>
+			<th>Estado</th>
+	</thead>
+	<tbody>
 	@foreach($te_llamamos as $registro)
 	<tr>
 			<td>{{ $registro->name }}</td>
@@ -16,6 +17,7 @@
 			<td>{{ $registro->state }}</td>	
 	</tr>	
 	@endforeach
+</tbody>
 </table>
 {{$te_llamamos->links()}}
 </div>

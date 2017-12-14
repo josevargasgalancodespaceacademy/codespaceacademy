@@ -2,18 +2,19 @@
 @section('content')
 <div class="container-fluid table-responsive">
 <table class="table table-bordered">
-	<tr>
-			<td>Nombre</td>
-			<td>Apellidos</td>
-			<td>Fecha de nacimiento</td>
-			<td>Email</td>
-			<td>DNI/NIE</td>
-			<td>Teléfono</td>
-			<td>Ciudad</td>
-			<td>Comentario</td>
-			<td>Fecha</td>
-			<td>Estado</td>
-	</tr>
+	<thead>
+			<th>Nombre</th>
+			<th>Apellidos</th>
+			<th>Fecha de nacimiento</th>
+			<th>Email</th>
+			<th>DNI/NIE</th>
+			<th>Teléfono</th>
+			<th>Ciudad</th>
+			<th>Comentario</th>
+			<th>Fecha</th>
+			<th>Estado</th>
+	</thead>
+	<tbody>
 	<tr>
 			<td>{{ $detalle_sorteo_becas->name }}</td>
 			<td>{{ $detalle_sorteo_becas->surnames }}</td>
@@ -25,7 +26,8 @@
 			<td>{{ $detalle_sorteo_becas->comment }}</td>
 			<td>{{ $detalle_sorteo_becas->created_at}}</td>
 			<td>{{ $detalle_sorteo_becas->state }}</td>
-	</tr>	
+	</tr>
+	</tbody>	
 </table>
 </div>
 @endsection
