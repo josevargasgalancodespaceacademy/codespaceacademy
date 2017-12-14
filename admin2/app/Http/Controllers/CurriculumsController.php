@@ -23,5 +23,8 @@ class CurriculumsController extends Controller
     	$detalle_curriculum = Curriculums::find($id);
     	return view('vistas.detalle-curriculum')->with('detalle_curriculum', $detalle_curriculum);
     }
+    public function editar()
+    {
+    }
 }
 

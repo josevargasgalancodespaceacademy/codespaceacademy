@@ -22,4 +22,7 @@ class MasInformacionController extends Controller
     	$detalle_mas_informacion = MasInformacion::find($id);
     	return view('vistas.detalle-mas-informacion')->with('detalle_mas_informacion', $detalle_mas_informacion);
     }
+    public function editar()
+    {
+    }
 }

@@ -16,7 +16,7 @@
 			<td>{{ $registro->telephone }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>
-			<td><a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Añadir observaciones </a></td>	
+			<td><a href="../public/listado-te-llamamos/editar" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Añadir observaciones </a></td>	
 	</tr>	
 	@endforeach
 </tbody>

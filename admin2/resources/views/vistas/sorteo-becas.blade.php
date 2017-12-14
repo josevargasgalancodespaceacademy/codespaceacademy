@@ -15,7 +15,7 @@
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>	
 			<td><a href="../public/listado-sorteo-becas/{{ $registro->id }}/detalle-sorteo-becas" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a>
-				<a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Añadir observaciones </a></td>	
+				<a href="../public/listado-sorteo-becas/editar" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Añadir observaciones </a></td>	
 	</tr>	
 	@endforeach
 </tbody>

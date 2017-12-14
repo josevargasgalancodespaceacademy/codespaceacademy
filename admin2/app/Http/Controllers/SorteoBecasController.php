@@ -22,4 +22,7 @@ class SorteoBecasController extends Controller
     	$detalle_sorteo_becas = SorteoBecas::find($id);
     	return view('vistas.detalle-sorteo-becas')->with('detalle_sorteo_becas', $detalle_sorteo_becas);
     }
+    public function editar()
+    {
+    }
 }

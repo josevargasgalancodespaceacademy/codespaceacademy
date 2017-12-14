@@ -22,4 +22,7 @@ class EmpresaController extends Controller
     	$detalle_empresa = Empresas::find($id);
     	return view('vistas.detalle-empresa')->with('detalle_empresa', $detalle_empresa);
     }
+    public function editar()
+    {
+    }
 }

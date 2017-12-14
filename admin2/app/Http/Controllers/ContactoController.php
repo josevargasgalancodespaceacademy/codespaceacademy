@@ -22,4 +22,7 @@ class ContactoController extends Controller
     	$detalle_contacto = Contacto::find($id);
     	return view('vistas.detalle-contacto')->with('detalle_contacto', $detalle_contacto);
     }
+    public function editar()
+    {
+    }
 }
