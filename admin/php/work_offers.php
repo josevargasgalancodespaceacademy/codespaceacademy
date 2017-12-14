@@ -11,7 +11,7 @@ $sanitizer = new Sanitizer($request);
 $request = $sanitizer->sanitizeRequest();
 
 $validator = new Validator($request);
-$validator->filledIn("name")->alpha("name")->length("name", "<=", 100);
+$validator->filledIn("name")->alphaNumeric("name")->length("name", "<=", 100);
 $validator->filledIn("city")->alpha("city")->length("city", "<=", 100);
 $validator->filledIn("business")->alpha("business")->length("business", "<=", 100);
 $validator->filledIn("offer_type")->length("offer_type", "<=", 50);
