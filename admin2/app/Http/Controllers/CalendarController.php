@@ -51,7 +51,6 @@ public function index()
         $evento->all_day=true;
         $evento->color=$back;
         $evento->title=$title;
-
         $evento->save();
    }
 
