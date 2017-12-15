@@ -9,6 +9,7 @@
 			<th>Nombre de la empresa</th>
 			<th>Fecha</th>
 			<th>Estado</th>
+			<th>Observaciones</th>
 			<th>Acciones</th>
 		</thead>
 		<tbody>
@@ -16,7 +17,8 @@
 	<tr>
 			<td>{{ $registro->company_name }}</td>
 			<td>{{ $registro->created_at }}</td>
-			<td>{{ $registro->state }}</td>	
+			<td>{{ $registro->state }}</td>
+			<td>{{ $registro->observations }}</td>		
 			<td><a href="../public/listado-empresas/{{ $registro->id }}/detalle-empresa" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a>
 				<a href="../public/listado-empresas/{{ $registro->id }}/editar-empresa" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a></td>	
 	</tr>	

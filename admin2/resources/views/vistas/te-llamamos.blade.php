@@ -7,6 +7,7 @@
 			<th>Teléfono</th>
 			<th>Fecha</th>
 			<th>Estado</th>
+			<th>Observaciones</th>
 			<th>Acciones</th>
 	</thead>
 	<tbody>
@@ -16,6 +17,7 @@
 			<td>{{ $registro->telephone }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>
+			<td>{{ $registro->observations }}</td>
 			<td><a href="../public/listado-te-llamamos/{{ $registro->id }}/editar-te-llamamos" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a></td>	
 	</tr>	
 	@endforeach

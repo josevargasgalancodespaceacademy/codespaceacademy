@@ -13,7 +13,7 @@ class MasInformacionController extends Controller
     }
     public function consulta()
     {
-    	$mas_informacion = MasInformacion::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at', 'state');
+    	$mas_informacion = MasInformacion::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at', 'state', 'observations');
         $mas_informacion = MasInformacion::paginate(15);
     	return view('vistas.mas-informacion')->with('mas_informacion', $mas_informacion);
     }

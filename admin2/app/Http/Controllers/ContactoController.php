@@ -13,7 +13,7 @@ class ContactoController extends Controller
     }
     public function consulta()
     {
-    	$contacto = Contacto::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at');
+    	$contacto = Contacto::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at' , 'state', 'observations');
         $contacto = Contacto::paginate(15);
     	return view('vistas.contacto')->with('contacto', $contacto);
     }

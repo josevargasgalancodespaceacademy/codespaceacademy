@@ -13,7 +13,7 @@ class TeLlamamosController extends Controller
     }
     public function consulta()
     {
-    	$te_llamamos = TeLLamamos::all('id' ,'name', 'telephone', 'created_at', 'state');
+    	$te_llamamos = TeLLamamos::all('id' ,'name', 'telephone', 'created_at', 'state', 'observations');
     	$te_llamamos = TeLLamamos::paginate(15);
     	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
     }

@@ -46,5 +46,6 @@ Route::get('/listado-curriculums/{id}/detalle-curriculum', 'CurriculumsControlle
 Route::get('/listado-curriculums/editar', 'CurriculumsController@editar');
 Route::get('/listado-sorteo-becas', 'SorteoBecasController@consulta')->name('listado-sorteo-becas');
 Route::get('/listado-sorteo-becas/{id}/detalle-sorteo-becas', 'SorteoBecasController@detalle');
-Route::get('/listado-sorteo-becas/editar', 'SorteoBecasController@editar');
+Route::get('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@editar');
+Route::put('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@actualizar')->name('actualizar-sorteo-becas');
 Route::get('/listado-newsletter', 'NewsletterController@consulta')->name('listado-newsletter');
