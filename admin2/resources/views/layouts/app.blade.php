@@ -59,7 +59,7 @@
                                         <a href="{{ route('listado-sorteo-becas')}}">Sorteo Becas</a>
                                         <a href="{{ route('listado-newsletter')}}">Newsletter</a>
                                         <a href="#">Talleres</a>
-                                        <a href="#">Jobs</a>
+                                        <a href="{{ route('listado-ofertas-trabajo')}}">Jobs</a>
                                     </li>
                                 </ul>
                             </li>

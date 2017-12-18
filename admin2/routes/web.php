@@ -49,3 +49,7 @@ Route::get('/listado-sorteo-becas/{id}/detalle-sorteo-becas', 'SorteoBecasContro
 Route::get('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@editar');
 Route::put('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@actualizar')->name('actualizar-sorteo-becas');
 Route::get('/listado-newsletter', 'NewsletterController@consulta')->name('listado-newsletter');
+Route::get('/listado-ofertas-trabajo', 'OfertasTrabajoController@consulta')->name('listado-ofertas-trabajo');
+Route::get('/listado-ofertas-trabajo/{id}/detalle-ofertas-trabajo', 'OfertasTrabajoController@detalle');
+Route::get('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTrabajoController@editar');
+Route::put('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTrabajoController@actualizar')->name('actualizar-ofertas-trabajo');
