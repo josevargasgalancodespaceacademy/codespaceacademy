@@ -13,7 +13,7 @@ class EmpresaController extends Controller
     {
         $this->middleware('auth');
     }
-    public function consulta()
+    public function consulta(Request $request)
     {
     	$empresas = Empresas::all('id' ,'name', 'company_name', 'email', 'telephone', 'comment', 'created_at', 'state', 'observations');
     	$empresas = Empresas::paginate(15);
