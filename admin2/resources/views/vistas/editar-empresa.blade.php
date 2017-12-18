@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
 <div class="page-header">
-  <h2>Editar <small>{{$registro_a_editar->name}}</small></h2>
+  <h2>Editar <small>{{$registro_a_editar->company_name}}</small></h2>
 </div>
 	@if (count($errors) > 0)
 	<div class="alert alert-danger" role="alert">
