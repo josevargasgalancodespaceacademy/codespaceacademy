@@ -19,15 +19,31 @@
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->city }}</td>
 			<td>{{ $registro->business }}</td>
-			@if ($registro->status = 1)
+			@if ($registro->status == 1)
 			<td>Oferta activa</td>
-			@endif
-			@if ($registro->status = 0)
+			@elseif ($registro->status == 0)
 			<td>Oferta desactivada</td>
 			@endif	
 			<td>{{ $registro->created_at }}</td>	
 			<td><a href="../public/listado-ofertas-trabajo/{{ $registro->id }}/detalle-ofertas-trabajo" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a>
-				<a href="../public/listado-ofertas-trabajo/{{ $registro->id }}/editar-ofertas-trabajo" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a></td>	
+				<a href="../public/listado-ofertas-trabajo/{{ $registro->id }}/editar-ofertas-trabajo" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a>
+					@if ($registro->status == 1) 
+					{!! Form::open(['route' => ['activar-ofertas-trabajo', $registro], 'method' => 'PUT'])!!}
+					<div class="form-group">
+				    <input type="hidden" name="status" value="0" /></div>
+				    <div class="form-group">
+							{!! Form::submit('Desactivar oferta', ['class' => 'btn btn-danger']) !!}
+				    </div></td>
+					{!! Form::close() !!}
+					 @else 
+					 {!! Form::open(['route' => ['activar-ofertas-trabajo', $registro], 'method' => 'PUT'])!!}
+					<div class="form-group">
+				    <input type="hidden" name="status" value="1" /></div>
+				    <div class="form-group">
+							{!! Form::submit('Activar oferta', ['class' => 'btn btn-success']) !!}
+				    </div></td>
+					{!! Form::close() !!}
+				    @endif
 	</tr>	
 	@endforeach
 	</tbody>

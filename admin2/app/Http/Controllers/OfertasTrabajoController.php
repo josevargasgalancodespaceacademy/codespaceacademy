@@ -34,11 +34,18 @@ class OfertasTrabajoController extends Controller
     	 $validator = Validator::make($editarrequest->all(), $editarrequest->rules(), $editarrequest->messages());
     	 if ($validator->valid())
     	 {
-         $registro_a_editar = ofertas_trabajos::find($id);
+         $registro_a_editar = OfertasTrabajo::find($id);
          $registro_a_editar->state = $request->state;
          $registro_a_editar->observations = $request->observations;
          $registro_a_editar->save();
          return redirect()->route('listado-ofertas-trabajo');
      }
+    }
+    public function activar(Request $request, $id)
+    {
+         $registro_a_editar = OfertasTrabajo::find($id);
+         $registro_a_editar->status = $request->status;
+         $registro_a_editar->save();
+         return redirect()->route('listado-ofertas-trabajo');
     }
 }
