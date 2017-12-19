@@ -53,4 +53,4 @@ Route::get('/listado-ofertas-trabajo', 'OfertasTrabajoController@consulta')->nam
 Route::get('/listado-ofertas-trabajo/{id}/detalle-ofertas-trabajo', 'OfertasTrabajoController@detalle');
 Route::get('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTrabajoController@editar');
 Route::put('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTrabajoController@actualizar')->name('actualizar-ofertas-trabajo');
-Route::put('/listado-ofertas-trabajo/{id}/activar-ofertas-trabajo','OfertasTrabajoController@activar')->name('activar-ofertas-trabajo');
+Route::put('/listado-ofertas-trabajo/{id}/activar-ofertas-trabajo','OfertasTrabajoController@activar_oferta')->name('activar-ofertas-trabajo');

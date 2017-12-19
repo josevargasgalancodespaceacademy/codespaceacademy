@@ -41,7 +41,7 @@ class OfertasTrabajoController extends Controller
          return redirect()->route('listado-ofertas-trabajo');
      }
     }
-    public function activar(Request $request, $id)
+    public function activar_oferta(Request $request, $id)
     {
          $registro_a_editar = OfertasTrabajo::find($id);
          $registro_a_editar->status = $request->status;
