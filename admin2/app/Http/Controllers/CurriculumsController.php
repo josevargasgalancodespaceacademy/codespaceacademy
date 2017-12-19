@@ -15,7 +15,7 @@ class CurriculumsController extends Controller
     public function consulta()
     {
     	$curriculums = Curriculums::all('id' ,'name', 'email', 'telephone', 'website', 'linkedin', 'route_curriculum_pdf', 	'created_at');
-        $curriculums = Curriculums::paginate(15);
+        $curriculums = Curriculums::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.curriculums')->with('curriculums', $curriculums);
     }
     public function detalle($id)

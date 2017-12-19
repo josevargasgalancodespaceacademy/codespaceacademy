@@ -25,7 +25,7 @@ Route::post('guardareventos', array('as' => 'guardareventos','uses' => 'Calendar
 Route::get('cargareventos{id?}','CalendarController@index');
 Route::post('actualizarevento','CalendarController@update');
 Route::post('eliminarevento','CalendarController@delete');
-//rutas para mostrar las diferentes tablas
+//rutas para mostrar y actualizar las diferentes tablas de las diferentes secciones de la web
 Route::get('/listado-empresas', 'EmpresaController@consulta')->name('listado-empresas');
 Route::get('/listado-empresas/{id}/detalle-empresa', 'EmpresaController@detalle');
 Route::get('/listado-empresas/{id}/editar-empresa', 'EmpresaController@editar');

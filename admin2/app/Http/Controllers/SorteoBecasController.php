@@ -16,7 +16,7 @@ class SorteoBecasController extends Controller
     public function consulta()
     {
     	$sorteo_becas = SorteoBecas::all('id' ,'name', 'surnames', 'date_of_birth', 'email', 'type_identification', 'number_identification', 'telephone', 'city', 'comment', 'created_at', 'state' , 'observations');
-    	$sorteo_becas = SorteoBecas::paginate(15);
+    	$sorteo_becas = SorteoBecas::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.sorteo-becas')->with('sorteo_becas', $sorteo_becas);
     }
     public function detalle($id)

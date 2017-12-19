@@ -14,7 +14,7 @@ class NewsletterController extends Controller
     public function consulta()
     {
     	$newsletter = Newsletter::all('id', 'email', 'created_at');
-    	$newsletter = Newsletter::paginate(15);
+    	$newsletter = Newsletter::orderBy('email' ,'asc')->paginate(15);
     	return view('vistas.newsletter')->with('newsletter', $newsletter);
     }
 }
