@@ -21,7 +21,7 @@ class SorteoBecasController extends Controller
     }
     public function filtrar_sorteo_becas(Request $request)
     {
-        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);
         return view('vistas.sorteo-becas')->with('sorteo_becas', $sorteo_becas);
     }
     public function detalle($id)
