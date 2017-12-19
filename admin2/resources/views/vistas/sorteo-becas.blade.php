@@ -16,8 +16,13 @@
 <p class="title"><strong>Filtrar por estado:</strong></p>
 <div class="form-group">
 		{{ Form::radio('state', 'No contactado', false) }} No contactado<br>
+        {{ Form::radio('state', 'Imposible contactar', false) }} Imposible contactar<br>
         {{ Form::radio('state', 'Contactado', false) }} Contactado <br>
-        {{ Form::radio('state', 'Imposible contactar', false) }} Imposible contactar
+        {{ Form::radio('state', 'Entrevistado', false) }} Entrevistado <br>
+        {{ Form::radio('state', 'Presentado', false) }} Presentado <br>
+        {{ Form::radio('state', 'No presentado', false) }} No presentado <br>
+        {{ Form::radio('state', 'Beca OK', false) }} Beca OK <br>
+        {{ Form::radio('state', 'No Beca', false) }} No Beca 
 </div>
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
