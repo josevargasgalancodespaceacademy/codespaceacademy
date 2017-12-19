@@ -88,7 +88,7 @@ function contador() {
   }
 
 function contador_becas() { 
-    var launchdate = new Date(2017, 12 - 1, 19);//la fecha de finalizacion del sorteo
+    var launchdate = new Date(2017, 12 - 1, 20);//la fecha de finalizacion del sorteo
     var format = 'DD hh:mm:ss';
     $('#counter').countdown({
 
