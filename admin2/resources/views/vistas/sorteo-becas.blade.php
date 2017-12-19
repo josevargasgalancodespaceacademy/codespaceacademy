@@ -15,14 +15,16 @@
 </div>
 <p class="title"><strong>Filtrar por estado:</strong></p>
 <div class="form-group">
-		{{ Form::radio('state', 'No contactado', ['class' => 'form-control']) }} No contactado<br>
-        {{ Form::radio('state', 'Contactado', ['class' => 'form-control']) }} Contactado <br>
-        {{ Form::radio('state', 'Imposible contactar', ['class' => 'form-control']) }} Imposible contactar
+		{{ Form::radio('state', 'No contactado', false) }} No contactado<br>
+        {{ Form::radio('state', 'Contactado', false) }} Contactado <br>
+        {{ Form::radio('state', 'Imposible contactar', false) }} Imposible contactar
 </div>
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
 {{ Form::close() }}
+<hr>
+<a href="../public/listado-sorteo-becas" class="btn btn-success"></span> Limpiar filtros </a>
 </div>
 <div class="container col-md-8"> 
 <table class="table table-bordered">
