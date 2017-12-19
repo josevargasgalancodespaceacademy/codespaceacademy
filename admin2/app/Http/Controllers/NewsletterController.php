@@ -18,7 +18,6 @@ class NewsletterController extends Controller
     }
     public function filtrar_newsletter(Request $request)
     {
-        $newsletter = Newsletter::all('id' ,'email', 'created_at');
         $newsletter = Newsletter::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
         return view('vistas.newsletter')->with('newsletter', $newsletter);
     }

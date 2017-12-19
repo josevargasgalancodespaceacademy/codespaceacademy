@@ -8,6 +8,7 @@
 <div class="row">
 <div class="container col-md-2"> 
 <h4 class="title"> Mostrar resultados para: </h4>
+<p class="title"> <strong>Ordenar por:</strong> </p>
 {!! Form::open(['route' => ['filtrar-ofertas-trabajo', $ofertas_trabajo], 'method' => 'PUT'])!!}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre de la oferta', 'city' => 'Localidad', 'business' => 'Empresa', 'created_at' => 'Fecha', 'status' => 'Estado'], null ,['class' => 'form-control']) !!}
@@ -18,6 +19,7 @@
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
+{{ Form::close() }}
 </div>
 <div class="container col-md-8"> 
 <table class="table table-bordered">

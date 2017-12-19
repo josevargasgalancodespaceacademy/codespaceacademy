@@ -4,6 +4,7 @@
 <div class="row">
 <div class="container col-md-2"> 
 <h4 class="title"> Mostrar resultados para: </h4>
+<p class="title"><strong>Ordenar por:</strong></p>
 {!! Form::open(['route' => ['filtrar-te-llamamos', $te_llamamos], 'method' => 'PUT'])!!}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre', 'telephone' => 'Teléfono', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
@@ -14,6 +15,7 @@
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
+{{ Form::close() }}
 </div>
 <div class="container col-md-8 "> 
 <table class="table table-bordered">
