@@ -15,9 +15,13 @@ class ContactoController extends Controller
     }
     public function consulta()
     {
-    	$contacto = Contacto::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at' , 'state', 'observations');
         $contacto = Contacto::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.contacto')->with('contacto', $contacto);
+    }
+    public function filtrar_contactos(Request $request)
+    {
+        $contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        return view('vistas.contacto')->with('contacto', $contacto);
     }
     public function detalle($id)
     {

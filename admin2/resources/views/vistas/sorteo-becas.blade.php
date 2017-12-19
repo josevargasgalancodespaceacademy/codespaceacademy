@@ -1,6 +1,22 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
+@section('content')
+<div class="container col-md-12">
+<div class="row">
+<div class="container col-md-2"> 
+<h4 class="title"> Mostrar resultados para: </h4>
+{!! Form::open(['route' => ['filtrar-sorteo-becas', $sorteo_becas], 'method' => 'PUT'])!!}
+<div class="form-group">
+		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+		{!! Form::select('orden', ['asc' => 'Ascendente', 'desc' => 'Descendente'], null ,['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
+</div>
+</div>
+<div class="container col-md-8"> 
 <table class="table table-bordered">
 	<thead>
 			<th>Nombre</th>
@@ -23,5 +39,7 @@
 </tbody>
 </table>
 	{{$sorteo_becas->links()}}
+</div>
+</div>
 </div>
 @endsection

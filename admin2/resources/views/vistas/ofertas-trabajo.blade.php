@@ -3,7 +3,23 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 @endsection
 @section('content')
-<div class="container">
+@section('content')
+<div class="container col-md-12">
+<div class="row">
+<div class="container col-md-2"> 
+<h4 class="title"> Mostrar resultados para: </h4>
+{!! Form::open(['route' => ['filtrar-ofertas-trabajo', $ofertas_trabajo], 'method' => 'PUT'])!!}
+<div class="form-group">
+		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre de la oferta', 'city' => 'Localidad', 'business' => 'Empresa', 'created_at' => 'Fecha', 'status' => 'Estado'], null ,['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+		{!! Form::select('orden', ['asc' => 'Ascendente', 'desc' => 'Descendente'], null ,['class' => 'form-control']) !!}
+</div>
+<div class="form-group">
+		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
+</div>
+</div>
+<div class="container col-md-8"> 
 <table class="table table-bordered">
 		<thead>
 			<th>Nombre de la oferta</th>
@@ -50,5 +66,7 @@
 	</tbody>
 </table>
 {{$ofertas_trabajo->links()}}
+</div>
+</div>
 </div>
 @endsection

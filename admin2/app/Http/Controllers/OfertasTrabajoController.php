@@ -19,6 +19,11 @@ class OfertasTrabajoController extends Controller
     	$ofertas_trabajo = OfertasTrabajo::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo);
     }
+    public function filtrar_ofertas_trabajo(Request $request)
+    {
+        $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo);
+    }
     public function detalle($id)
     {
     	$detalle_ofertas_trabajo = OfertasTrabajo::find($id);

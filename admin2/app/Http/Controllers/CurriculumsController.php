@@ -18,6 +18,11 @@ class CurriculumsController extends Controller
         $curriculums = Curriculums::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.curriculums')->with('curriculums', $curriculums);
     }
+    public function filtrar_curriculums(Request $request)
+    {
+        $curriculums = Curriculums::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        return view('vistas.curriculums')->with('curriculums', $curriculums);
+    }
     public function detalle($id)
     {
     	$detalle_curriculum = Curriculums::find($id);

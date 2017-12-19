@@ -15,9 +15,13 @@ class MasInformacionController extends Controller
     }
     public function consulta()
     {
-    	$mas_informacion = MasInformacion::all('id' ,'name', 'email', 'telephone', 'comment', 'created_at', 'state', 'observations');
         $mas_informacion = MasInformacion::orderBy('name' ,'asc')->paginate(15);
     	return view('vistas.mas-informacion')->with('mas_informacion', $mas_informacion);
+    }
+    public function filtrar_mas_informacion(Request $request)
+    {
+        $mas_informacion = MasInformacion::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        return view('vistas.mas-informacion')->with('mas_informacion', $mas_informacion);
     }
     public function detalle($id)
     {

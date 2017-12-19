@@ -15,9 +15,13 @@ class EmpresaController extends Controller
     }
     public function consulta(Request $request)
     {
-    	$empresas = Empresas::all('id' ,'name', 'company_name', 'email', 'telephone', 'comment', 'created_at', 'state', 'observations');
     	$empresas = Empresas::orderBy('company_name' ,'asc')->paginate(15);
     	return view('vistas.empresas')->with('empresas', $empresas);
+    }
+    public function filtrar_empresas(Request $request)
+    {
+        $empresas = Empresas::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        return view('vistas.empresas')->with('empresas', $empresas);
     }
     public function detalle($id)
     {
