@@ -59,7 +59,7 @@ Route::get('/listado-sorteo-becas', 'SorteoBecasController@consulta')->name('lis
 Route::get('/listado-sorteo-becas/{id}/detalle-sorteo-becas', 'SorteoBecasController@detalle');
 Route::get('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@editar');
 Route::put('/listado-sorteo-becas/{id}/editar-sorteo-becas', 'SorteoBecasController@actualizar')->name('actualizar-sorteo-becas');
-Route::put('/listado-sorteo-becas/filtros', 'SorteoBecasController@filtrar_sorteo_becas')->name('filtrar-sorteo-becas');
+Route::put('/listado-sorteo-becas/', 'SorteoBecasController@filtrar_sorteo_becas')->name('filtrar-sorteo-becas');
 //Listado newsletter
 Route::get('/listado-newsletter', 'NewsletterController@consulta')->name('listado-newsletter');
 Route::put('/listado-newsletter', 'NewsletterController@filtrar_newsletter')->name('filtrar-newsletter');
