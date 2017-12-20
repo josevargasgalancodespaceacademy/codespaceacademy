@@ -15,17 +15,17 @@ class SorteoBecasController extends Controller
     }
     public function consulta()
     {
-    	$sorteo_becas = SorteoBecas::orderBy('name' ,'asc')->paginate(15);
+    	$sorteo_becas = SorteoBecas::orderBy('name' ,'asc')->paginate();
         $total_sorteo_becas = SorteoBecas::all()->count();
     	return view('vistas.sorteo-becas')->with('sorteo_becas', $sorteo_becas)->with('total_sorteo_becas' , $total_sorteo_becas);
     }
     public function filtrar_sorteo_becas(Request $request)
     {
-        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->paginate();
         $total_sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->count();
         if (!empty ($request->state)) 
         {
-        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);  
+        $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate();  
         $total_sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->count();
         }
         return view('vistas.sorteo-becas')->with('sorteo_becas', $sorteo_becas)->with('total_sorteo_becas',$total_sorteo_becas);
