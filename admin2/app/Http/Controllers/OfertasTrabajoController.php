@@ -22,7 +22,7 @@ class OfertasTrabajoController extends Controller
     public function filtrar_ofertas_trabajo(Request $request)
     {
         $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
-        if (!empty ($request->status)) 
+        if ($request->status>=0) 
         {
             $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->paginate(15);
         }
