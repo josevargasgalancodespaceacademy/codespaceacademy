@@ -21,7 +21,8 @@ class CurriculumsController extends Controller
     public function filtrar_curriculums(Request $request)
     {
         $curriculums = Curriculums::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
-        return view('vistas.curriculums')->with('curriculums', $curriculums);
+        $total_curriculums = Curriculums::orderBy($request->campo_a_filtrar , $request->orden)->count();
+        return view('vistas.curriculums')->with('curriculums', $curriculums)->with('total_curriculums', $total_curriculums);
     }
     public function detalle($id)
     {

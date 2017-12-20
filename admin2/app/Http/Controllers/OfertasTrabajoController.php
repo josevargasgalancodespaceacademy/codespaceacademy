@@ -22,11 +22,13 @@ class OfertasTrabajoController extends Controller
     public function filtrar_ofertas_trabajo(Request $request)
     {
         $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $total_ofertas_trabajo= OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->count();
         if ($request->status>=0) 
         {
             $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->paginate(15);
+            $total_ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->count();
         }
-        return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo);
+        return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo)->with('total_ofertas_trabajo',$total_ofertas_trabajo);
     }
     public function detalle($id)
     {

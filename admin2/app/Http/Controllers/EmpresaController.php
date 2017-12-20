@@ -22,11 +22,13 @@ class EmpresaController extends Controller
     public function filtrar_empresas(Request $request)
     {
         $empresas = Empresas::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $total_empresas = Empresas::orderBy($request->campo_a_filtrar , $request->orden)->count();
         if (!empty ($request->state)) 
         {
             $empresas = Empresas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);
+            $total_empresas = Empresas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->count();
         }
-        return view('vistas.empresas')->with('empresas', $empresas);
+        return view('vistas.empresas')->with('empresas', $empresas)->with('total_empresas', $total_empresas);
     }
     public function detalle($id)
     {

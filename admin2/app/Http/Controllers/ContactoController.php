@@ -22,11 +22,13 @@ class ContactoController extends Controller
     public function filtrar_contactos(Request $request)
     {
         $contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $total_contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->count();
         if (!empty ($request->state)) 
         {
         $contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);
+        $total_contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->count();
         }
-        return view('vistas.contacto')->with('contacto', $contacto);
+        return view('vistas.contacto')->with('contacto', $contacto)->with('total_contacto', $total_contacto);
     }
     public function detalle($id)
     {
