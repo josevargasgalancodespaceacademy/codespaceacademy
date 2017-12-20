@@ -22,6 +22,10 @@ class OfertasTrabajoController extends Controller
     public function filtrar_ofertas_trabajo(Request $request)
     {
         $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        if (!empty ($request->status)) 
+        {
+            $ofertas_trabajo = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->paginate(15);
+        }
         return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo);
     }
     public function detalle($id)

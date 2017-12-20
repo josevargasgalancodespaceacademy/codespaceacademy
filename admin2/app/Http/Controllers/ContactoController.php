@@ -21,6 +21,10 @@ class ContactoController extends Controller
     public function filtrar_contactos(Request $request)
     {
         $contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        if (!empty ($request->state)) 
+        {
+        $contacto = Contacto::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);
+        }
         return view('vistas.contacto')->with('contacto', $contacto);
     }
     public function detalle($id)

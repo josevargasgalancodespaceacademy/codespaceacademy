@@ -22,7 +22,7 @@ class SorteoBecasController extends Controller
     public function filtrar_sorteo_becas(Request $request)
     {
         $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
-        if ( !empty ($request->state)) 
+        if (!empty ($request->state)) 
         {
         $sorteo_becas = SorteoBecas::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);  
         }

@@ -16,10 +16,17 @@
 <div class="form-group">
 		{!! Form::select('orden', ['asc' => 'Ascendente', 'desc' => 'Descendente'], null ,['class' => 'form-control']) !!}
 </div>
+<p class="title"><strong>Filtrar por estado de la oferta:</strong></p>
+<div class="form-group">
+		{{ Form::radio('status', '1', false) }} Oferta activa<br>
+        {{ Form::radio('status', '0', false) }} Oferta desactivada
+</div>
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
 {{ Form::close() }}
+<hr>
+<a href="../public/listado-ofertas-trabajo" class="btn btn-success"></span> Limpiar filtros </a>
 </div>
 <div class="container col-md-8"> 
 <table class="table table-bordered">

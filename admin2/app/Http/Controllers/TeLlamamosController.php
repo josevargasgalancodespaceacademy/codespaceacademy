@@ -22,6 +22,10 @@ class TeLlamamosController extends Controller
         public function filtrar_te_llamamos(Request $request)
     {
         $te_llamamos = TeLLamamos::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+         if (!empty ($request->state)) 
+        {
+            $te_llamamos = TeLLamamos::orderBy($request->campo_a_filtrar , $request->orden)->where('state', '=',$request->state)->paginate(15);
+        }
         return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
     }
     public function editar($id)

@@ -12,10 +12,18 @@
 <div class="form-group">
 		{!! Form::select('orden', ['asc' => 'Ascendente', 'desc' => 'Descendente'], null ,['class' => 'form-control']) !!}
 </div>
+<p class="title"><strong>Filtrar por estado:</strong></p>
+<div class="form-group">
+		{{ Form::radio('state', 'No contactado', false) }} No contactado<br>
+        {{ Form::radio('state', 'Imposible contactar', false) }} Imposible contactar<br>
+        {{ Form::radio('state', 'Contactado', false) }} Contactado
+</div>
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
 {{ Form::close() }}
+<hr>
+<a href="../public/listado-te-llamamos" class="btn btn-success"></span> Limpiar filtros </a>
 </div>
 <div class="container col-md-8 "> 
 <table class="table table-bordered">
