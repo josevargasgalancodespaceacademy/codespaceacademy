@@ -16,7 +16,8 @@ class MasInformacionController extends Controller
     public function consulta()
     {
         $mas_informacion = MasInformacion::orderBy('name' ,'asc')->paginate(15);
-    	return view('vistas.mas-informacion')->with('mas_informacion', $mas_informacion);
+        $total_mas_informacion = MasInformacion::all()->count();
+    	return view('vistas.mas-informacion')->with('mas_informacion', $mas_informacion)->with('total_mas_informacion', $total_mas_informacion);
     }
     public function filtrar_mas_informacion(Request $request)
     {

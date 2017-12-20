@@ -33,6 +33,7 @@
 	@endforeach
 	</tbody>
 </table>
+<p>Número de registros encontrados: {{$total_newsletter}}</p>
 {{$newsletter->links()}}
 </div>
 </div>

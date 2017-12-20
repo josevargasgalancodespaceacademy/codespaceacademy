@@ -47,6 +47,7 @@
 	@endforeach
 </tbody>
 </table>
+<p>Número de registros encontrados: {{$total_mas_informacion}}</p>
 {{$mas_informacion->links()}}
 </div>
 </div>

@@ -15,9 +15,9 @@ class OfertasTrabajoController extends Controller
     }
     public function consulta(Request $request)
     {
-    	$ofertas_trabajo = OfertasTrabajo::all('id' ,'name', 'city', 'business', 'status');
     	$ofertas_trabajo = OfertasTrabajo::orderBy('name' ,'asc')->paginate(15);
-    	return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo);
+        $total_ofertas_trabajo= OfertasTrabajo::all()->count();
+    	return view('vistas.ofertas-trabajo')->with('ofertas_trabajo', $ofertas_trabajo)->with('total_ofertas_trabajo', $total_ofertas_trabajo);
     }
     public function filtrar_ofertas_trabajo(Request $request)
     {

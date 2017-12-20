@@ -16,7 +16,8 @@ class ContactoController extends Controller
     public function consulta()
     {
         $contacto = Contacto::orderBy('name' ,'asc')->paginate(15);
-    	return view('vistas.contacto')->with('contacto', $contacto);
+        $total_contacto = Contacto::all()->count();
+    	return view('vistas.contacto')->with('contacto', $contacto)->with('total_contacto', $total_contacto);
     }
     public function filtrar_contactos(Request $request)
     {

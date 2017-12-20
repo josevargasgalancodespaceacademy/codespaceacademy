@@ -50,6 +50,7 @@
 	@endforeach
 	</tbody>
 </table>
+<p>Número de registros encontrados: {{$total_empresas}}</p>
 {{$empresas->links()}}
 </div>
 </div>

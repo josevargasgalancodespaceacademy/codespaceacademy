@@ -53,6 +53,7 @@
 	@endforeach
 </tbody>
 </table>
+<p>Número de registros encontrados: {{$total_sorteo_becas}}</p>
 	{{$sorteo_becas->links()}}
 </div>
 </div>

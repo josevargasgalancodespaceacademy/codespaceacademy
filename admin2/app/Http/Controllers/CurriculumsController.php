@@ -14,9 +14,9 @@ class CurriculumsController extends Controller
     }
     public function consulta()
     {
-    	$curriculums = Curriculums::all('id' ,'name', 'email', 'telephone', 'website', 'linkedin', 'route_curriculum_pdf', 	'created_at');
         $curriculums = Curriculums::orderBy('name' ,'asc')->paginate(15);
-    	return view('vistas.curriculums')->with('curriculums', $curriculums);
+        $total_curriculums = Curriculums::all()->count();
+    	return view('vistas.curriculums')->with('curriculums', $curriculums)->with('total_curriculums', $total_curriculums);
     }
     public function filtrar_curriculums(Request $request)
     {

@@ -34,6 +34,7 @@
 	@endforeach
 </tbody>
 </table>
+<p>Número de registros encontrados: {{$total_curriculums}}</p>
 {{$curriculums->links()}}
 </div>
 </div>

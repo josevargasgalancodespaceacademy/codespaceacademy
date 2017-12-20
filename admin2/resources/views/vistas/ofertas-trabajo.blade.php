@@ -74,6 +74,7 @@
 	@endforeach
 	</tbody>
 </table>
+<p>Número de registros encontrados: {{$total_ofertas_trabajo}}</p>
 {{$ofertas_trabajo->links()}}
 </div>
 </div>

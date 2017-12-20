@@ -13,10 +13,11 @@ class EmpresaController extends Controller
     {
         $this->middleware('auth');
     }
-    public function consulta(Request $request)
+    public function consulta()
     {
     	$empresas = Empresas::orderBy('company_name' ,'asc')->paginate(15);
-    	return view('vistas.empresas')->with('empresas', $empresas);
+        $total_empresas = Empresas::all()->count();
+    	return view('vistas.empresas')->with('empresas', $empresas)->with('total_empresas', $total_empresas);
     }
     public function filtrar_empresas(Request $request)
     {

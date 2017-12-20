@@ -15,9 +15,9 @@ class TeLlamamosController extends Controller
     }
     public function consulta()
     {
-    	$te_llamamos = TeLLamamos::all('id' ,'name', 'telephone', 'created_at', 'state', 'observations');
         $te_llamamos = TeLLamamos::orderBy('name' ,'asc')->paginate(15);
-    	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos);
+        $total_te_llamamos = TeLLamamos::all()->count();
+    	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos)->with('total_te_llamamos', $total_te_llamamos);
     }
         public function filtrar_te_llamamos(Request $request)
     {

@@ -48,6 +48,7 @@
 	@endforeach
 </tbody>
 </table>
+<p>Número de registros encontrados: {{$total_te_llamamos}}</p>
 {{$te_llamamos->links()}}
 </div>
 </div>

@@ -49,6 +49,7 @@
 	@endforeach
 </tbody>
 </table>
+<p>Número de registros encontrados: {{$total_contacto}}</p>
 {{$contacto->links()}}
 </div>
 </div>
