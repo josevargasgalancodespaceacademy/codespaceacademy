@@ -10833,10 +10833,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   border-bottom: solid 1px #E6E6E6;
   margin-top: 20px;
 }
-#formulario-taller
+/*#formulario-taller
 {
   display: none!important;
-}
+}*/
 .event-image
 {
   background-position:center;
