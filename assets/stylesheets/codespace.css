@@ -10867,9 +10867,6 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 .master-class-bootstrapping
 {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  rotation: 90deg;
   margin-top: 80px;
   background-image: url(../../assets/images/eventos/master-class-bootstrapping.jpg)
 }
