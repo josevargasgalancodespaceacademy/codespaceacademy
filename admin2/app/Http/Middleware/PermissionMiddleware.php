@@ -21,7 +21,7 @@ class PermissionMiddleware
         }
  
     if (! $request->user()->can($permission)) {
-         abort(403);
+         return abort(403);
         }
         return $next($request);
     }
