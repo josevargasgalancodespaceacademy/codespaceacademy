@@ -10823,6 +10823,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
    padding-top: 0px!important;
    font-size:60px!important;
 }
+.container-events h2
+{
+  font-size: 22px;
+}
 }
 .container-events 
 {
@@ -10860,6 +10864,36 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .taller-practico-javascript
 {
   background-image: url(../../assets/images/eventos/taller-practico-javascript.jpg)
+}
+.master-class-bootstrapping
+{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  rotation: 90deg;
+  margin-top: 80px;
+  background-image: url(../../assets/images/eventos/master-class-bootstrapping.jpg)
+}
+@media (min-width: 1080px) and (max-width: 1280px)
+{
+  .master-class-bootstrapping
+{
+  margin-top: 35px;
+}
+}
+@media (min-width: 800px) and (max-width: 1080px)
+{
+  .master-class-bootstrapping
+{
+  margin-top: 5px;
+}
+}
+@media (min-width: 800px) and (max-width: 1079px)
+{
+  .master-class-bootstrapping
+{
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 }
 .informacion-evento 
 {
