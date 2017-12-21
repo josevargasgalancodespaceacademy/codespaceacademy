@@ -58,7 +58,7 @@
                                         <a href="{{ route('listado-curriculums')}}">Currículums</a>
                                         <a href="{{ route('listado-sorteo-becas')}}">Sorteo Becas</a>
                                         <a href="{{ route('listado-newsletter')}}">Newsletter</a>
-                                        <a href="#">Talleres</a>
+                                        <a href="#">Talleres y eventos</a>
                                         <a href="{{ route('listado-ofertas-trabajo')}}">Jobs</a>
                                     </li>
                                 </ul>
@@ -76,6 +76,16 @@
                                     </li>       
                                 </ul>
                             </li>
+                                <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    Usuarios <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('register')}}">Registrar nuevo usuario</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
@@ -83,6 +93,7 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
+                                        <a href="#">Ver perfil</a>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
