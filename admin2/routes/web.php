@@ -19,7 +19,9 @@ Auth::routes();
 //ruta home
 Route::get('/home', 'HomeController@index')->name('home');
 //ruta crear ofertas
+Route::group(['middleware' => ['permission:add_offers']], function () {
 Route::get('/inscribir-ofertas', 'HomeController@ofertas')->name('inscribir-ofertas');
+});
 //rutas para el calendario/agenda
 Route::post('guardareventos', array('as' => 'guardareventos','uses' => 'CalendarController@create'));
 Route::get('cargareventos{id?}','CalendarController@index');
