@@ -74,4 +74,7 @@ Route::put('/listado-ofertas-trabajo/{id}/activar-ofertas-trabajo','OfertasTraba
 Route::put('/listado-ofertas-trabajo', 'OfertasTrabajoController@filtrar_ofertas_trabajo')->name('filtrar-ofertas-trabajo');
 //Listado de talleres y eventos
 Route::get('/listado-talleresyeventos', 'TalleresYEventosController@consulta')->name('listado-talleresyeventos');
+Route::get('/listado-talleresyeventos/{id}/detalle-talleresyeventos', 'TalleresYEventosController@detalle');
+Route::get('/listado-talleresyeventos/{id}/editar-talleresyeventos', 'TalleresYEventosController@editar');
+Route::put('/listado-talleresyeventos{id}/editar-talleresyeventos', 'TalleresYEventosController@actualizar')->name('actualizar-talleresyeventos');
 Route::put('/listado-talleresyeventos', 'TalleresYEventosController@filtrar_talleresyeventos')->name('filtrar-talleresyeventos');
