@@ -70,10 +70,10 @@
                                     <li>
                                         <a href="{{ route('inscribir-ofertas')}}">Crear nueva oferta</a>
                                     </li>
-                            @endcan 
                                     <li>
                                         <a href="#">Crear nuevo evento</a>
-                                    </li>       
+                                    </li>
+                            @endcan        
                                 </ul>
                             </li>
                                 <li class="dropdown">
