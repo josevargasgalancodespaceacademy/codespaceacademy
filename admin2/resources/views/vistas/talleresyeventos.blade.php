@@ -8,10 +8,10 @@
 <div class="container col-md-2"> 
 <h4 class="title"> Mostrar resultados para: </h4>
 <p class="title"><strong>Ordenar por:</strong></p>
-{!! Form::open(['route' => ['filtrar-empresas', $talleresyeventos], 'method' => 'PUT'])!!}
+{!! Form::open(['route' => ['filtrar-talleresyeventos', $talleresyeventos], 'method' => 'PUT'])!!}
         {{ csrf_field() }}
 <div class="form-group">
-		{!! Form::select('campo_a_filtrar', ['company_name' => 'Nombre de la empresa', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
+		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
 		{!! Form::select('orden', ['asc' => 'Ascendente', 'desc' => 'Descendente'], null ,['class' => 'form-control']) !!}
@@ -20,13 +20,16 @@
 <div class="form-group">
 		{{ Form::radio('state', 'No contactado', false) }} No contactado<br>
         {{ Form::radio('state', 'Imposible contactar', false) }} Imposible contactar<br>
-        {{ Form::radio('state', 'Contactado', false) }} Contactado
+        {{ Form::radio('state', 'Inscrito', false) }} Inscrito<br>
+        {{ Form::radio('state', 'No inscrito', false) }} No inscrito<br>
+        {{ Form::radio('state', 'Presentado', false) }} Presentado<br>
+        {{ Form::radio('state', 'No presentado', false) }} No presentado
 </div>
 <div class="form-group">
 		{!! Form::submit('Aplicar filtros', ['class' => 'btn']) !!}
 </div>
 <hr>
-<a href="../public/listado-empresas" class="btn btn-success"></span> Limpiar filtros </a>
+<a href="../public/listado-talleresyeventos" class="btn btn-success"></span> Limpiar filtros </a>
 {{ Form::close() }}
 </div>
 <div class="container col-md-8"> 
