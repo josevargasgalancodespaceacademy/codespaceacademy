@@ -63,10 +63,10 @@
                                     </li>
                                 </ul>
                             </li>
+                            @can('add_offers')  
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Contenido web<span class="caret"></span></a>     
-                                       <ul class="dropdown-menu">
-                            @can('add_offers')                     
+                                       <ul class="dropdown-menu">                   
                                     <li>
                                         <a href="{{ route('inscribir-ofertas')}}">Crear nueva oferta</a>
                                     </li>
