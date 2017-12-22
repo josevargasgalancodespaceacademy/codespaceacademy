@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Talleres extends Model
+class TalleresYEventos extends Model
 {
     protected $table = 'talleres';
 
@@ -15,4 +15,4 @@ class Talleres extends Model
     protected $hidden = [
     	'id', 'name', 'type_identification', 'number_identification', 'telephone', 'email', 'company_name', 'company_link', 'created_at'];
 }
-}
+

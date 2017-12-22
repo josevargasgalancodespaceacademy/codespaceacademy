@@ -58,7 +58,7 @@
                                         <a href="{{ route('listado-curriculums')}}">Currículums</a>
                                         <a href="{{ route('listado-sorteo-becas')}}">Sorteo Becas</a>
                                         <a href="{{ route('listado-newsletter')}}">Newsletter</a>
-                                        <a href="#">Talleres y eventos</a>
+                                        <a href="{{ route('listado-talleresyeventos')}}">Talleres y eventos</a>
                                         <a href="{{ route('listado-ofertas-trabajo')}}">Jobs</a>
                                     </li>
                                 </ul>

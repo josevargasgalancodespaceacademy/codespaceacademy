@@ -72,3 +72,5 @@ Route::get('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTraba
 Route::put('/listado-ofertas-trabajo/{id}/editar-ofertas-trabajo', 'OfertasTrabajoController@actualizar')->name('actualizar-ofertas-trabajo');
 Route::put('/listado-ofertas-trabajo/{id}/activar-ofertas-trabajo','OfertasTrabajoController@activar_oferta')->name('activar-ofertas-trabajo');
 Route::put('/listado-ofertas-trabajo', 'OfertasTrabajoController@filtrar_ofertas_trabajo')->name('filtrar-ofertas-trabajo');
+
+Route::get('/listado-talleresyeventos', 'TalleresYEventosController@consulta')->name('listado-talleresyeventos');
