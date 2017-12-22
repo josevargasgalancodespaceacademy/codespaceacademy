@@ -17,6 +17,7 @@
 	</div>
 	@endif
 	{!! Form::open(['route' => ['actualizar-sorteo-becas', $registro_a_editar], 'method' => 'PUT'])!!}
+	{{ csrf_field() }}
 	<div class="form-group">
 		{!! Form::label('state','Estado')!!}
 		{!! Form::select('state', ['' => 'Selecciona el estado', 'No contactado' => 'No contactado', 'Imposible contactar' => 'Imposible contactar', 'Contactado' => 'Contactado', 'Entrevistado' => 'Entrevistado', 'Presentado' => 'Presentado', 'No presentado' => 'No presentado', 'Beca OK' => 'Beca OK', 'No Beca' => 'No Beca',], null ,['class' => 'form-control']) !!}

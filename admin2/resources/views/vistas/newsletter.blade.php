@@ -7,6 +7,7 @@
 <h4 class="title"> Mostrar resultados para: </h4>
 <p class="title"><strong>Ordenar por:</strong></p>
 {!! Form::open(['route' => ['filtrar-newsletter', $newsletter], 'method' => 'PUT'])!!}
+{{ csrf_field() }}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['email' => 'Email', 'created_at' => 'Fecha'], null ,['class' => 'form-control']) !!}
 </div>

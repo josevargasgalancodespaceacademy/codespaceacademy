@@ -6,6 +6,7 @@
 <h4 class="title"> Mostrar resultados para: </h4>
 <p class="title"><strong>Ordenar por:</strong></p>
 {!! Form::open(['route' => ['filtrar-contactos', $contacto], 'method' => 'PUT'])!!}
+{{ csrf_field() }}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
 </div>

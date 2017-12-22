@@ -10,6 +10,7 @@
 <h4 class="title"> Mostrar resultados para: </h4>
 <p class="title"> <strong>Ordenar por:</strong> </p>
 {!! Form::open(['route' => ['filtrar-ofertas-trabajo', $ofertas_trabajo], 'method' => 'PUT'])!!}
+{{ csrf_field() }}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['name' => 'Nombre de la oferta', 'city' => 'Localidad', 'business' => 'Empresa', 'created_at' => 'Fecha', 'status' => 'Estado'], null ,['class' => 'form-control']) !!}
 </div>
@@ -55,6 +56,7 @@
 				<a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a>
 					@if ($registro->status == 1) 
 					{!! Form::open(['route' => ['activar-ofertas-trabajo', $registro], 'method' => 'PUT'])!!}
+					{{ csrf_field() }}
 					<div class="form-group">
 				    <input type="hidden" name="status" value="0" /></div>
 				    <div class="form-group">
@@ -63,6 +65,7 @@
 					{!! Form::close() !!}
 					 @else 
 					 {!! Form::open(['route' => ['activar-ofertas-trabajo', $registro], 'method' => 'PUT'])!!}
+					 {{ csrf_field() }}
 					<div class="form-group">
 				    <input type="hidden" name="status" value="1" /></div>
 				    <div class="form-group">

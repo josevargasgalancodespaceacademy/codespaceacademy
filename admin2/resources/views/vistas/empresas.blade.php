@@ -9,6 +9,7 @@
 <h4 class="title"> Mostrar resultados para: </h4>
 <p class="title"><strong>Ordenar por:</strong></p>
 {!! Form::open(['route' => ['filtrar-empresas', $empresas], 'method' => 'PUT'])!!}
+        {{ csrf_field() }}
 <div class="form-group">
 		{!! Form::select('campo_a_filtrar', ['company_name' => 'Nombre de la empresa', 'created_at' => 'Fecha', 'state' => 'Estado'], null ,['class' => 'form-control']) !!}
 </div>
