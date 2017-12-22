@@ -72,10 +72,10 @@
                                     </li>
                                     <li>
                                         <a href="#">Crear nuevo evento</a>
-                                    </li>
-                            @endcan        
+                                    </li>     
                                 </ul>
                             </li>
+                              @endcan   
                                 <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     Usuarios <span class="caret"></span>
