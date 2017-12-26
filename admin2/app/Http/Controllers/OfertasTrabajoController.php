@@ -69,7 +69,7 @@ class OfertasTrabajoController extends Controller
     }
         public function detalle_candidatos($id)
     {
-        $detalle_candidatos= CurriculumsOfertasTrabajo::find($id);
-        return view('ofertas.detalle-candidatos-oferta')->with('detalle_candidatos', $detalle_candidatos);
+        $detalle_candidato= CurriculumsOfertasTrabajo::find($id);
+        return view('ofertas.detalle-candidatos-oferta')->with('detalle_candidato', $detalle_candidato);
     }
 }
