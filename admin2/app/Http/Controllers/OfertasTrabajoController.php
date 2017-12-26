@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Http\Requests\Vistas\EditarRequest;
 use App\OfertasTrabajo;
+use App\CurriculumsOfertasTrabajo;
+
 
 class OfertasTrabajoController extends Controller
 {
@@ -58,5 +60,11 @@ class OfertasTrabajoController extends Controller
          $registro_a_editar->status = $request->status;
          $registro_a_editar->save();
          return redirect()->route('listado-ofertas-trabajo');
+    }
+        public function mostrar_candidatos($id)
+    {
+        $candidatos = CurriculumsOfertasTrabajo::where('offer_id', '=',$id)->paginate(15);
+        $total_candidatos = CurriculumsOfertasTrabajo::where('offer_id', '=',$id)->count();
+        return view('ofertas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos', $total_candidatos);
     }
 }

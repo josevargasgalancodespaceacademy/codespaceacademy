@@ -52,7 +52,7 @@
 			@endif	
 			<td>{{ $registro->created_at }}</td>	
 			<td><a href="../public/listado-ofertas-trabajo/{{ $registro->id }}/detalle-ofertas-trabajo" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a>
-			    <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver candidatos </a>
+			    <a href="../public/listado-ofertas-trabajo/{{ $registro->id }}/candidatos" class="btn btn-primary"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver candidatos </a>
 				<a href="#" class="btn btn-warning"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar </a>
 					@if ($registro->status == 1) 
 					{!! Form::open(['route' => ['activar-ofertas-trabajo', $registro], 'method' => 'PUT'])!!}
