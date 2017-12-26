@@ -67,4 +67,9 @@ class OfertasTrabajoController extends Controller
         $total_candidatos = CurriculumsOfertasTrabajo::where('offer_id', '=',$id)->count();
         return view('ofertas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos', $total_candidatos);
     }
+        public function detalle_candidatos($id)
+    {
+        $detalle_candidatos= CurriculumsOfertasTrabajo::find($id);
+        return view('ofertas.detalle-candidatos-oferta')->with('detalle_candidatos', $detalle_candidatos);
+    }
 }
