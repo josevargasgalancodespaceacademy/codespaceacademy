@@ -30,7 +30,7 @@
 	<tr>
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
-			<td><a href="../../public/listado-ofertas-trabajo/{{ $registro->offer_id }}/candidatos/{{$registro->id}}/detalle-candidato" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a></td>
+			<td><a href="../../listado-ofertas-trabajo/{{ $registro->offer_id }}/candidatos/{{$registro->id}}/detalle-candidato" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a></td>
 	</tr>	
 	@endforeach
 </tbody>
