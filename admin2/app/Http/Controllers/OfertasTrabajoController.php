@@ -72,4 +72,15 @@ class OfertasTrabajoController extends Controller
         $detalle_candidato= CurriculumsOfertasTrabajo::find($id);
         return view('ofertas.detalle-candidatos-oferta')->with('detalle_candidato', $detalle_candidato);
     }
+        public function filtrar_candidatos(Request $request, $id)
+    {
+        $candidatos = CurriculumsOfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->paginate(15);
+        $total_candidatos = OfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->count();
+        if ($request->status>=0) 
+        {
+            $candidatos = CurriculumsOfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->paginate(15);
+            $total_candidatos = CurriculumsOfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->count();
+        }
+        return view('vistas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos',$total_candidatos);
+    }
 }
