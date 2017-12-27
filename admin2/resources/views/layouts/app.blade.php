@@ -106,6 +106,11 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="dropdown">
+                                <a href="{{ route('logs')}}" role="button">
+                                    Logs
+                                </a>
+                            </li>
                         @endguest
                     </ul>
                 </div>
@@ -121,6 +126,31 @@
      <script src="{{ asset('plugins/fullcalendar//lib/moment.min.js') }}"></script>
      <script src="{{ asset('plugins/fullcalendar/fullcalendar.js') }}"></script>
      <script src="{{ asset('plugins/fullcalendar/locale/es.js') }}"></script>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.table-container tr').on('click', function () {
+      $('#' + $(this).data('display')).toggle();
+    });
+    $('#table-log').DataTable({
+      "order": [1, 'desc'],
+      "stateSave": true,
+      "stateSaveCallback": function (settings, data) {
+        window.localStorage.setItem("datatable", JSON.stringify(data));
+      },
+      "stateLoadCallback": function (settings) {
+        var data = JSON.parse(window.localStorage.getItem("datatable"));
+        if (data) data.start = 0;
+        return data;
+      }
+    });
+    $('#delete-log, #delete-all-log').click(function () {
+      return confirm('Are you sure?');
+    });
+  });
+</script>
      @yield('scripts')
 </body>
 </html>
