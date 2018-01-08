@@ -13,6 +13,9 @@
     </ul>
   </div>
   @endif
+    <div class="panel panel-default">
+      <div class="panel-heading">Formulario de creación de ofertas de trabajo </div>
+        <div class="panel-body">
   {!! Form::open(['route' => ['crear-oferta-de-trabajo'], 'method' => 'PUT'])!!}
   {{ csrf_field() }}
   <div class="form-group col-sm-4">
@@ -72,5 +75,6 @@
   </div>
   {{ Form::close() }}
 </div>
-  </div> 
+</div>
+</div>
 @endsection
