@@ -43,15 +43,15 @@
     {!! Form::select('min_studies', ['' => 'Estudios mínimos', 'Educación secundaria obligatoria' => 'Educación secundaria obligatoria', 'Bachillerato o Ciclo Formativo de Grado Medio' => 'Bachillerato o Ciclo Formativo de Grado Medio', 'Ciclo Formativo de Grado Superior' => 'Ciclo Formativo de Grado Superior', 'Título Universitario' => 'Título Universitario', 'Otros títulos y certificaciones' => 'Otros títulos y certificaciones'], null ,['class' => 'form-control']) !!}
   </div>
     <div class="form-group col-sm-4">
-    {!! Form::label('min_salary','Salario mínimo*')!!}
+    {!! Form::label('min_salary','Salario mínimo')!!}
     {!! Form::text('min_salary', '', ['class' => 'form-control', 'placeholder' => 'Introduce el salario mínimo']) !!}
   </div>
     <div class="form-group col-sm-4">
-    {!! Form::label('max_salary','Salario máximo*')!!}
+    {!! Form::label('max_salary','Salario máximo')!!}
     {!! Form::text('max_salary', '', ['class' => 'form-control', 'placeholder' => 'Introduce el salario mínimo']) !!}
   </div>
   <div class="form-group col-sm-12 ">
-    {!! Form::label('min_requirements','Requisitos mínimos')!!}
+    {!! Form::label('min_requirements','Requisitos mínimos*')!!}
     {!! Form::textarea('min_requirements', '', ['class' => 'form-control', 'placeholder' => 'Requisitos mínimos de la oferta']) !!}
   </div>
     <div class="form-group col-sm-4">
@@ -67,7 +67,7 @@
     {!! Form::textarea('offer_short_description', '', ['class' => 'form-control', 'placeholder' => 'Descripción corta de la oferta']) !!}
   </div>
       <div class="form-group col-sm-12 ">
-    {!! Form::label('offer_description','Descripción de la oferta')!!}
+    {!! Form::label('offer_description','Descripción de la oferta*')!!}
     {!! Form::textarea('offer_description', '', ['class' => 'form-control', 'placeholder' => 'Descripción de la oferta']) !!}
   </div>
     <div class="form-group col-sm-12">
