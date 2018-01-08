@@ -20,7 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //ruta crear ofertas
 Route::group(['middleware' => ['permission:add_offers']], function () {
+//Contenido Web
+	//Crear Ofertas de Trabajo
 Route::get('/inscribir-ofertas', 'HomeController@ofertas')->name('inscribir-ofertas');
+Route::put('/inscribir-ofertas', 'OfertasTrabajoController@crear_oferta_trabajo')->name('crear-oferta-de-trabajo');
 });
 //rutas para el calendario/agenda
 Route::post('guardareventos', array('as' => 'guardareventos','uses' => 'CalendarController@create'));
@@ -81,6 +84,5 @@ Route::get('/listado-talleresyeventos/{id}/detalle-talleresyeventos', 'TalleresY
 Route::get('/listado-talleresyeventos/{id}/editar-talleresyeventos', 'TalleresYEventosController@editar');
 Route::put('/listado-talleresyeventos{id}/editar-talleresyeventos', 'TalleresYEventosController@actualizar')->name('actualizar-talleresyeventos');
 Route::put('/listado-talleresyeventos', 'TalleresYEventosController@filtrar_talleresyeventos')->name('filtrar-talleresyeventos');
-
 //logs
 Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->name('logs');

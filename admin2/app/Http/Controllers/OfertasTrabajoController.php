@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Http\Requests\Vistas\EditarRequest;
+use App\Http\Requests\ContenidoWeb\RequestCrearOfertasTrabajo;
 use App\OfertasTrabajo;
 use App\CurriculumsOfertasTrabajo;
 
@@ -84,10 +85,29 @@ class OfertasTrabajoController extends Controller
         }
         return view('vistas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos',$total_candidatos);
     }
-  //Creacion de ofertas de trabajo  s
-        public function crear_oferta_trabajo(array $data)
+  //Creacion de ofertas de trabajo 
+        public function crear_oferta_trabajo(Request $request, RequestCrearOfertasTrabajo $requestcrearofertastrabajo)
      {
-    
+         $validator = Validator::make($requestcrearofertastrabajo->all(), $requestcrearofertastrabajo->rules(), $requestcrearofertastrabajo->messages());
+         if ($validator->valid())
+         {
+         $OfertasTrabajo = new OfertasTrabajo();
+         $OfertasTrabajo->name =  $request->name;
+         $OfertasTrabajo->city =  $request->city;
+         $OfertasTrabajo->business =  $request->business;
+         $OfertasTrabajo->offer_type = $request->offer_type;
+         $OfertasTrabajo->min_experience =  $request->min_experience;
+         $OfertasTrabajo->min_studies =  $request->min_studies;
+         $OfertasTrabajo->min_salary = $request->min_salary;
+         $OfertasTrabajo->max_salary =  $request->max_salary;
+         $OfertasTrabajo->min_requirements =  $request->min_requirements;
+         $OfertasTrabajo->num_vacant =  $request->num_vacant;
+         $OfertasTrabajo->industry_type = $request->industry_type;
+         $OfertasTrabajo->offer_short_description =  $request->offer_short_description;
+         $OfertasTrabajo->offer_description = $request->offer_description;
+         $OfertasTrabajo ->save();
+         return redirect()->route('home');
      }
-    }
+     }
+    
 }

@@ -13,7 +13,7 @@ class RequestCrearOfertasTrabajo extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -29,9 +29,9 @@ class RequestCrearOfertasTrabajo extends FormRequest
             'business' => 'required|max:100',
             'offer_type' => 'required|max:50',
             'min_experience' => 'required|max:25',
-            'min_studies' => 'required|max:25',
-            'min_salary' => 'integer|max:30',
-            'max_salary' => 'integer|max:30',
+            'min_studies' => 'required|max:50',
+            'min_salary' => 'max:30',
+            'max_salary' => 'max:30',
             'min_requirements' => 'required',
             'num_vacant' => 'required|integer|max:10',
             'industry_type' => 'required|max:100',
@@ -43,7 +43,10 @@ class RequestCrearOfertasTrabajo extends FormRequest
     public function messages()
     {
         return [
-            'state.required' => 'Selecciona un estado'
+            'required' => 'El campo :attribute es obligatorio.',
+            'string' => 'El campo :attribute tiene un formato incorrecto.',
+            'integer' => 'El campo :attribute tiene un formato incorrecto.',
+            'max' => 'El campo :attribute ha superado el límite de caracteres permitido.',
         ];
     }
 }
