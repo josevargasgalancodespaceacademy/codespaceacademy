@@ -17,7 +17,7 @@ return [
     'active_url'           => 'The :attribute is not a valid URL.',
     'after'                => 'The :attribute must be a date after :date.',
     'after_or_equal'       => 'The :attribute must be a date after or equal to :date.',
-    'alpha'                => 'The :attribute may only contain letters.',
+    'alpha'                => 'El campo :attribute may only contain letters.',
     'alpha_dash'           => 'The :attribute may only contain letters, numbers, and dashes.',
     'alpha_num'            => 'The :attribute may only contain letters and numbers.',
     'array'                => 'The :attribute must be an array.',
@@ -116,6 +116,20 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'nombre',
+        'city' => 'ciudad',
+        'business' => 'nombre de la empresa',
+        'offer_type' => 'tipo de oferta',
+        'min_experience' => 'experiencia mínima',
+        'min_studies' => 'estudios mínimos',
+        'min_salary' => 'salario mínimo',
+        'max_salary' => 'salario máximo',
+        'min_requirements' => 'requerimientos mínimos',
+        'num_vacant' => 'número de vacantes',
+        'industry_type' => 'tipo de industria',
+        'offer_short_description' => 'descripción corta de la oferta',
+        'offer_description' => 'descripción de la oferta',
+        ],
 
 ];

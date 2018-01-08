@@ -25,7 +25,7 @@ class RequestCrearOfertasTrabajo extends FormRequest
     {
         return [
             'name' => 'required|string|max:100',
-            'city' => 'required|string|max:100',
+            'city' => 'required|alpha|max:100',
             'business' => 'required|max:100',
             'offer_type' => 'required|max:50',
             'min_experience' => 'required|max:25',
@@ -34,7 +34,7 @@ class RequestCrearOfertasTrabajo extends FormRequest
             'max_salary' => 'max:30',
             'min_requirements' => 'required',
             'num_vacant' => 'required|integer|max:10',
-            'industry_type' => 'required|max:100',
+            'industry_type' => 'required|alpha|max:100',
             'offer_short_description' => 'required|max:300',
             'offer_description' => 'required',
         ];
@@ -45,6 +45,7 @@ class RequestCrearOfertasTrabajo extends FormRequest
         return [
             'required' => 'El campo :attribute es obligatorio.',
             'string' => 'El campo :attribute tiene un formato incorrecto.',
+            'alpha' => 'El campo :attribute solo puede contener letras.',
             'integer' => 'El campo :attribute tiene un formato incorrecto.',
             'max' => 'El campo :attribute ha superado el límite de caracteres permitido.',
         ];
