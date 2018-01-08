@@ -84,11 +84,7 @@ class OfertasTrabajoController extends Controller
         }
         return view('vistas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos',$total_candidatos);
     }
-  //Creacion de ofertas de trabajo  
-        public function validar_crear_oferta_trabajo(array $data)
-     {
-
-     }
+  //Creacion de ofertas de trabajo  s
         public function crear_oferta_trabajo(array $data)
      {
     
