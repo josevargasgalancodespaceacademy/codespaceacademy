@@ -15,6 +15,7 @@ class OfertasTrabajoController extends Controller
     {
         $this->middleware('auth');
     }
+  //Consultas y filtros ofertas de trabajo  
     public function consulta(Request $request)
     {
     	$ofertas_trabajo = OfertasTrabajo::orderBy('name' ,'asc')->paginate(15);
@@ -82,5 +83,15 @@ class OfertasTrabajoController extends Controller
             $total_candidatos = CurriculumsOfertasTrabajo::orderBy($request->campo_a_filtrar , $request->orden)->where('status', '=',$request->status)->count();
         }
         return view('vistas.candidatos-oferta')->with('candidatos', $candidatos)->with('total_candidatos',$total_candidatos);
+    }
+  //Creacion de ofertas de trabajo  
+        public function validar_crear_oferta_trabajo(array $data)
+     {
+
+     }
+        public function crear_oferta_trabajo(array $data)
+     {
+    
+     }
     }
 }
