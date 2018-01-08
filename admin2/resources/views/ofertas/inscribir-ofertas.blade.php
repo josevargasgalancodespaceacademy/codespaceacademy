@@ -3,7 +3,7 @@
  <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
 @section('content')
 <div class="container">
- <h1 style = "text-align: center; margin-bottom: 50px"> Inscripción de ofertas de trabajo </h1>
+ <h1 style = "text-align: center; margin-bottom: 50px"> Creación de ofertas de trabajo </h1>
   @if (count($errors) > 0)
   <div class="alert alert-danger" role="alert">
     <ul>
