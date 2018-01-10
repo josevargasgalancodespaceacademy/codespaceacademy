@@ -86,3 +86,5 @@ Route::put('/listado-talleresyeventos{id}/editar-talleresyeventos', 'TalleresYEv
 Route::put('/listado-talleresyeventos', 'TalleresYEventosController@filtrar_talleresyeventos')->name('filtrar-talleresyeventos');
 //logs
 Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->name('logs');
+//Listado de usuarios del sistema
+Route::get('/listado-usuarios', 'UserController@consulta')->name('listado-usuarios');

@@ -84,6 +84,9 @@
                                     <li>
                                         <a href="{{ route('register')}}">Registrar nuevo usuario</a>
                                     </li>
+                                    <li>
+                                        <a href="{{ route('listado-usuarios')}}">Listado de usuarios</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
