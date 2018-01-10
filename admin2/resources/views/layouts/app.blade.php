@@ -94,7 +94,7 @@
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">Ver perfil</a>
-                                        <a href="#">Cambiar contraseña</a>
+                                        <a href="https://www.codespaceacademy.com/admin2/public/password/reset/">Cambiar contraseña</a>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
