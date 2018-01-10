@@ -85,7 +85,7 @@
                                         <a href="{{ route('register')}}">Registrar nuevo usuario</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('listado-usuarios')}}">Listado de usuarios</a>
+                                        <a href="{{ route('listado-usuarios')}}">Listado de usuarios del sistema</a>
                                     </li>
                                 </ul>
                             </li>
