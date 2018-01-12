@@ -7936,7 +7936,7 @@ margin-bottom: 25px
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.facebook-link, .instagram-link, .twitter-link, .linkedin-link  
+.facebook-link, .instagram-link, .twitter-link, .linkedin-link, .meetup-link  
 {
 background:no-repeat;
 background-position: center;
@@ -7963,6 +7963,10 @@ background-image: url("../images/footer/twitter.svg");
 {
 background-image: url("../images/footer/linkedin.svg");
 }
+.meetup-link
+{
+background-image: url("../images/footer/meetup.svg");
+}
 .facebook-link:hover
 {
    background-image: url("../images/footer/facebook-color.svg");
@@ -7981,6 +7985,10 @@ background-image: url("../images/footer/linkedin.svg");
 {
    background-image: url("../images/footer/linkedin-color.svg");
 }
+.meetup-link:hover
+{
+   background-image: url("../images/footer/meetup-color.svg");
+}
 @media (max-width:767px)
 {
   .redes-sociales 
@@ -7988,7 +7996,7 @@ background-image: url("../images/footer/linkedin.svg");
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.facebook-link, .instagram-link, .twitter-link, .linkedin-link 
+.facebook-link, .instagram-link, .twitter-link, .linkedin-link, .meetup-link 
   {
      width: 30px;
      height: 30px;
