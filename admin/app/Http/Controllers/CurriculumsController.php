@@ -14,7 +14,7 @@ class CurriculumsController extends Controller
     }
     public function consulta()
     {
-        $curriculums = Curriculums::orderBy('name' ,'asc')->paginate(15);
+        $curriculums = Curriculums::orderBy('created_at' ,'desc')->paginate(15);
         $total_curriculums = Curriculums::all()->count();
     	return view('vistas.curriculums')->with('curriculums', $curriculums)->with('total_curriculums', $total_curriculums);
     }
