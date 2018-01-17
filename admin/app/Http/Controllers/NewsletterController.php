@@ -13,7 +13,7 @@ class NewsletterController extends Controller
     }
     public function consulta()
     {
-    	$newsletter = Newsletter::orderBy('email' ,'asc')->paginate(15);
+    	$newsletter = Newsletter::orderBy('created_at' ,'desc')->paginate(15);
         $total_newsletter = Newsletter::all()->count();
     	return view('vistas.newsletter')->with('newsletter', $newsletter)->with('total_newsletter',$total_newsletter);
     }
