@@ -15,7 +15,7 @@ class TalleresYEventosController extends Controller
     }
     public function consulta()
     {
-    	$talleresyeventos = TalleresYEventos::orderBy('name' ,'asc')->paginate(15);
+    	$talleresyeventos = TalleresYEventos::orderBy('created_at' ,'desc')->paginate(15);
         $total_talleresyeventos = TalleresYEventos::all()->count();
     	return view('vistas.talleresyeventos')->with('talleresyeventos', $talleresyeventos)->with('total_talleresyeventos', $total_talleresyeventos);
     }
