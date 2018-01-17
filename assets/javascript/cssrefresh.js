@@ -73,7 +73,7 @@
 
 			try
 			{   
-				req.open( 'HEAD', url, false );
+				req.open( 'HEAD', url, true);
 				req.send( null ); 
 				if ( req.readyState < 3 )
 				{
