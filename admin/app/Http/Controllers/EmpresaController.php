@@ -15,7 +15,7 @@ class EmpresaController extends Controller
     }
     public function consulta()
     {
-    	$empresas = Empresas::orderBy('company_name' ,'asc')->paginate(15);
+    	$empresas = Empresas::orderBy('created_at' ,'desc')->paginate(15);
         $total_empresas = Empresas::all()->count();
     	return view('vistas.empresas')->with('empresas', $empresas)->with('total_empresas', $total_empresas);
     }
