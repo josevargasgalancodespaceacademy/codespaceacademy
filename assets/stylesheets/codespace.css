@@ -6771,6 +6771,10 @@ textarea
 {
   resize: none;
 }
+.texto-tachado
+{
+  text-decoration:line-through!important;
+}
 .header
 {
   position:relative;
@@ -10845,6 +10849,22 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   border-bottom: solid 1px #E6E6E6;
   margin-top: 20px;
 }
+.proximo-evento, .eventos-pasados, .eventos-previstos
+{
+  font-size: 40px!important;
+  text-transform: uppercase;
+  color:rgb(230, 23, 83);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+@media (max-width:767px)
+{
+ .proximo-evento, .eventos-pasados, .eventos-previstos
+{
+  font-size: 30px!important;
+} 
+}
 /*#formulario-taller
 {
   display: none!important;
@@ -10880,6 +10900,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 .meetup-tablas-temporales-sql
 {
   background-image: url(../../assets/images/eventos/meetup-tablas-temporales-sql.jpg)
+}
+.meetup-gamedevs-1
+{
+  background-image: url(../../assets/images/eventos/meetup-gamedevs-1.jpeg)
 }
 .informacion-evento 
 {
