@@ -15,7 +15,7 @@ class TeLlamamosController extends Controller
     }
     public function consulta()
     {
-        $te_llamamos = TeLLamamos::orderBy('name' ,'asc')->paginate(15);
+        $te_llamamos = TeLLamamos::orderBy('created_at' ,'desc')->paginate(15);
         $total_te_llamamos = TeLLamamos::all()->count();
     	return view('vistas.te-llamamos')->with('te_llamamos', $te_llamamos)->with('total_te_llamamos', $total_te_llamamos);
     }
