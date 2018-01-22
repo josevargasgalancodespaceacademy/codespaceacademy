@@ -9,9 +9,9 @@ class Newsletter extends Model
     protected $table = 'newsletter_subscriptions';
 
     protected $fillable = [
-       'updated_at'
+       'email','updated_at'
     ];
 
     protected $hidden = [
-    	'id', 'email', 'subscribed', 'created_at', 'comment_unsubscribe'];
+    	'id', 'subscribed', 'created_at', 'comment_unsubscribe'];
 }

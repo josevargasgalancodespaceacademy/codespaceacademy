@@ -28,7 +28,7 @@ class NewsletterController extends Controller
        
 \Excel::create('Newsletter', function($excel) {
 
-    $newsletter = Newsletter::all();
+    $newsletter = Newsletter::get(['email']);
     $excel->sheet('Newsletter', function($sheet) use($newsletter) {
         $sheet->fromArray($newsletter);
     });

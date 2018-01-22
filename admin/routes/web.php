@@ -68,7 +68,7 @@ Route::put('/listado-sorteo-becas/', 'SorteoBecasController@filtrar_sorteo_becas
 //Listado newsletter
 Route::get('/listado-newsletter', 'NewsletterController@consulta')->name('listado-newsletter');
 Route::put('/listado-newsletter', 'NewsletterController@filtrar_newsletter')->name('filtrar-newsletter');
-Route::get('/listado-newsletter','NewsletterController@excel_newsletter')->name('excel-newsletter')
+Route::get('/listado-newsletter/export-newsletter','NewsletterController@excel_newsletter')->name('excel-newsletter');
 //Listado de ofertas de trabajo externas
 Route::get('/listado-ofertas-trabajo', 'OfertasTrabajoController@consulta')->name('listado-ofertas-trabajo');
 Route::get('/listado-ofertas-trabajo/{id}/detalle-ofertas-trabajo', 'OfertasTrabajoController@detalle');
