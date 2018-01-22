@@ -37,6 +37,7 @@
 <p>Número de registros encontrados: {{$total_newsletter}}</p>
 {{$newsletter->links()}}
 </div>
+<div class="container col-md-1"><a href="{{ route('excel-newsletter') }}">Home</a></div>
 </div>
 </div>
 @endsection

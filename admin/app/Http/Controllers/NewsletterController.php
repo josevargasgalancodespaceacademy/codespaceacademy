@@ -23,4 +23,17 @@ class NewsletterController extends Controller
         $total_newsletter = Newsletter::orderBy($request->campo_a_filtrar , $request->orden)->count();
         return view('vistas.newsletter')->with('newsletter', $newsletter)->with('total_newsletter',$total_newsletter);
     }
+    public function excel_newsletter()
+    {
+       
+\Excel::create('Newsletter', function($excel) {
+
+    $newsletter = Newsletter::all();
+    $excel->sheet('Newsletter', function($sheet) use($newsletter) {
+        $sheet->fromArray($newsletter);
+    });
+
+})->export('xlsx');
+    return redirect()->route('listado-newsletter');
+    }
 }
