@@ -24,15 +24,13 @@ class NewsletterController extends Controller
         return view('vistas.newsletter')->with('newsletter', $newsletter)->with('total_newsletter',$total_newsletter);
     }
     public function excel_newsletter()
-    {
-       
+    {     
 \Excel::create('Newsletter', function($excel) {
 
     $newsletter = Newsletter::get(['email']);
     $excel->sheet('Newsletter', function($sheet) use($newsletter) {
         $sheet->fromArray($newsletter);
     });
-
 })->export('xlsx');
     return redirect()->route('listado-newsletter');
     }
