@@ -15,4 +15,4 @@ class Jobs extends Model
 
     protected $hidden = ['id'];
 }
-}
+
