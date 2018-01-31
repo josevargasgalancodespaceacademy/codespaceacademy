@@ -183,6 +183,10 @@ return [
 
         //Excel provider
         Maatwebsite\Excel\ExcelServiceProvider::class,
+
+        //migrations generator
+        Way\Generators\GeneratorsServiceProvider::class,
+        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
     ],
 
     /*
