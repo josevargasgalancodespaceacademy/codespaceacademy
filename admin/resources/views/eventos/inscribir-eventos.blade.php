@@ -38,6 +38,10 @@
     {!! Form::label('event_url','Enlace al evento*')!!}
     {!! Form::text('event_url', '', ['class' => 'form-control', 'placeholder' => 'Introduce un enlace al evento']) !!}
   </div>
+     <div class="form-group col-sm-4">
+    {!! Form::label('event_image','Imagen del evento*')!!}
+    {!! Form::file('event_image', ['class' => 'field']) !!}
+  </div>
       <div class="form-group col-sm-12 ">
     {!! Form::label('event_description','Descripción del evento*')!!}
     {!! Form::textarea('event_description', '', ['class' => 'form-control', 'placeholder' => 'Descripción del evento']) !!}

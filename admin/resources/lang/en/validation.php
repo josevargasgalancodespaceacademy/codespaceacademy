@@ -135,6 +135,7 @@ return [
         'event_date' => 'fecha del evento',
         'event_hour' => 'hora del evento',
         'event_url' => 'url del evento',
+        'event_image' => 'imagen del evento',
         'event_description' => 'descripción del evento'
         ],
 
