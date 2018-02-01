@@ -130,6 +130,12 @@ return [
         'industry_type' => 'tipo de industria',
         'offer_short_description' => 'descripción corta de la oferta',
         'offer_description' => 'descripción de la oferta',
+        'event_name' => 'nombre del evento',
+        'event_type' => 'tipo de evento',
+        'event_date' => 'fecha del evento',
+        'event_hour' => 'hora del evento',
+        'event_url' => 'url del evento',
+        'event_description' => 'descripción del evento'
         ],
 
 ];

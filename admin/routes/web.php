@@ -24,6 +24,9 @@ Route::group(['middleware' => ['permission:add_offers']], function () {
 	//Crear Ofertas de Trabajo
 Route::get('/inscribir-ofertas', 'HomeController@ofertas')->name('inscribir-ofertas');
 Route::put('/inscribir-ofertas', 'OfertasTrabajoController@crear_oferta_trabajo')->name('crear-oferta-de-trabajo');
+	//Crear Eventos
+Route::get('/inscribir-eventos', 'HomeController@eventos')->name('inscribir-eventos');
+Route::put('/inscribir-eventos', 'EventsController@crear_eventos')->name('crear-eventos');
 });
 //rutas para el calendario/agenda
 Route::post('guardareventos', array('as' => 'guardareventos','uses' => 'CalendarController@create'));

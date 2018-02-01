@@ -71,7 +71,7 @@
                                         <a href="{{ route('inscribir-ofertas')}}">Crear nueva oferta</a>
                                     </li>
                                     <li>
-                                        <a href="#">Crear nuevo evento</a>
+                                        <a href="{{ route('inscribir-eventos')}}">Crear nuevo evento</a>
                                     </li>     
                                 </ul>
                             </li>

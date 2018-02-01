@@ -29,4 +29,8 @@ class HomeController extends Controller
     {
         return view('ofertas/inscribir-ofertas');
     }
+      public function eventos()
+    {
+        return view('eventos/inscribir-eventos');
+    }
 }

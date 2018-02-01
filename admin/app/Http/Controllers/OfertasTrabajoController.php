@@ -105,7 +105,7 @@ class OfertasTrabajoController extends Controller
          $OfertasTrabajo->industry_type = $request->industry_type;
          $OfertasTrabajo->offer_short_description =  $request->offer_short_description;
          $OfertasTrabajo->offer_description = $request->offer_description;
-         $OfertasTrabajo ->save();
+         $OfertasTrabajo->save();
          $contenido = 
 "<!DOCTYPE html>
 <head>
