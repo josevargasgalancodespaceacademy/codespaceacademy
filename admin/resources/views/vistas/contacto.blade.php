@@ -30,7 +30,7 @@
 <table class="table table-bordered">
 	<thead>
 			<th>Nombre</th>
-			<th>Comentario</th>
+			<th class="col-md-3">Comentario</th>
 			<th>Fecha</th>
 			<th>Estado</th>
 			<th>Observaciones</th>
