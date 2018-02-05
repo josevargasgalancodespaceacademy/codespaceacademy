@@ -26,7 +26,7 @@
 <hr>
 <a href="../public/listado-contacto" class="btn btn-success"></span> Limpiar filtros </a>
 </div>
-<div class="container col-md-8 ">
+<div class="container col-md-9 ">
 <table class="table table-bordered">
 	<thead>
 			<th>Nombre</th>
