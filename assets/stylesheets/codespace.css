@@ -7345,13 +7345,10 @@ height:180px;
    display: none;
  }
 }
-@media (min-width: 768px)
-{
  .plazas-agotadas-movil
  {
    display: none;
  }
-}
 @media (min-width:1681px) and (max-width:1768px)
 {
 .plazas-agotadas
