@@ -65,10 +65,8 @@ Política de Privacidad.*\' es obligatorio.'
 			'type' => 'checkbox',
 			'label' => 'No deseo recibir comunicaciones comerciales
 sobre productos o servicios de Codespace.*',
-			'required' => true,
+			'required' => false,
 			'errors' => array(
-				'required' => 'El campo \'No deseo recibir comunicaciones comerciales
-sobre productos o servicios de Codespace.*\' es obligatorio.'
 			)
 		)
 	)

@@ -111,6 +111,39 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
  </head>
  <body>
 
+   <!-- Google Code for Conversiones M&oacute;viles Conversion Page
+   In your html page, add the snippet and call
+   goog_report_conversion when someone clicks on the
+   phone number link or button. -->
+   <script type="text/javascript">
+     /* <![CDATA[ */
+     goog_snippet_vars = function() {
+       var w = window;
+       w.google_conversion_id = 830007273;
+       w.google_conversion_label = "2GarCPjSwncQ6c_jiwM";
+       w.google_remarketing_only = false;
+     }
+     // DO NOT CHANGE THE CODE BELOW.
+     goog_report_conversion = function(url) {
+       goog_snippet_vars();
+       window.google_conversion_format = "3";
+       var opt = new Object();
+       opt.onload_callback = function() {
+       if (typeof(url) != 'undefined') {
+         window.location = url;
+       }
+     }
+     var conv_handler = window['google_trackConversion'];
+     if (typeof(conv_handler) == 'function') {
+       conv_handler(opt);
+     }
+   }
+   /* ]]> */
+   </script>
+   <script type="text/javascript"
+     src="//www.googleadservices.com/pagead/conversion_async.js">
+   </script>
+
   <div class="clearfix" id="page"><!-- group -->
    <div class="clearfix grpelem" id="pu5460-8"><!-- column -->
     <div class="browser_width colelem" id="u5460-8-bw">
@@ -214,7 +247,7 @@ href="#">900 102 101</a></p>
          </div>
          <label class="fld-label actAsDiv termi clearfix grpelem" id="u5601-11" for="widgetu5600_input"><!-- content --><span class="actAsPara"><span id="u5601">Acepto</span> <a class="nonblock" href="https://www.codespaceacademy.com/es/avisos-legales" target="_blank"><span id="u5601-3">los términos y Condiciones de uso y</span></a></span><span class="actAsPara"><a class="nonblock" href="https://www.codespaceacademy.com/es/avisos-legales" target="_blank"><span id="u5601-6">Política de Privacidad</span></a><span id="u5601-8">.*</span></span></label>
         </div>
-        <div class="fld-grp clearfix grpelem" id="widgetu5609" data-required="true" data-type="checkbox"><!-- none box -->
+        <div class="fld-grp clearfix grpelem" id="widgetu5609" data-required="false" data-type="checkbox"><!-- none box -->
          <div class="fld-checkbox museBGSize grpelem" id="u5612"><!-- simple frame -->
           <input class="wrapped-input" type="checkbox" value="1" id="widgetu5609_input" name="custom_U5609" tabindex="4"/>
           <label for="widgetu5609_input"></label>
