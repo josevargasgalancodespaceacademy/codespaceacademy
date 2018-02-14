@@ -25,7 +25,6 @@ function enviar_llamamos_form(){
             $('#'+ key).addClass("errorbox");
             $('#' + key).attr("placeholder", data[key]);  
             $('#' + key).val("");
-            replaceValueTimeout('#'+ key,originalData[key]);
             break
           } else {  
             $('#'+ key).off('focus');
