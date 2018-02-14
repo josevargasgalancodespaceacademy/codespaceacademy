@@ -1,163 +1,141 @@
-<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="codespaceacademy.com" resolutions="1x" timestamp="1518523952802">
-  <folder name="tablet">
-    <folder name="css">
-      <file name="master_a-p_g_-maestra.css" crc="99831829" ref="tablet>envio-ok:tablet>index"/>
-      <file name="envio-ok.css" crc="28277671" ref="tablet>envio-ok"/>
-      <file name="iefonts_envio-ok.css" crc="116641676" ref="tablet>envio-ok"/>
-      <file name="index.css" crc="4242437233" ref="tablet>index"/>
-      <file name="iefonts_index.css" crc="4024525354" ref="tablet>index"/>
-    </folder>
-    <file name="index.html" crc="3952678520" seo="true" mt="1518523489020" redirect="true"/>
-    <file name="envio-ok.html" crc="4244411438" seo="true" mt="1518523328755" redirect="true"/>
-  </folder>
-  <folder name="phone">
-    <folder name="css">
-      <file name="master_a-p_g_-maestra.css" crc="4063891229" ref="phone>index:phone>envio-ok"/>
-      <file name="index.css" crc="390945389" ref="phone>index"/>
-      <file name="iefonts_index.css" crc="3849897965" ref="phone>index"/>
-      <file name="envio-ok.css" crc="4222097034" ref="phone>envio-ok"/>
-      <file name="iefonts_envio-ok.css" crc="3842225650" ref="phone>envio-ok"/>
-    </folder>
-    <file name="index.html" crc="3868763254" seo="true" mt="1518523505378" redirect="true"/>
-    <file name="envio-ok.html" crc="173561605" seo="true" mt="1518523399988" redirect="true"/>
-  </folder>
+<manifest alg="2" build="2018.0.0.379" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="codespaceacademy.com" resolutions="1x" timestamp="1518597897294">
   <folder name="css">
     <file name="site_global.css" crc="357256105"/>
-    <file name="master_a-p_g_-maestra.css" crc="133132683" ref="index:envio-ok"/>
-    <file name="index.css" crc="4007941896" ref="index"/>
-    <file name="iefonts_index.css" crc="4150178464" ref="index"/>
-    <file name="envio-ok.css" crc="3895675813" ref="envio-ok"/>
+    <file name="master_a-p_g_-maestra.css" crc="3881723218" ref="envio-ok:index"/>
+    <file name="envio-ok.css" crc="29874827" ref="envio-ok"/>
     <file name="iefonts_envio-ok.css" crc="3787970916" ref="envio-ok"/>
+    <file name="index.css" crc="352099147" ref="index"/>
+    <file name="iefonts_index.css" crc="66252502" ref="index"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="museutils.js" crc="3803043152" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="whatinput.js" crc="86476730" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="museconfig.js" crc="4153641093" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="jquery.watch.js" crc="99325471" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="require.js" crc="4157109226" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="index:phone>index:tablet>index"/>
-    <file name="webpro.js" crc="242022427" ref="index:phone>index:tablet>index"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
+    <file name="museutils.js" crc="3803043152" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
+    <file name="museconfig.js" crc="4153641093" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
+    <file name="jquery.watch.js" crc="99325471" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="phone>index:tablet>index"/>
+    <file name="webpro.js" crc="242022427" ref="phone>index:tablet>index"/>
     <file name="form_check.php" crc="147359589" ref="phone>index"/>
     <file name="form_throttle.php" crc="93986428" ref="phone>index"/>
     <file name="form_process.php" crc="3851993751" ref="phone>index"/>
-    <file name="form-u642.php" crc="3802285263" ref="index"/>
     <file name="form-u5589.php" crc="211016564" ref="phone>index"/>
+    <file name="require.js" crc="4157109226" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok"/>
     <file name="form-u5070.php" crc="3911904692" ref="tablet>index"/>
   </folder>
   <folder name="images">
-    <file name="inicio-favicon.ico" crc="155968560" ref="phone>index"/>
-    <file name="svg-pegado-183528x88.svg" crc="427276310" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="inicio-favicon.ico" crc="3810764008" ref="phone>index:index"/>
+    <file name="svg-pegado-183528x111.svg" crc="491018558" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="svg pegado 183528x88_poster_.png" crc="285349245" ref="phone>index"/>
-    <file name="svg-pegado-183528x111.svg" crc="491018558" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="svg pegado 183528x111_poster_.png" crc="3815483122" ref="phone>index:index"/>
+    <file name="svg-pegado-44.svg" crc="4036481301" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="svg-pegado-44.svg" crc="4036481301" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
+    <file name="svg pegado 44_poster_.png" crc="4008070975" ref="phone>index:index"/>
+    <file name="svg-pegado-565172x446.svg" crc="3819114535" seo="true" ref="phone>index:tablet>index:index">
       <caption webpage="index" alt=""/>
+    </file>
+    <file name="svg pegado 565172x446_poster_.png" crc="3944208255" ref="phone>index:index"/>
+    <file name="checkboxunchecked.jpg" crc="495023700" ref="phone>index:tablet>index">
       <caption webpage="index" alt=""/>
+    </file>
+    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="checkboxchecked.jpg" crc="477278992" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="phone>index:tablet>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="svg-pegado-183528x88.svg" crc="427276310" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="svg pegado 44_poster_.png" crc="4008070975" ref="phone>index"/>
-    <file name="svg-pegado-2364802x449.svg" crc="4161960419" seo="true" ref="index:tablet>index">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="svg pegado 2364802x449_poster_.png" crc="3981573564" ref="tablet>index"/>
-    <file name="svg-pegado-565172x446.svg" crc="3819114535" seo="true" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="svg pegado 565172x446_poster_.png" crc="3944208255" ref="phone>index"/>
-    <file name="checkboxunchecked.jpg" crc="495023700" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="checkboxchecked.jpg" crc="477278992" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="index:phone>index:tablet>index">
-      <caption webpage="index" alt=""/>
-    </file>
-    <file name="facebook.png" crc="4084263549" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="svg pegado 183528x88_poster_.png" crc="285349245" ref="phone>index:index"/>
+    <file name="facebook.png" crc="4084263549" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="insta.png" crc="3942327735" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="insta.png" crc="3942327735" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="twitter.png" crc="445035048" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="twitter.png" crc="445035048" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="link.png" crc="227408396" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="link.png" crc="227408396" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="meet.png" crc="439060658" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="meet.png" crc="439060658" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
-    <file name="google.png" crc="4132154587" seo="true" ref="index:envio-ok:phone>index:phone>envio-ok:tablet>index:tablet>envio-ok">
-      <caption webpage="index" alt=""/>
-      <caption webpage="index" alt=""/>
+    <file name="google.png" crc="4132154587" seo="true" ref="phone>index:phone>envio-ok:tablet>index:tablet>envio-ok:index:envio-ok">
       <caption webpage="index" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
     <file name="a-pág.-maestra-favicon.ico" crc="155968560" ref="phone>envio-ok"/>
-    <file name="svg pegado 183528x111_poster_.png" crc="3815483122" ref="phone>index"/>
-    <file name="deo.png" crc="361718310" seo="true" ref="envio-ok:tablet>envio-ok:phone>envio-ok">
+    <file name="deo.png" crc="361718310" seo="true" ref="phone>envio-ok:tablet>envio-ok:envio-ok">
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
       <caption webpage="envio-ok" alt=""/>
     </file>
+    <file name="svg-pegado-2364802x449.svg" crc="4161960419" seo="true" ref="tablet>index:index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="svg pegado 2364802x449_poster_.png" crc="3981573564" ref="tablet>index:index"/>
   </folder>
-  <file name="index.html" crc="3923220128" seo="true" mt="1518523445977" redirect="true"/>
-  <file name="envio-ok.html" crc="4199789057" seo="true" mt="1518523315222" redirect="true"/>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="master_a-p_g_-maestra.css" crc="4095391161" ref="tablet>envio-ok:tablet>index"/>
+      <file name="envio-ok.css" crc="4150447249" ref="tablet>envio-ok"/>
+      <file name="iefonts_envio-ok.css" crc="116641676" ref="tablet>envio-ok"/>
+      <file name="index.css" crc="3956986624" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="4024525354" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="164568577" seo="true" mt="1518523489020" redirect="true"/>
+    <file name="envio-ok.html" crc="3840636084" seo="true" mt="1518523328755" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-p_g_-maestra.css" crc="3879646186" ref="phone>index:phone>envio-ok"/>
+      <file name="index.css" crc="1934568" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="3849897965" ref="phone>index"/>
+      <file name="envio-ok.css" crc="360581672" ref="phone>envio-ok"/>
+      <file name="iefonts_envio-ok.css" crc="3842225650" ref="phone>envio-ok"/>
+    </folder>
+    <file name="index.html" crc="503413723" seo="true" mt="1518523505378" redirect="true"/>
+    <file name="envio-ok.html" crc="532542496" seo="true" mt="1518523399988" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="19933203" seo="true" mt="1518597885609" redirect="true"/>
+  <file name="envio-ok.html" crc="410473236" seo="true" mt="1518595026960" redirect="true"/>
 </manifest>

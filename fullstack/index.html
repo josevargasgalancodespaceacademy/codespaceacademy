@@ -4,7 +4,9 @@
 
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
   <meta name="generator" content="2018.0.0.379"/>
-
+   <script src="assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
+   <script type="text/javascript" src="assets/javascript/bootstrap.js"></script>
+   <script type="text/javascript" src="assets/javascript/forms/te_llamamos.js" async="async"></script> 
   <script type="text/javascript">
    // Redirect to phone/tablet as necessary
 (function(a,b,c){var d=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var f=a[b]+"MaxTouchPoints";if(f in navigator&&navigator[f])return!0}try{return document.createEvent("TouchEvent"),!0}catch(d){}return!1}(),g=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var f=b[c];f.charAt(0)==" ";)f=f.substring(1,f.length);if(f.indexOf(a)==
@@ -15,20 +17,21 @@
 document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 
 // Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "require.js", "index.css"], "outOfDate":[]};
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
 
   <link media="only screen and (max-width: 370px)" rel="alternate" href="http://codespaceacademy.com/phone/index.html"/>
   <link media="only screen and (max-width: 960px)" rel="alternate" href="http://codespaceacademy.com/tablet/index.html"/>
-  <link rel="shortcut icon" href="images/inicio-favicon.ico?crc=155968560"/>
+  <link rel="shortcut icon" href="images/inicio-favicon.ico?crc=3810764008"/>
   <title>Inicio</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=357256105"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=133132683"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=4007941896" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra.css?crc=3881723218"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=352099147" id="pagesheet"/>
+  <link rel="stylesheet" href="assets/stylesheets/codespace.css">
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=4150178464"/>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=66252502"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -165,13 +168,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
        <div class="size_fixed grpelem" id="u105"><!-- custom html -->
 
             <div class="countdown1-countdown">
-                <input class="knob days" data-label="Días" data-width="160" data-height="160" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="1" data-angleOffset=0 data-angleArc=0>
+                <input class="knob days" data-label="Days" data-width="160" data-height="160" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="1" data-angleOffset=0 data-angleArc=0>
 
                 <input class="knob hour" data-label="Hrs" data-width="160" data-height="160" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="1" data-angleOffset=0 data-angleArc=0>
 
                 <input class="knob minute" data-label="Min" data-width="160" data-height="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="1" data-angleOffset=0 data-angleArc=0>
 
-                <input class="knob second" data-label="Seg" data-width="160" data-height="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="0" data-angleOffset=0 data-angleArc=0>
+                <input class="knob second" data-label="Sec" data-width="160" data-height="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#FFFFFF" data-bgColor="rgba(255,255,255, 1)" data-inputColor="#FFFFFF" data-readOnly="true" data-skin="standard" data-thickness="0.09" value="0" data-angleOffset=0 data-angleArc=0>
             </div>
 
        </div>
@@ -185,55 +188,38 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      </div>
     </div>
     <div class="browser_width colelem" id="u639-bw">
-     <div id="u639"><!-- column -->
+     <div id="u639"><!-- group -->
       <div class="clearfix" id="u639_align_to_page">
-       <div class="clearfix colelem" id="u766-4"><!-- content -->
-        <p>¡Nosotros te llamamos!</p>
+       <div class="grpelem" id="u5972"><!-- custom html -->
+        <h2 style="text-align: center; margin-bottom: 30px"><strong>!Nosotros te llamamos!</strong></h2>
+   <form role="form" id="formulario-llamamos" class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="form-group">
+        <label for="nombre-contacto">Nombre*</label>
+        <input class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
        </div>
-       <form class="form-grp clearfix colelem" id="widgetu642" method="post" enctype="multipart/form-data" action="scripts/form-u642.php"><!-- none box -->
-        <div class="fld-grp clearfix grpelem" id="widgetu655" data-required="true"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix grpelem" id="u657-4" for="widgetu655_input"><!-- content --><span class="actAsPara">Nombre*</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u656-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu655_input" name="custom_U655" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu655_prompt" for="widgetu655_input"><span class="actAsPara">Introduce tu nombre</span></label></span>
-        </div>
-        <div class="clearfix grpelem" id="u650-4"><!-- content -->
-         <p>Enviando formulario...</p>
-        </div>
-        <div class="clearfix grpelem" id="u643-4"><!-- content -->
-         <p>El servidor ha detectado un error.</p>
-        </div>
-        <div class="clearfix grpelem" id="u649-4"><!-- content -->
-         <p>Formulario recibido.</p>
-        </div>
-        <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u648-5" type="submit" value="&nbsp;" tabindex="5"><!-- content -->
-         <div style="margin-top:-21px;height:21px;">
-          <p>&nbsp;</p>
-          <p>ENVIAR</p>
-         </div>
-        </button>
-        <div class="fld-grp clearfix grpelem" id="widgetu695" data-required="true"><!-- none box -->
-         <label class="fld-label actAsDiv clearfix grpelem" id="u696-4" for="widgetu695_input"><!-- content --><span class="actAsPara">Teléfono*</span></label>
-         <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u698-4"><!-- content --><input class="wrapped-input" type="tel" spellcheck="false" id="widgetu695_input" name="custom_U695" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu695_prompt" for="widgetu695_input"><span class="actAsPara">Introducir tu teléfono</span></label></span>
-        </div>
-        <div class="fld-grp clearfix grpelem" id="widgetu707" data-required="true" data-type="checkbox"><!-- none box -->
-         <div class="fld-checkbox museBGSize grpelem" id="u715"><!-- simple frame -->
-          <input class="wrapped-input" type="checkbox" value="1" id="widgetu707_input" name="custom_U707" tabindex="3"/>
-          <label for="widgetu707_input"></label>
-         </div>
-         <label class="fld-label actAsDiv termi clearfix grpelem" id="u708-8" for="widgetu707_input"><!-- content --><span class="actAsPara"><span id="u708">Acepto</span> <a class="nonblock" href="https://www.codespaceacademy.com/es/avisos-legales" target="_blank"><span id="u708-3">los términos y Condiciones de uso y Política de Privacidad</span></a><span id="u708-5">.*</span></span></label>
-        </div>
-        <div class="fld-grp clearfix grpelem" id="widgetu770" data-required="false" data-type="checkbox"><!-- none box -->
-         <div class="fld-checkbox museBGSize grpelem" id="u771"><!-- simple frame -->
-          <input class="wrapped-input" type="checkbox" value="1" id="widgetu770_input" name="custom_U770" tabindex="4"/>
-          <label for="widgetu770_input"></label>
-         </div>
-         <label class="fld-label actAsDiv termi clearfix grpelem" id="u772-6" for="widgetu770_input"><!-- content --><span class="actAsPara"><span id="u772">No deseo recibir comunicaciones comerciales</span></span><span class="actAsPara"><span id="u772-3">sobre productos o servicios de Codespace.*</span></span></label>
-        </div>
-       </form>
+       <div class="form-group">
+        <label for="telefono-contacto">Teléfono*</label>
+        <input class="form-control" id="telephone" name="telephone" placeholder="Introduce tu teléfono">
+       </div>
+      <div class="checkbox">
+       <label>
+      <input class="check-contacto" type="checkbox" id="check-llamamos"> Acepto <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.*
+      </label>
+      </div>
+        <div class="checkbox">
+       <label>
+      <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
+      </label>
+      </div>
+      <button style="margin-bottom:20px;" type="button" class="button fondobutton btn boton-contacto" onclick="enviar_llamamos_form()">Enviar</button>
+      <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>
+      </form>
+       </div>
       </div>
      </div>
     </div>
    </div>
-   <div class="verticalspacer" data-offset-top="1335" data-content-above-spacer="1335" data-content-below-spacer="300"></div>
+   <div class="verticalspacer" data-offset-top="1509" data-content-above-spacer="1509" data-content-below-spacer="300"></div>
    <div class="browser_width grpelem" id="u616-bw">
     <div id="u616"><!-- column -->
      <div class="clearfix" id="u616_align_to_page">
@@ -262,21 +248,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     </div>
    </div>
   </div>
-  <div class="preload_images">
-   <img class="preload" src="images/checkboxunchecked.jpg?crc=495023700" alt=""/>
-   <img class="preload" src="images/checkboxuncheckedrollover.jpg?crc=4076496830" alt=""/>
-   <img class="preload" src="images/checkboxuncheckedmousedown.jpg?crc=361678653" alt=""/>
-   <img class="preload" src="images/checkboxchecked.jpg?crc=477278992" alt=""/>
-   <img class="preload" src="images/checkboxcheckedrollover.jpg?crc=435737969" alt=""/>
-   <img class="preload" src="images/checkboxcheckedmousedown.jpg?crc=4004261994" alt=""/>
-  </div>
   <!-- JS includes -->
-  <script type="text/javascript">
-   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
-</script>
-  <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
-</script>
   <!-- Other scripts -->
   <script type="text/javascript">
    // Decide weather to suppress missing file error or not based on preference setting
@@ -288,14 +260,13 @@ var suppressMissingFileError = false
 l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
 f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Puede que determinados archivos falten en el servidor o sean incorrectos. Limpie la cache del navegador e inténtelo de nuevo. Si el problema persiste, póngase en contacto con el administrador del sitio web.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(f+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(f)):alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
 setTimeout(function(){g(!0)},5E3):g()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","jquery.musepolyfill.bgsize","webpro"],function(d){var $ = d;$(document).ready(function(){try{
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
 Muse.Utils.resizeHeight('.browser_width');/* resize height */
 Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.initWidget('#widgetu642', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu642 */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
@@ -1271,6 +1242,5 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
                     '01:00:00');
 
             </script>
-
    </body>
 </html>
