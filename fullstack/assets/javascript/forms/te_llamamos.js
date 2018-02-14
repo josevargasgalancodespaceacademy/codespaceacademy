@@ -14,7 +14,7 @@ function enviar_llamamos_form(){
       obj[item.name] = item.value;
       return obj;
     }, {});
-    if( respuesta == "OK") {
+    if( respuesta == "\nOK") {
       location.href ="https://www.codespaceacademy.com/fullstack/envio-ok.html";
     } else {
       var data = JSON.parse(respuesta);
@@ -25,6 +25,7 @@ function enviar_llamamos_form(){
             $('#'+ key).addClass("errorbox");
             $('#' + key).attr("placeholder", data[key]);  
             $('#' + key).val("");
+            replaceValueTimeout('#'+ key,originalData[key]);
             break
           } else {  
             $('#'+ key).off('focus');
