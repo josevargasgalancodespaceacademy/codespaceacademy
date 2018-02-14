@@ -14,7 +14,7 @@ function enviar_llamamos_form(){
       obj[item.name] = item.value;
       return obj;
     }, {});
-    if( respuesta == "\nOK") {
+    if( respuesta == "OK") {
       location.href ="https://www.codespaceacademy.com/fullstack/envio-ok.html";
     } else {
       var data = JSON.parse(respuesta);
