@@ -51,12 +51,12 @@ function recargar() {
 }
 
 /*Se muestra formulario del sorteo*/
-/*$(document).ready(function(){ 
+$(document).ready(function(){ 
   $('.abrir-formulario-sorteo').click(function() {
     $('.formulario-sorteo').toggle('slow');
   });
-});*/
-/*Se muestra formulario de envio de cv*/
+});
+/*Se muestra formulario de envio de cv
 $(document).ready(function () {
   $('.contamos-contigo .cv-y-ofertas-button').click(function () {
     $('.formulario-cv').toggle('slow');
