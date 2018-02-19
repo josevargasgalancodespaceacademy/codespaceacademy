@@ -15,7 +15,7 @@ class SorteoBecasController extends Controller
     }
     public function consulta()
     {
-    	$sorteo_becas = SorteoBecas::orderBy('name' ,'asc')->paginate(15);
+    	$sorteo_becas = SorteoBecas::orderBy('created_at' ,'desc')->paginate(15);
         $total_sorteo_becas = SorteoBecas::all()->count();
     	return view('vistas.sorteo-becas')->with('sorteo_becas', $sorteo_becas)->with('total_sorteo_becas' , $total_sorteo_becas);
     }
