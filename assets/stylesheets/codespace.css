@@ -7437,7 +7437,83 @@ height:180px;
 display: none;
 }
 }
- /*family-courses-container*/
+/*publicidad becas*/
+.container-advertising-becas
+{
+  background-color:rgb(230, 23, 83);
+  margin-top: -10px;
+}
+.advertising-becas
+{
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.advertising-becas-title
+{
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  color:#fff;
+  text-align: center;
+}
+.advertising-becas-explanation-container
+{
+  border-left: 1px solid #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.advertising-becas-explanation
+{
+    color:#fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+.advertising-becas-explanation strong
+{
+ font-size: 1.25em;
+}
+.advertising-becas-button
+{
+ font-size: 1.25em;
+ text-transform: uppercase;
+}
+.advertising-becas-button a
+{
+  background-color: #fff;
+  padding: 5px 40px 5px 40px;
+  color:rgb(230, 23, 83);
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius:20px;
+}
+@media (max-width:767px)
+{
+  .advertising-becas, .advertising-becas-explanation-container
+{
+  align-items: inherit;
+  display: inherit;
+  padding-bottom: 20px;
+  padding-top: inherit;
+}
+.advertising-becas
+{
+  text-align: center;
+}
+.advertising-becas-explanation
+{
+  margin-bottom: 15px;
+}
+.advertising-becas-explanation label
+{
+  font-size: 1.2em;
+}
+}
+/*family-courses-container*/
 .row
 {
   margin-right:-15px;

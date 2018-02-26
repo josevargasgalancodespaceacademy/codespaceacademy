@@ -84,6 +84,17 @@
       <div class="plazas-agotadas"></div> 
 </div>
 </div>
+<section>
+ <div class="row container-advertising-becas">
+        <div class="col-xs-12 col-sm-5 advertising-becas advertising-becas-title-container">
+          <div class="advertising-becas-title">¡becas empresa!</div>
+        </div>
+        <div class="col-xs-12 col-sm-7 advertising-becas advertising-becas-explanation-container">
+          <div class="col-xs-12 col-sm-6 advertising-becas-explanation" id="advertising-becas-explanation">Dos empresas te dan la oportunidad de conseguir <strong>una beca al 100%</strong> para <strong>nuestro Full Stack Web Development Bootcamp.</strong></div>
+          <div class="col-xs-12 col-sm-6 advertising-becas-button"><a class="button-adsertising" href="es/becas-programacion-malaga">consíguela</a></div>
+        </div>
+        </div>
+</section>
    <section class="container explanation">
       <div class="row">
         <div class="col-xs-12 col-sm-12 title">
@@ -252,6 +263,15 @@
         <a href="es/avisos-legales" target="_blank" class="info">Más información</a>
     </div>
 </div>
+<script>
+  /*cambiar texto advertising becas*/
+$(window).resize(function() {
+  if (document.body.clientWidth < 768) {
+  document.getElementById("advertising-becas-explanation").innerHTML = "<strong>Beca al <label>100% Full Stack Development Web Bootcamp</label></strong>";
+}else{document.getElementById("advertising-becas-explanation").innerHTML = "Dos empresas te dan la oportunidad de conseguir <strong>una beca al 100%</strong> para <strong>nuestro Full Stack Web Development Bootcamp.</strong>"
+}
+});
+</script>
         <script src="assets/javascript/codespace.js"></script>
         <!-- Google Code para etiquetas de remarketing -->
 <!--
