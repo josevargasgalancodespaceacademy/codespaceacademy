@@ -7442,14 +7442,14 @@ display: none;
 {
   background-color:rgb(230, 23, 83);
   margin-top: -10px;
+    align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .advertising-becas
 {
   padding-top: 30px;
   padding-bottom: 30px; 
-  align-items: center;
-  display: flex;
-  justify-content: center;
 }
 .advertising-becas-title
 {
@@ -7493,6 +7493,12 @@ display: none;
 }
 @media (max-width:767px)
 {
+.container-advertising-becas
+{
+  align-items: inherit;
+  display: inherit;
+  justify-content: inherit;
+}  
   .advertising-becas, .advertising-becas-explanation-container
 {
   align-items: inherit;
