@@ -18,8 +18,8 @@
 
   gtag('config', 'UA-107698899-1');
 </script>
-
 <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="expires" content="0" > 
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <link rel="shortcut icon" href="assets/favicon.ico">
 <title>Simplemente, hazlo. Bootcamps & Business code courses.</title>
@@ -75,14 +75,27 @@
     <div class="hero-block">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 call-to-action">
+            <div class="col-xs-12 plazas-agotadas-movil"><img src="assets/images/plazas-agotadas/plazas-agotadas.svg"></div> 
             <h1 class="h1">Simplemente, hazlo.</h1>
             <h2 class="h2">Full Stack web development Bootcamp & Business code courses</h2>
             <a href="es/cursos-programacion-malaga" class="button fondobutton">Ver cursos</a>
           </div>
         </div>
       </div>
+      <div class="plazas-agotadas"></div> 
 </div>
 </div>
+<section>
+ <div class="row container-advertising-becas">
+        <div class="col-xs-12 col-sm-5 advertising-becas advertising-becas-title-container">
+          <div class="advertising-becas-title">¡becas empresa!</div>
+        </div>
+        <div class="col-xs-12 col-sm-7 advertising-becas advertising-becas-explanation-container">
+          <div class="col-xs-12 col-sm-6 advertising-becas-explanation" id="advertising-becas-explanation"></div>
+          <div class="col-xs-12 col-sm-6 advertising-becas-button"><a class="button-adsertising" href="es/becas-programacion-malaga">consíguela</a></div>
+        </div>
+        </div>
+</section>
    <section class="container explanation">
       <div class="row">
         <div class="col-xs-12 col-sm-12 title">
@@ -112,7 +125,7 @@
 
     <section class="container contador-atras">
       <div class="col-xs-12 col-md-10 col-md-offset-1">
-        <h2><strong> 26 de enero </strong> comienza el <strong>Web Development Bootcamp</strong></h2>
+        <h2><strong> 20 de abril </strong> comienza el <strong>Web Development Bootcamp</strong></h2>
         <h3><strong>¡Ya falta poco para empezar!</strong></h3>
       </div>
       <div id="counter" class="col-xs-12 col-md-8 col-md-offset-2"></div>
@@ -237,7 +250,7 @@
           <li class="footer-link instagram"><a class="instagram-link" target="_blank" href="https://www.instagram.com/codespaceacademy/"></a></li>
           <li class="footer-link twitter"><a class="twitter-link" target="_blank" href="https://twitter.com/CodeSpaceAcade"></a></li>
           <li class="footer-link linkedin"><a class="linkedin-link" target="_blank" href="https://www.linkedin.com/company/24800060/"></a></li>
-          <li class="footer-link meetup"><a class="meetup-link" target="_blank" href="https://www.meetup.com/es-ES/Codespace-Academy/"></a></li>
+           <li class="footer-link meetup"><a class="meetup-link" target="_blank" href="https://www.meetup.com/es-ES/Codespace-Academy/"></a></li>
         </ul>
          </div>
         </div>
@@ -251,6 +264,19 @@
         <a href="es/avisos-legales" target="_blank" class="info">Más información</a>
     </div>
 </div>
+<script>
+if (document.body.clientWidth < 768) {
+  document.getElementById("advertising-becas-explanation").innerHTML = "<strong>Beca al <label>100% Full Stack Development Web Bootcamp</label></strong>";
+}else{document.getElementById("advertising-becas-explanation").innerHTML = "Dos empresas te dan la oportunidad de conseguir <strong>una beca al 100%</strong> para <strong>nuestro Full Stack Web Development Bootcamp.</strong>"
+};
+/*cambiar texto advertising becas al hacer resize*/
+$(window).resize(function() {
+  if (document.body.clientWidth < 768) {
+  document.getElementById("advertising-becas-explanation").innerHTML = "<strong>Beca al <label>100% Full Stack Development Web Bootcamp</label></strong>";
+}else{document.getElementById("advertising-becas-explanation").innerHTML = "Dos empresas te dan la oportunidad de conseguir <strong>una beca al 100%</strong> para <strong>nuestro Full Stack Web Development Bootcamp.</strong>"
+}
+});
+</script>
         <script src="assets/javascript/codespace.js"></script>
         <!-- Google Code para etiquetas de remarketing -->
 <!--
