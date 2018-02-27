@@ -53,9 +53,9 @@ $(document).ready(function(){
     $('.formulario-sorteo').toggle('slow');
   });
 });
-/*Se muestra formulario de envio de cv
-$(document).ready(function () {
-  $('.contamos-contigo .cv-y-ofertas-button').click(function () {
+/*Se muestra formulario de envio de cv*/
+$(document).ready(function(){
+  $('.cv-y-ofertas-button').click(function () {
     $('.formulario-cv').toggle('slow');
   });
 });
