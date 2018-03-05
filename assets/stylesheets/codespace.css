@@ -8641,9 +8641,18 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   font-weight: 400!important;
   font-size:90px!important;
 }
+.page-bootcamp-web .hero-block .part-time
+{
+  font-weight: 400!important;
+  font-size:75px!important;
+}
 @media (max-width:767px)
 {
   .page-bootcamp-web .hero-block h1
+  {
+     font-size:40px!important;
+  }
+  .page-bootcamp-web .hero-block .part-time
   {
      font-size:40px!important;
   }
@@ -8658,6 +8667,17 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
   font-size:70px!important;
 }
+  .page-bootcamp-web .hero-block .part-time
+  {
+     font-size:65px!important;
+  }
+}
+@media (min-width:1366px) and (max-width:1439px)
+{
+  .page-bootcamp-web .hero-block .part-time
+  {
+     font-size:65px!important;
+  }
 }
 @media (min-width:768px) and (max-width:881px)
 {
@@ -8669,6 +8689,10 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
   font-size:60px!important;
 }
+  .page-bootcamp-web .hero-block .part-time
+  {
+     font-size:45px!important;
+  }
 }
 .video-bootcamp-web
 {
