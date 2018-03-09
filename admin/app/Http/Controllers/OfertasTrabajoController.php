@@ -392,6 +392,7 @@ var google_remarketing_only = true;
 </html>";
          mkdir('/var/www/codespaceacademy/curriculums/ofertas-externas/'.$request->name.'-'.$request->city.'-'.$request->business, 0777, true);
          file_put_contents('/var/www/codespaceacademy/es/offers/'.$request->name.'-'.$request->city.'-'.$request->business.'.html', $contenido);
+         file_put_contents('/var/www/codespaceacademy/en/offers/'.$request->name.'-'.$request->city.'-'.$request->business.'.html', $contenido);
          return redirect()->route('listado-ofertas-trabajo');
      }
      }
