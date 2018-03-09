@@ -8442,6 +8442,10 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
    content: 'ver curso'
 }
+.bussiness-courses .english .button:before, .bootcamp-videogames-container .english .button:before, .bootcamp-mobile-container .english .button:before  
+{
+   content: 'view course' 
+}
 .bussiness-courses .button:hover
 {
   background-color: #8904B1;
@@ -8454,6 +8458,10 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .bussiness-courses .button:hover:before, .bootcamp-videogames-container .button:hover:before, .bootcamp-mobile-container .button:hover:before 
 {
    content: 'próximamente';
+}
+.bussiness-courses .english .button:hover:before, .bootcamp-videogames-container .english .button:hover:before, .bootcamp-mobile-container .english .button:hover:before 
+{
+   content: 'coming soon';
 }
 .boton-business-courses:before
 {
