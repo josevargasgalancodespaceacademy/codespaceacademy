@@ -8471,6 +8471,14 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 {
   content: 'próximamente'
 }
+.english .boton-business-courses:before
+{
+  content: 'coming soon'
+}
+.english .boton-business-courses:hover:before
+{
+  content: 'coming soon'
+}
 .boton-business-courses
 {
    width: 100%;
