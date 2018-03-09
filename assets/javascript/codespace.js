@@ -83,6 +83,22 @@ function contador() {
   });
 }
 
+/*contador hacia atras del bootcamp en inglés*/
+function contador_ingles() {
+  var launchdate = new Date(2018, 4 - 1, 20);//la fecha de lanzamiento del bootcamp
+  var format = 'DD hh:mm:ss';
+  $('#counter').countdown({
+
+    format: format,
+    layout: '<span class="countdown_row countdown_show4"><span class="countdown_section">' +
+      '<span class="countdown_amount">{dnn}</span><br>Days</span><span class="countdown_section">' +
+      '<span class="countdown_amount">{hnn}</span><br>Hours</span><span class="countdown_section">' +
+      '<span class="countdown_amount">{mnn}</span><br>Minutes</span><span class="countdown_section">' +
+      '<span class="countdown_amount">{snn}</span><br>Seconds</span></span></div></div>',
+    until: launchdate
+  });
+}
+
 function contador_becas() {
   var launchdate = new Date(2017, 12 - 1, 20);//la fecha de finalizacion del sorteo
   var format = 'DD hh:mm:ss';
