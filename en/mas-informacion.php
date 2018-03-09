@@ -161,46 +161,6 @@
     </div>
   </div> 
 
-      <section class="container prefooter">
-      <div class="row js-same-height js-same-height-parent">
-        <div class="col-xs-12 col-sm-12 col-md-6 newsletter">
-          <p>Get more information about <strong>codespace</strong> courses and events.</p>
-          <h2>Subscribe to our newsletter</h2>
-        <form  id="newsletter">
-        <input type="text" class="newsletter-email" name="email" placeholder="Enter your email address">
-        <button type="button" class="button fondobutton newsletter-button" onclick="enviar_newsletter('../assets/php/forms/newsletter.php')">submit</button>
-        </form>
-          </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 trabaja-con-nosotros">
-        <div class="col-xs-12 col-sm-6 col-md-6 tcn-text">
-         <h2><strong>Join our team</strong></h2>
-         <h2>Work with us</h2>
-          <p>With 30 years of combined experience, our skilled team will provide you the opportunity to investigate, train, and discover new professional challenges in the best work environment.</p>
-         <a class="button fondobutton" href="es/trabaja-con-nosotros">Join</a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 tcn-image">
-        <img src="../assets/images/trabaja-con-nosotros/trabaja-con-nosotros-icon.png">
-        </div>
-        </div>
-        </div>
-    </section>
-
-        <div class="modal fade" id="modal-newsletter" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-<h4 class="modal-title">Thanks for subscribing to our newsletter</h4>
-       </div>
-<div class="modal-body">
-         You have already been registered.
-       </div>
-<div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
      <footer>
