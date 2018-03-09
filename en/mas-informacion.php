@@ -113,7 +113,7 @@
                <?php
                 foreach ($courses as $key => $cityBlock) {
                   echo "<select class='form-control mas_informacion_course_block'  data-city='".$key."' name='course-".$key."'>";
-                  echo "<option value=''>Escoge un curso en ".$cities[$key-1]["name"]."</option>";
+                  echo "<option value=''>Choose a course in ".$cities[$key-1]["name"]."</option>";
                     foreach ($cityBlock as $course) echo "<option value='".$course["id"]."' name='city'>".$course["name"]."</option>";
                   echo "</select>";
                 }
