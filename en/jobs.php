@@ -37,35 +37,35 @@
         <div class="container">
         <a href="https://www.codespaceacademy.com/en" class="codespace-logo"><img src="../assets/images/logos/logo_positivo.svg"></a>
         <a href="#" class="hamburger-icon"><img src="../assets/images/logos/hamburger-icon-positivo.svg"></a>
-<nav class="menu">
+  <nav class="menu">
     <ul>
       <li class="menu-item">
-        <a href="../es/nosotros">Nosotros</a>
+        <a href="about-us">About Us</a>
       </li>
         <li class="menu-item">
-        <a href="../es/cursos-programacion-malaga">Cursos</a>
+        <a href="cursos-programacion-malaga">Courses</a>
         <div class="submenu">
           <ul>
-            <li><a href="../es/cursos-programacion-malaga#bootcamps">Bootcamps</a></li>
-            <li><a href="../es/cursos-programacion-malaga#business-courses">Business code courses</a></li>
+            <li><a href="cursos-programacion-malaga#bootcamps">Bootcamps</a></li>
+            <li><a href="cursos-programacion-malaga#business-courses">Business code courses</a></li>
             <li><a href="#">Extreme programming workshops</a></li>
           </ul>
         </div>
       </li>
       <li class="menu-item">
-      <a href="../es/agenda-eventos-codespace">Eventos</a>
+      <a href="agenda-eventos-codespace">Events</a>
       </li>
       <li class="menu-item">
-        <a href="../es/becas-programacion-malaga">Becas</a>
-      </li>
-       <li class="menu-item">
-        <a href="../es/asesoramiento-laboral-malaga">Mentoring</a>
+        <a href="becas-programacion-malaga">Scholarships</a>
       </li>
       <li class="menu-item">
-        <a href="../es/talento-codespace">Talento <strong>codespace</strong></a>
+        <a href="asesoramiento-laboral-malaga">Mentoring</a>
+      </li>
+      <li class="menu-item">
+        <a href="talento-codespace"><strong>codespace</strong> talent</a>
       </li>
         <li class="menu-item">
-        <a href="../es/jobs">Jobs</a>
+        <a href="jobs">Jobs</a>
       </li>
     </ul>
     </nav>
