@@ -3,6 +3,7 @@
 <head>
 <script src="../../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript" async="async"></script> 
 <link rel="stylesheet" href="../../assets/stylesheets/codespace.css">
+<script type="text/javascript" src="../../assets/javascript/forms/business_courses.js" async="async"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107698899-1"></script>
@@ -239,41 +240,33 @@
         <h2 class="title">Y bien...¿Contamos contigo?</h2>
         <p class="introduction">Déjanos tus datos de contacto y estaremos encantados de hablar contigo para contarte todos los detalles.<br>
         Queremos estar seguros de que no tienes ninguna duda.</p>
-         <form role="form">
+         <form role="form" id="formulario-business-courses">
         <div class="form-group">
-        <label for="nombre-bcc">Nombre*</label>
-        <input class="form-control" id="nombre-bcc"
-           placeholder="Introduce tu nombre">
+        <label for="nombre-bcc">Nombre completo*</label>
+        <input class="form-control" id="name" name="name" 
+           placeholder="Introduce tu nombre completo">
        </div>
-       <div class="form-group">
-       <label for="apellidos-bcc">Apellidos*</label>
-       <input class="form-control" id="apellidos-bcc" 
-           placeholder="Introduce tus apellidos">
-      </div>
       <div class="form-group">
         <label for="email-bcc">Email*</label>
-        <input class="form-control" id="email-bcc"
+        <input class="form-control" id="email" name="email" 
            placeholder="Introduce tu email">
        </div>
        <div class="form-group">
         <label for="telefono-bcc">Teléfono*</label>
-        <input class="form-control" id="telefono-bcc"
+        <input class="form-control" id="telephone" name="telephone" 
            placeholder="Introduce tu teléfono">
        </div>
         <div class="form-group">
-        <label for="ciudad-bcc">Ciudad*</label>
-        <input class="form-control" id="ciudad-bcc"
-           placeholder="Introduce tu ciudad">
-       </div>
-        <div class="form-group">
         <label for="comentario-bcc">Comentario</label>
-        <textarea class="form-control" id="comentario-bcc"
+        <textarea class="form-control" id="comentario-bcc" name="comment" 
            placeholder="Comentanos cualquier duda que tengas"></textarea>
        </div>
       <div class="checkbox">
-      <input type="checkbox"> Acepto la política de privacidad y legal. Para más informacion click <a href="../../es/avisos-legales.html" target="_blank">aqui</a>
+      <input type="checkbox" id="check-business-course">Acepto <a href="../avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>*.<br>
+      <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.
       </div>
-      <button type="button" class="btn button fondobutton boton-bcc" data-toggle="modal" data-target="#modal-bcc">Enviar</button>
+      <button type="button" class="btn button fondobutton boton-bcc" data-toggle="modal" data-target="#modal-bcc" onclick="enviar_business_course_form()">Enviar</button>
+      <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>   
      </form>
         </div>
         </section>
