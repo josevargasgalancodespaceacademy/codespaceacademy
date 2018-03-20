@@ -16,7 +16,7 @@ function enviar_business_course_form(){
     }, {});
     console.log(respuesta);
     if( respuesta == "\nOK") {
-      $('#modal-contact').modal('show');
+      $('#modal-business-courses').modal('show');
     } else {
       var data = JSON.parse(respuesta);
       $('#formulario-business-courses .mensajerror').css('display', 'inline-block');
