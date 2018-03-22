@@ -147,15 +147,15 @@ $(function () {
 /*Despliegue de menú móvil*/
 $(document).ready(function () {
   $('.hamburger-icon').click(function (e) {
-    if ($('body').hasClass("page-bootcamp-web")) {
+    if ($('body').hasClass("page-bootcamp-web") || $('body').hasClass("page-bootcamp-videogames") ) {
       $(".container .menu").animate({
         width: "toggle"
       }, 400);
-      if ($('.page-bootcamp-web .hero-block').css("margin-top") == "465px") {
-        $('.page-bootcamp-web .hero-block').css("margin-top", "80px");
+      if ($('.page-bootcamp-web .hero-block').css("margin-top") == "465px" || $('.page-bootcamp-videogames .hero-block').css("margin-top") == "465px") {
+        $('.hero-block').css("margin-top", "80px");
       }
       else {
-        $('.page-bootcamp-web .hero-block').css("margin-top", "465px");
+        $('.hero-block').css("margin-top", "465px");
       }
     }
     else {
@@ -165,7 +165,6 @@ $(document).ready(function () {
     }
   });
 })
-
 //Transiciones business code courses
 function slider() {
   $('.slider-business-courses').unslider({
