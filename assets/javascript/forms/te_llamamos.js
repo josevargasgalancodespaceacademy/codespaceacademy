@@ -1,5 +1,5 @@
 function enviar_llamamos_form(){
-          var url ="https://codespaceacademy.com/assets/php/forms/te_llamamos.php";
+          var url ="assets/php/forms/te_llamamos.php";
   if ($('#check-llamamos').is(':checked')){ 
   $.ajax({                        
     type: "POST",                 
