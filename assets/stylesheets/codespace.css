@@ -10109,6 +10109,9 @@ text-align: center;
   background-color: rgb(246, 65, 25)!important;
   height: 300px!important;
 }
+ .winner p{
+   margin-bottom: 10px;
+ }
 .hobby-profession
 {
   height: 425px!important;
@@ -10254,6 +10257,9 @@ font-size: 2em
  background-size: cover;  
  background-position: 40% 100%;
 }
+ .winner p{
+   margin-bottom: 0px;
+ }
   .cyborg
   {
     margin-top: 220px;
@@ -10302,8 +10308,11 @@ font-size: 2em
  {
   height: 980px;
  }
+ .winner p{
+   margin-bottom: 20px;
+ }
  .winner{
-  height: 380px!important
+  height: 400px!important
  }
  .page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-videogames .pasos-matricula3-num
 {
@@ -10342,6 +10351,9 @@ font-size: 2em
 {
   padding-right: inherit!important;
 }
+ .winner p{
+   margin-bottom: 60px;
+ }
 }
 @media (max-width:767px)
 {
@@ -10374,6 +10386,9 @@ font-size: 2em
 {
   height: 350px!important;
 }
+ .winner p{
+   margin-bottom: 16%;
+ }
 .module-title h2
 {
  font-size: 35px
