@@ -125,7 +125,7 @@
             </div>
                   <div class="checkbox">
        <label>
-      <input class="check-becas" type="checkbox" id="check-mas-info"> I accept <a href="../es/avisos-legales" target="_blank">the terms and Conditions of use and Privacy Policy</a>.
+      <input class="check-becas" type="checkbox" id="check-mas-info"> I accept <a href="avisos-legales" target="_blank">the terms and Conditions of use and Privacy Policy</a>.
       </label>
       </div>
       <div class="checkbox">
@@ -168,7 +168,7 @@
     <div class="row">
     <div class=" col-xs-12 col-sm-12 container-logo"><div class="codespace-logo"><a href="https://www.codespaceacademy.com/en"><img src="../assets/images/logos/logo_negativo.svg"></a></div></div>
     <div class=" col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 codespace-copyright"><p>C/ Compositor Lehmberg Ruiz, 13 29007 Málaga | 900 102 101 | www.codespaceacademy.com</p></div>
-    <div class=" col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Technical Training. All Rights Reserved. <a href="es/avisos-legales">Legal policies and conditions of use</a></p></div>
+    <div class=" col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 codespace-copyright"><p>&copy; 2017 <strong>code</strong>space - Technical Training. All Rights Reserved. <a href="avisos-legales">Legal policies and conditions of use</a></p></div>
       <div class="col-xs-12 col-sm-12 footer-navigate">
         <ul>
           <li class="footer-link"><a href="contacto">contact</a></li>
@@ -192,7 +192,7 @@
         Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
         Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
         <a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
-        <a href="../es/avisos-legales" target="_blank" class="info">Más información</a>
+        <a href="avisos-legales" target="_blank" class="info">Más información</a>
     </div>
 </div>
         <script src="../assets/javascript/codespace.js"></script>
