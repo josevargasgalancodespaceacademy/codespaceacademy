@@ -11,7 +11,8 @@ class DatabaseSeeder extends Seeder
     {
      $this->call([
          BootcampsSeeder::class,
-         BusinessCodeCoursesSeeder::class
+         BusinessCodeCoursesSeeder::class,
+         SubjectsCoursesSeeder::class
      ]);
     }
 }
