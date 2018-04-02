@@ -123,7 +123,7 @@
          <h2><strong>Join our team</strong></h2>
          <h2>Work with us</h2>
           <p>With 30 years of combined experience, our skilled team will provide you the opportunity to investigate, train, and discover new professional challenges in the best work environment.</p>
-         <a class="button fondobutton" href="es/trabaja-con-nosotros">Join</a>
+         <a class="button fondobutton" href="trabaja-con-nosotros">Join</a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 tcn-image">
         <img src="../assets/images/trabaja-con-nosotros/trabaja-con-nosotros-icon.png">
