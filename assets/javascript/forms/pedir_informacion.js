@@ -75,7 +75,11 @@ function enviar_pedir_mas_informacion(){
       }
     });
   }else{
-    jQuery(function(){swal("Acepta las condiciones legales");});
+    jQuery(function(){swal({
+    title: "Acepta las condiciones legales",
+    type: "danger",  
+    }
+  );});
   }
 }
 
