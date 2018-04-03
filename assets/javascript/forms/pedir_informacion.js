@@ -75,7 +75,7 @@ function enviar_pedir_mas_informacion(){
       }
     });
   }else{
-    swal("¡Bien!, Condición cumplida", success);
+    jQuery(function(){swal("¡Bien!,Condición cumplida", success);});
   }
 }
 
