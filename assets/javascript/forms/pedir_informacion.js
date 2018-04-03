@@ -75,7 +75,7 @@ function enviar_pedir_mas_informacion(){
       }
     });
   }else{
-    jQuery(function(){swal("¡Bien!,Condición cumplida", "success");});
+    jQuery(function(){swal("Acepta las condiciones legales");});
   }
 }
 
