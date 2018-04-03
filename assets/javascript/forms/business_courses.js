@@ -39,7 +39,7 @@ function enviar_business_course_form(){
   })
 }else
   {
-    alert ('Acepta las condiciones legales');
+    swal("Acepta las condiciones legales", "", "error");
   }
 }
 
