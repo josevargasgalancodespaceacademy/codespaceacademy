@@ -82,9 +82,7 @@ function enviar_pedir_mas_informacion(){
       confirmButtonText: "OK",
       closeOnConfirm: false
     },
-    function(){
-      swal("Acepta las condiciones legales");
-    });
+    );
   }
 }
 
