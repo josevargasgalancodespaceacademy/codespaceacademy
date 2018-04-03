@@ -125,12 +125,12 @@
             </div>
                   <div class="checkbox">
        <label>
-      <input class="check-becas" type="checkbox" id="check-mas-info"> I accept <a href="avisos-legales" target="_blank">the terms and Conditions of use and Privacy Policy</a>.
+      <input class="check-becas" type="checkbox" id="check-mas-info"> I accept <a href="avisos-legales" target="_blank">the terms and Conditions of use and Privacy Policy</a>*.
       </label>
       </div>
       <div class="checkbox">
        <label>
-      <input class="comunicaciones" type="checkbox" id="comunicaciones">I do not wish to be receive commercial communications about Codespace products or services.*
+      <input class="comunicaciones" type="checkbox" id="comunicaciones">I do not wish to be receive commercial communications about Codespace products or services.
       </label>
       </div>
 
