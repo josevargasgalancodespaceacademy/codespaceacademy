@@ -45,7 +45,7 @@ function enviar_contacto_company(){
 }
 }) 
 }else{
-    alert ('Acepta las condiciones legales');
+    swal("Acepta las condiciones legales", "", "error");
   }
 }
 

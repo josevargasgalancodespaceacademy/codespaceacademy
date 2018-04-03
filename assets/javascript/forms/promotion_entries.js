@@ -58,6 +58,6 @@ if ($('#check-sorteo').is(':checked')){
 }
 })
   }else{
-    alert ('Acepta las condiciones legales');
+    swal("Acepta las condiciones legales", "", "error");
   }
 }
