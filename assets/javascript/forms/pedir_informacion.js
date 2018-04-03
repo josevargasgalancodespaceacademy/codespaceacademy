@@ -77,7 +77,7 @@ function enviar_pedir_mas_informacion(){
   }else{
     swal({
       title: "Acepta las condiciones legales",
-      type: "warning",
+      type: "danger",
       confirmButtonClass: "btn-danger",
       confirmButtonText: "OK",
       closeOnConfirm: false
