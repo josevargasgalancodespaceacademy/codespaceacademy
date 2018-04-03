@@ -75,14 +75,7 @@ function enviar_pedir_mas_informacion(){
       }
     });
   }else{
-    swal({
-      title: "Acepta las condiciones legales",
-      type: "danger",
-      confirmButtonClass: "btn-danger",
-      confirmButtonText: "OK",
-      closeOnConfirm: false
-    },
-    );
+    swal("Acepta las condiciones legales", "error");
   }
 }
 
