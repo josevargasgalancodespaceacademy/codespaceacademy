@@ -4,6 +4,8 @@
   <script src="../assets/javascript/lib/jquery-3.2.1.min.js" type="text/javascript"></script> 
       <script src="../assets/javascript/bootstrap.js"></script>
     <link rel="stylesheet" href="../assets/stylesheets/codespace.css">
+    <link href="../assets/stylesheets/sweetalert.css" rel="stylesheet">
+    <script src="../assets/javascript/sweetalert.min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107698899-1"></script>

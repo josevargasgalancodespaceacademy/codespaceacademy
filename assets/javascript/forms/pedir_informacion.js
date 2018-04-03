@@ -75,7 +75,7 @@ function enviar_pedir_mas_informacion(){
       }
     });
   }else{
-    alert ('Acepta las condiciones legales');
+    swal("¡Bien!, Condición cumplida", success);
   }
 }
 
