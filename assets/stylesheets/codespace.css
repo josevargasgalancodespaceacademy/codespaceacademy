@@ -7182,8 +7182,6 @@ float:left
 {
   display: none!important
 }
-.num-telefono
-}
 /*video-home*/
 .video-home
 {
@@ -11920,7 +11918,7 @@ background-image:url(../../assets/images/talento/capacidad.svg)
 }
 .meetup-quality-inception-knockout
 {
-  background-image: url(../../assets/images/eventos/meetup-quality-inception-knockout.jpeg);
+  background-image: url(../../assets/images/eventos/.jpeg);
 }
 .informacion-evento 
 {
