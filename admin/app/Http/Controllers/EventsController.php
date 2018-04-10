@@ -16,6 +16,7 @@ class EventsController extends Controller
          if ($validator->valid())
          {
          $Events = new Events();
+         $file = $request->file('file');
          $Events->event_name =  $request->event_name;
          $Events->event_type =  $request->event_type;
          $Events->event_date =  $request->event_date;
@@ -23,6 +24,7 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          $Events->save();
+         Storage::disk('local')->put($request->event_name,  \File::get($file));
 }
 }
 }
