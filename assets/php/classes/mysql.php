@@ -185,6 +185,16 @@ class Mysql
         return count($result);
 	}
 
+	public function checkRowExistswithConditions($tableName,$data) {
+        $query = "SELECT * FROM $tableName WHERE ";
+        foreach ($data as $key => $value) {
+        	$query .= "$key = '$value' AND ";
+        }
+
+        $result = $this->getAll(substr($query,0,-4));
+        return count($result);
+	}
+
 	/**
 	 *
 	 * Gets all data with column = value filters
