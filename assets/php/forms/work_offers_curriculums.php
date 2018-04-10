@@ -37,8 +37,11 @@ $validator->filledIn("email")->length("email", "<=", 100)->email("email");
 $validator->filledIn("telephone")->numeric("telephone",array(" ","+"))->lengthBetween("telephone", 15, 9, $inclusive = true);
 $errors = $validator->getErrors();
 foreach ($file_upload_errors as $file_upload_error) $errors["file_upload"] = $file_upload_error;
+$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+if ($mysql->checkRowExists("work_offers_curriculums", array(
+	"email" => $request["email"],
+)) > 0) $errors["email"] = "Ya estás suscrito a la oferta";
 if (!$errors) {
-	$mysql = new Mysql(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
 	$mysql->insertRow("work_offers_curriculums",$request);
 }
 
