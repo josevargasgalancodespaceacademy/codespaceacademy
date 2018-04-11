@@ -24,7 +24,8 @@ class EventsController extends Controller
          $Events->event_url =  $request->event_url;
          $file = $request->file('event_image');
          $content = file_get_contents($file->path());
-         dd(file_get_contents($file->path()));
+         $hash = md5_file($file->path());
+         dd($hash);
          //$Events->save();
 }
      }
