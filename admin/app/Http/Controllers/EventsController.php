@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
 use App\Events;
 use App\Http\Requests\ContenidoWeb\RequestCrearEventos;
 
@@ -23,7 +24,8 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          $image_name = $request->file('event_image')->getClientOriginalName();
-         $file = $request->file('event_image')->store('public', $image_name);
+         //$file = $request->file('event_image')->store('public', $image_name);
+         Storage::disk('local')->put($request->file('event_image')->getClientOriginalName(),  File::get($request->file('event_image')));
          //$path = md5_file($request->file('event_image')->path());
          //dd($image_name);
          //$Events->save();
