@@ -24,8 +24,8 @@ class EventsController extends Controller
          $Events->event_url =  $request->event_url;
          $Events->save();
          $file = $request->file('event_image');
-         dd($file);
-        // Storage::disk('local')->put($nombre, File::get($file));
+         $nombre = $file->getClientOriginalName();
+         Storage::disk('local')->put($nombre, File::get($file));
 }
 }
 }
