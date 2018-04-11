@@ -22,8 +22,9 @@ class EventsController extends Controller
          $Events->event_hour =  $request->event_hour;
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
+         $request->file('event_image')->store('public');
+         dd($request->file('event_image'));
          $Events->save();
-         $request->file('event_image')->store('https://www.codespaceacademy.com/assets/images/eventos');
 }
      }
 }
