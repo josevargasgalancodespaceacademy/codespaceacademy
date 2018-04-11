@@ -16,7 +16,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">Formulario de creación de eventos</div>
         <div class="panel-body">
-  {!! Form::open(['route' => ['crear-eventos'], 'method' => 'PUT'])!!}
+  {!! Form::open(['route' => ['crear-eventos'], 'method' => 'PUT', enctype => 'multipart/form-data'])!!}
   {{ csrf_field() }}
   <div class="form-group col-sm-4">
     {!! Form::label('event_name','Nombre del evento*')!!}
