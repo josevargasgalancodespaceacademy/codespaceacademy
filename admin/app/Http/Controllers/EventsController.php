@@ -22,7 +22,7 @@ class EventsController extends Controller
          $Events->event_hour =  $request->event_hour;
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
-         $image_name = $request->file('event_image')->getClientOriginalName().'.'. $request->file('event_image')->getClientOriginalExtension();
+         $image_name = $request->file('event_image')->getClientOriginalName();
          //$file = $request->file('event_image')->store('public', $image_name);
          //$path = md5_file($request->file('event_image')->path());
          dd($image_name);
