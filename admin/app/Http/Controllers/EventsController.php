@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Storage;
 use App\Events;
 use App\Http\Requests\ContenidoWeb\RequestCrearEventos;
 
@@ -24,7 +23,7 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          $file = $request->file('event_image')->store('public');
-         $Events->image_url = $file::hashName();
+         $Events->image_url = $file->hashName();
          $Events->save();
 }
      }
