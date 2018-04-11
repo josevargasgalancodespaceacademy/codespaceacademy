@@ -23,7 +23,7 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          $file = $request->file('event_image')->store('public');
-         $Events->image_image = $request->file('event_image')->hashName();
+         $Events->event_image = $request->file('event_image')->hashName();
          $Events->save();
 }
      }
