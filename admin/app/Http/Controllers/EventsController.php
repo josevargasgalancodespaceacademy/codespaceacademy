@@ -9,7 +9,7 @@ use App\Http\Requests\ContenidoWeb\RequestCrearEventos;
 
 class EventsController extends Controller
 {
-     //Creacion de ofertas de trabajo 
+     //Creacion de eventos
         public function crear_eventos(Request $request, RequestCrearEventos $requestcreareventos)
      {
          $validator = Validator::make($requestcreareventos->all(), $requestcreareventos->rules(), $requestcreareventos->messages());
@@ -25,6 +25,7 @@ class EventsController extends Controller
          $file = $request->file('event_image')->store('public');
          $Events->event_image = $request->file('event_image')->hashName();
          $Events->save();
+         return redirect()->route('home');
 }
      }
 }
