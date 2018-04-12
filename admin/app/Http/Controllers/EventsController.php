@@ -22,15 +22,12 @@ class EventsController extends Controller
          $Events->event_hour =  $request->event_hour;
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
-         //$file = $request->file('event_image')->store('public');
-         //$file = $request->file('event_image')->storeAs('public', $request->file('event_image')->getClientOriginalName());
+         $file = $request->file('event_image')->store('public');
+         $file = $request->file('event_image')->storeAs('public', $request->file('event_image')->getClientOriginalName());
          $Events->event_image = $request->file('event_image')->getClientOriginalName();
-         $origen=$_FILES[$request->file('event_image')]["tmp_name"];
-         $destino="https://codespaceacademy.com/assets/images/eventos/".$_FILES[$request->file('event_image')][$request->file('event_image')->getClientOriginalName()];
          @move_uploaded_file($origen, $destino);
-         //$Events->save();
-         //return redirect()->route('home');
-         dd($_FILES[$request->file('event_image')][$request->file('event_image')->getRealPath()]);
+         $Events->save();
+         return redirect()->route('home');
 }
      }
 }
