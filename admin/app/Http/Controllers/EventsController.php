@@ -24,8 +24,8 @@ class EventsController extends Controller
          $Events->event_url =  $request->event_url;
          $file = $request->file('event_image');
          $path = "/var/www/codespaceacademy/assets/images/eventos/";
-         //$file->storeAs($path, $request->file('event_image')->getClientOriginalName());
-         $request->file('event_image')->move($path,$file->getClientOriginalName());
+         //$file->storeAs($path, $request->file('event_image')->getClientOriginalName()); De esta forma las imagenes se guardan en storage/public 
+         $request->file('event_image')->move($path,$file->getClientOriginalName()); //Así conseguimos que se guarde en la ruta que nosotros prefiramos, siempre y cuando tengas los permisos adecuados
          $Events->event_image = $file->getClientOriginalName();
          $Events->save();
          return redirect()->route('home');
