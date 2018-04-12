@@ -25,7 +25,7 @@ class EventsController extends Controller
          $file = $request->file('event_image');
          //$path = "/var/www/codespaceacademy/assets/";
          //$file->storeAs($path, $request->file('event_image')->getClientOriginalName());
-         $request->file('event_image')->move($path,$file->getClientOriginalName());
+         //$request->file('event_image')->move($path,$file->getClientOriginalName());
          //$Events->event_image = $request->file('event_image')->getClientOriginalName();
          //@move_uploaded_file($origen, $destino);
          //$Events->save();
