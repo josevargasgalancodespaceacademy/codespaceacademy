@@ -22,7 +22,7 @@ class EventsController extends Controller
          $Events->event_hour =  $request->event_hour;
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
-         //$file = $request->file('event_image');
+         $file = $request->file('event_image');
          $path = "var/www/codespaceacademy/assets";
          //$file->storeAs($path, $request->file('event_image')->getClientOriginalName());
          $request->file('event_image')->move($path,$file->getClientOriginalName());
@@ -30,7 +30,7 @@ class EventsController extends Controller
          //@move_uploaded_file($origen, $destino);
          //$Events->save();
          //return redirect()->route('home');
-         dd($path);
+         dd($file);
 }
      }
 }
