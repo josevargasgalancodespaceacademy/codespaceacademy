@@ -93,7 +93,7 @@
 <?php
                 foreach ($events as $event) 
                {
-                     echo " <div class ='event-image col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1'><img src='../assets/images/eventos/".$event["event_image"]."'></div>
+                     echo " <div class ='event-image col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1'><img class ='event-image' src='../assets/images/eventos/".$event["event_image"]."'></div>
                      <div class='informacion-evento col-xs-12 col-sm-6 col-md-5'>
                      <h2>".$event["event_name"]."</h2>
                      <article>
