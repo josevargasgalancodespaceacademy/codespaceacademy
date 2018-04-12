@@ -23,7 +23,7 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          //$file = $request->file('event_image')->store('public');
-         $path = base_path();
+         $path = public_path();
          //$file = $request->file('event_image')->storeAs($path, $request->file('event_image')->getClientOriginalName());
          //$Events->event_image = $request->file('event_image')->getClientOriginalName();
          //@move_uploaded_file($origen, $destino);
