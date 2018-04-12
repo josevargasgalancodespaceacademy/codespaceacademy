@@ -45,12 +45,12 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('https://www.codespaceacademy.com/assets/images/eventos'),
+            'root' => storage_path('www.codespaceacademy.com/assets/images/eventos'),
         ],
 
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('https://www.codespaceacademy.com/assets/images/eventos'),
+            'root' => storage_path('www.codespaceacademy.com/assets/images/eventos'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
