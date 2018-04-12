@@ -90,7 +90,7 @@
                      <h2>".$event["event_name"]."</h2>
                      <article>
                      <p class='event-type'><strong>".$event["event_type"]."</strong> </p>
-                     <p class='fechayhora'><span class='fecha'>".date("d-m-Y", strtotime($event["event_date"]))."</span> | ".$event["event_hour"]." h</p>
+                     <p class='fechayhora'><span class='fecha'>".date("d-m", strtotime($event["event_date"]))."</span> | ".$event["event_hour"]." h</p>
                      <p class='place'><strong>Campus codespace</strong> Málaga</p>
                      <p class='event-explanation'>".$event["event_description"]."
                     <br><br>
