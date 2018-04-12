@@ -23,12 +23,13 @@ class EventsController extends Controller
          $Events->event_description =  $request->event_description;
          $Events->event_url =  $request->event_url;
          //$file = $request->file('event_image')->store('public');
-         //$Events->event_image = $request->file('event_image')->hashName();
+         $file = $request->file('event_image')->storeAs('public', $request->file('event_image')->getClientOriginalName());
+         $Events->event_image = $request->file('event_image')->hashName();
          //$origen=$_FILES["archivo"]["tmp_name"];
          //@move_uploaded_file($origen, $destino);
          //$Events->save();
          //return redirect()->route('home');
-         dd($request->file('event_image'));
+         dd($request->file('event_image')->getRealPath());
 }
      }
 }
