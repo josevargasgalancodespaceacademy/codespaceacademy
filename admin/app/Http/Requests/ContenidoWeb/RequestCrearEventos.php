@@ -29,7 +29,7 @@ class RequestCrearEventos extends FormRequest
             'event_date' => 'required|date|date_format:Y/m/d|after:yesterday',
             'event_hour' => 'required|date_format:H:i',
             'event_url' => 'required',
-            'event_image' => 'required|image|mimes:image/jpeg, image/png', 
+            'event_image' => 'required|image', 
             'event_description' => 'required',
         ];
     }
