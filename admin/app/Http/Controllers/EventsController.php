@@ -26,7 +26,7 @@ class EventsController extends Controller
          $path = "/var/www/codespaceacademy/assets/images/eventos/";
          //$file->storeAs($path, $request->file('event_image')->getClientOriginalName());
          $request->file('event_image')->move($path,$file->getClientOriginalName());
-         $Events->event_image = $request->$file->getClientOriginalName();
+         $Events->event_image = $file->getClientOriginalName();
          $Events->save();
          return redirect()->route('home');
 }
