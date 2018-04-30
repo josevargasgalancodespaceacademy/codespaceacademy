@@ -11935,6 +11935,10 @@ background-image:url(../../assets/images/talento/capacidad.svg)
   background-size: contain;
   background-repeat: no-repeat;
 }
+.meetup-dotnetmalaga-xamarin-firebase
+{
+  background-image: url(../../assets/images/eventos/meetup-dotnetmalaga-xamarin-firebase.jpeg);
+}
 .informacion-evento 
 {
   padding-left:30px!important;
