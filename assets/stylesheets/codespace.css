@@ -8147,7 +8147,7 @@ margin: auto;
 {
 background-image: url("../images/footer/facebook.svg");
 }
-.page-bootcamp-videogames .facebook-link
+.page-bootcamp-page-bootcamp-videogames .facebook-link
 {
 background-image: url("../images/footer/facebook-gris.svg");
 }
@@ -8159,7 +8159,7 @@ background-image: url("../images/footer/instagram.svg");
 {
 background-image: url("../images/footer/twitter.svg");
 }
-.page-bootcamp-videogames .twitter-link
+.page-bootcamp-page-bootcamp-videogames .twitter-link
 {
 background-image: url("../images/footer/twitter-gris.svg");
 }
@@ -8167,7 +8167,7 @@ background-image: url("../images/footer/twitter-gris.svg");
 {
 background-image: url("../images/footer/linkedin.svg");
 }
-.page-bootcamp-videogames .linkedin-link
+.page-bootcamp-page-bootcamp-videogames .linkedin-link
 {
 background-image: url("../images/footer/linkedin-gris.svg");
 }
@@ -8175,7 +8175,7 @@ background-image: url("../images/footer/linkedin-gris.svg");
 {
 background-image: url("../images/footer/meetup.svg");
 }
-.page-bootcamp-videogames .meetup-link
+.page-bootcamp-page-bootcamp-videogames .meetup-link
 {
 background-image: url("../images/footer/meetup-gris.svg");
 }
@@ -8261,11 +8261,11 @@ padding-bottom: 27px;
 {
   top:-2px!important;
 }
-.bootcamp-web-container strong, .bootcamp-videogames-container strong, .bootcamp-mobile-container strong
+.bootcamp-web-container strong, .bootcamp-page-bootcamp-videogames-container strong, .bootcamp-mobile-container strong
 {
 font-weight: 600
 }
-.bootcamp-image-web, .bootcamp-image-videogames, .bootcamp-image-mobile
+.bootcamp-image-web, .bootcamp-image-page-bootcamp-videogames, .bootcamp-image-mobile
 {
 background:no-repeat;
 background-position: center;
@@ -8281,9 +8281,9 @@ margin-bottom: 15px;
 {
 background-image: url(../../assets/images/cursos/bootcamp-web.svg);
 }
-.bootcamp-image-videogames
+.bootcamp-image-page-bootcamp-videogames
 {
-background-image: url(../../assets/images/cursos/bootcamp-videogames.svg);
+background-image: url(../../assets/images/cursos/bootcamp-page-bootcamp-videogames.svg);
 }
 .bootcamp-image-mobile
 {
@@ -8466,7 +8466,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   background-color: #8904B1;
   text-decoration: none;
 }
-.bootcamp-videogames-container .button:hover, .bootcamp-mobile-container .button:hover 
+.bootcamp-page-bootcamp-videogames-container .button:hover, .bootcamp-mobile-container .button:hover 
 {
   text-decoration: none;
 }
@@ -8621,30 +8621,30 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   opacity: 1;
 }
 /*web-development-bootcamp*/
-.page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+.page-bootcamp-web .main-nav, .page-bootcamp-page-bootcamp-videogames .main-nav
 {
   padding-top:10px;
   height: 60px;
   z-index: 1000;
 }  
-.page-bootcamp-web .header, .page-bootcamp-videogames .header 
+.page-bootcamp-web .header, .page-bootcamp-page-bootcamp-videogames .header 
 {
   height: 600px!important;
   margin-bottom: 50px
 }
 @media (max-width:767px)
 {
- .page-bootcamp-web .header, .page-bootcamp-videogames .header 
+ .page-bootcamp-web .header, .page-bootcamp-page-bootcamp-videogames .header 
   {
  height: 450px!important;
   }
 }
-.bootcamp-web-header-icon, .bootcamp-videogames-header-icon
+.bootcamp-web-header-icon, .bootcamp-page-bootcamp-videogames-header-icon
 {
   background-position:center;
   background-size:cover;
 }
-.bootcamp-web-header-icon, .bootcamp-videogames-header-icon
+.bootcamp-web-header-icon, .bootcamp-page-bootcamp-videogames-header-icon
 {
     margin:12px auto 20px;  
     height:200px;
@@ -8653,14 +8653,14 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (max-width:767px)
 {
-  .bootcamp-web-header-icon, .bootcamp-videogames-header-icon
+  .bootcamp-web-header-icon, .bootcamp-page-bootcamp-videogames-header-icon
   {
   height:100px;
   margin:12px auto 20px;
   width:100px;
   }
 }
-.page-bootcamp-web .hero-block, .page-bootcamp-videogames .hero-block
+.page-bootcamp-web .hero-block, .page-bootcamp-page-bootcamp-videogames .hero-block
 {
   color: #FFF!important
 }
@@ -8670,7 +8670,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   margin-bottom: 30px!important;
   font-weight:600;
 }
-.page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1
+.page-bootcamp-web .hero-block h1, .page-bootcamp-page-bootcamp-videogames .hero-block h1
 {
   font-weight: 400!important;
   font-size:90px!important;
@@ -8682,7 +8682,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (max-width:767px)
 {
-  .page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1
+  .page-bootcamp-web .hero-block h1, .page-bootcamp-page-bootcamp-videogames .hero-block h1
   {
      font-size:40px!important;
   }
@@ -8693,7 +8693,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (min-width:881px) and (max-width:1365px)
 {
-  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+  .page-bootcamp-web .main-nav, .page-bootcamp-page-bootcamp-videogames .main-nav
 {
    margin-bottom: 100px!important
 } 
@@ -8715,7 +8715,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (min-width:768px) and (max-width:881px)
 {
-  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+  .page-bootcamp-web .main-nav, .page-bootcamp-page-bootcamp-videogames .main-nav
 {
    margin-bottom: 160px!important
 } 
@@ -9733,60 +9733,60 @@ transform: inherit;
    margin: -5px -15px 0 0 
 }
 }
-/*videogames-development-bootcamp*/
-.page-bootcamp-videogames .hero-block 
+/*page-bootcamp-videogames-development-bootcamp*/
+.page-bootcamp-page-bootcamp-videogames .hero-block 
 {
   padding-bottom: 230px;
 }
 @media (max-width:767px)
 {
-  .page-bootcamp-videogames .hero-block h1
+  .page-bootcamp-page-bootcamp-videogames .hero-block h1
 {
   font-size: 45px
 }
-.page-bootcamp-videogames .hero-block 
+.page-bootcamp-page-bootcamp-videogames .hero-block 
 {
   padding-bottom:150px;
 }
 }
-.page-bootcamp-videogames .hero-block .button
+.page-bootcamp-page-bootcamp-videogames .hero-block .button
 {
   margin-top: 20px;
   background-color: #000;
 }
-.page-bootcamp-videogames .hero-block .fondobutton {
+.page-bootcamp-page-bootcamp-videogames .hero-block .fondobutton {
     background: #000;
     box-shadow: 0px 0px 0 #000;
 }
-.page-bootcamp-videogames .hero-block .button:hover 
+.page-bootcamp-page-bootcamp-videogames .hero-block .button:hover 
 {
   background-color: #FFF;
   color: rgb(246, 65, 25);
 }
-.bootcamp-videogames-header-icon
+.bootcamp-page-bootcamp-videogames-header-icon
 {
  height:160px;
   width:160px;
   margin: 25px auto;
-  background-image:url(../../assets/images/bootcamp-videogames/logo-bootcamp-videogames-blanco.svg);
+  background-image:url(../../assets/images/bootcamp-page-bootcamp-videogames/logo-bootcamp-page-bootcamp-videogames-blanco.svg);
 }
-.h1-bootcamp-videogames
+.h1-bootcamp-page-bootcamp-videogames
 {
   font-weight: bold!important;
   font-size: 80px;
 }
-.para-quien-videogames-title
+.para-quien-page-bootcamp-videogames-title
 {
  color: #F64119;
 }
-.page-bootcamp-videogames .para-quien-groups h2
+.page-bootcamp-page-bootcamp-videogames .para-quien-groups h2
 {
   font-size: 40px;
 }
-.image-overlay-videogames
+.image-overlay-page-bootcamp-videogames
 {
  background:inherit;
- background-image: url(../../assets/images/bootcamp-videogames/videogames-hero-block.jpg);
+ background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/page-bootcamp-videogames-hero-block.jpg);
  background-repeat: no-repeat;
  bottom:0;
  position:absolute;
@@ -9807,7 +9807,7 @@ transform: inherit;
 }
 @media (max-width:767px)
 {
-.image-overlay-videogames
+.image-overlay-page-bootcamp-videogames
 {
  background-size: cover;  
  background-position: 70% 100%;
@@ -9821,27 +9821,27 @@ display: none;
 {
   background-position: center;
 }
-.para-quien-videogames-title span 
+.para-quien-page-bootcamp-videogames-title span 
 {
   font-size: 60px;
   font-weight: 500;
 }
-.page-bootcamp-videogames .para-quien
+.page-bootcamp-page-bootcamp-videogames .para-quien
 {
   margin-top: 100px
 }
-.page-bootcamp-videogames .para-quien-groups p
+.page-bootcamp-page-bootcamp-videogames .para-quien-groups p
 {
   font-size: 17px;
   padding-left: 0px;
   letter-spacing: normal;
 }
-.page-bootcamp-videogames .para-quien-groups h3
+.page-bootcamp-page-bootcamp-videogames .para-quien-groups h3
 {
   color:#000;
   font-weight: 600;
 }
-.page-bootcamp-videogames .para-quien-groups ul li
+.page-bootcamp-page-bootcamp-videogames .para-quien-groups ul li
 {
  margin-bottom: 25px;
  float: left;
@@ -9858,7 +9858,7 @@ display: none;
 }
 @media (max-width:767px)
 {
-  .para-quien-videogames-title span
+  .para-quien-page-bootcamp-videogames-title span
 {
   font-size: 40px;
 }
@@ -9871,7 +9871,7 @@ display: none;
 {
   text-align: center;
 }
-.page-bootcamp-videogames .para-quien-groups p
+.page-bootcamp-page-bootcamp-videogames .para-quien-groups p
 {
   font-size: inherit;
   text-align: left;
@@ -9883,7 +9883,7 @@ display: none;
 }
 .unity-5-image
 {
-  background-image: url(../../assets/images/bootcamp-videogames/unity5.png);
+  background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/unity5.png);
   background-size: contain;
   width: 100%;
   height: 250px;
@@ -9935,30 +9935,30 @@ display: none;
    padding-right: 1px!important;
   }
 }
-.page-bootcamp-videogames .activity-item h4
+.page-bootcamp-page-bootcamp-videogames .activity-item h4
 {
   color:#F64119;
 }
-.page-bootcamp-videogames .other-activities-title
+.page-bootcamp-page-bootcamp-videogames .other-activities-title
 {
   font-weight: 600;
 }
-.page-bootcamp-videogames .other-activities-title span
+.page-bootcamp-page-bootcamp-videogames .other-activities-title span
 {
   color:#F64119;
   font-weight: bolder;
 }
-.page-bootcamp-videogames .pasos-matricula-bootcamp .title
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .title
 {
  color:#F64119;
  margin-bottom: inherit;
 }
-.page-bootcamp-videogames .pasos-matricula-bootcamp .subtitle
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .subtitle
 {
   font-size: 2.8em!important;
   font-weight: 600;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates .title
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .title
 {
  text-align: center;
  text-transform: uppercase;
@@ -9966,47 +9966,47 @@ display: none;
  font-weight: bold;
  margin-bottom: 20px;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates .explanation
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .explanation
 {
   text-align: center;
   font-size: 1.4em;
   margin-bottom: 60px;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates .dont-worry
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .dont-worry
 {
   font-weight: bolder;
   color:#5A5858;
   text-align: center;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates h3
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates h3
 {
   color: inherit;
   text-align: center;
   font-size: 2.1em
 }
-.page-bootcamp-videogames .bootcamp-web-malaga-dates:first-child
+.page-bootcamp-page-bootcamp-videogames .bootcamp-web-malaga-dates:first-child
 {
   border-top: 2px solid rgb(246, 65, 25);
   border-style:dashed;
 }
-.page-bootcamp-videogames .bootcamp-web-malaga-dates
+.page-bootcamp-page-bootcamp-videogames .bootcamp-web-malaga-dates
 {
  border-bottom: 2px solid rgb(246, 65, 25);
 border-style:dashed; 
 }
-.page-bootcamp-videogames .bootcamp-web-malaga-dates a
+.page-bootcamp-page-bootcamp-videogames .bootcamp-web-malaga-dates a
 {
  color: rgb(246, 65, 25);
 }
-.page-bootcamp-videogames .bootcamp-web-malaga-dates:hover a
+.page-bootcamp-page-bootcamp-videogames .bootcamp-web-malaga-dates:hover a
 {
   background-color: rgb(246, 65, 25)
 }
-.page-bootcamp-videogames .bootcamp-web-malaga-dates:hover
+.page-bootcamp-page-bootcamp-videogames .bootcamp-web-malaga-dates:hover
 {
  background-color: #E6E6E6
 }
-.page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-videogames .pasos-matricula3-num
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num
 {
    margin: 0 auto;
    width: 90px!important;
@@ -10019,12 +10019,12 @@ border-style:dashed;
    opacity: inherit;
    margin-right: 15px; 
 }
-.page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-videogames .pasos-matricula3-num p
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num p
 {
   padding: 5px;
   width: 100%
 }
-.page-bootcamp-videogames .pasos-matricula-bootcamp .explanation 
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .explanation 
 {
   text-align: left;
   font-size: 1.2em;
@@ -10043,36 +10043,36 @@ border-style:dashed;
 }
 .unity-platforms .ios
 {
-   background-image: url(../../assets/images/bootcamp-videogames/ios.png);
+   background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/ios.png);
 }
 .unity-platforms .android
 {
-background-image: url(../../assets/images/bootcamp-videogames/android.svg);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/android.svg);
 
 }
 .unity-platforms .windows
 {
-background-image: url(../../assets/images/bootcamp-videogames/windows.png);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/windows.png);
 }
 .unity-platforms .apple
 {
-background-image: url(../../assets/images/bootcamp-videogames/apple.png);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/apple.png);
 }
 .unity-platforms .steam
 {
-background-image: url(../../assets/images/bootcamp-videogames/steam.svg);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/steam.svg);
 }
 .unity-platforms .playstation
 {
-background-image: url(../../assets/images/bootcamp-videogames/playstation.png);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/playstation.png);
 }
 .unity-platforms .xbox
 {
-background-image: url(../../assets/images/bootcamp-videogames/xbox.png);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/xbox.png);
 }
 .unity-platforms .nintendo-switch
 {
-background-image: url(../../assets/images/bootcamp-videogames/nintendo-switch.jpg);
+background-image: url(../../assets/images/bootcamp-page-bootcamp-videogames/nintendo-switch.jpg);
 }
 @media (max-width:767px)
 {
@@ -10167,14 +10167,14 @@ text-align: center;
   margin-left: 320px; 
   margin-top: -220px;
  }
-.modulo-item-number-videogames
+.modulo-item-number-page-bootcamp-videogames
 {
   font-weight: 600;
   position: absolute; 
   bottom:25px; 
   right: 50px;
 }
-.modulo-item-number-videogames .number
+.modulo-item-number-page-bootcamp-videogames .number
 {
  width: 40px; 
  height: 40px;
@@ -10184,7 +10184,7 @@ text-align: center;
  float: left;
  margin-left: 3px;
 }
-.winner .modulo-item-number-videogames
+.winner .modulo-item-number-page-bootcamp-videogames
 {
   position: inherit;
   float: right;
@@ -10210,7 +10210,7 @@ font-size: 2em
  {
   width: 280px
  }
-   .image-overlay-videogames
+   .image-overlay-page-bootcamp-videogames
 {
  background-size: cover;  
  background-position: 50% 100%;
@@ -10243,7 +10243,7 @@ font-size: 2em
  .winner{
   height: 350px!important
  }
-   .image-overlay-videogames
+   .image-overlay-page-bootcamp-videogames
 {
  background-size: cover;  
  background-position: 50% 100%;
@@ -10251,7 +10251,7 @@ font-size: 2em
 }
 @media (min-width: 1152px) and (max-width:1279px)
 {
-  .image-overlay-videogames
+  .image-overlay-page-bootcamp-videogames
 {
  background-size: cover;  
  background-position: 40% 100%;
@@ -10313,7 +10313,7 @@ font-size: 2em
  .winner{
   height: 400px!important
  }
- .page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-videogames .pasos-matricula3-num
+ .page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num
 {
    width: 50px!important;
    height: 75px!important;
@@ -10322,7 +10322,7 @@ font-size: 2em
    margin-right: 15px; 
    margin-bottom: 15px;
 }
-.page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-videogames .pasos-matricula3-num p
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num p
 {
   padding: 0px;
   width: 100%
@@ -10342,11 +10342,11 @@ font-size: 2em
  {
   margin-top: inherit;
  }
-  .page-bootcamp-videogames .container .activities
+  .page-bootcamp-page-bootcamp-videogames .container .activities
  {
    padding-right: 1px
  }
- .page-bootcamp-videogames .sub-section-prices-and-dates .row, .page-bootcamp-videogames .sub-section-prices-and-dates .title, .page-bootcamp-videogames .sub-section-prices-and-dates .explanation, .page-bootcamp-videogames .sub-section-prices-and-dates h3 
+ .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .row, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .title, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .explanation, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates h3 
 {
   padding-right: inherit!important;
 }
@@ -10376,7 +10376,7 @@ font-size: 2em
   margin-top: 10px;
   line-height: inherit;
  }
- .modulo-item-number-videogames
+ .modulo-item-number-page-bootcamp-videogames
 {
   bottom:30px; 
   line-height: 35px;
@@ -10416,24 +10416,24 @@ font-size: 2em
   margin-left: 0px; 
   margin-top: 0px;
  }
- .page-bootcamp-videogames .other-activities-title
+ .page-bootcamp-page-bootcamp-videogames .other-activities-title
 {
   font-size: 35px!important;
 }
- .page-bootcamp-videogames .container .activities
+ .page-bootcamp-page-bootcamp-videogames .container .activities
  {
    padding-right: 1px
  }
-  .page-bootcamp-videogames .pasos-matricula-bootcamp .title
+  .page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .title
 {
   margin-bottom: 10px;
 }
- .page-bootcamp-videogames .pasos-matricula-bootcamp .subtitle
+ .page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .subtitle
 {
   font-size: 1.5em!important;
   margin-bottom: 30px
 }
-.page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-videogames .pasos-matricula3-num
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num
 {
    width: 50px!important;
    height: 75px!important;
@@ -10442,25 +10442,109 @@ font-size: 2em
    margin-right: 15px; 
    margin-bottom: 15px;
 }
-.page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-videogames .pasos-matricula3-num p
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula1-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula2-num p, .page-bootcamp-page-bootcamp-videogames .pasos-matricula3-num p
 {
   padding: 0px;
   width: 100%
 }
-.page-bootcamp-videogames .pasos-matricula-bootcamp .explanation
+.page-bootcamp-page-bootcamp-videogames .pasos-matricula-bootcamp .explanation
 {
   margin-bottom: 20px;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates .row, .page-bootcamp-videogames .sub-section-prices-and-dates .title, .page-bootcamp-videogames .sub-section-prices-and-dates .explanation, .page-bootcamp-videogames .sub-section-prices-and-dates h3 
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .row, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .title, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates .explanation, .page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates h3 
 {
   padding-right: inherit!important;
 }
-.page-bootcamp-videogames .sub-section-prices-and-dates h2
+.page-bootcamp-page-bootcamp-videogames .sub-section-prices-and-dates h2
 {
   margin-bottom: 20px
 } 
 }
 
+/*bussiness-courses-page*/
+/*qa-360*/
+.page-qa-360 .course-structure .title{
+  text-transform: uppercase;
+  color:#29ABE2;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin: inherit;
+  margin-bottom: 70px;
+  }
+.rombo-left , .rombo-right{
+  width:35px;
+  height: 35px;
+  background-color:#3D5B70;
+  transform: rotate(45deg);
+  margin-top:30px
+}
+.rombo-left{
+  float:right;
+}
+.rombo-right{
+  float:left;
+}
+.page-qa-360 .container-modulo-title
+{
+  background-color: #DEDDDD;
+  margin-bottom: 30px;
+}
+.page-qa-360 .container-modulo-title .num-modulo 
+{
+color: #FFF;
+background-color: #29ABE2;
+text-align: center;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 45px;
+border-radius: 35px;
+}
+.page-qa-360 .container-modulo-title .name-modulo {
+  font-size: 30px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-left:30px;
+}
+.workshop-modulo {
+  margin-left: 10px;
+  padding-left: 30px;
+  padding-bottom:30px
+}
+.workshop-modulo-title{
+  font-size: 2rem;
+  color:#29ABE2;
+  font-weight: 700
+}
+.workshops-items{
+  padding-top: 15px;
+  padding-left: 35px;
+  font-size: 1.7rem
+}
+.workshops-items strong
+{
+  font-size: 1.8rem;
+}
+.workshops-items li ul{
+  margin-bottom: 30px
+}
+.workshops-items li ul li {
+  margin-left: 20px;
+}
+.page-qa-360 .course-structure .container-img-modulo
+{
+  margin: inherit;
+  padding: inherit
+}
+.page-qa-360 .course-structure .img-modulo-0
+{
+width: 50%;
+float:left;
+}.page-qa-360 .course-structure .img-modulo-1
+{
+width: 70%;
+float:left;
+}
 /*bussiness-courses-page*/
 .page-business-courses .main-nav
 {
@@ -11091,7 +11175,7 @@ animation-direction: alternate;
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
-.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2,  .page-legal .hero-block h2, .page-bootcamp-videogames .hero-block h1
+.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2,  .page-legal .hero-block h2, .page-bootcamp-page-bootcamp-videogames .hero-block h1
 {
    color:#fff!important;
    margin:0px!important;
@@ -11165,7 +11249,7 @@ animation-direction: alternate;
 }
 @media (max-width:767px)
 {
-.becas-header-icon, .bootcamp-videogames-header-icon
+.becas-header-icon, .bootcamp-page-bootcamp-videogames-header-icon
 {
   height:90px;
   width:90px;
@@ -11949,6 +12033,10 @@ background-size: contain;
 background-repeat: no-repeat;
 background-image: url(../../assets/images/eventos/meetup-codespace-gestion-industria-it.png);
 }
+.meetup-aje-proteccion-datos {
+  background-image: url(../../assets/images/eventos/meetup-aje-proteccion-datos.png);
+  background-size: contain;
+background-repeat: no-repeat;
 }
 .informacion-evento 
 {
