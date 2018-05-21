@@ -8622,20 +8622,20 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   opacity: 1;
 }
 /*web-development-bootcamp*/
-.page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+.page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav, .page-qa-360 .main-nav
 {
   padding-top:10px;
   height: 60px;
   z-index: 1000;
 }  
-.page-bootcamp-web .header, .page-bootcamp-videogames .header 
+.page-bootcamp-web .header, .page-bootcamp-videogames .header, .page-qa-360 .header
 {
   height: 600px!important;
   margin-bottom: 50px
 }
 @media (max-width:767px)
 {
- .page-bootcamp-web .header, .page-bootcamp-videogames .header 
+ .page-bootcamp-web .header, .page-bootcamp-videogames .header, .page-qa-360 .header
   {
  height: 450px!important;
   }
@@ -8661,7 +8661,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   width:100px;
   }
 }
-.page-bootcamp-web .hero-block, .page-bootcamp-videogames .hero-block
+.page-bootcamp-web .hero-block, .page-bootcamp-videogames .hero-block, .page-qa-360 .hero-block
 {
   color: #FFF!important
 }
@@ -8671,7 +8671,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
   margin-bottom: 30px!important;
   font-weight:600;
 }
-.page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1
+.page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1, .page-qa-360 .hero-block h1
 {
   font-weight: 400!important;
   font-size:90px!important;
@@ -8683,7 +8683,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (max-width:767px)
 {
-  .page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1
+  .page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1, .page-qa-360 .hero-block h1
   {
      font-size:40px!important;
   }
@@ -8694,7 +8694,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (min-width:881px) and (max-width:1365px)
 {
-  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav, .page-qa-360 .main-nav
 {
    margin-bottom: 100px!important
 } 
@@ -8716,7 +8716,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 }
 @media (min-width:768px) and (max-width:881px)
 {
-  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav
+  .page-bootcamp-web .main-nav, .page-bootcamp-videogames .main-nav, .page-qa-360 .main-nav
 {
    margin-bottom: 160px!important
 } 
@@ -9735,13 +9735,13 @@ transform: inherit;
 }
 }
 /*videogames-development-bootcamp*/
-.page-bootcamp-videogames .hero-block 
+.page-bootcamp-videogames .hero-block
 {
   padding-bottom: 230px;
 }
 @media (max-width:767px)
 {
-  .page-bootcamp-videogames .hero-block h1
+  .page-bootcamp-videogames .hero-block h1, .page-qa-360 .hero-block h1
 {
   font-size: 45px
 }
@@ -10462,6 +10462,39 @@ font-size: 2em
 } 
 }
 /*qa-360*/ 
+.h1-qa-360 {
+  margin-top: 230px;
+  font-weight: 700;
+  font-size: 80px
+}
+.page-qa-360 .hero-block 
+{
+  padding-bottom: 50px;
+}
+.page-qa-360 .hero-block .button
+{
+  margin-top: 20px;
+  background-color: #29ABE2;
+}
+.page-qa-360 .hero-block .fondobutton {
+    background: #29ABE2;
+    box-shadow: 0px 0px 0 #29ABE2;
+}
+.page-qa-360  .hero-block .button:hover 
+{
+  background-color: #FFF;
+  color: #29ABE2;
+}
+.image-overlay-qa
+{
+ background:inherit;
+ background-image: url(../../assets/images/business-courses/qa-360/qa-360-hero-block.jpg);
+ background-repeat: no-repeat;
+ bottom:0;
+ position:absolute;
+ min-width:100%;
+ min-height:100%;
+}
 .pieza-clave
 {
 color:#29ABE2;
@@ -10519,6 +10552,36 @@ font-weight: 200
   transform: rotate(45deg); 
   margin-top:30px 
 } 
+.equipo-qa-title
+{
+ text-align: center;
+ background-color:#29ABE2;
+ color:#FFF;
+ font-size: 60px ;
+ font-weight: 700;
+ padding-top: 10px;
+ padding-bottom: 10px
+}
+.equipo-qa{
+  margin-top:50px;
+  margin-bottom: 80px;
+}
+.docentes-qa img
+{
+  width:350px;
+  height: 350px;
+}
+.docentes-qa .nombre
+{
+  text-align: center;
+  font-size: 30px;
+  color:#045FB4;
+  font-weight: 600
+}
+.docentes-qa .descripcion
+{
+text-align: center
+}
 .page-qa-360 .course-structure .title{ 
   text-transform: uppercase; 
   color:#29ABE2; 
@@ -10527,7 +10590,7 @@ font-weight: 200
   font-weight: 700; 
   margin: inherit; 
   margin-bottom: 70px; 
-  } 
+} 
 .rombo-left{ 
   float:right; 
 } 
@@ -11224,7 +11287,9 @@ animation-direction: alternate;
 {
   background-image: url("../../assets/images/becas/header-becas.jpg");
 }
-.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, .page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2,  .page-legal .hero-block h2, .page-bootcamp-videogames .hero-block h1
+.page-becas-financiacion .hero-block h2, .page-work-with-us .hero-block h2, .page-business-courses .hero-block h2, 
+.page-mentoring .hero-block h2, .page-talent .hero-block h2, .page-nosotros .hero-block h2, .page-events .hero-block h2,  
+.page-legal .hero-block h2, .page-bootcamp-videogames .hero-block h1
 {
    color:#fff!important;
    margin:0px!important;
