@@ -10462,6 +10462,63 @@ font-size: 2em
 } 
 }
 /*qa-360*/ 
+.pieza-clave
+{
+color:#29ABE2;
+text-align: center;
+margin-bottom: 50px;
+font-size: 85px;
+font-weight: 200
+}
+.who-is-title
+{
+  color:#29ABE2;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.rombo-who-is
+{
+  width:20px; 
+  height: 20px; 
+  background-color:#3D5B70; 
+  transform: rotate(45deg); 
+  margin-top:10px;
+  float: left; 
+}
+.page-qa-360 .who-is-roles
+{
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3D5B70; 
+  font-weight: 700;
+  padding-left:50px;
+}
+.who-is-image
+{
+  background-image: url("../../assets/images/business-courses/qa-360/pieza-clave.png");
+  width:500px;
+  height:500px;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  margin-bottom: 60px
+}
+.page-qa-360 .objetivos {
+  font-size: 20px;
+}
+.page-qa-360 .objetivos ul{
+  margin-bottom: 20px
+}
+.rombo-left , .rombo-right{ 
+  width:35px; 
+  height: 35px; 
+  background-color:#3D5B70; 
+  transform: rotate(45deg); 
+  margin-top:30px 
+} 
 .page-qa-360 .course-structure .title{ 
   text-transform: uppercase; 
   color:#29ABE2; 
@@ -10471,13 +10528,6 @@ font-size: 2em
   margin: inherit; 
   margin-bottom: 70px; 
   } 
-.rombo-left , .rombo-right{ 
-  width:35px; 
-  height: 35px; 
-  background-color:#3D5B70; 
-  transform: rotate(45deg); 
-  margin-top:30px 
-} 
 .rombo-left{ 
   float:right; 
 } 
