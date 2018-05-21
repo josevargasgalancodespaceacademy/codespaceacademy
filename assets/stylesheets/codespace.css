@@ -8152,6 +8152,10 @@ background-image: url("../images/footer/facebook.svg");
 {
 background-image: url("../images/footer/facebook-gris.svg");
 }
+.page-qa-360 .facebook-link
+{
+background-image: url("../images/footer/facebook-celeste.svg");
+}
 .instagram-link
 {
 background-image: url("../images/footer/instagram.svg");
@@ -8164,6 +8168,10 @@ background-image: url("../images/footer/twitter.svg");
 {
 background-image: url("../images/footer/twitter-gris.svg");
 }
+.page-qa-360 .twitter-link
+{
+background-image: url("../images/footer/twitter-celeste.svg");
+}
 .linkedin-link
 {
 background-image: url("../images/footer/linkedin.svg");
@@ -8172,6 +8180,10 @@ background-image: url("../images/footer/linkedin.svg");
 {
 background-image: url("../images/footer/linkedin-gris.svg");
 }
+.page-qa-360 .linkedin-link
+{
+background-image: url("../images/footer/linkedin-celeste.svg");
+}
 .meetup-link
 {
 background-image: url("../images/footer/meetup.svg");
@@ -8179,6 +8191,10 @@ background-image: url("../images/footer/meetup.svg");
 .page-bootcamp-videogames .meetup-link
 {
 background-image: url("../images/footer/meetup-gris.svg");
+}
+.page-qa-360 .meetup-link
+{
+background-image: url("../images/footer/meetup-celeste.svg");
 }
 .facebook-link:hover
 {
@@ -10463,13 +10479,13 @@ font-size: 2em
 }
 /*qa-360*/ 
 .h1-qa-360 {
-  margin-top: 230px;
+  margin-top: 300px;
   font-weight: 700;
   font-size: 80px
 }
 .page-qa-360 .hero-block 
 {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .page-qa-360 .hero-block .button
 {
@@ -10503,7 +10519,7 @@ margin-bottom: 50px;
 font-size: 85px;
 font-weight: 200
 }
-.who-is-title
+.page-qa-360 .who-is-title
 {
   color:#29ABE2;
   font-size: 30px;
@@ -10511,6 +10527,25 @@ font-weight: 200
   margin-left: 10px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.page-qa-360 .who-is-calendario
+{
+  margin-left:-5px;
+  margin-bottom: 40px
+}
+.page-qa-360 .explanation-calendario
+{
+ font-size: 2.5rem;
+}
+.page-qa-360 .explanation-calendario ul li
+{
+  list-style:none
+  /*list-style-image: url("../../assets/images/business-courses/qa-360/blue-circle.png");*/
+}
+.page-qa-360 .explanation-calendario ul li::before {
+  border-left: 2px, solid #29ABE2;
+  content: "• ";
+  color: #29ABE2; /* or whatever color you prefer */
 }
 .rombo-who-is
 {
@@ -10545,6 +10580,7 @@ font-weight: 200
 .page-qa-360 .objetivos ul{
   margin-bottom: 20px
 }
+
 .rombo-left , .rombo-right{ 
   width:35px; 
   height: 35px; 
@@ -10566,10 +10602,12 @@ font-weight: 200
   margin-top:50px;
   margin-bottom: 80px;
 }
-.docentes-qa img
+.docentes-qa img, .img-calendario img
 {
-  width:350px;
-  height: 350px;
+  display: block; 
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
 }
 .docentes-qa .nombre
 {
