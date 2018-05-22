@@ -48,6 +48,9 @@
           <ul>
             <li><a href="../es/cursos-programacion-malaga#bootcamps">Bootcamps</a></li>
             <li><a href="../es/cursos-programacion-malaga#business-courses">Business code courses</a></li>
+            <li>
+                        <a href="business-courses/qa360">QA 360: Un enfoque práctico </a>
+                      </li>
             <li><a href="#">Extreme programming workshops</a></li>
           </ul>
         </div>

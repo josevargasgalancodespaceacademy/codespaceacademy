@@ -7438,13 +7438,19 @@ display: none;
 }
 }
 /*publicidad becas*/
-.container-advertising-becas
+.container-advertising-becas, .container-advertising-becas-qa-360
 {
   background-color:rgb(230, 23, 83);
   margin-top: -10px;
-    align-items: center;
+  align-items: center;
   display: flex;
   justify-content: center;
+}
+.container-advertising-becas-qa-360
+{
+  background-color: #29ABE2;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .advertising-becas
 {
@@ -7491,9 +7497,13 @@ display: none;
   font-size: 1.2em;
   border-radius:20px;
 }
+.container-advertising-becas-qa-360 .advertising-becas-button a
+{
+  color:#29ABE2;
+}
 @media (max-width:767px)
 {
-.container-advertising-becas
+.container-advertising-becas, .container-advertising-becas-qa-360
 {
   align-items: inherit;
   display: inherit;
@@ -10615,19 +10625,26 @@ font-weight: 200
   font-size: 17px;
   text-align: left
 }
-.img-calendario
-{
-  display: none
-}
 .rombo-who-is
 {
   width: 15px;
   height: 15px
 }
-.who-is-image
-{
-  display: none
 }
+@media (max-width:970px)
+{
+  .img-calendario
+  {
+    display: none
+  }
+  .who-is-image
+  {
+  display: none
+  }
+  .page-qa-360 .course-structure .img-modulo-0, .page-qa-360 .course-structure .img-modulo-1 
+  {
+    display: none
+  }
 }
 .rombo-left , .rombo-right{ 
   width:35px; 
@@ -10635,7 +10652,8 @@ font-weight: 200
   background-color:#3D5B70; 
   transform: rotate(45deg); 
   margin-top:30px 
-} 
+}
+
 @media (min-width:1441px) and (max-width:1600px)
 {
   .rombo-left
@@ -10703,6 +10721,18 @@ font-weight: 200
   }
 }
 
+@media (min-width:768px) and (max-width:1023px)
+{
+  .rombo-left
+  {
+    margin-right: -105px
+  }
+  .rombo-right 
+  {
+    margin-left: -115px
+  }
+}
+
 .equipo-qa-title
 {
  text-align: center;
@@ -10740,7 +10770,7 @@ margin-bottom: 30px
 {
 text-align: center
 }
-@media (max-width:767px)
+@media (max-width:970px)
 {
   .docentes-qa .descripcion
   {
@@ -10784,6 +10814,85 @@ text-transform: uppercase;
 font-weight: 700; 
 font-size: 45px; 
 border-radius: 35px; 
+}
+@media (width:1440px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 43px;
+  }
+}
+@media (min-width:1360px) and (max-width:1439px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 41px;
+    margin-top: 2px
+  }
+}
+@media (min-width:1280px) and (max-width:1359px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 38px;
+    margin-top: 2px
+  }
+  .page-qa-360 .container-modulo-title .name-modulo 
+  {
+    font-size: 27px!important
+  }
+}
+@media (min-width:1176px) and (max-width:1279px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 34px;
+    margin-top: 2px
+  }
+  .page-qa-360 .container-modulo-title .name-modulo 
+  {
+    font-size: 23px!important
+  }
+}
+@media (min-width:1023px) and (max-width:1175px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 30px;
+    margin-top: 5px
+  }
+  .page-qa-360 .container-modulo-title .name-modulo 
+  {
+    font-size: 23px!important
+  }
+}
+@media (min-width:971px) and (max-width:1024px)
+{
+    .page-qa-360 .container-modulo-title .num-modulo 
+    {
+      font-size: 29px;
+      margin-top: 3px
+    }
+    .page-qa-360 .container-modulo-title .name-modulo 
+    {
+      font-size: 20px!important;
+      text-align: center
+    }
+}
+@media (min-width:768px) and (max-width:970px)
+{
+  .page-qa-360 .container-modulo-title .num-modulo 
+  {
+    font-size: 29px;
+    margin-top: 3px;
+    text-align: center
+  }
+  .page-qa-360 .container-modulo-title .name-modulo 
+  {
+    font-size: 32px!important;
+    margin-left: 0px!important;
+    text-align: center
+  }
 }
 @media (max-width:767px)
 {
@@ -10857,10 +10966,6 @@ float:left;
   {
     font-size: 30px;
     margin-top: 5px
-  }
-  .page-qa-360 .course-structure .img-modulo-0, .page-qa-360 .course-structure .img-modulo-1 
-  {
-    display: none
   }
   .page-qa-360 .container-modulo-title .name-modulo 
   { 
