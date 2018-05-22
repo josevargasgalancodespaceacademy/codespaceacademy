@@ -10636,6 +10636,73 @@ font-weight: 200
   transform: rotate(45deg); 
   margin-top:30px 
 } 
+@media (min-width:1441px) and (max-width:1600px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 25px
+  }
+}
+@media (width:1440px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 50px
+  }
+}
+@media (min-width:1360px) and (max-width:1439px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 65px
+  }
+}
+@media (min-width:1177px) and (max-width:1280px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 75px
+  }
+}
+@media (min-width:1152px) and (max-width:1176px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 95px
+  }
+}
+@media (min-width:1024px) and (max-width:1151px)
+{
+  .rombo-left
+  {
+    margin-right: 20px
+  }
+  .rombo-right 
+  {
+    margin-left: 115px
+  }
+}
+
 .equipo-qa-title
 {
  text-align: center;
