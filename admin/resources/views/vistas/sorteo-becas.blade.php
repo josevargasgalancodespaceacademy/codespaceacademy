@@ -47,7 +47,6 @@
 	<tr>
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
-			<td>{{ $registro->state }}</td>
 			@if({{ $registro->state }} === 0){
 			<td>Videogames</td>
 			}
