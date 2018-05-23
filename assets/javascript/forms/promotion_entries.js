@@ -28,22 +28,22 @@ function enviar_sorteo_becas_videogames() {
                 break
               }
               else {
-                $('##videogames_' + key).addClass("errorbox");
-                $('##videogames_' + key).attr("placeholder", data[key]);
-                $('##videogames_' + key).val("");
+                $('#videogames_' + key).addClass("errorbox");
+                $('#videogames_' + key).attr("placeholder", data[key]);
+                $('#videogames_' + key).val("");
                 replaceValueTimeout('#' + key, originalData[key]);
                 break
               }
             }
             else {
               if (key == "date_of_birth") {
-                $('##videogames_' + key).removeClass("errorbox");
+                $('#videogames_' + key).removeClass("errorbox");
                 $('#' + key).attr("placeholder", "");
               }
               else {
-                $('##videogames_' + key).off('focus');
-                $('##videogames_' + key).removeClass("errorbox");
-                $('##videogames_' + key).attr("placeholder", "");
+                $('#videogames_' + key).off('focus');
+                $('#videogames_' + key).removeClass("errorbox");
+                $('#videogames_' + key).attr("placeholder", "");
               }
             }
           }
