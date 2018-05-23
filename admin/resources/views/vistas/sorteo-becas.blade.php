@@ -48,8 +48,8 @@
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>
-			@if({{ $registro->type }} == 0)
-			<td>{{ $registro->type }}</td>
+			@if ({{ $registro->type }} == 0)
+			HOLA
 			@endif
             <td>{{ $registro->observations }}</td>
 			<td><a href="../public/listado-sorteo-becas/{{ $registro->id }}/detalle-sorteo-becas" class="btn btn-info"><span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> Ver más </a>
