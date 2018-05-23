@@ -49,8 +49,11 @@ function recargar() {
 
 /*Se muestra formulario del sorteo*/
 $(document).ready(function(){ 
-  $('.abrir-formulario-sorteo').click(function() {
-    $('.formulario-sorteo').toggle('slow');
+  $('.abrir-formulario-sorteo-videogames').click(function() {
+    $('.formulario-sorteo-videogames').toggle('slow');
+  });
+  $('.abrir-formulario-sorteo-web').click(function() {
+    $('.formulario-sorteo-web').toggle('slow');
   });
 });
 /*Se muestra formulario de envio de cv*/

@@ -11709,20 +11709,20 @@ animation-direction: alternate;
 {
   background-image:url(../../assets/images/becas/inauguracion.svg);
 }
-.formulario-sorteo
+.formulario-sorteo-videogames, .formulario-sorteo-web
 {
  text-align: left;
  display: none;
 }
-.abrir-formulario-sorteo
+.abrir-formulario-sorteo-videogames, .abrir-formulario-sorteo-web
 {
    cursor: pointer;
 }
-.formulario-sorteo label
+.formulario-sorteo-videogames label, .formulario-sorteo-web label
 {
    margin-bottom: 5px;
 }
-.formulario-sorteo .btn
+.formulario-sorteo-videogames .btn, .formulario-sorteo-web .btn
 {
   margin-bottom: 10px;
 }
@@ -11768,7 +11768,7 @@ animation-direction: alternate;
 {
    padding-top: 10px;
 }
-.abrir-formulario-sorteo
+.abrir-formulario-sorteo-videogames, .abrir-formulario-sorteo-web
 { 
    padding: 5px 15px!important;
    margin-top: 5px;

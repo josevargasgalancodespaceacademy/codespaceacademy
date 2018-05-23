@@ -1,63 +1,114 @@
-function enviar_sorteo_becas(){
-        var url ="../assets/php/forms/promotion_entries.php";
-if ($('#check-sorteo').is(':checked')){ 
-        $.ajax({                        
-           type: "POST",                 
-           url: url,  
-           data: $("#promotion_entries").serialize()                   
-}).done(function(respuesta){
-  var postData = $("#promotion_entries").serializeArray().reduce(function(obj, item) {
-            obj[item.name] = item.name;
-            return obj;
-        }, {});
-   var originalData = $("#promotion_entries").serializeArray().reduce(function(obj, item) {
-            obj[item.name] = item.value;
-            return obj;
-        }, {});
-  if( respuesta == "\nOK")
-  {
-    $('#modal-sorteo').modal('show');
-  }
-  else
-  {
-	var data = JSON.parse(respuesta);
-    $('#promotion_entries .mensajerror').css('display', 'inline-block');
-  for (var key in postData) {
-    for (var key2 in data){
-  if (postData[key] == key2)
-  {
-    if(key =="date_of_birth")
-      { 
-       $('#'+ key).addClass("errorbox");
-       break
+function enviar_sorteo_becas_videogames() {
+  var url = "../assets/php/forms/promotion_entries.php";
+  if ($('#check-sorteo-videogames').is(':checked')) {
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $("#promotion_entries_videogames").serialize()
+    }).done(function (respuesta) {
+      var postData = $("#promotion_entries_videogames").serializeArray().reduce(function (obj, item) {
+        obj[item.name] = item.name;
+        return obj;
+      }, {});
+      var originalData = $("#promotion_entries_videogames").serializeArray().reduce(function (obj, item) {
+        obj[item.name] = item.value;
+        return obj;
+      }, {});
+      if (respuesta == "\nOK") {
+        $('#modal-sorteo').modal('show');
       }
-    else
-    {
-     $('#'+ key).addClass("errorbox");
-     $('#' + key).attr("placeholder", data[key]);  
-     $('#' + key).val("");
-     replaceValueTimeout('#'+ key,originalData[key]);
-     break
-    }
-  } 
-  else
-  {   if(key =="date_of_birth")
-      { 
-       $('#'+ key).removeClass("errorbox");
-       $('#' + key).attr("placeholder", ""); 
+      else {
+        var data = JSON.parse(respuesta);
+        $('#promotion_entries_videogames .mensajerror').css('display', 'inline-block');
+        for (var key in postData) {
+          for (var key2 in data) {
+            if (postData[key] == key2) {
+              if (key == "date_of_birth") {
+                $('#' + key).addClass("errorbox");
+                break
+              }
+              else {
+                $('#' + key).addClass("errorbox");
+                $('#' + key).attr("placeholder", data[key]);
+                $('#' + key).val("");
+                replaceValueTimeout('#' + key, originalData[key]);
+                break
+              }
+            }
+            else {
+              if (key == "date_of_birth") {
+                $('#' + key).removeClass("errorbox");
+                $('#' + key).attr("placeholder", "");
+              }
+              else {
+                $('#' + key).off('focus');
+                $('#' + key).removeClass("errorbox");
+                $('#' + key).attr("placeholder", "");
+              }
+            }
+          }
+        }
       }
-      else
-      {
-     $('#'+ key).off('focus');
-     $('#'+ key).removeClass("errorbox");
-     $('#' + key).attr("placeholder", ""); 
-   }  
+    })
+  } else {
+    swal("Acepta las condiciones legales", "", "error");
   }
 }
-}
-}
-})
-  }else{
+
+
+function enviar_sorteo_becas_web() {
+  var url = "../assets/php/forms/promotion_entries.php";
+  if ($('#check-sorteo-web').is(':checked')) {
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: $("#promotion_entries_web").serialize()
+    }).done(function (respuesta) {
+      var postData = $("#promotion_entries_web").serializeArray().reduce(function (obj, item) {
+        obj[item.name] = item.name;
+        return obj;
+      }, {});
+      var originalData = $("#promotion_entries_web").serializeArray().reduce(function (obj, item) {
+        obj[item.name] = item.value;
+        return obj;
+      }, {});
+      if (respuesta == "\nOK") {
+        $('#modal-sorteo').modal('show');
+      }
+      else {
+        var data = JSON.parse(respuesta);
+        $('#promotion_entries_web .mensajerror').css('display', 'inline-block');
+        for (var key in postData) {
+          for (var key2 in data) {
+            if (postData[key] == key2) {
+              if (key == "date_of_birth") {
+                $('#' + key).addClass("errorbox");
+                break
+              }
+              else {
+                $('#' + key).addClass("errorbox");
+                $('#' + key).attr("placeholder", data[key]);
+                $('#' + key).val("");
+                replaceValueTimeout('#' + key, originalData[key]);
+                break
+              }
+            }
+            else {
+              if (key == "date_of_birth") {
+                $('#' + key).removeClass("errorbox");
+                $('#' + key).attr("placeholder", "");
+              }
+              else {
+                $('#' + key).off('focus');
+                $('#' + key).removeClass("errorbox");
+                $('#' + key).attr("placeholder", "");
+              }
+            }
+          }
+        }
+      }
+    })
+  } else {
     swal("Acepta las condiciones legales", "", "error");
   }
 }

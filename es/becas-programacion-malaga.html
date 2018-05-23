@@ -107,7 +107,7 @@
 
     <div class="container sistema-becas">
       <div class="row col-sm-12">
-        <div class="col-xs-12 col-sm-5 col-sm-offset-1 becas-families">
+        <div class="col-xs-12 col-sm-4 becas-families">
           <article>
             <div class="becas-families-inauguracion"></div>
             <h2>¡Beca videogames!</h2>
@@ -115,10 +115,10 @@
               el formulario para participar en el proceso de selección donde te entrevistaremos y tendrás que demostrar tu
               actitud. Si quieres conseguirla pulsa
               <br>
-              <input type="button" class="button fondobutton abrir-formulario-sorteo" value="aquí">
+              <input type="button" class="button fondobutton abrir-formulario-sorteo-videogames" value="aquí">
             </p>
-            <div class="container formulario-sorteo">
-              <form role="form" id="promotion_entries">
+            <div class="container formulario-sorteo-videogames">
+              <form role="form" id="promotion_entries_videogames">
                 <div class="form-group">
                   <label for="nombre-sorteo">Nombre*</label>
                   <input class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
@@ -158,7 +158,7 @@
                 </div>
                 <div class="checkbox">
                   <label>
-                    <input class="check-becas" type="checkbox" id="check-sorteo"> Acepto
+                    <input class="check-becas" type="checkbox" id="check-sorteo-videogames"> Acepto
                     <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.* Solo pueden participar mayores de 18
                     años.
                   </label>
@@ -168,13 +168,80 @@
                     <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
                   </label>
                 </div>
-                <button type="button" class="button fondobutton btn boton-sorteo" onclick="enviar_sorteo_becas()">Enviar</button>
+                <button type="button" class="button fondobutton btn boton-sorteo" onclick="enviar_sorteo_becas_videogames()">Enviar</button>
                 <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>
               </form>
             </div>
           </article>
         </div>
-        <div class="col-xs-12 col-sm-5  becas-families">
+        <div class="col-xs-12 col-sm-4  becas-families">
+          <article>
+            <div class="becas-families-inauguracion"></div>
+            <h2>¡Beca Full Stack Web!</h2>
+            <p class="becas-families-explanation">Te damos la oportunidad de conseguir una beca al 100% para nuestro Full Stack Web Development Bootcamp. Completa
+              el formulario para participar en el proceso de selección donde te entrevistaremos y tendrás que demostrar tu
+              actitud. Si quieres conseguirla pulsa
+              <br>
+              <input type="button" class="button fondobutton abrir-formulario-sorteo-web" value="aquí">
+            </p>
+            <div class="container formulario-sorteo-web">
+              <form role="form" id="promotion_entries_web">
+                <div class="form-group">
+                  <label for="nombre-sorteo">Nombre*</label>
+                  <input class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
+                </div>
+                <div class="form-group">
+                  <label for="apellidos-sorteo">Apellidos*</label>
+                  <input class="form-control" id="surnames" name="surnames" placeholder="Introduce tus apellidos">
+                </div>
+                <div class="form-group">
+                  <label for="tipo-identidad-sorteo">Documento de identidad*</label>
+                  <select class="select-identidad" id="type_identification" name="type_identification">
+                    <option value="">Documento de identidad</option>
+                    <option value="DNI">DNI</option>
+                    <option value="NIE">NIE</option>
+                  </select>
+                  <input class="form-control" id="number_identification" name="number_identification" placeholder="Introduce tu documento de identidad">
+                </div>
+                <div class="form-group">
+                  <label class="fecha-nac" for="date_of_birth">Fecha de nacimiento*</label>
+                  <input type="text" id="date_of_birth" name="date_of_birth" class="fecha-nac-sorteo">
+                </div>
+                <div class="form-group">
+                  <label for="email-sorteo">Email*</label>
+                  <input class="form-control" id="email" name="email" placeholder="Introduce tu email">
+                </div>
+                <div class="form-group">
+                  <label for="telefono-sorteo">Teléfono*</label>
+                  <input class="form-control" id="telephone" name="telephone" placeholder="Introduce tu teléfono">
+                </div>
+                <div class="form-group">
+                  <label for="ciudad-sorteo">Ciudad*</label>
+                  <input class="form-control" id="city" name="city" placeholder="Introduce tu ciudad">
+                </div>
+                <div class="form-group">
+                  <label for="comentario-sorteo">Comentario</label>
+                  <textarea class="form-control" id="comentario-sorteo" placeholder="Coméntanos por que deberías recibir la beca" name="comment"></textarea>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input class="check-becas" type="checkbox" id="check-sorteo-web"> Acepto
+                    <a href="../es/avisos-legales" target="_blank">los términos y Condiciones de uso y Política de Privacidad</a>.* Solo pueden participar mayores de 18
+                    años.
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.*
+                  </label>
+                </div>
+                <button type="button" class="button fondobutton btn boton-sorteo" onclick="enviar_sorteo_becas_web()">Enviar</button>
+                <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>
+              </form>
+            </div>
+          </article>
+        </div>
+        <div class="col-xs-12 col-sm-4 becas-families">
           <article>
             <div class="becas-families-mujeres"></div>
             <h2>Mujeres y tecnología</h2>
