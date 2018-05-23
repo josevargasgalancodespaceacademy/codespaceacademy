@@ -48,7 +48,8 @@
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>
-			@switch({{ $registro->type }})
+			$tipo = {{ $registro->type }}
+			@switch($tipo)
 
 			@case(1)
 			<td>Videogames</td>
