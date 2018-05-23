@@ -48,6 +48,7 @@
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
 			<td>{{ $registro->state }}</td>
+			$tipo = 0;
 			$tipo = {{ $registro->type }}
 			@switch($tipo)
 
