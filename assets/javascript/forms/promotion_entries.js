@@ -24,26 +24,26 @@ function enviar_sorteo_becas_videogames() {
           for (var key2 in data) {
             if (postData[key] == key2) {
               if (key == "date_of_birth") {
-                $('#' + key).addClass("errorbox");
+                $('#videogames_' + key).addClass("errorbox");
                 break
               }
               else {
-                $('#' + key).addClass("errorbox");
-                $('#' + key).attr("placeholder", data[key]);
-                $('#' + key).val("");
+                $('##videogames_' + key).addClass("errorbox");
+                $('##videogames_' + key).attr("placeholder", data[key]);
+                $('##videogames_' + key).val("");
                 replaceValueTimeout('#' + key, originalData[key]);
                 break
               }
             }
             else {
               if (key == "date_of_birth") {
-                $('#' + key).removeClass("errorbox");
+                $('##videogames_' + key).removeClass("errorbox");
                 $('#' + key).attr("placeholder", "");
               }
               else {
-                $('#' + key).off('focus');
-                $('#' + key).removeClass("errorbox");
-                $('#' + key).attr("placeholder", "");
+                $('##videogames_' + key).off('focus');
+                $('##videogames_' + key).removeClass("errorbox");
+                $('##videogames_' + key).attr("placeholder", "");
               }
             }
           }
@@ -82,26 +82,26 @@ function enviar_sorteo_becas_web() {
           for (var key2 in data) {
             if (postData[key] == key2) {
               if (key == "date_of_birth") {
-                $('#' + key).addClass("errorbox");
+                $('#web_' + key).addClass("errorbox");
                 break
               }
               else {
-                $('#' + key).addClass("errorbox");
-                $('#' + key).attr("placeholder", data[key]);
-                $('#' + key).val("");
+                $('#web_' + key).addClass("errorbox");
+                $('#web_' + key).attr("placeholder", data[key]);
+                $('#web_' + key).val("");
                 replaceValueTimeout('#' + key, originalData[key]);
                 break
               }
             }
             else {
               if (key == "date_of_birth") {
-                $('#' + key).removeClass("errorbox");
-                $('#' + key).attr("placeholder", "");
+                $('#web_' + key).removeClass("errorbox");
+                $('#web_' + key).attr("placeholder", "");
               }
               else {
-                $('#' + key).off('focus');
-                $('#' + key).removeClass("errorbox");
-                $('#' + key).attr("placeholder", "");
+                $('#web_' + key).off('focus');
+                $('#web_' + key).removeClass("errorbox");
+                $('#web_' + key).attr("placeholder", "");
               }
             }
           }
