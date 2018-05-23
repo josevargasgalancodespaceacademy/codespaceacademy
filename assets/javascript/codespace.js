@@ -201,7 +201,13 @@ function datepicker() {
     yearSuffix: ''
   };
   $.datepicker.setDefaults($.datepicker.regional['es']);
-  $('#date_of_birth').datepicker({
+  $('#videogames_date_of_birth').datepicker({
+    changeYear: true,
+    changeMonth: true,
+    yearRange: '-100:+0',
+    dateFormat: 'dd-mm-yy'
+  });
+  $('#web_date_of_birth').datepicker({
     changeYear: true,
     changeMonth: true,
     yearRange: '-100:+0',
