@@ -10981,6 +10981,29 @@ float:left;
     margin-bottom: 10px 
   }   
 }
+.page-qa-360 .bootcamp-web-malaga-dates:first-child
+{
+  border-top: 2px solid #29ABE2;
+  border-style:dashed;
+}
+.page-qa-360 .bootcamp-web-malaga-dates
+{
+ border-bottom: 2px solid #29ABE2;
+border-style:dashed; 
+}
+.page-qa-360 .bootcamp-web-malaga-dates a
+{
+ color: #29ABE2
+}
+.page-qa-360 .bootcamp-web-malaga-dates:hover a
+{
+  background-color: #29ABE2;
+  border-color: #29ABE2;
+}
+.page-qa-360 .bootcamp-web-malaga-dates:hover
+{
+ background-color: #E6E6E6
+}
 /*bussiness-courses-page*/
 .page-business-courses .main-nav
 {
