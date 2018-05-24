@@ -44,6 +44,7 @@
 	</thead>
 	<tbody>
 	@foreach($sorteo_becas as $registro)
+	@if({{ $registro->type }} == 0) <li>HOLA</li>
 	<tr>
 			<td>{{ $registro->name }}</td>
 			<td>{{ $registro->created_at }}</td>
