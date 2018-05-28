@@ -10920,6 +10920,12 @@ border-radius: 35px;
   text-transform: uppercase; 
   margin-left:30px; 
 } 
+.image-cuadrados
+{
+background-image: url(../../assets/images/business-courses/qa-360/cuadrados.png);
+background-repeat: no-repeat;
+background-position: center;
+}
 .workshop-modulo { 
   margin-left: 10px; 
   padding-left: 30px; 
