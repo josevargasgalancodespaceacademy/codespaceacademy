@@ -148,6 +148,9 @@ if(window.location.href.indexOf('index')>-1){
   
   });
 }
+else{
+  console.log(window.location.href.indexOf('index'));
+}
 /*Despliegue de menú móvil*/
 $(document).ready(function () {
   $('.hamburger-icon').click(function (e) {
