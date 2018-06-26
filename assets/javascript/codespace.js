@@ -149,7 +149,7 @@ if(window.location.href.indexOf('index')>-1){
   });
 }
 else{
-  console.log(window.location.href.indexOf('index'));
+  console.log(window.location.href);
 }
 /*Despliegue de menú móvil*/
 $(document).ready(function () {
