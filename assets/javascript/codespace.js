@@ -119,7 +119,7 @@ function contador_becas() {
 
 
 /*animacion anclas usabilidad*/
-if(window.location.href.indexOf('index')>-1){
+if(window.location.href !=='https://www.codespaceacademy.com/'){
   $(function () {
 
     $('a[href*="#"]:not([href="#"])').click(function () {
@@ -147,9 +147,6 @@ if(window.location.href.indexOf('index')>-1){
   
   
   });
-}
-else{
-  console.log(window.location.href);
 }
 /*Despliegue de menú móvil*/
 $(document).ready(function () {
