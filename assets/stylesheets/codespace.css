@@ -12552,7 +12552,10 @@ background-image: url(../../assets/images/eventos/meetup-codespace-gestion-indus
   background-image: url(../../assets/images/eventos/meetup-aje-proteccion-datos.png); 
   background-size: contain; 
 background-repeat: no-repeat; 
-} 
+}
+.meetup-codespace-codeceptjs {
+  background-image: url(../../assets/images/eventos/meetup-codespace-codeceptjs.jpeg);
+}
 .informacion-evento 
 {
   padding-left:30px!important;
