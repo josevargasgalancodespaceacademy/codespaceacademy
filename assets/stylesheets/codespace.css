@@ -7811,6 +7811,9 @@ font-size: 30px;
     display: none
   }
   .partners-movil #myCarouselMovil .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 260px;
   }
   .partners-movil h2{
