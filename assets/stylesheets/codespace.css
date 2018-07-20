@@ -7810,7 +7810,7 @@ font-size: 30px;
   .partners{
     display: none
   }
-  .partners-movil #myCarousel .row{
+  .partners-movil #myCarouselMovil .row{
     height: 260px;
   }
   .partners-movil h2{
