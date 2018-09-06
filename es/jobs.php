@@ -51,7 +51,7 @@
             <li>
                         <a href="business-courses/qa360">QA 360: Un enfoque práctico </a>
                       </li>
-            <li><a href="#">Extreme programming workshops</a></li>
+            <li><a href="cursos-programacion-malaga#landing-courses">Landing courses</a></li>
           </ul>
         </div>
       </li>
