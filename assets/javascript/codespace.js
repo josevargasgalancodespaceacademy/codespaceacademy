@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 /*contador hacia atras del primer bootcamp*/
 function contador() {
-  var launchdate = new Date(2018, 9 - 1, 17);//la fecha de lanzamiento del bootcamp
+  var launchdate = new Date(2018, 9 - 1, 28);//la fecha de lanzamiento del bootcamp
   var format = 'DD hh:mm:ss';
   $('#counter').countdown({
 
