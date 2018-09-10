@@ -8751,7 +8751,7 @@ background-image: url(../../assets/images/cursos/bootcamp-mobile.svg);
 .page-bootcamp-web .hero-block h1, .page-bootcamp-videogames .hero-block h1
 {
   font-weight: 400!important;
-  font-size:90px!important;
+  font-size:90px;
 }
 .page-bootcamp-web .hero-block .part-time
 {
@@ -11071,6 +11071,23 @@ border-style:dashed;
 {
  background-color: #E6E6E6
 }
+/*Landing courses*/
+@media(min-width: 768px)
+{
+  .landing-javascript{
+  font-size: 80px!important
+  }
+  .landing-java{
+    font-size: 80px!important
+  }
+  .landing-python{
+    font-size: 75px!important
+  }
+  .h1-bootcamp-web{
+    font-size: 90px!important
+  }
+}
+
 /*bussiness-courses-page*/
 .page-business-courses .main-nav
 {
