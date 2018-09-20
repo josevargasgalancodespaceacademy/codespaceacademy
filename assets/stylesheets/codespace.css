@@ -12592,6 +12592,9 @@ background-repeat: no-repeat;
 .meetup-devfest-2018{
   background-image: url(../../assets/images/eventos/meetup-devfest-2018.png);
 }
+.meetup-parceljs{
+  background-image: url(../../assets/images/eventos/meetup-parceljs.png);
+}
 .informacion-evento 
 {
   padding-left:30px!important;
