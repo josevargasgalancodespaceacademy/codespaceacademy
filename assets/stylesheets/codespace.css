@@ -12660,6 +12660,39 @@ background-repeat: no-repeat;
     width:60%;
   } 
 }
+/*página alumni*/
+.foto-alumni-codespacers{
+  background-image: url(../images/alumni/equipo-codespace.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:400px;
+  width: 100%;
+  margin-bottom: 20px
+}
+@media(max-width:768px){
+  .foto-alumni-codespacers{
+    display: none
+  }
+}
+.alumni-testimonio {
+  padding: 50px;
+  flex-flow: row;
+  font-size: 30px
+}
+.alumni-testimonio-foto {
+ background-color: black;
+ background-size: contain;
+ height: 300px;  
+}
+.margin-left-testimonio-alumni{
+  margin-left: 50px;
+}
+.titular-alumni{
+  text-align: center; 
+  margin-bottom: 30px; 
+  font-size: 3vw; 
+  font-weight: bold
+}
 /*página de pedir informacion*/
 #mas_informacion_course_block, .mas_informacion_course_block
 {
