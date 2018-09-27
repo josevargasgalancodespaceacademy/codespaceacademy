@@ -7836,7 +7836,6 @@ font-size: 30px;
 {
   margin: inherit;
   padding: inherit;
-  max-width: 1900px;
   height: 320px;
 }
 .prefooter .row 
@@ -8106,7 +8105,6 @@ margin-bottom: 25px
 /*footer*/
  .footer-content
 {
-  max-width: 1950px;
   background-color:rgb(230, 23, 83);
   color:#fff;
   margin: inherit;
