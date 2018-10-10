@@ -48,18 +48,27 @@ function recargar() {
 }
 
 /*Se muestra formulario del sorteo*/
-$(document).ready(function(){ 
-  $('.abrir-formulario-sorteo-videogames').click(function() {
+$(document).ready(function () {
+  $('.abrir-formulario-sorteo-videogames').click(function () {
     $('.formulario-sorteo-videogames').toggle('slow');
   });
-  $('.abrir-formulario-sorteo-web').click(function() {
+  $('.abrir-formulario-sorteo-web').click(function () {
     $('.formulario-sorteo-web').toggle('slow');
   });
 });
 /*Se muestra formulario de envio de cv*/
-$(document).ready(function(){
+$(document).ready(function () {
   $('.cv-y-ofertas-button').click(function () {
     $('.formulario-cv').toggle('slow');
+  });
+});
+/*Toggle landing python*/
+$(document).ready(function () {
+  $('.step-landing-ul').hide();
+  $('.step-landing').on('click', function () {
+    if ($(this).next()[0].className === 'step-landing-ul') {
+      $(this).next().toggle('normal');
+    }
   });
 });
 /*Se muestran preguntas frecuentes al pulsar el boton*/
@@ -119,43 +128,43 @@ function contador_becas() {
 
 
 /*animacion anclas usabilidad*/
-if(window.location.href !=='https://www.codespaceacademy.com/'){
+if (window.location.href !== 'https://www.codespaceacademy.com/') {
   $(function () {
 
     $('a[href*="#"]:not([href="#"])').click(function () {
-  
+
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
         && location.hostname == this.hostname) {
-  
+
         var $target = $(this.hash);
-  
+
         $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-  
+
         if ($target.length) {
-  
+
           var targetOffset = $target.offset().top;
-  
+
           $('html,body').animate({ scrollTop: targetOffset }, 1000);
-  
+
           return false;
-  
+
         }
-  
+
       }
-  
+
     });
-  
-  
+
+
   });
 }
 /*Despliegue de menú móvil*/
 $(document).ready(function () {
   $('.hamburger-icon').click(function (e) {
-    if ($('body').hasClass("page-bootcamp-web") || $('body').hasClass("page-bootcamp-videogames") || $('body').hasClass("page-qa-360") ) {
+    if ($('body').hasClass("page-bootcamp-web") || $('body').hasClass("page-bootcamp-videogames") || $('body').hasClass("page-qa-360")) {
       $(".container .menu").animate({
         width: "toggle"
       }, 400);
-      if ($('.page-bootcamp-web .hero-block').css("margin-top") == "465px" || $('.page-bootcamp-videogames .hero-block').css("margin-top") == "465px" || $('.page-qa-360 .hero-block').css("margin-top") == "465px")  {
+      if ($('.page-bootcamp-web .hero-block').css("margin-top") == "465px" || $('.page-bootcamp-videogames .hero-block').css("margin-top") == "465px" || $('.page-qa-360 .hero-block').css("margin-top") == "465px") {
         $('.hero-block').css("margin-top", "80px");
       }
       else {
