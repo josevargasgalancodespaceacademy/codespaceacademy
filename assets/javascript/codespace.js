@@ -64,6 +64,7 @@ $(document).ready(function () {
 });
 /*Toggle landing python*/
 $(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip(); 
   $('.step-landing-ul').hide();
   $('.step-landing').on('click', function () {
     if ($(this).next()[0].className === 'step-landing-ul') {
