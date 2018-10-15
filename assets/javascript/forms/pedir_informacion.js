@@ -14,11 +14,9 @@ window.onload = function() {
   });
 
 }
-
 function enviar_pedir_mas_informacion(){
 
     var url ="../assets/php/forms/pedir_informacion.php";
-    console.log( $("#pedir_mas_informacion").serialize())
     if ($('#check-mas-info').is(':checked')){ 
     $.ajax({                        
       type: "POST",                 
