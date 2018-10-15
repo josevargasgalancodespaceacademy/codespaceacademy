@@ -69,7 +69,7 @@
               <div class="form-group">
                 <input class="form-control" id="informacion_telephone" placeholder="" name="telephone">
               </div>
-                <input type="hidden" class="form-control" value="3" name="course">
+                <input type="hidden" class="form-control" value="3" name="course-1">
               <label for="comment">Comentario</label>
               <textarea class="form-control" id="comentario-talent" placeholder="Coméntanos cualquier duda que tengas" name="comment"></textarea>
 
