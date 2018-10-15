@@ -104,15 +104,7 @@
                   ?>
                 </select>
 
-                <p class="city-error mensajerror""></p>
-              </div>
-              <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6" id ="mas_informacion_course_block">
-    
-                <label for="course"> 
-                  Curso en el que estás interesado
-                </label>
-                <p class="course-error mensajerror""></p>
-
+                <p class="city-error mensajerror"></p>
               </div>
 
             </div>
