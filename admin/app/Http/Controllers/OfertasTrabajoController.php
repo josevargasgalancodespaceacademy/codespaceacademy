@@ -170,6 +170,9 @@ class OfertasTrabajoController extends Controller
         <li class='menu-item'>
         <a href='../../es/jobs'>Jobs</a>
       </li>
+      <li class='menu-item'>
+      <a href='../alumni'>Alumni</a>
+      </li>
     </ul>
     </nav>
     </div>
