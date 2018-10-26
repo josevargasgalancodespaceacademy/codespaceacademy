@@ -106,6 +106,10 @@ class OfertasTrabajoController extends Controller
          $OfertasTrabajo->offer_short_description =  $request->offer_short_description;
          $OfertasTrabajo->offer_description = $request->offer_description;
          $OfertasTrabajo->save();
+         $rangoSalarial = "No disponible";
+         if($request->min_salary !=="" && $request->max_salary!==""){
+          $rangoSalarial = $request->min_salary." - ".$request->max_salary;
+         }
          $contenido = 
 "<!DOCTYPE html>
 <head>
@@ -200,7 +204,7 @@ class OfertasTrabajoController extends Controller
       <ul>
         <li><strong>Empresa</strong>: ".$request->business."</li>
         <li><strong>Localidad</strong>: ".$request->city."</li>
-        <li><strong>Rango salarial</strong>: ".$request->min_salary." - ".$request->max_salary."</li>
+        <li><strong>Rango salarial</strong>: ".$rangoSalarial."</li>
       </ul>
     </div>
     <div class='col-sm-3 col-sm-offset-1'>
