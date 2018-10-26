@@ -105,8 +105,10 @@ class OfertasTrabajoController extends Controller
          $OfertasTrabajo->industry_type = $request->industry_type;
          $OfertasTrabajo->offer_short_description =  $request->offer_short_description;
          $OfertasTrabajo->offer_description = $request->offer_description;
-         $OfertasTrabajo->save();
          $rangoSalarial = "No disponible";
+         if($OfertasTrabajo->save()) {
+          return response()->json(array('success' => true, 'last_insert_id' => $OfertasTrabajo->id), 200);
+          }
          if($request->min_salary !=="" && $request->max_salary!==""){
           $rangoSalarial = $request->min_salary." - ".$request->max_salary;
          }
@@ -235,6 +237,7 @@ class OfertasTrabajoController extends Controller
   <a name='inscripcion'></a>
  <div class='container formulario-cv-ofertas'> 
         <form role='form' id='curriculums' enctype='multipart/form-data'>
+        <input type='hidden' name='offer_id' value='".$OfertasTrabajo->id."'>
         <div class='datos-personales'>
         <label class='title'> Ingresa tus datos personales*</label>
         <div class='trabaja-field'>
