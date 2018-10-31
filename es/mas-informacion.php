@@ -213,5 +213,8 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/830007273/?guid=ON&amp;script=0"/>
 </div>
 </noscript>
+<script type="text/javascript" src="https://www.codespaceacademy.com/clickheat/js/clickheat.js"></script><noscript><p><a href="http://www.dugwood.com/index.html">CMS</a></p></noscript><script type="text/javascript">
+    clickHeatSite = 'Mas informacion';clickHeatGroup = encodeURIComponent(window.location.pathname+window.location.search);clickHeatServer = 'https://www.codespaceacademy.com/clickheat/click.php';initClickHeat(); //-->
+    </script>
   </body>
 </html>
