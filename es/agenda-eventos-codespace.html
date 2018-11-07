@@ -153,7 +153,7 @@
                 <strong style="font-size: 1.2em">¡tendrás la opción de ganar un ordenador portátil!</strong>
               </p>
             </article>
-            <form role="form" id="formulario-taller">
+            <form role="form" id="formulario-taller" style="display:none">
               <div class="form-group">
                 <label for="nombre-sorteo">Nombre*</label>
                 <input class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
@@ -186,9 +186,10 @@
                   <input class="comunicaciones" type="checkbox" id="comunicaciones">No deseo recibir comunicaciones comerciales sobre productos o servicios de Codespace.
                 </label>
               </div>
-              <button type="button" class="button fondobutton btn" style="margin-bottom: 20px" onclick="enviar_taller_form()">quiero asistir</button>
+              <button type="button" class="button fondobutton btn" style="margin-bottom: 20px" onclick="">quiero asistir</button>
               <div class="mensajerror">Uno o mas campos del formulario tienen errores.</div>
             </form>
+            <a class="button fondobutton">Taller cerrado</a>
           </div>
         </div>
         <h2 class="col-sm-offset-1 col-md-offset-1 eventos-previstos">eventos previstos</h2>
