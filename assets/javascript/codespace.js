@@ -64,7 +64,7 @@ $(document).ready(function () {
 });
 /*Toggle landing python*/
 $(document).ready(function () {
-  $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="tooltip"]').tooltip();
   $('.step-landing-ul').hide();
   $('.step-landing').on('click', function () {
     if ($(this).next()[0].className === 'step-landing-ul') {
@@ -75,7 +75,7 @@ $(document).ready(function () {
 /*Se muestran preguntas frecuentes al pulsar el boton*/
 $(document).ready(function () {
   $('.faq-button').on('click', function (e) {
-    $(this).parent().next().toggle('slow');
+    $(this).parent().next().toggle('normal');
     e.preventDefault();
   });
 });
@@ -133,26 +133,26 @@ if (window.location.href !== 'https://www.codespaceacademy.com/') {
   $(function () {
 
     $('a[href*="#"]:not([href="#"])').click(function () {
+      if (!$(this).attr('data-toggle')) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          && location.hostname == this.hostname) {
 
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
 
-        var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
 
-        $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+          if ($target.length) {
 
-        if ($target.length) {
+            var targetOffset = $target.offset().top;
 
-          var targetOffset = $target.offset().top;
+            $('html,body').animate({ scrollTop: targetOffset }, 1000);
 
-          $('html,body').animate({ scrollTop: targetOffset }, 1000);
+            return false;
 
-          return false;
+          }
 
         }
-
       }
-
     });
 
 
